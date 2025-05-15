@@ -1,4 +1,5 @@
 # How make a new build
+
 install npm and yarn (sudo npm install -g yarn)
 npx run projen
 npm install --save-dev
@@ -79,9 +80,7 @@ Add additional notes about how to deploy this on a live system
 * Inspiration
 * etc
 
-
-<!-- TWINE PASSWORD  -->
-<!-- aws codeartifact get-authorization-token --domain thron --domain-owner 499570923361 --query authorizationToken --output text -->
+<!-- TWINE PASSWORD  --><!-- aws codeartifact get-authorization-token --domain thron --domain-owner 499570923361 --query authorizationToken --output text -->
 # API Reference <a name="API Reference" id="api-reference"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -90,28 +89,28 @@ Add additional notes about how to deploy this on a live system
 
 #### Initializers <a name="Initializers" id="cdk-constructs.DefaultValue.Initializer"></a>
 
-```typescript
-import { DefaultValue } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new DefaultValue(scope: Construct, id: string)
+cdkconstructs.NewDefaultValue(scope Construct, id *string) DefaultValue
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DefaultValue.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.DefaultValue.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.DefaultValue.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -119,88 +118,88 @@ new DefaultValue(scope: Construct, id: string)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.DefaultValue.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.DefaultValue.cdnDomainLong">cdnDomainLong</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.privateRouteR53Zone">privateRouteR53Zone</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.privateSubnetSelection">privateSubnetSelection</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.sitename">sitename</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.vpc">vpc</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.vpcId">vpcId</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.vpcIPV4Cidr">vpcIPV4Cidr</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.DefaultValue.vpcIPV6Cidr">vpcIPV6Cidr</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.DefaultValue.cdnDomainLong">CdnDomainLong</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.privateRouteR53Zone">PrivateRouteR53Zone</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.privateSubnetSelection">PrivateSubnetSelection</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.sitename">Sitename</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.vpc">Vpc</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.vpcId">VpcId</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.vpcIPV4Cidr">VpcIPV4Cidr</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DefaultValue.vpcIPV6Cidr">VpcIPV6Cidr</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.DefaultValue.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.DefaultValue.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `cdnDomainLong` <a name="cdnDomainLong" id="cdk-constructs.DefaultValue.cdnDomainLong"></a>
+##### `CdnDomainLong` <a name="CdnDomainLong" id="cdk-constructs.DefaultValue.cdnDomainLong"></a>
 
-```typescript
-public cdnDomainLong(): string
+```go
+func CdnDomainLong() *string
 ```
 
-##### `privateRouteR53Zone` <a name="privateRouteR53Zone" id="cdk-constructs.DefaultValue.privateRouteR53Zone"></a>
+##### `PrivateRouteR53Zone` <a name="PrivateRouteR53Zone" id="cdk-constructs.DefaultValue.privateRouteR53Zone"></a>
 
-```typescript
-public privateRouteR53Zone(): IHostedZone
+```go
+func PrivateRouteR53Zone() IHostedZone
 ```
 
-##### `privateSubnetSelection` <a name="privateSubnetSelection" id="cdk-constructs.DefaultValue.privateSubnetSelection"></a>
+##### `PrivateSubnetSelection` <a name="PrivateSubnetSelection" id="cdk-constructs.DefaultValue.privateSubnetSelection"></a>
 
-```typescript
-public privateSubnetSelection(): SubnetSelection
+```go
+func PrivateSubnetSelection() SubnetSelection
 ```
 
-##### `sitename` <a name="sitename" id="cdk-constructs.DefaultValue.sitename"></a>
+##### `Sitename` <a name="Sitename" id="cdk-constructs.DefaultValue.sitename"></a>
 
-```typescript
-public sitename(): string
+```go
+func Sitename() *string
 ```
 
-##### `vpc` <a name="vpc" id="cdk-constructs.DefaultValue.vpc"></a>
+##### `Vpc` <a name="Vpc" id="cdk-constructs.DefaultValue.vpc"></a>
 
-```typescript
-public vpc(): IVpc
+```go
+func Vpc() IVpc
 ```
 
-##### `vpcId` <a name="vpcId" id="cdk-constructs.DefaultValue.vpcId"></a>
+##### `VpcId` <a name="VpcId" id="cdk-constructs.DefaultValue.vpcId"></a>
 
-```typescript
-public vpcId(): string
+```go
+func VpcId() *string
 ```
 
-##### `vpcIPV4Cidr` <a name="vpcIPV4Cidr" id="cdk-constructs.DefaultValue.vpcIPV4Cidr"></a>
+##### `VpcIPV4Cidr` <a name="VpcIPV4Cidr" id="cdk-constructs.DefaultValue.vpcIPV4Cidr"></a>
 
-```typescript
-public vpcIPV4Cidr(): string
+```go
+func VpcIPV4Cidr() *string
 ```
 
-##### `vpcIPV6Cidr` <a name="vpcIPV6Cidr" id="cdk-constructs.DefaultValue.vpcIPV6Cidr"></a>
+##### `VpcIPV6Cidr` <a name="VpcIPV6Cidr" id="cdk-constructs.DefaultValue.vpcIPV6Cidr"></a>
 
-```typescript
-public vpcIPV6Cidr(): string
+```go
+func VpcIPV6Cidr() *string
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.DefaultValue.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.DefaultValue.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.DefaultValue.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.DefaultValue.isConstruct"></a>
 
-```typescript
-import { DefaultValue } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-DefaultValue.isConstruct(x: any)
+cdkconstructs.DefaultValue_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -221,7 +220,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.DefaultValue.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -231,17 +230,17 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DefaultValue.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.DefaultValue.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.DefaultValue.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.DefaultValue.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
@@ -252,42 +251,42 @@ The tree node.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.DockerBuildAndPush.Initializer"></a>
 
-```typescript
-import { DockerBuildAndPush } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new DockerBuildAndPush(scope: Stack, id: string, directory: string, dockerfile?: string)
+cdkconstructs.NewDockerBuildAndPush(scope Stack, id *string, directory *string, dockerfile *string) DockerBuildAndPush
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.Stack</code> | *No description.* |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.directory">directory</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.dockerfile">dockerfile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | *No description.* |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.directory">directory</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.Initializer.parameter.dockerfile">dockerfile</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.DockerBuildAndPush.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.DockerBuildAndPush.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `directory`<sup>Required</sup> <a name="directory" id="cdk-constructs.DockerBuildAndPush.Initializer.parameter.directory"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `dockerfile`<sup>Optional</sup> <a name="dockerfile" id="cdk-constructs.DockerBuildAndPush.Initializer.parameter.dockerfile"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -295,36 +294,36 @@ new DockerBuildAndPush(scope: Stack, id: string, directory: string, dockerfile?:
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.addMetadata">addMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.formatArn">formatArn</a></code> | Creates an ARN from components. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.addDependency">AddDependency</a></code> | Add a dependency between this stack and another stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.addMetadata">AddMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.addTransform">AddTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.exportStringListValue">ExportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.exportValue">ExportValue</a></code> | Create a CloudFormation Export for a string value. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.formatArn">FormatArn</a></code> | Creates an ARN from components. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.getLogicalId">GetLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.regionalFact">RegionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.renameLogicalId">RenameLogicalId</a></code> | Rename a generated logical identities. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.reportMissingContextKey">ReportMissingContextKey</a></code> | Indicate that a context key was expected. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.resolve">Resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.splitArn">SplitArn</a></code> | Splits the provided ARN into its components. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.toJsonString">ToJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.toYamlString">ToYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.DockerBuildAndPush.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.DockerBuildAndPush.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `addDependency` <a name="addDependency" id="cdk-constructs.DockerBuildAndPush.addDependency"></a>
+##### `AddDependency` <a name="AddDependency" id="cdk-constructs.DockerBuildAndPush.addDependency"></a>
 
-```typescript
-public addDependency(target: Stack, reason?: string): void
+```go
+func AddDependency(target Stack, reason *string)
 ```
 
 Add a dependency between this stack and another stack.
@@ -334,20 +333,20 @@ app, and also supports nested stacks.
 
 ###### `target`<sup>Required</sup> <a name="target" id="cdk-constructs.DockerBuildAndPush.addDependency.parameter.target"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ###### `reason`<sup>Optional</sup> <a name="reason" id="cdk-constructs.DockerBuildAndPush.addDependency.parameter.reason"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `addMetadata` <a name="addMetadata" id="cdk-constructs.DockerBuildAndPush.addMetadata"></a>
+##### `AddMetadata` <a name="AddMetadata" id="cdk-constructs.DockerBuildAndPush.addMetadata"></a>
 
-```typescript
-public addMetadata(key: string, value: any): void
+```go
+func AddMetadata(key *string, value interface{})
 ```
 
 Adds an arbitrary key-value pair, with information you want to record about the stack.
@@ -358,20 +357,20 @@ These get translated to the Metadata section of the generated template.
 
 ###### `key`<sup>Required</sup> <a name="key" id="cdk-constructs.DockerBuildAndPush.addMetadata.parameter.key"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `value`<sup>Required</sup> <a name="value" id="cdk-constructs.DockerBuildAndPush.addMetadata.parameter.value"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `addTransform` <a name="addTransform" id="cdk-constructs.DockerBuildAndPush.addTransform"></a>
+##### `AddTransform` <a name="AddTransform" id="cdk-constructs.DockerBuildAndPush.addTransform"></a>
 
-```typescript
-public addTransform(transform: string): void
+```go
+func AddTransform(transform *string)
 ```
 
 Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template.
@@ -382,7 +381,7 @@ Duplicate values are removed when stack is synthesized.
 
 *Example*
 
-```typescript
+```go
 declare const stack: Stack;
 
 stack.addTransform('AWS::Serverless-2016-10-31')
@@ -391,16 +390,16 @@ stack.addTransform('AWS::Serverless-2016-10-31')
 
 ###### `transform`<sup>Required</sup> <a name="transform" id="cdk-constructs.DockerBuildAndPush.addTransform.parameter.transform"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The transform to add.
 
 ---
 
-##### `exportStringListValue` <a name="exportStringListValue" id="cdk-constructs.DockerBuildAndPush.exportStringListValue"></a>
+##### `ExportStringListValue` <a name="ExportStringListValue" id="cdk-constructs.DockerBuildAndPush.exportStringListValue"></a>
 
-```typescript
-public exportStringListValue(exportedValue: any, options?: ExportValueOptions): string[]
+```go
+func ExportStringListValue(exportedValue interface{}, options ExportValueOptions) *[]*string
 ```
 
 Create a CloudFormation Export for a string list value.
@@ -425,20 +424,20 @@ See `exportValue` for an example of this process.
 
 ###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="cdk-constructs.DockerBuildAndPush.exportStringListValue.parameter.exportedValue"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.DockerBuildAndPush.exportStringListValue.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.ExportValueOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ExportValueOptions
 
 ---
 
-##### `exportValue` <a name="exportValue" id="cdk-constructs.DockerBuildAndPush.exportValue"></a>
+##### `ExportValue` <a name="ExportValue" id="cdk-constructs.DockerBuildAndPush.exportValue"></a>
 
-```typescript
-public exportValue(exportedValue: any, options?: ExportValueOptions): string
+```go
+func ExportValue(exportedValue interface{}, options ExportValueOptions) *string
 ```
 
 Create a CloudFormation Export for a string value.
@@ -486,20 +485,20 @@ Instead, the process takes two deployments:
 
 ###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="cdk-constructs.DockerBuildAndPush.exportValue.parameter.exportedValue"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.DockerBuildAndPush.exportValue.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.ExportValueOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ExportValueOptions
 
 ---
 
-##### `formatArn` <a name="formatArn" id="cdk-constructs.DockerBuildAndPush.formatArn"></a>
+##### `FormatArn` <a name="FormatArn" id="cdk-constructs.DockerBuildAndPush.formatArn"></a>
 
-```typescript
-public formatArn(components: ArnComponents): string
+```go
+func FormatArn(components ArnComponents) *string
 ```
 
 Creates an ARN from components.
@@ -520,14 +519,14 @@ can be 'undefined'.
 
 ###### `components`<sup>Required</sup> <a name="components" id="cdk-constructs.DockerBuildAndPush.formatArn.parameter.components"></a>
 
-- *Type:* aws-cdk-lib.ArnComponents
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ArnComponents
 
 ---
 
-##### `getLogicalId` <a name="getLogicalId" id="cdk-constructs.DockerBuildAndPush.getLogicalId"></a>
+##### `GetLogicalId` <a name="GetLogicalId" id="cdk-constructs.DockerBuildAndPush.getLogicalId"></a>
 
-```typescript
-public getLogicalId(element: CfnElement): string
+```go
+func GetLogicalId(element CfnElement) *string
 ```
 
 Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource.
@@ -542,16 +541,16 @@ class and override this method.
 
 ###### `element`<sup>Required</sup> <a name="element" id="cdk-constructs.DockerBuildAndPush.getLogicalId.parameter.element"></a>
 
-- *Type:* aws-cdk-lib.CfnElement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.CfnElement
 
 The CloudFormation element for which a logical identity is needed.
 
 ---
 
-##### `regionalFact` <a name="regionalFact" id="cdk-constructs.DockerBuildAndPush.regionalFact"></a>
+##### `RegionalFact` <a name="RegionalFact" id="cdk-constructs.DockerBuildAndPush.regionalFact"></a>
 
-```typescript
-public regionalFact(factName: string, defaultValue?: string): string
+```go
+func RegionalFact(factName *string, defaultValue *string) *string
 ```
 
 Look up a fact value for the given fact for the region of this stack.
@@ -574,20 +573,20 @@ the given region.
 
 ###### `factName`<sup>Required</sup> <a name="factName" id="cdk-constructs.DockerBuildAndPush.regionalFact.parameter.factName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="cdk-constructs.DockerBuildAndPush.regionalFact.parameter.defaultValue"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `renameLogicalId` <a name="renameLogicalId" id="cdk-constructs.DockerBuildAndPush.renameLogicalId"></a>
+##### `RenameLogicalId` <a name="RenameLogicalId" id="cdk-constructs.DockerBuildAndPush.renameLogicalId"></a>
 
-```typescript
-public renameLogicalId(oldId: string, newId: string): void
+```go
+func RenameLogicalId(oldId *string, newId *string)
 ```
 
 Rename a generated logical identities.
@@ -597,20 +596,20 @@ override the `allocateLogicalId` method.
 
 ###### `oldId`<sup>Required</sup> <a name="oldId" id="cdk-constructs.DockerBuildAndPush.renameLogicalId.parameter.oldId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `newId`<sup>Required</sup> <a name="newId" id="cdk-constructs.DockerBuildAndPush.renameLogicalId.parameter.newId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `reportMissingContextKey` <a name="reportMissingContextKey" id="cdk-constructs.DockerBuildAndPush.reportMissingContextKey"></a>
+##### `ReportMissingContextKey` <a name="ReportMissingContextKey" id="cdk-constructs.DockerBuildAndPush.reportMissingContextKey"></a>
 
-```typescript
-public reportMissingContextKey(report: MissingContext): void
+```go
+func ReportMissingContextKey(report MissingContext)
 ```
 
 Indicate that a context key was expected.
@@ -620,30 +619,30 @@ the key should be supplied.
 
 ###### `report`<sup>Required</sup> <a name="report" id="cdk-constructs.DockerBuildAndPush.reportMissingContextKey.parameter.report"></a>
 
-- *Type:* aws-cdk-lib.cloud_assembly_schema.MissingContext
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.cloud_assembly_schema.MissingContext
 
 The set of parameters needed to obtain the context.
 
 ---
 
-##### `resolve` <a name="resolve" id="cdk-constructs.DockerBuildAndPush.resolve"></a>
+##### `Resolve` <a name="Resolve" id="cdk-constructs.DockerBuildAndPush.resolve"></a>
 
-```typescript
-public resolve(obj: any): any
+```go
+func Resolve(obj interface{}) interface{}
 ```
 
 Resolve a tokenized value in the context of the current stack.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.DockerBuildAndPush.resolve.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `splitArn` <a name="splitArn" id="cdk-constructs.DockerBuildAndPush.splitArn"></a>
+##### `SplitArn` <a name="SplitArn" id="cdk-constructs.DockerBuildAndPush.splitArn"></a>
 
-```typescript
-public splitArn(arn: string, arnFormat: ArnFormat): ArnComponents
+```go
+func SplitArn(arn *string, arnFormat ArnFormat) ArnComponents
 ```
 
 Splits the provided ARN into its components.
@@ -655,7 +654,7 @@ encoded as Tokens).
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="cdk-constructs.DockerBuildAndPush.splitArn.parameter.arn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 the ARN to split into its components.
 
@@ -663,43 +662,43 @@ the ARN to split into its components.
 
 ###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="cdk-constructs.DockerBuildAndPush.splitArn.parameter.arnFormat"></a>
 
-- *Type:* aws-cdk-lib.ArnFormat
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ArnFormat
 
 the expected format of 'arn' - depends on what format the service 'arn' represents uses.
 
 ---
 
-##### `toJsonString` <a name="toJsonString" id="cdk-constructs.DockerBuildAndPush.toJsonString"></a>
+##### `ToJsonString` <a name="ToJsonString" id="cdk-constructs.DockerBuildAndPush.toJsonString"></a>
 
-```typescript
-public toJsonString(obj: any, space?: number): string
+```go
+func ToJsonString(obj interface{}, space *f64) *string
 ```
 
 Convert an object, potentially containing tokens, to a JSON string.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.DockerBuildAndPush.toJsonString.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `space`<sup>Optional</sup> <a name="space" id="cdk-constructs.DockerBuildAndPush.toJsonString.parameter.space"></a>
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
-##### `toYamlString` <a name="toYamlString" id="cdk-constructs.DockerBuildAndPush.toYamlString"></a>
+##### `ToYamlString` <a name="ToYamlString" id="cdk-constructs.DockerBuildAndPush.toYamlString"></a>
 
-```typescript
-public toYamlString(obj: any): string
+```go
+func ToYamlString(obj interface{}) *string
 ```
 
 Convert an object, potentially containing tokens, to a YAML string.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.DockerBuildAndPush.toYamlString.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
@@ -707,18 +706,18 @@ Convert an object, potentially containing tokens, to a YAML string.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.isStack">isStack</a></code> | Return whether the given object is a Stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.isStack">IsStack</a></code> | Return whether the given object is a Stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.of">Of</a></code> | Looks up the first stack scope in which `construct` is defined. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.DockerBuildAndPush.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.DockerBuildAndPush.isConstruct"></a>
 
-```typescript
-import { DockerBuildAndPush } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-DockerBuildAndPush.isConstruct(x: any)
+cdkconstructs.DockerBuildAndPush_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -739,18 +738,18 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.DockerBuildAndPush.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isStack` <a name="isStack" id="cdk-constructs.DockerBuildAndPush.isStack"></a>
+##### `IsStack` <a name="IsStack" id="cdk-constructs.DockerBuildAndPush.isStack"></a>
 
-```typescript
-import { DockerBuildAndPush } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-DockerBuildAndPush.isStack(x: any)
+cdkconstructs.DockerBuildAndPush_IsStack(x interface{}) *bool
 ```
 
 Return whether the given object is a Stack.
@@ -759,16 +758,16 @@ We do attribute detection since we can't reliably use 'instanceof'.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.DockerBuildAndPush.isStack.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `of` <a name="of" id="cdk-constructs.DockerBuildAndPush.of"></a>
+##### `Of` <a name="Of" id="cdk-constructs.DockerBuildAndPush.of"></a>
 
-```typescript
-import { DockerBuildAndPush } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-DockerBuildAndPush.of(construct: IConstruct)
+cdkconstructs.DockerBuildAndPush_Of(construct IConstruct) Stack
 ```
 
 Looks up the first stack scope in which `construct` is defined.
@@ -777,7 +776,7 @@ Fails if there is no stack up the tree.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.DockerBuildAndPush.of.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 The construct to start the search from.
 
@@ -787,51 +786,51 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.ecrImage">ecrImage</a></code> | <code>aws-cdk-lib.aws_ecs.EcrImage</code> | *No description.* |
-| <code><a href="#cdk-constructs.DockerBuildAndPush.property.lambdaDockerImageCode">lambdaDockerImageCode</a></code> | <code>aws-cdk-lib.aws_lambda.DockerImageCode</code> | *No description.* |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.account">Account</a></code> | <code>*string</code> | The AWS account into which this stack will be deployed. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.artifactId">ArtifactId</a></code> | <code>*string</code> | The ID of the cloud assembly artifact for this stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.bundlingRequired">BundlingRequired</a></code> | <code>*bool</code> | Indicates whether the stack requires bundling or not. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.dependencies">Dependencies</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | Return the stacks this stack depends on. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.environment">Environment</a></code> | <code>*string</code> | The environment coordinates in which this stack is deployed. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.nested">Nested</a></code> | <code>*bool</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.notificationArns">NotificationArns</a></code> | <code>*[]*string</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.partition">Partition</a></code> | <code>*string</code> | The partition in which this stack is defined. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.region">Region</a></code> | <code>*string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.stackId">StackId</a></code> | <code>*string</code> | The ID of the stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.stackName">StackName</a></code> | <code>*string</code> | The concrete CloudFormation physical stack name. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.synthesizer">Synthesizer</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.IStackSynthesizer</code> | Synthesis method for this stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.tags">Tags</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.TagManager</code> | Tags to be applied to the stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.templateFile">TemplateFile</a></code> | <code>*string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.templateOptions">TemplateOptions</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.urlSuffix">UrlSuffix</a></code> | <code>*string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.nestedStackParent">NestedStackParent</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | If this is a nested stack, returns it's parent stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.nestedStackResource">NestedStackResource</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.terminationProtection">TerminationProtection</a></code> | <code>*bool</code> | Whether termination protection is enabled for this stack. |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.ecrImage">EcrImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.EcrImage</code> | *No description.* |
+| <code><a href="#cdk-constructs.DockerBuildAndPush.property.lambdaDockerImageCode">LambdaDockerImageCode</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.DockerBuildAndPush.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.DockerBuildAndPush.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="cdk-constructs.DockerBuildAndPush.property.account"></a>
+##### `Account`<sup>Required</sup> <a name="Account" id="cdk-constructs.DockerBuildAndPush.property.account"></a>
 
-```typescript
-public readonly account: string;
+```go
+func Account() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The AWS account into which this stack will be deployed.
 
@@ -854,25 +853,25 @@ implement some other account-agnostic behavior.
 
 ---
 
-##### `artifactId`<sup>Required</sup> <a name="artifactId" id="cdk-constructs.DockerBuildAndPush.property.artifactId"></a>
+##### `ArtifactId`<sup>Required</sup> <a name="ArtifactId" id="cdk-constructs.DockerBuildAndPush.property.artifactId"></a>
 
-```typescript
-public readonly artifactId: string;
+```go
+func ArtifactId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the cloud assembly artifact for this stack.
 
 ---
 
-##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="cdk-constructs.DockerBuildAndPush.property.availabilityZones"></a>
+##### `AvailabilityZones`<sup>Required</sup> <a name="AvailabilityZones" id="cdk-constructs.DockerBuildAndPush.property.availabilityZones"></a>
 
-```typescript
-public readonly availabilityZones: string[];
+```go
+func AvailabilityZones() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack.
 
@@ -889,37 +888,37 @@ To specify a different strategy for selecting availability zones override this m
 
 ---
 
-##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="cdk-constructs.DockerBuildAndPush.property.bundlingRequired"></a>
+##### `BundlingRequired`<sup>Required</sup> <a name="BundlingRequired" id="cdk-constructs.DockerBuildAndPush.property.bundlingRequired"></a>
 
-```typescript
-public readonly bundlingRequired: boolean;
+```go
+func BundlingRequired() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Indicates whether the stack requires bundling or not.
 
 ---
 
-##### `dependencies`<sup>Required</sup> <a name="dependencies" id="cdk-constructs.DockerBuildAndPush.property.dependencies"></a>
+##### `Dependencies`<sup>Required</sup> <a name="Dependencies" id="cdk-constructs.DockerBuildAndPush.property.dependencies"></a>
 
-```typescript
-public readonly dependencies: Stack[];
+```go
+func Dependencies() *[]Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 Return the stacks this stack depends on.
 
 ---
 
-##### `environment`<sup>Required</sup> <a name="environment" id="cdk-constructs.DockerBuildAndPush.property.environment"></a>
+##### `Environment`<sup>Required</sup> <a name="Environment" id="cdk-constructs.DockerBuildAndPush.property.environment"></a>
 
-```typescript
-public readonly environment: string;
+```go
+func Environment() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The environment coordinates in which this stack is deployed.
 
@@ -937,49 +936,49 @@ region/account-agnostic.
 
 ---
 
-##### `nested`<sup>Required</sup> <a name="nested" id="cdk-constructs.DockerBuildAndPush.property.nested"></a>
+##### `Nested`<sup>Required</sup> <a name="Nested" id="cdk-constructs.DockerBuildAndPush.property.nested"></a>
 
-```typescript
-public readonly nested: boolean;
+```go
+func Nested() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent.
 
 ---
 
-##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="cdk-constructs.DockerBuildAndPush.property.notificationArns"></a>
+##### `NotificationArns`<sup>Required</sup> <a name="NotificationArns" id="cdk-constructs.DockerBuildAndPush.property.notificationArns"></a>
 
-```typescript
-public readonly notificationArns: string[];
+```go
+func NotificationArns() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Returns the list of notification Amazon Resource Names (ARNs) for the current stack.
 
 ---
 
-##### `partition`<sup>Required</sup> <a name="partition" id="cdk-constructs.DockerBuildAndPush.property.partition"></a>
+##### `Partition`<sup>Required</sup> <a name="Partition" id="cdk-constructs.DockerBuildAndPush.property.partition"></a>
 
-```typescript
-public readonly partition: string;
+```go
+func Partition() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The partition in which this stack is defined.
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="cdk-constructs.DockerBuildAndPush.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="cdk-constructs.DockerBuildAndPush.property.region"></a>
 
-```typescript
-public readonly region: string;
+```go
+func Region() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The AWS region into which this stack will be deployed (e.g. `us-west-2`).
 
@@ -1002,13 +1001,13 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `stackId`<sup>Required</sup> <a name="stackId" id="cdk-constructs.DockerBuildAndPush.property.stackId"></a>
+##### `StackId`<sup>Required</sup> <a name="StackId" id="cdk-constructs.DockerBuildAndPush.property.stackId"></a>
 
-```typescript
-public readonly stackId: string;
+```go
+func StackId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the stack.
 
@@ -1016,19 +1015,19 @@ The ID of the stack.
 
 *Example*
 
-```typescript
+```go
 // After resolving, looks like
 'arn:aws:cloudformation:us-west-2:123456789012:stack/teststack/51af3dc0-da77-11e4-872e-1234567db123'
 ```
 
 
-##### `stackName`<sup>Required</sup> <a name="stackName" id="cdk-constructs.DockerBuildAndPush.property.stackName"></a>
+##### `StackName`<sup>Required</sup> <a name="StackName" id="cdk-constructs.DockerBuildAndPush.property.stackName"></a>
 
-```typescript
-public readonly stackName: string;
+```go
+func StackName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The concrete CloudFormation physical stack name.
 
@@ -1043,37 +1042,37 @@ you can use `Aws.STACK_NAME` directly.
 
 ---
 
-##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="cdk-constructs.DockerBuildAndPush.property.synthesizer"></a>
+##### `Synthesizer`<sup>Required</sup> <a name="Synthesizer" id="cdk-constructs.DockerBuildAndPush.property.synthesizer"></a>
 
-```typescript
-public readonly synthesizer: IStackSynthesizer;
+```go
+func Synthesizer() IStackSynthesizer
 ```
 
-- *Type:* aws-cdk-lib.IStackSynthesizer
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.IStackSynthesizer
 
 Synthesis method for this stack.
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="cdk-constructs.DockerBuildAndPush.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="cdk-constructs.DockerBuildAndPush.property.tags"></a>
 
-```typescript
-public readonly tags: TagManager;
+```go
+func Tags() TagManager
 ```
 
-- *Type:* aws-cdk-lib.TagManager
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.TagManager
 
 Tags to be applied to the stack.
 
 ---
 
-##### `templateFile`<sup>Required</sup> <a name="templateFile" id="cdk-constructs.DockerBuildAndPush.property.templateFile"></a>
+##### `TemplateFile`<sup>Required</sup> <a name="TemplateFile" id="cdk-constructs.DockerBuildAndPush.property.templateFile"></a>
 
-```typescript
-public readonly templateFile: string;
+```go
+func TemplateFile() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The name of the CloudFormation template file emitted to the output directory during synthesis.
 
@@ -1081,49 +1080,49 @@ Example value: `MyStack.template.json`
 
 ---
 
-##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="cdk-constructs.DockerBuildAndPush.property.templateOptions"></a>
+##### `TemplateOptions`<sup>Required</sup> <a name="TemplateOptions" id="cdk-constructs.DockerBuildAndPush.property.templateOptions"></a>
 
-```typescript
-public readonly templateOptions: ITemplateOptions;
+```go
+func TemplateOptions() ITemplateOptions
 ```
 
-- *Type:* aws-cdk-lib.ITemplateOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ITemplateOptions
 
 Options for CloudFormation template (like version, transform, description).
 
 ---
 
-##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="cdk-constructs.DockerBuildAndPush.property.urlSuffix"></a>
+##### `UrlSuffix`<sup>Required</sup> <a name="UrlSuffix" id="cdk-constructs.DockerBuildAndPush.property.urlSuffix"></a>
 
-```typescript
-public readonly urlSuffix: string;
+```go
+func UrlSuffix() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The Amazon domain suffix for the region in which this stack is defined.
 
 ---
 
-##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="cdk-constructs.DockerBuildAndPush.property.nestedStackParent"></a>
+##### `NestedStackParent`<sup>Optional</sup> <a name="NestedStackParent" id="cdk-constructs.DockerBuildAndPush.property.nestedStackParent"></a>
 
-```typescript
-public readonly nestedStackParent: Stack;
+```go
+func NestedStackParent() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 If this is a nested stack, returns it's parent stack.
 
 ---
 
-##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="cdk-constructs.DockerBuildAndPush.property.nestedStackResource"></a>
+##### `NestedStackResource`<sup>Optional</sup> <a name="NestedStackResource" id="cdk-constructs.DockerBuildAndPush.property.nestedStackResource"></a>
 
-```typescript
-public readonly nestedStackResource: CfnResource;
+```go
+func NestedStackResource() CfnResource
 ```
 
-- *Type:* aws-cdk-lib.CfnResource
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.CfnResource
 
 If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource.
 
@@ -1131,35 +1130,35 @@ If this is a nested stack, this represents its `AWS::CloudFormation::Stack` reso
 
 ---
 
-##### `terminationProtection`<sup>Required</sup> <a name="terminationProtection" id="cdk-constructs.DockerBuildAndPush.property.terminationProtection"></a>
+##### `TerminationProtection`<sup>Required</sup> <a name="TerminationProtection" id="cdk-constructs.DockerBuildAndPush.property.terminationProtection"></a>
 
-```typescript
-public readonly terminationProtection: boolean;
+```go
+func TerminationProtection() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether termination protection is enabled for this stack.
 
 ---
 
-##### `ecrImage`<sup>Required</sup> <a name="ecrImage" id="cdk-constructs.DockerBuildAndPush.property.ecrImage"></a>
+##### `EcrImage`<sup>Required</sup> <a name="EcrImage" id="cdk-constructs.DockerBuildAndPush.property.ecrImage"></a>
 
-```typescript
-public readonly ecrImage: EcrImage;
+```go
+func EcrImage() EcrImage
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.EcrImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.EcrImage
 
 ---
 
-##### `lambdaDockerImageCode`<sup>Required</sup> <a name="lambdaDockerImageCode" id="cdk-constructs.DockerBuildAndPush.property.lambdaDockerImageCode"></a>
+##### `LambdaDockerImageCode`<sup>Required</sup> <a name="LambdaDockerImageCode" id="cdk-constructs.DockerBuildAndPush.property.lambdaDockerImageCode"></a>
 
-```typescript
-public readonly lambdaDockerImageCode: DockerImageCode;
+```go
+func LambdaDockerImageCode() DockerImageCode
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.DockerImageCode
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode
 
 ---
 
@@ -1168,29 +1167,29 @@ public readonly lambdaDockerImageCode: DockerImageCode;
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ECRDeployment.Initializer"></a>
 
-```typescript
-import { ECRDeployment } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ECRDeployment(scope: Construct, id: string, props: ECRDeploymentProps)
+cdkconstructs.NewECRDeployment(scope Construct, id *string, props ECRDeploymentProps) ECRDeployment
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ECRDeployment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ECRDeployment.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ECRDeployment.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ECRDeployment.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ECRDeployment.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ECRDeploymentProps">ECRDeploymentProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ECRDeployment.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ECRDeployment.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -1204,28 +1203,28 @@ new ECRDeployment(scope: Construct, id: string, props: ECRDeploymentProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ECRDeployment.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ECRDeployment.addToPrincipalPolicy">addToPrincipalPolicy</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ECRDeployment.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ECRDeployment.addToPrincipalPolicy">AddToPrincipalPolicy</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ECRDeployment.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ECRDeployment.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `addToPrincipalPolicy` <a name="addToPrincipalPolicy" id="cdk-constructs.ECRDeployment.addToPrincipalPolicy"></a>
+##### `AddToPrincipalPolicy` <a name="AddToPrincipalPolicy" id="cdk-constructs.ECRDeployment.addToPrincipalPolicy"></a>
 
-```typescript
-public addToPrincipalPolicy(statement: PolicyStatement): AddToPrincipalPolicyResult
+```go
+func AddToPrincipalPolicy(statement PolicyStatement) AddToPrincipalPolicyResult
 ```
 
 ###### `statement`<sup>Required</sup> <a name="statement" id="cdk-constructs.ECRDeployment.addToPrincipalPolicy.parameter.statement"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.PolicyStatement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.PolicyStatement
 
 ---
 
@@ -1233,16 +1232,16 @@ public addToPrincipalPolicy(statement: PolicyStatement): AddToPrincipalPolicyRes
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ECRDeployment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ECRDeployment.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ECRDeployment.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ECRDeployment.isConstruct"></a>
 
-```typescript
-import { ECRDeployment } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ECRDeployment.isConstruct(x: any)
+cdkconstructs.ECRDeployment_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -1263,7 +1262,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ECRDeployment.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -1273,17 +1272,17 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ECRDeployment.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ECRDeployment.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ECRDeployment.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ECRDeployment.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
@@ -1296,31 +1295,31 @@ The tree node.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.EndpointAlb.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.EndpointAlb.buildTGConditions">buildTGConditions</a></code> | Build ALB Listener routing condition based on routing token and service name. |
-| <code><a href="#cdk-constructs.EndpointAlb.withTarget">withTarget</a></code> | Set the target of the endpoint. |
+| <code><a href="#cdk-constructs.EndpointAlb.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.EndpointAlb.buildTGConditions">BuildTGConditions</a></code> | Build ALB Listener routing condition based on routing token and service name. |
+| <code><a href="#cdk-constructs.EndpointAlb.withTarget">WithTarget</a></code> | Set the target of the endpoint. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.EndpointAlb.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.EndpointAlb.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `buildTGConditions` <a name="buildTGConditions" id="cdk-constructs.EndpointAlb.buildTGConditions"></a>
+##### `BuildTGConditions` <a name="BuildTGConditions" id="cdk-constructs.EndpointAlb.buildTGConditions"></a>
 
-```typescript
-public buildTGConditions(serviceName: string, routingTokenPrefix: string, serviceGroup: string): ListenerCondition[]
+```go
+func BuildTGConditions(serviceName *string, routingTokenPrefix *string, serviceGroup *string) *[]ListenerCondition
 ```
 
 Build ALB Listener routing condition based on routing token and service name.
 
 ###### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.EndpointAlb.buildTGConditions.parameter.serviceName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 service name.
 
@@ -1328,7 +1327,7 @@ service name.
 
 ###### `routingTokenPrefix`<sup>Required</sup> <a name="routingTokenPrefix" id="cdk-constructs.EndpointAlb.buildTGConditions.parameter.routingTokenPrefix"></a>
 
-- *Type:* string
+- *Type:* *string
 
 routing token.
 
@@ -1336,21 +1335,21 @@ routing token.
 
 ###### `serviceGroup`<sup>Required</sup> <a name="serviceGroup" id="cdk-constructs.EndpointAlb.buildTGConditions.parameter.serviceGroup"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `withTarget` <a name="withTarget" id="cdk-constructs.EndpointAlb.withTarget"></a>
+##### `WithTarget` <a name="WithTarget" id="cdk-constructs.EndpointAlb.withTarget"></a>
 
-```typescript
-public withTarget(targetGroup: ApplicationTargetGroup): EndpointAlb
+```go
+func WithTarget(targetGroup ApplicationTargetGroup) EndpointAlb
 ```
 
 Set the target of the endpoint.
 
 ###### `targetGroup`<sup>Required</sup> <a name="targetGroup" id="cdk-constructs.EndpointAlb.withTarget.parameter.targetGroup"></a>
 
-- *Type:* aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationTargetGroup
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.ApplicationTargetGroup
 
 ---
 
@@ -1358,18 +1357,18 @@ Set the target of the endpoint.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.EndpointAlb.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.EndpointAlb.legacyEndpoint">legacyEndpoint</a></code> | Build an endpoint without any validation on path prefix. |
-| <code><a href="#cdk-constructs.EndpointAlb.thronEndpoint">thronEndpoint</a></code> | Build an endpoint using thron's conventions on path prefix. |
+| <code><a href="#cdk-constructs.EndpointAlb.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.EndpointAlb.legacyEndpoint">LegacyEndpoint</a></code> | Build an endpoint without any validation on path prefix. |
+| <code><a href="#cdk-constructs.EndpointAlb.thronEndpoint">ThronEndpoint</a></code> | Build an endpoint using thron's conventions on path prefix. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.EndpointAlb.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.EndpointAlb.isConstruct"></a>
 
-```typescript
-import { EndpointAlb } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointAlb.isConstruct(x: any)
+cdkconstructs.EndpointAlb_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -1390,31 +1389,31 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.EndpointAlb.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `legacyEndpoint` <a name="legacyEndpoint" id="cdk-constructs.EndpointAlb.legacyEndpoint"></a>
+##### `LegacyEndpoint` <a name="LegacyEndpoint" id="cdk-constructs.EndpointAlb.legacyEndpoint"></a>
 
-```typescript
-import { EndpointAlb } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointAlb.legacyEndpoint(scope: Construct, id: string, props: LegacyEndpointAlbProps)
+cdkconstructs.EndpointAlb_LegacyEndpoint(scope Construct, id *string, props LegacyEndpointAlbProps) EndpointAlb
 ```
 
 Build an endpoint without any validation on path prefix.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.EndpointAlb.legacyEndpoint.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.EndpointAlb.legacyEndpoint.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -1424,25 +1423,25 @@ Build an endpoint without any validation on path prefix.
 
 ---
 
-##### `thronEndpoint` <a name="thronEndpoint" id="cdk-constructs.EndpointAlb.thronEndpoint"></a>
+##### `ThronEndpoint` <a name="ThronEndpoint" id="cdk-constructs.EndpointAlb.thronEndpoint"></a>
 
-```typescript
-import { EndpointAlb } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointAlb.thronEndpoint(scope: Construct, id: string, props: ThronEndpointAlbProps)
+cdkconstructs.EndpointAlb_ThronEndpoint(scope Construct, id *string, props ThronEndpointAlbProps) EndpointAlb
 ```
 
 Build an endpoint using thron's conventions on path prefix.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.EndpointAlb.thronEndpoint.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.EndpointAlb.thronEndpoint.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -1456,36 +1455,36 @@ Build an endpoint using thron's conventions on path prefix.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.EndpointAlb.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.defaultValue">defaultValue</a></code> | <code><a href="#cdk-constructs.DefaultValue">DefaultValue</a></code> | Default Vaule class. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.routingTokenPrefix">routingTokenPrefix</a></code> | <code>string</code> | Routing path, validated against selected `serviceGroup` conventions. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.serviceGroup">serviceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.sitename">sitename</a></code> | <code>string</code> | Sitename where the construct is being deployed. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.listener">listener</a></code> | <code>aws-cdk-lib.aws_elasticloadbalancingv2.IApplicationListener</code> | ALB Listener where the endpoint is attached. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.rulePriority">rulePriority</a></code> | <code>aws-cdk-lib.Reference</code> | ALB Listener Rule priority used for this endpoint. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.serviceName">serviceName</a></code> | <code>string</code> | Name of the service (generated). |
-| <code><a href="#cdk-constructs.EndpointAlb.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The reference of parent Stack. |
-| <code><a href="#cdk-constructs.EndpointAlb.property.version">version</a></code> | <code>number</code> | Version of the endpoint (available only on thronEndpoints). |
-| <code><a href="#cdk-constructs.EndpointAlb.property.visibility">visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Visibility of the endpint (available only on thronEndpoints). |
+| <code><a href="#cdk-constructs.EndpointAlb.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.defaultValue">DefaultValue</a></code> | <code><a href="#cdk-constructs.DefaultValue">DefaultValue</a></code> | Default Vaule class. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.routingTokenPrefix">RoutingTokenPrefix</a></code> | <code>*string</code> | Routing path, validated against selected `serviceGroup` conventions. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.serviceGroup">ServiceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.sitename">Sitename</a></code> | <code>*string</code> | Sitename where the construct is being deployed. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.listener">Listener</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.IApplicationListener</code> | ALB Listener where the endpoint is attached. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.rulePriority">RulePriority</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Reference</code> | ALB Listener Rule priority used for this endpoint. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.serviceName">ServiceName</a></code> | <code>*string</code> | Name of the service (generated). |
+| <code><a href="#cdk-constructs.EndpointAlb.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The reference of parent Stack. |
+| <code><a href="#cdk-constructs.EndpointAlb.property.version">Version</a></code> | <code>*f64</code> | Version of the endpoint (available only on thronEndpoints). |
+| <code><a href="#cdk-constructs.EndpointAlb.property.visibility">Visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Visibility of the endpint (available only on thronEndpoints). |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.EndpointAlb.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.EndpointAlb.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `defaultValue`<sup>Required</sup> <a name="defaultValue" id="cdk-constructs.EndpointAlb.property.defaultValue"></a>
+##### `DefaultValue`<sup>Required</sup> <a name="DefaultValue" id="cdk-constructs.EndpointAlb.property.defaultValue"></a>
 
-```typescript
-public readonly defaultValue: DefaultValue;
+```go
+func DefaultValue() DefaultValue
 ```
 
 - *Type:* <a href="#cdk-constructs.DefaultValue">DefaultValue</a>
@@ -1494,22 +1493,22 @@ Default Vaule class.
 
 ---
 
-##### `routingTokenPrefix`<sup>Required</sup> <a name="routingTokenPrefix" id="cdk-constructs.EndpointAlb.property.routingTokenPrefix"></a>
+##### `RoutingTokenPrefix`<sup>Required</sup> <a name="RoutingTokenPrefix" id="cdk-constructs.EndpointAlb.property.routingTokenPrefix"></a>
 
-```typescript
-public readonly routingTokenPrefix: string;
+```go
+func RoutingTokenPrefix() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Routing path, validated against selected `serviceGroup` conventions.
 
 ---
 
-##### `serviceGroup`<sup>Required</sup> <a name="serviceGroup" id="cdk-constructs.EndpointAlb.property.serviceGroup"></a>
+##### `ServiceGroup`<sup>Required</sup> <a name="ServiceGroup" id="cdk-constructs.EndpointAlb.property.serviceGroup"></a>
 
-```typescript
-public readonly serviceGroup: ServiceGroup;
+```go
+func ServiceGroup() ServiceGroup
 ```
 
 - *Type:* <a href="#cdk-constructs.ServiceGroup">ServiceGroup</a>
@@ -1518,82 +1517,82 @@ Service group.
 
 ---
 
-##### `sitename`<sup>Required</sup> <a name="sitename" id="cdk-constructs.EndpointAlb.property.sitename"></a>
+##### `Sitename`<sup>Required</sup> <a name="Sitename" id="cdk-constructs.EndpointAlb.property.sitename"></a>
 
-```typescript
-public readonly sitename: string;
+```go
+func Sitename() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Sitename where the construct is being deployed.
 
 ---
 
-##### `listener`<sup>Optional</sup> <a name="listener" id="cdk-constructs.EndpointAlb.property.listener"></a>
+##### `Listener`<sup>Optional</sup> <a name="Listener" id="cdk-constructs.EndpointAlb.property.listener"></a>
 
-```typescript
-public readonly listener: IApplicationListener;
+```go
+func Listener() IApplicationListener
 ```
 
-- *Type:* aws-cdk-lib.aws_elasticloadbalancingv2.IApplicationListener
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.IApplicationListener
 
 ALB Listener where the endpoint is attached.
 
 ---
 
-##### `rulePriority`<sup>Optional</sup> <a name="rulePriority" id="cdk-constructs.EndpointAlb.property.rulePriority"></a>
+##### `RulePriority`<sup>Optional</sup> <a name="RulePriority" id="cdk-constructs.EndpointAlb.property.rulePriority"></a>
 
-```typescript
-public readonly rulePriority: Reference;
+```go
+func RulePriority() Reference
 ```
 
-- *Type:* aws-cdk-lib.Reference
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Reference
 
 ALB Listener Rule priority used for this endpoint.
 
 ---
 
-##### `serviceName`<sup>Optional</sup> <a name="serviceName" id="cdk-constructs.EndpointAlb.property.serviceName"></a>
+##### `ServiceName`<sup>Optional</sup> <a name="ServiceName" id="cdk-constructs.EndpointAlb.property.serviceName"></a>
 
-```typescript
-public readonly serviceName: string;
+```go
+func ServiceName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Name of the service (generated).
 
 ---
 
-##### `stack`<sup>Optional</sup> <a name="stack" id="cdk-constructs.EndpointAlb.property.stack"></a>
+##### `Stack`<sup>Optional</sup> <a name="Stack" id="cdk-constructs.EndpointAlb.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+func Stack() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The reference of parent Stack.
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="cdk-constructs.EndpointAlb.property.version"></a>
+##### `Version`<sup>Optional</sup> <a name="Version" id="cdk-constructs.EndpointAlb.property.version"></a>
 
-```typescript
-public readonly version: number;
+```go
+func Version() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 Version of the endpoint (available only on thronEndpoints).
 
 ---
 
-##### `visibility`<sup>Optional</sup> <a name="visibility" id="cdk-constructs.EndpointAlb.property.visibility"></a>
+##### `Visibility`<sup>Optional</sup> <a name="Visibility" id="cdk-constructs.EndpointAlb.property.visibility"></a>
 
-```typescript
-public readonly visibility: EndpointVisibility;
+```go
+func Visibility() EndpointVisibility
 ```
 
 - *Type:* <a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a>
@@ -1609,38 +1608,39 @@ Class instantiating the SSMParameterReader custom resources, which allows you to
 
 *Example*
 
-```typescript
- const ssmParameterValue: string = new SsmParameterReader(this, 'example-id',{
-   parameterName: "/example/param"
- }).stringValue;
+```go
+// Example automatically generated from non-compiling source. May contain errors.
+ssmParameterValue := NewSsmParameterReader(this, jsii.String("example-id"), map[string]*string{
+	"parameterName": jsii.String("/example/param"),
+}).stringValue
 ```
 
 
 #### Initializers <a name="Initializers" id="cdk-constructs.SsmParameterReader.Initializer"></a>
 
-```typescript
-import { SsmParameterReader } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new SsmParameterReader(scope: Construct, id: string, props: SsmParameterReaderProps)
+cdkconstructs.NewSsmParameterReader(scope Construct, id *string, props SsmParameterReaderProps) SsmParameterReader
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.SsmParameterReader.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.SsmParameterReader.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.SsmParameterReader.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.SsmParameterReader.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.SsmParameterReader.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.SsmParameterReaderProps">SsmParameterReaderProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.SsmParameterReader.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.SsmParameterReader.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -1654,14 +1654,14 @@ new SsmParameterReader(scope: Construct, id: string, props: SsmParameterReaderPr
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.SsmParameterReader.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.SsmParameterReader.toString">ToString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.SsmParameterReader.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.SsmParameterReader.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
@@ -1670,16 +1670,16 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.SsmParameterReader.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.SsmParameterReader.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.SsmParameterReader.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.SsmParameterReader.isConstruct"></a>
 
-```typescript
-import { SsmParameterReader } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-SsmParameterReader.isConstruct(x: any)
+cdkconstructs.SsmParameterReader_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -1700,7 +1700,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.SsmParameterReader.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -1710,30 +1710,30 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.SsmParameterReader.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.SsmParameterReader.property.stringValue">stringValue</a></code> | <code>string</code> | Unencrypted Value of the SSM Parameter. |
+| <code><a href="#cdk-constructs.SsmParameterReader.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.SsmParameterReader.property.stringValue">StringValue</a></code> | <code>*string</code> | Unencrypted Value of the SSM Parameter. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.SsmParameterReader.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.SsmParameterReader.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `stringValue`<sup>Required</sup> <a name="stringValue" id="cdk-constructs.SsmParameterReader.property.stringValue"></a>
+##### `StringValue`<sup>Required</sup> <a name="StringValue" id="cdk-constructs.SsmParameterReader.property.stringValue"></a>
 
-```typescript
-public readonly stringValue: string;
+```go
+func StringValue() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Unencrypted Value of the SSM Parameter.
 
@@ -1744,29 +1744,29 @@ Unencrypted Value of the SSM Parameter.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronAcmCertificate.Initializer"></a>
 
-```typescript
-import { ThronAcmCertificate } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronAcmCertificate(scope: Stack, id: string, props: ThronAcmCertificateProps)
+cdkconstructs.NewThronAcmCertificate(scope Stack, id *string, props ThronAcmCertificateProps) ThronAcmCertificate
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.Stack</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronAcmCertificate.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronAcmCertificateProps">ThronAcmCertificateProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronAcmCertificate.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronAcmCertificate.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -1780,36 +1780,36 @@ new ThronAcmCertificate(scope: Stack, id: string, props: ThronAcmCertificateProp
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.addMetadata">addMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.formatArn">formatArn</a></code> | Creates an ARN from components. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.addDependency">AddDependency</a></code> | Add a dependency between this stack and another stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.addMetadata">AddMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.addTransform">AddTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.exportStringListValue">ExportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.exportValue">ExportValue</a></code> | Create a CloudFormation Export for a string value. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.formatArn">FormatArn</a></code> | Creates an ARN from components. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.getLogicalId">GetLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.regionalFact">RegionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.renameLogicalId">RenameLogicalId</a></code> | Rename a generated logical identities. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.reportMissingContextKey">ReportMissingContextKey</a></code> | Indicate that a context key was expected. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.resolve">Resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.splitArn">SplitArn</a></code> | Splits the provided ARN into its components. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.toJsonString">ToJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.toYamlString">ToYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronAcmCertificate.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronAcmCertificate.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `addDependency` <a name="addDependency" id="cdk-constructs.ThronAcmCertificate.addDependency"></a>
+##### `AddDependency` <a name="AddDependency" id="cdk-constructs.ThronAcmCertificate.addDependency"></a>
 
-```typescript
-public addDependency(target: Stack, reason?: string): void
+```go
+func AddDependency(target Stack, reason *string)
 ```
 
 Add a dependency between this stack and another stack.
@@ -1819,20 +1819,20 @@ app, and also supports nested stacks.
 
 ###### `target`<sup>Required</sup> <a name="target" id="cdk-constructs.ThronAcmCertificate.addDependency.parameter.target"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ###### `reason`<sup>Optional</sup> <a name="reason" id="cdk-constructs.ThronAcmCertificate.addDependency.parameter.reason"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `addMetadata` <a name="addMetadata" id="cdk-constructs.ThronAcmCertificate.addMetadata"></a>
+##### `AddMetadata` <a name="AddMetadata" id="cdk-constructs.ThronAcmCertificate.addMetadata"></a>
 
-```typescript
-public addMetadata(key: string, value: any): void
+```go
+func AddMetadata(key *string, value interface{})
 ```
 
 Adds an arbitrary key-value pair, with information you want to record about the stack.
@@ -1843,20 +1843,20 @@ These get translated to the Metadata section of the generated template.
 
 ###### `key`<sup>Required</sup> <a name="key" id="cdk-constructs.ThronAcmCertificate.addMetadata.parameter.key"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `value`<sup>Required</sup> <a name="value" id="cdk-constructs.ThronAcmCertificate.addMetadata.parameter.value"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `addTransform` <a name="addTransform" id="cdk-constructs.ThronAcmCertificate.addTransform"></a>
+##### `AddTransform` <a name="AddTransform" id="cdk-constructs.ThronAcmCertificate.addTransform"></a>
 
-```typescript
-public addTransform(transform: string): void
+```go
+func AddTransform(transform *string)
 ```
 
 Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template.
@@ -1867,7 +1867,7 @@ Duplicate values are removed when stack is synthesized.
 
 *Example*
 
-```typescript
+```go
 declare const stack: Stack;
 
 stack.addTransform('AWS::Serverless-2016-10-31')
@@ -1876,16 +1876,16 @@ stack.addTransform('AWS::Serverless-2016-10-31')
 
 ###### `transform`<sup>Required</sup> <a name="transform" id="cdk-constructs.ThronAcmCertificate.addTransform.parameter.transform"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The transform to add.
 
 ---
 
-##### `exportStringListValue` <a name="exportStringListValue" id="cdk-constructs.ThronAcmCertificate.exportStringListValue"></a>
+##### `ExportStringListValue` <a name="ExportStringListValue" id="cdk-constructs.ThronAcmCertificate.exportStringListValue"></a>
 
-```typescript
-public exportStringListValue(exportedValue: any, options?: ExportValueOptions): string[]
+```go
+func ExportStringListValue(exportedValue interface{}, options ExportValueOptions) *[]*string
 ```
 
 Create a CloudFormation Export for a string list value.
@@ -1910,20 +1910,20 @@ See `exportValue` for an example of this process.
 
 ###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="cdk-constructs.ThronAcmCertificate.exportStringListValue.parameter.exportedValue"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronAcmCertificate.exportStringListValue.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.ExportValueOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ExportValueOptions
 
 ---
 
-##### `exportValue` <a name="exportValue" id="cdk-constructs.ThronAcmCertificate.exportValue"></a>
+##### `ExportValue` <a name="ExportValue" id="cdk-constructs.ThronAcmCertificate.exportValue"></a>
 
-```typescript
-public exportValue(exportedValue: any, options?: ExportValueOptions): string
+```go
+func ExportValue(exportedValue interface{}, options ExportValueOptions) *string
 ```
 
 Create a CloudFormation Export for a string value.
@@ -1971,20 +1971,20 @@ Instead, the process takes two deployments:
 
 ###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="cdk-constructs.ThronAcmCertificate.exportValue.parameter.exportedValue"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronAcmCertificate.exportValue.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.ExportValueOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ExportValueOptions
 
 ---
 
-##### `formatArn` <a name="formatArn" id="cdk-constructs.ThronAcmCertificate.formatArn"></a>
+##### `FormatArn` <a name="FormatArn" id="cdk-constructs.ThronAcmCertificate.formatArn"></a>
 
-```typescript
-public formatArn(components: ArnComponents): string
+```go
+func FormatArn(components ArnComponents) *string
 ```
 
 Creates an ARN from components.
@@ -2005,14 +2005,14 @@ can be 'undefined'.
 
 ###### `components`<sup>Required</sup> <a name="components" id="cdk-constructs.ThronAcmCertificate.formatArn.parameter.components"></a>
 
-- *Type:* aws-cdk-lib.ArnComponents
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ArnComponents
 
 ---
 
-##### `getLogicalId` <a name="getLogicalId" id="cdk-constructs.ThronAcmCertificate.getLogicalId"></a>
+##### `GetLogicalId` <a name="GetLogicalId" id="cdk-constructs.ThronAcmCertificate.getLogicalId"></a>
 
-```typescript
-public getLogicalId(element: CfnElement): string
+```go
+func GetLogicalId(element CfnElement) *string
 ```
 
 Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource.
@@ -2027,16 +2027,16 @@ class and override this method.
 
 ###### `element`<sup>Required</sup> <a name="element" id="cdk-constructs.ThronAcmCertificate.getLogicalId.parameter.element"></a>
 
-- *Type:* aws-cdk-lib.CfnElement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.CfnElement
 
 The CloudFormation element for which a logical identity is needed.
 
 ---
 
-##### `regionalFact` <a name="regionalFact" id="cdk-constructs.ThronAcmCertificate.regionalFact"></a>
+##### `RegionalFact` <a name="RegionalFact" id="cdk-constructs.ThronAcmCertificate.regionalFact"></a>
 
-```typescript
-public regionalFact(factName: string, defaultValue?: string): string
+```go
+func RegionalFact(factName *string, defaultValue *string) *string
 ```
 
 Look up a fact value for the given fact for the region of this stack.
@@ -2059,20 +2059,20 @@ the given region.
 
 ###### `factName`<sup>Required</sup> <a name="factName" id="cdk-constructs.ThronAcmCertificate.regionalFact.parameter.factName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="cdk-constructs.ThronAcmCertificate.regionalFact.parameter.defaultValue"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `renameLogicalId` <a name="renameLogicalId" id="cdk-constructs.ThronAcmCertificate.renameLogicalId"></a>
+##### `RenameLogicalId` <a name="RenameLogicalId" id="cdk-constructs.ThronAcmCertificate.renameLogicalId"></a>
 
-```typescript
-public renameLogicalId(oldId: string, newId: string): void
+```go
+func RenameLogicalId(oldId *string, newId *string)
 ```
 
 Rename a generated logical identities.
@@ -2082,20 +2082,20 @@ override the `allocateLogicalId` method.
 
 ###### `oldId`<sup>Required</sup> <a name="oldId" id="cdk-constructs.ThronAcmCertificate.renameLogicalId.parameter.oldId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `newId`<sup>Required</sup> <a name="newId" id="cdk-constructs.ThronAcmCertificate.renameLogicalId.parameter.newId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `reportMissingContextKey` <a name="reportMissingContextKey" id="cdk-constructs.ThronAcmCertificate.reportMissingContextKey"></a>
+##### `ReportMissingContextKey` <a name="ReportMissingContextKey" id="cdk-constructs.ThronAcmCertificate.reportMissingContextKey"></a>
 
-```typescript
-public reportMissingContextKey(report: MissingContext): void
+```go
+func ReportMissingContextKey(report MissingContext)
 ```
 
 Indicate that a context key was expected.
@@ -2105,30 +2105,30 @@ the key should be supplied.
 
 ###### `report`<sup>Required</sup> <a name="report" id="cdk-constructs.ThronAcmCertificate.reportMissingContextKey.parameter.report"></a>
 
-- *Type:* aws-cdk-lib.cloud_assembly_schema.MissingContext
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.cloud_assembly_schema.MissingContext
 
 The set of parameters needed to obtain the context.
 
 ---
 
-##### `resolve` <a name="resolve" id="cdk-constructs.ThronAcmCertificate.resolve"></a>
+##### `Resolve` <a name="Resolve" id="cdk-constructs.ThronAcmCertificate.resolve"></a>
 
-```typescript
-public resolve(obj: any): any
+```go
+func Resolve(obj interface{}) interface{}
 ```
 
 Resolve a tokenized value in the context of the current stack.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.ThronAcmCertificate.resolve.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `splitArn` <a name="splitArn" id="cdk-constructs.ThronAcmCertificate.splitArn"></a>
+##### `SplitArn` <a name="SplitArn" id="cdk-constructs.ThronAcmCertificate.splitArn"></a>
 
-```typescript
-public splitArn(arn: string, arnFormat: ArnFormat): ArnComponents
+```go
+func SplitArn(arn *string, arnFormat ArnFormat) ArnComponents
 ```
 
 Splits the provided ARN into its components.
@@ -2140,7 +2140,7 @@ encoded as Tokens).
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="cdk-constructs.ThronAcmCertificate.splitArn.parameter.arn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 the ARN to split into its components.
 
@@ -2148,43 +2148,43 @@ the ARN to split into its components.
 
 ###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="cdk-constructs.ThronAcmCertificate.splitArn.parameter.arnFormat"></a>
 
-- *Type:* aws-cdk-lib.ArnFormat
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ArnFormat
 
 the expected format of 'arn' - depends on what format the service 'arn' represents uses.
 
 ---
 
-##### `toJsonString` <a name="toJsonString" id="cdk-constructs.ThronAcmCertificate.toJsonString"></a>
+##### `ToJsonString` <a name="ToJsonString" id="cdk-constructs.ThronAcmCertificate.toJsonString"></a>
 
-```typescript
-public toJsonString(obj: any, space?: number): string
+```go
+func ToJsonString(obj interface{}, space *f64) *string
 ```
 
 Convert an object, potentially containing tokens, to a JSON string.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.ThronAcmCertificate.toJsonString.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `space`<sup>Optional</sup> <a name="space" id="cdk-constructs.ThronAcmCertificate.toJsonString.parameter.space"></a>
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
-##### `toYamlString` <a name="toYamlString" id="cdk-constructs.ThronAcmCertificate.toYamlString"></a>
+##### `ToYamlString` <a name="ToYamlString" id="cdk-constructs.ThronAcmCertificate.toYamlString"></a>
 
-```typescript
-public toYamlString(obj: any): string
+```go
+func ToYamlString(obj interface{}) *string
 ```
 
 Convert an object, potentially containing tokens, to a YAML string.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.ThronAcmCertificate.toYamlString.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
@@ -2192,18 +2192,18 @@ Convert an object, potentially containing tokens, to a YAML string.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.isStack">isStack</a></code> | Return whether the given object is a Stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.isStack">IsStack</a></code> | Return whether the given object is a Stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.of">Of</a></code> | Looks up the first stack scope in which `construct` is defined. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronAcmCertificate.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronAcmCertificate.isConstruct"></a>
 
-```typescript
-import { ThronAcmCertificate } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronAcmCertificate.isConstruct(x: any)
+cdkconstructs.ThronAcmCertificate_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -2224,18 +2224,18 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronAcmCertificate.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isStack` <a name="isStack" id="cdk-constructs.ThronAcmCertificate.isStack"></a>
+##### `IsStack` <a name="IsStack" id="cdk-constructs.ThronAcmCertificate.isStack"></a>
 
-```typescript
-import { ThronAcmCertificate } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronAcmCertificate.isStack(x: any)
+cdkconstructs.ThronAcmCertificate_IsStack(x interface{}) *bool
 ```
 
 Return whether the given object is a Stack.
@@ -2244,16 +2244,16 @@ We do attribute detection since we can't reliably use 'instanceof'.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronAcmCertificate.isStack.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `of` <a name="of" id="cdk-constructs.ThronAcmCertificate.of"></a>
+##### `Of` <a name="Of" id="cdk-constructs.ThronAcmCertificate.of"></a>
 
-```typescript
-import { ThronAcmCertificate } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronAcmCertificate.of(construct: IConstruct)
+cdkconstructs.ThronAcmCertificate_Of(construct IConstruct) Stack
 ```
 
 Looks up the first stack scope in which `construct` is defined.
@@ -2262,7 +2262,7 @@ Fails if there is no stack up the tree.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronAcmCertificate.of.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 The construct to start the search from.
 
@@ -2272,52 +2272,52 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.certificate">certificate</a></code> | <code>aws-cdk-lib.aws_certificatemanager.Certificate</code> | The issued certificate. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.domainName">domainName</a></code> | <code>string</code> | FQDN the certificate is issued for. |
-| <code><a href="#cdk-constructs.ThronAcmCertificate.property.subjectAlternativeNames">subjectAlternativeNames</a></code> | <code>string[]</code> | Alternative domain names on the certificate. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.account">Account</a></code> | <code>*string</code> | The AWS account into which this stack will be deployed. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.artifactId">ArtifactId</a></code> | <code>*string</code> | The ID of the cloud assembly artifact for this stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.bundlingRequired">BundlingRequired</a></code> | <code>*bool</code> | Indicates whether the stack requires bundling or not. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.dependencies">Dependencies</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | Return the stacks this stack depends on. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.environment">Environment</a></code> | <code>*string</code> | The environment coordinates in which this stack is deployed. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.nested">Nested</a></code> | <code>*bool</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.notificationArns">NotificationArns</a></code> | <code>*[]*string</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.partition">Partition</a></code> | <code>*string</code> | The partition in which this stack is defined. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.region">Region</a></code> | <code>*string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.stackId">StackId</a></code> | <code>*string</code> | The ID of the stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.stackName">StackName</a></code> | <code>*string</code> | The concrete CloudFormation physical stack name. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.synthesizer">Synthesizer</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.IStackSynthesizer</code> | Synthesis method for this stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.tags">Tags</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.TagManager</code> | Tags to be applied to the stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.templateFile">TemplateFile</a></code> | <code>*string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.templateOptions">TemplateOptions</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.urlSuffix">UrlSuffix</a></code> | <code>*string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.nestedStackParent">NestedStackParent</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | If this is a nested stack, returns it's parent stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.nestedStackResource">NestedStackResource</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.terminationProtection">TerminationProtection</a></code> | <code>*bool</code> | Whether termination protection is enabled for this stack. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.certificate">Certificate</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_certificatemanager.Certificate</code> | The issued certificate. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.domainName">DomainName</a></code> | <code>*string</code> | FQDN the certificate is issued for. |
+| <code><a href="#cdk-constructs.ThronAcmCertificate.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>*[]*string</code> | Alternative domain names on the certificate. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronAcmCertificate.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronAcmCertificate.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="cdk-constructs.ThronAcmCertificate.property.account"></a>
+##### `Account`<sup>Required</sup> <a name="Account" id="cdk-constructs.ThronAcmCertificate.property.account"></a>
 
-```typescript
-public readonly account: string;
+```go
+func Account() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The AWS account into which this stack will be deployed.
 
@@ -2340,25 +2340,25 @@ implement some other account-agnostic behavior.
 
 ---
 
-##### `artifactId`<sup>Required</sup> <a name="artifactId" id="cdk-constructs.ThronAcmCertificate.property.artifactId"></a>
+##### `ArtifactId`<sup>Required</sup> <a name="ArtifactId" id="cdk-constructs.ThronAcmCertificate.property.artifactId"></a>
 
-```typescript
-public readonly artifactId: string;
+```go
+func ArtifactId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the cloud assembly artifact for this stack.
 
 ---
 
-##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="cdk-constructs.ThronAcmCertificate.property.availabilityZones"></a>
+##### `AvailabilityZones`<sup>Required</sup> <a name="AvailabilityZones" id="cdk-constructs.ThronAcmCertificate.property.availabilityZones"></a>
 
-```typescript
-public readonly availabilityZones: string[];
+```go
+func AvailabilityZones() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack.
 
@@ -2375,37 +2375,37 @@ To specify a different strategy for selecting availability zones override this m
 
 ---
 
-##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="cdk-constructs.ThronAcmCertificate.property.bundlingRequired"></a>
+##### `BundlingRequired`<sup>Required</sup> <a name="BundlingRequired" id="cdk-constructs.ThronAcmCertificate.property.bundlingRequired"></a>
 
-```typescript
-public readonly bundlingRequired: boolean;
+```go
+func BundlingRequired() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Indicates whether the stack requires bundling or not.
 
 ---
 
-##### `dependencies`<sup>Required</sup> <a name="dependencies" id="cdk-constructs.ThronAcmCertificate.property.dependencies"></a>
+##### `Dependencies`<sup>Required</sup> <a name="Dependencies" id="cdk-constructs.ThronAcmCertificate.property.dependencies"></a>
 
-```typescript
-public readonly dependencies: Stack[];
+```go
+func Dependencies() *[]Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 Return the stacks this stack depends on.
 
 ---
 
-##### `environment`<sup>Required</sup> <a name="environment" id="cdk-constructs.ThronAcmCertificate.property.environment"></a>
+##### `Environment`<sup>Required</sup> <a name="Environment" id="cdk-constructs.ThronAcmCertificate.property.environment"></a>
 
-```typescript
-public readonly environment: string;
+```go
+func Environment() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The environment coordinates in which this stack is deployed.
 
@@ -2423,49 +2423,49 @@ region/account-agnostic.
 
 ---
 
-##### `nested`<sup>Required</sup> <a name="nested" id="cdk-constructs.ThronAcmCertificate.property.nested"></a>
+##### `Nested`<sup>Required</sup> <a name="Nested" id="cdk-constructs.ThronAcmCertificate.property.nested"></a>
 
-```typescript
-public readonly nested: boolean;
+```go
+func Nested() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent.
 
 ---
 
-##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="cdk-constructs.ThronAcmCertificate.property.notificationArns"></a>
+##### `NotificationArns`<sup>Required</sup> <a name="NotificationArns" id="cdk-constructs.ThronAcmCertificate.property.notificationArns"></a>
 
-```typescript
-public readonly notificationArns: string[];
+```go
+func NotificationArns() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Returns the list of notification Amazon Resource Names (ARNs) for the current stack.
 
 ---
 
-##### `partition`<sup>Required</sup> <a name="partition" id="cdk-constructs.ThronAcmCertificate.property.partition"></a>
+##### `Partition`<sup>Required</sup> <a name="Partition" id="cdk-constructs.ThronAcmCertificate.property.partition"></a>
 
-```typescript
-public readonly partition: string;
+```go
+func Partition() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The partition in which this stack is defined.
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="cdk-constructs.ThronAcmCertificate.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="cdk-constructs.ThronAcmCertificate.property.region"></a>
 
-```typescript
-public readonly region: string;
+```go
+func Region() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The AWS region into which this stack will be deployed (e.g. `us-west-2`).
 
@@ -2488,13 +2488,13 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `stackId`<sup>Required</sup> <a name="stackId" id="cdk-constructs.ThronAcmCertificate.property.stackId"></a>
+##### `StackId`<sup>Required</sup> <a name="StackId" id="cdk-constructs.ThronAcmCertificate.property.stackId"></a>
 
-```typescript
-public readonly stackId: string;
+```go
+func StackId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the stack.
 
@@ -2502,19 +2502,19 @@ The ID of the stack.
 
 *Example*
 
-```typescript
+```go
 // After resolving, looks like
 'arn:aws:cloudformation:us-west-2:123456789012:stack/teststack/51af3dc0-da77-11e4-872e-1234567db123'
 ```
 
 
-##### `stackName`<sup>Required</sup> <a name="stackName" id="cdk-constructs.ThronAcmCertificate.property.stackName"></a>
+##### `StackName`<sup>Required</sup> <a name="StackName" id="cdk-constructs.ThronAcmCertificate.property.stackName"></a>
 
-```typescript
-public readonly stackName: string;
+```go
+func StackName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The concrete CloudFormation physical stack name.
 
@@ -2529,37 +2529,37 @@ you can use `Aws.STACK_NAME` directly.
 
 ---
 
-##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="cdk-constructs.ThronAcmCertificate.property.synthesizer"></a>
+##### `Synthesizer`<sup>Required</sup> <a name="Synthesizer" id="cdk-constructs.ThronAcmCertificate.property.synthesizer"></a>
 
-```typescript
-public readonly synthesizer: IStackSynthesizer;
+```go
+func Synthesizer() IStackSynthesizer
 ```
 
-- *Type:* aws-cdk-lib.IStackSynthesizer
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.IStackSynthesizer
 
 Synthesis method for this stack.
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="cdk-constructs.ThronAcmCertificate.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="cdk-constructs.ThronAcmCertificate.property.tags"></a>
 
-```typescript
-public readonly tags: TagManager;
+```go
+func Tags() TagManager
 ```
 
-- *Type:* aws-cdk-lib.TagManager
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.TagManager
 
 Tags to be applied to the stack.
 
 ---
 
-##### `templateFile`<sup>Required</sup> <a name="templateFile" id="cdk-constructs.ThronAcmCertificate.property.templateFile"></a>
+##### `TemplateFile`<sup>Required</sup> <a name="TemplateFile" id="cdk-constructs.ThronAcmCertificate.property.templateFile"></a>
 
-```typescript
-public readonly templateFile: string;
+```go
+func TemplateFile() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The name of the CloudFormation template file emitted to the output directory during synthesis.
 
@@ -2567,49 +2567,49 @@ Example value: `MyStack.template.json`
 
 ---
 
-##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="cdk-constructs.ThronAcmCertificate.property.templateOptions"></a>
+##### `TemplateOptions`<sup>Required</sup> <a name="TemplateOptions" id="cdk-constructs.ThronAcmCertificate.property.templateOptions"></a>
 
-```typescript
-public readonly templateOptions: ITemplateOptions;
+```go
+func TemplateOptions() ITemplateOptions
 ```
 
-- *Type:* aws-cdk-lib.ITemplateOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ITemplateOptions
 
 Options for CloudFormation template (like version, transform, description).
 
 ---
 
-##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="cdk-constructs.ThronAcmCertificate.property.urlSuffix"></a>
+##### `UrlSuffix`<sup>Required</sup> <a name="UrlSuffix" id="cdk-constructs.ThronAcmCertificate.property.urlSuffix"></a>
 
-```typescript
-public readonly urlSuffix: string;
+```go
+func UrlSuffix() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The Amazon domain suffix for the region in which this stack is defined.
 
 ---
 
-##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="cdk-constructs.ThronAcmCertificate.property.nestedStackParent"></a>
+##### `NestedStackParent`<sup>Optional</sup> <a name="NestedStackParent" id="cdk-constructs.ThronAcmCertificate.property.nestedStackParent"></a>
 
-```typescript
-public readonly nestedStackParent: Stack;
+```go
+func NestedStackParent() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 If this is a nested stack, returns it's parent stack.
 
 ---
 
-##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="cdk-constructs.ThronAcmCertificate.property.nestedStackResource"></a>
+##### `NestedStackResource`<sup>Optional</sup> <a name="NestedStackResource" id="cdk-constructs.ThronAcmCertificate.property.nestedStackResource"></a>
 
-```typescript
-public readonly nestedStackResource: CfnResource;
+```go
+func NestedStackResource() CfnResource
 ```
 
-- *Type:* aws-cdk-lib.CfnResource
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.CfnResource
 
 If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource.
 
@@ -2617,49 +2617,49 @@ If this is a nested stack, this represents its `AWS::CloudFormation::Stack` reso
 
 ---
 
-##### `terminationProtection`<sup>Required</sup> <a name="terminationProtection" id="cdk-constructs.ThronAcmCertificate.property.terminationProtection"></a>
+##### `TerminationProtection`<sup>Required</sup> <a name="TerminationProtection" id="cdk-constructs.ThronAcmCertificate.property.terminationProtection"></a>
 
-```typescript
-public readonly terminationProtection: boolean;
+```go
+func TerminationProtection() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether termination protection is enabled for this stack.
 
 ---
 
-##### `certificate`<sup>Required</sup> <a name="certificate" id="cdk-constructs.ThronAcmCertificate.property.certificate"></a>
+##### `Certificate`<sup>Required</sup> <a name="Certificate" id="cdk-constructs.ThronAcmCertificate.property.certificate"></a>
 
-```typescript
-public readonly certificate: Certificate;
+```go
+func Certificate() Certificate
 ```
 
-- *Type:* aws-cdk-lib.aws_certificatemanager.Certificate
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_certificatemanager.Certificate
 
 The issued certificate.
 
 ---
 
-##### `domainName`<sup>Required</sup> <a name="domainName" id="cdk-constructs.ThronAcmCertificate.property.domainName"></a>
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="cdk-constructs.ThronAcmCertificate.property.domainName"></a>
 
-```typescript
-public readonly domainName: string;
+```go
+func DomainName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 FQDN the certificate is issued for.
 
 ---
 
-##### `subjectAlternativeNames`<sup>Optional</sup> <a name="subjectAlternativeNames" id="cdk-constructs.ThronAcmCertificate.property.subjectAlternativeNames"></a>
+##### `SubjectAlternativeNames`<sup>Optional</sup> <a name="SubjectAlternativeNames" id="cdk-constructs.ThronAcmCertificate.property.subjectAlternativeNames"></a>
 
-```typescript
-public readonly subjectAlternativeNames: string[];
+```go
+func SubjectAlternativeNames() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Alternative domain names on the certificate.
 
@@ -2670,29 +2670,29 @@ Alternative domain names on the certificate.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronApiGatewayApi.Initializer"></a>
 
-```typescript
-import { ThronApiGatewayApi } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronApiGatewayApi(scope: Construct, id: string, props: ThronApiGatewayApiProps)
+cdkconstructs.NewThronApiGatewayApi(scope Construct, id *string, props ThronApiGatewayApiProps) ThronApiGatewayApi
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronApiGatewayApi.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayApiProps">ThronApiGatewayApiProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronApiGatewayApi.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronApiGatewayApi.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -2706,72 +2706,72 @@ new ThronApiGatewayApi(scope: Construct, id: string, props: ThronApiGatewayApiPr
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.addAltDomain">addAltDomain</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.addLambdaEndpoint">addLambdaEndpoint</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.addServiceLambdaEndpoint">addServiceLambdaEndpoint</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.addAltDomain">AddAltDomain</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.addLambdaEndpoint">AddLambdaEndpoint</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.addServiceLambdaEndpoint">AddServiceLambdaEndpoint</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronApiGatewayApi.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronApiGatewayApi.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `addAltDomain` <a name="addAltDomain" id="cdk-constructs.ThronApiGatewayApi.addAltDomain"></a>
+##### `AddAltDomain` <a name="AddAltDomain" id="cdk-constructs.ThronApiGatewayApi.addAltDomain"></a>
 
-```typescript
-public addAltDomain(domainFirstPart: string): void
+```go
+func AddAltDomain(domainFirstPart *string)
 ```
 
 ###### `domainFirstPart`<sup>Required</sup> <a name="domainFirstPart" id="cdk-constructs.ThronApiGatewayApi.addAltDomain.parameter.domainFirstPart"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `addLambdaEndpoint` <a name="addLambdaEndpoint" id="cdk-constructs.ThronApiGatewayApi.addLambdaEndpoint"></a>
+##### `AddLambdaEndpoint` <a name="AddLambdaEndpoint" id="cdk-constructs.ThronApiGatewayApi.addLambdaEndpoint"></a>
 
-```typescript
-public addLambdaEndpoint(lambdaFunction: IFunction, basePath: string, timeout: Duration): ThronEndpointApiGateway
+```go
+func AddLambdaEndpoint(lambdaFunction IFunction, basePath *string, timeout Duration) ThronEndpointApiGateway
 ```
 
 ###### `lambdaFunction`<sup>Required</sup> <a name="lambdaFunction" id="cdk-constructs.ThronApiGatewayApi.addLambdaEndpoint.parameter.lambdaFunction"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.IFunction
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IFunction
 
 ---
 
 ###### `basePath`<sup>Required</sup> <a name="basePath" id="cdk-constructs.ThronApiGatewayApi.addLambdaEndpoint.parameter.basePath"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `timeout`<sup>Required</sup> <a name="timeout" id="cdk-constructs.ThronApiGatewayApi.addLambdaEndpoint.parameter.timeout"></a>
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 ---
 
-##### `addServiceLambdaEndpoint` <a name="addServiceLambdaEndpoint" id="cdk-constructs.ThronApiGatewayApi.addServiceLambdaEndpoint"></a>
+##### `AddServiceLambdaEndpoint` <a name="AddServiceLambdaEndpoint" id="cdk-constructs.ThronApiGatewayApi.addServiceLambdaEndpoint"></a>
 
-```typescript
-public addServiceLambdaEndpoint(lambdaFunction: IFunction, timeout: Duration, __2: FullServiceProps): ThronEndpointApiGateway
+```go
+func AddServiceLambdaEndpoint(lambdaFunction IFunction, timeout Duration, __2 FullServiceProps) ThronEndpointApiGateway
 ```
 
 ###### `lambdaFunction`<sup>Required</sup> <a name="lambdaFunction" id="cdk-constructs.ThronApiGatewayApi.addServiceLambdaEndpoint.parameter.lambdaFunction"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.IFunction
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IFunction
 
 ---
 
 ###### `timeout`<sup>Required</sup> <a name="timeout" id="cdk-constructs.ThronApiGatewayApi.addServiceLambdaEndpoint.parameter.timeout"></a>
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 ---
 
@@ -2785,17 +2785,17 @@ public addServiceLambdaEndpoint(lambdaFunction: IFunction, timeout: Duration, __
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.buildServiceEndpoint">buildServiceEndpoint</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.buildServiceEndpoint">BuildServiceEndpoint</a></code> | *No description.* |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronApiGatewayApi.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronApiGatewayApi.isConstruct"></a>
 
-```typescript
-import { ThronApiGatewayApi } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayApi.isConstruct(x: any)
+cdkconstructs.ThronApiGatewayApi_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -2816,23 +2816,23 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronApiGatewayApi.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `buildServiceEndpoint` <a name="buildServiceEndpoint" id="cdk-constructs.ThronApiGatewayApi.buildServiceEndpoint"></a>
+##### `BuildServiceEndpoint` <a name="BuildServiceEndpoint" id="cdk-constructs.ThronApiGatewayApi.buildServiceEndpoint"></a>
 
-```typescript
-import { ThronApiGatewayApi } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayApi.buildServiceEndpoint(scope: Construct, serviceProps: FullServiceProps)
+cdkconstructs.ThronApiGatewayApi_BuildServiceEndpoint(scope Construct, serviceProps FullServiceProps) EndpointComponents
 ```
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronApiGatewayApi.buildServiceEndpoint.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
@@ -2846,49 +2846,49 @@ ThronApiGatewayApi.buildServiceEndpoint(scope: Construct, serviceProps: FullServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.apiGatewayApi">apiGatewayApi</a></code> | <code>aws-cdk-lib.aws_apigateway.RestApi</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.domainAliases">domainAliases</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias">ThronApiGatewayDomainAlias</a>[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.mainDomain">mainDomain</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias">ThronApiGatewayDomainAlias</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.apiGatewayApi">ApiGatewayApi</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.RestApi</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.domainAliases">DomainAliases</a></code> | <code>*[]<a href="#cdk-constructs.ThronApiGatewayDomainAlias">ThronApiGatewayDomainAlias</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayApi.property.mainDomain">MainDomain</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias">ThronApiGatewayDomainAlias</a></code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronApiGatewayApi.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronApiGatewayApi.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `apiGatewayApi`<sup>Required</sup> <a name="apiGatewayApi" id="cdk-constructs.ThronApiGatewayApi.property.apiGatewayApi"></a>
+##### `ApiGatewayApi`<sup>Required</sup> <a name="ApiGatewayApi" id="cdk-constructs.ThronApiGatewayApi.property.apiGatewayApi"></a>
 
-```typescript
-public readonly apiGatewayApi: RestApi;
+```go
+func ApiGatewayApi() RestApi
 ```
 
-- *Type:* aws-cdk-lib.aws_apigateway.RestApi
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.RestApi
 
 ---
 
-##### `domainAliases`<sup>Required</sup> <a name="domainAliases" id="cdk-constructs.ThronApiGatewayApi.property.domainAliases"></a>
+##### `DomainAliases`<sup>Required</sup> <a name="DomainAliases" id="cdk-constructs.ThronApiGatewayApi.property.domainAliases"></a>
 
-```typescript
-public readonly domainAliases: ThronApiGatewayDomainAlias[];
+```go
+func DomainAliases() *[]ThronApiGatewayDomainAlias
 ```
 
-- *Type:* <a href="#cdk-constructs.ThronApiGatewayDomainAlias">ThronApiGatewayDomainAlias</a>[]
+- *Type:* *[]<a href="#cdk-constructs.ThronApiGatewayDomainAlias">ThronApiGatewayDomainAlias</a>
 
 ---
 
-##### `mainDomain`<sup>Required</sup> <a name="mainDomain" id="cdk-constructs.ThronApiGatewayApi.property.mainDomain"></a>
+##### `MainDomain`<sup>Required</sup> <a name="MainDomain" id="cdk-constructs.ThronApiGatewayApi.property.mainDomain"></a>
 
-```typescript
-public readonly mainDomain: ThronApiGatewayDomainAlias;
+```go
+func MainDomain() ThronApiGatewayDomainAlias
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronApiGatewayDomainAlias">ThronApiGatewayDomainAlias</a>
@@ -2902,40 +2902,41 @@ Defines an Alias domain to the main api-gateway.
 
 *Example*
 
-```typescript
-const endpoint = new ThronApiGatewayDomainAlias(this, `cool-domain-alias`, {
-    domainName: 'cool-domain.4me.cdndev.weebo.it',
-    apiGatewayApi: sampleApi.restApiId,
-    domainId: 'cool-domain'
-  });
+```go
+// Example automatically generated from non-compiling source. May contain errors.
+endpoint := NewThronApiGatewayDomainAlias(this, jsii.String("cool-domain-alias"), map[string]interface{}{
+	"domainName": jsii.String("cool-domain.4me.cdndev.weebo.it"),
+	"apiGatewayApi": sampleApi.restApiId,
+	"domainId": jsii.String("cool-domain"),
+})
 ```
 
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronApiGatewayDomainAlias.Initializer"></a>
 
-```typescript
-import { ThronApiGatewayDomainAlias } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronApiGatewayDomainAlias(scope: Construct, id: string, props: ThronApiGatewayDomainAliasProps)
+cdkconstructs.NewThronApiGatewayDomainAlias(scope Construct, id *string, props ThronApiGatewayDomainAliasProps) ThronApiGatewayDomainAlias
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayDomainAliasProps">ThronApiGatewayDomainAliasProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronApiGatewayDomainAlias.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronApiGatewayDomainAlias.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -2949,14 +2950,14 @@ new ThronApiGatewayDomainAlias(scope: Construct, id: string, props: ThronApiGate
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.toString">ToString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronApiGatewayDomainAlias.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronApiGatewayDomainAlias.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
@@ -2965,16 +2966,16 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronApiGatewayDomainAlias.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronApiGatewayDomainAlias.isConstruct"></a>
 
-```typescript
-import { ThronApiGatewayDomainAlias } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayDomainAlias.isConstruct(x: any)
+cdkconstructs.ThronApiGatewayDomainAlias_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -2995,7 +2996,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronApiGatewayDomainAlias.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -3005,30 +3006,30 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.property.recordName">recordName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAlias.property.recordName">RecordName</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronApiGatewayDomainAlias.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronApiGatewayDomainAlias.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `recordName`<sup>Required</sup> <a name="recordName" id="cdk-constructs.ThronApiGatewayDomainAlias.property.recordName"></a>
+##### `RecordName`<sup>Required</sup> <a name="RecordName" id="cdk-constructs.ThronApiGatewayDomainAlias.property.recordName"></a>
 
-```typescript
-public readonly recordName: string;
+```go
+func RecordName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -3039,23 +3040,23 @@ public readonly recordName: string;
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronCachePolicy.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.applyRemovalPolicy">ApplyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronCachePolicy.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronCachePolicy.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="cdk-constructs.ThronCachePolicy.applyRemovalPolicy"></a>
+##### `ApplyRemovalPolicy` <a name="ApplyRemovalPolicy" id="cdk-constructs.ThronCachePolicy.applyRemovalPolicy"></a>
 
-```typescript
-public applyRemovalPolicy(policy: RemovalPolicy): void
+```go
+func ApplyRemovalPolicy(policy RemovalPolicy)
 ```
 
 Apply the given removal policy to this resource.
@@ -3070,7 +3071,7 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 ###### `policy`<sup>Required</sup> <a name="policy" id="cdk-constructs.ThronCachePolicy.applyRemovalPolicy.parameter.policy"></a>
 
-- *Type:* aws-cdk-lib.RemovalPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.RemovalPolicy
 
 ---
 
@@ -3078,22 +3079,22 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronCachePolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.fromCachePolicyId">fromCachePolicyId</a></code> | Imports a Cache Policy from its id. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.cacheDisabled">cacheDisabled</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronCachePolicy.default">default</a></code> | Generates a `ThronCachePolicy` with all the default values. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.defaultWithOverrides">defaultWithOverrides</a></code> | Generates a `ThronCachePolicy` with all the default values except for the ones passed on `props`. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.isOwnedResource">IsOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.isResource">IsResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.fromCachePolicyId">FromCachePolicyId</a></code> | Imports a Cache Policy from its id. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.cacheDisabled">CacheDisabled</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCachePolicy.default">Default</a></code> | Generates a `ThronCachePolicy` with all the default values. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.defaultWithOverrides">DefaultWithOverrides</a></code> | Generates a `ThronCachePolicy` with all the default values except for the ones passed on `props`. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronCachePolicy.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronCachePolicy.isConstruct"></a>
 
-```typescript
-import { ThronCachePolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCachePolicy.isConstruct(x: any)
+cdkconstructs.ThronCachePolicy_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -3114,133 +3115,133 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronCachePolicy.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isOwnedResource` <a name="isOwnedResource" id="cdk-constructs.ThronCachePolicy.isOwnedResource"></a>
+##### `IsOwnedResource` <a name="IsOwnedResource" id="cdk-constructs.ThronCachePolicy.isOwnedResource"></a>
 
-```typescript
-import { ThronCachePolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCachePolicy.isOwnedResource(construct: IConstruct)
+cdkconstructs.ThronCachePolicy_IsOwnedResource(construct IConstruct) *bool
 ```
 
 Returns true if the construct was created by CDK, and false otherwise.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronCachePolicy.isOwnedResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `isResource` <a name="isResource" id="cdk-constructs.ThronCachePolicy.isResource"></a>
+##### `IsResource` <a name="IsResource" id="cdk-constructs.ThronCachePolicy.isResource"></a>
 
-```typescript
-import { ThronCachePolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCachePolicy.isResource(construct: IConstruct)
+cdkconstructs.ThronCachePolicy_IsResource(construct IConstruct) *bool
 ```
 
 Check whether the given construct is a Resource.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronCachePolicy.isResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `fromCachePolicyId` <a name="fromCachePolicyId" id="cdk-constructs.ThronCachePolicy.fromCachePolicyId"></a>
+##### `FromCachePolicyId` <a name="FromCachePolicyId" id="cdk-constructs.ThronCachePolicy.fromCachePolicyId"></a>
 
-```typescript
-import { ThronCachePolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCachePolicy.fromCachePolicyId(scope: Construct, id: string, cachePolicyId: string)
+cdkconstructs.ThronCachePolicy_FromCachePolicyId(scope Construct, id *string, cachePolicyId *string) ICachePolicy
 ```
 
 Imports a Cache Policy from its id.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronCachePolicy.fromCachePolicyId.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronCachePolicy.fromCachePolicyId.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `cachePolicyId`<sup>Required</sup> <a name="cachePolicyId" id="cdk-constructs.ThronCachePolicy.fromCachePolicyId.parameter.cachePolicyId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `cacheDisabled` <a name="cacheDisabled" id="cdk-constructs.ThronCachePolicy.cacheDisabled"></a>
+##### `CacheDisabled` <a name="CacheDisabled" id="cdk-constructs.ThronCachePolicy.cacheDisabled"></a>
 
-```typescript
-import { ThronCachePolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCachePolicy.cacheDisabled(scope: Construct, id: string)
+cdkconstructs.ThronCachePolicy_CacheDisabled(scope Construct, id *string) ThronCachePolicy
 ```
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronCachePolicy.cacheDisabled.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronCachePolicy.cacheDisabled.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `default` <a name="default" id="cdk-constructs.ThronCachePolicy.default"></a>
+##### `Default` <a name="Default" id="cdk-constructs.ThronCachePolicy.default"></a>
 
-```typescript
-import { ThronCachePolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCachePolicy.default(scope: Construct, id: string)
+cdkconstructs.ThronCachePolicy_Default(scope Construct, id *string) ThronCachePolicy
 ```
 
 Generates a `ThronCachePolicy` with all the default values.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronCachePolicy.default.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronCachePolicy.default.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `defaultWithOverrides` <a name="defaultWithOverrides" id="cdk-constructs.ThronCachePolicy.defaultWithOverrides"></a>
+##### `DefaultWithOverrides` <a name="DefaultWithOverrides" id="cdk-constructs.ThronCachePolicy.defaultWithOverrides"></a>
 
-```typescript
-import { ThronCachePolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCachePolicy.defaultWithOverrides(scope: Construct, id: string, props: ThronCachePolicyProps)
+cdkconstructs.ThronCachePolicy_DefaultWithOverrides(scope Construct, id *string, props ThronCachePolicyProps) ThronCachePolicy
 ```
 
 Generates a `ThronCachePolicy` with all the default values except for the ones passed on `props`.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronCachePolicy.defaultWithOverrides.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronCachePolicy.defaultWithOverrides.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -3254,32 +3255,32 @@ Generates a `ThronCachePolicy` with all the default values except for the ones p
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.cachePolicyId">cachePolicyId</a></code> | <code>string</code> | The ID of the cache policy. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.env">Env</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.cachePolicyId">CachePolicyId</a></code> | <code>*string</code> | The ID of the cache policy. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronCachePolicy.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronCachePolicy.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-constructs.ThronCachePolicy.property.env"></a>
+##### `Env`<sup>Required</sup> <a name="Env" id="cdk-constructs.ThronCachePolicy.property.env"></a>
 
-```typescript
-public readonly env: ResourceEnvironment;
+```go
+func Env() ResourceEnvironment
 ```
 
-- *Type:* aws-cdk-lib.ResourceEnvironment
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment
 
 The environment this resource belongs to.
 
@@ -3292,25 +3293,25 @@ that might be different than the stack they were imported into.
 
 ---
 
-##### `stack`<sup>Required</sup> <a name="stack" id="cdk-constructs.ThronCachePolicy.property.stack"></a>
+##### `Stack`<sup>Required</sup> <a name="Stack" id="cdk-constructs.ThronCachePolicy.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+func Stack() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The stack in which this resource is defined.
 
 ---
 
-##### `cachePolicyId`<sup>Required</sup> <a name="cachePolicyId" id="cdk-constructs.ThronCachePolicy.property.cachePolicyId"></a>
+##### `CachePolicyId`<sup>Required</sup> <a name="CachePolicyId" id="cdk-constructs.ThronCachePolicy.property.cachePolicyId"></a>
 
-```typescript
-public readonly cachePolicyId: string;
+```go
+func CachePolicyId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the cache policy.
 
@@ -3320,35 +3321,35 @@ The ID of the cache policy.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.AMPLIFY">AMPLIFY</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | This policy is designed for use with an origin that is an AWS Amplify web app. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.CACHING_DISABLED">CACHING_DISABLED</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | Disables caching. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED">CACHING_OPTIMIZED</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | Optimize cache efficiency by minimizing the values that CloudFront includes in the cache key. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS">CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | Optimize cache efficiency by minimizing the values that CloudFront includes in the cache key. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.ELEMENTAL_MEDIA_PACKAGE">ELEMENTAL_MEDIA_PACKAGE</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | Designed for use with an origin that is an AWS Elemental MediaPackage endpoint. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS">USE_ORIGIN_CACHE_CONTROL_HEADERS</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | Designed for use with an origin that returns Cache-Control HTTP response headers and does not serve different content based on values present in the query string. |
-| <code><a href="#cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS">USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | Designed for use with an origin that returns Cache-Control HTTP response headers and serves different content based on values present in the query string. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.AMPLIFY">Amplify</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy</code> | This policy is designed for use with an origin that is an AWS Amplify web app. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.CACHING_DISABLED">CachingDisabled</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy</code> | Disables caching. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED">CachingOptimized</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy</code> | Optimize cache efficiency by minimizing the values that CloudFront includes in the cache key. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS">CachingOptimizedForUncompressedObjects</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy</code> | Optimize cache efficiency by minimizing the values that CloudFront includes in the cache key. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.ELEMENTAL_MEDIA_PACKAGE">ElementalMediaPackage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy</code> | Designed for use with an origin that is an AWS Elemental MediaPackage endpoint. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS">UseOriginCacheControlHeaders</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy</code> | Designed for use with an origin that returns Cache-Control HTTP response headers and does not serve different content based on values present in the query string. |
+| <code><a href="#cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS">UseOriginCacheControlHeadersQueryStrings</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy</code> | Designed for use with an origin that returns Cache-Control HTTP response headers and serves different content based on values present in the query string. |
 
 ---
 
-##### `AMPLIFY`<sup>Required</sup> <a name="AMPLIFY" id="cdk-constructs.ThronCachePolicy.property.AMPLIFY"></a>
+##### `Amplify`<sup>Required</sup> <a name="Amplify" id="cdk-constructs.ThronCachePolicy.property.AMPLIFY"></a>
 
-```typescript
-public readonly AMPLIFY: ICachePolicy;
+```go
+func Amplify() ICachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ICachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy
 
 This policy is designed for use with an origin that is an AWS Amplify web app.
 
 ---
 
-##### `CACHING_DISABLED`<sup>Required</sup> <a name="CACHING_DISABLED" id="cdk-constructs.ThronCachePolicy.property.CACHING_DISABLED"></a>
+##### `CachingDisabled`<sup>Required</sup> <a name="CachingDisabled" id="cdk-constructs.ThronCachePolicy.property.CACHING_DISABLED"></a>
 
-```typescript
-public readonly CACHING_DISABLED: ICachePolicy;
+```go
+func CachingDisabled() ICachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ICachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy
 
 Disables caching.
 
@@ -3356,13 +3357,13 @@ This policy is useful for dynamic content and for requests that are not cacheabl
 
 ---
 
-##### `CACHING_OPTIMIZED`<sup>Required</sup> <a name="CACHING_OPTIMIZED" id="cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED"></a>
+##### `CachingOptimized`<sup>Required</sup> <a name="CachingOptimized" id="cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED"></a>
 
-```typescript
-public readonly CACHING_OPTIMIZED: ICachePolicy;
+```go
+func CachingOptimized() ICachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ICachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy
 
 Optimize cache efficiency by minimizing the values that CloudFront includes in the cache key.
 
@@ -3370,13 +3371,13 @@ Query strings and cookies are not included in the cache key, and only the normal
 
 ---
 
-##### `CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS`<sup>Required</sup> <a name="CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS" id="cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS"></a>
+##### `CachingOptimizedForUncompressedObjects`<sup>Required</sup> <a name="CachingOptimizedForUncompressedObjects" id="cdk-constructs.ThronCachePolicy.property.CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS"></a>
 
-```typescript
-public readonly CACHING_OPTIMIZED_FOR_UNCOMPRESSED_OBJECTS: ICachePolicy;
+```go
+func CachingOptimizedForUncompressedObjects() ICachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ICachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy
 
 Optimize cache efficiency by minimizing the values that CloudFront includes in the cache key.
 
@@ -3385,37 +3386,37 @@ Disables cache compression.
 
 ---
 
-##### `ELEMENTAL_MEDIA_PACKAGE`<sup>Required</sup> <a name="ELEMENTAL_MEDIA_PACKAGE" id="cdk-constructs.ThronCachePolicy.property.ELEMENTAL_MEDIA_PACKAGE"></a>
+##### `ElementalMediaPackage`<sup>Required</sup> <a name="ElementalMediaPackage" id="cdk-constructs.ThronCachePolicy.property.ELEMENTAL_MEDIA_PACKAGE"></a>
 
-```typescript
-public readonly ELEMENTAL_MEDIA_PACKAGE: ICachePolicy;
+```go
+func ElementalMediaPackage() ICachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ICachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy
 
 Designed for use with an origin that is an AWS Elemental MediaPackage endpoint.
 
 ---
 
-##### `USE_ORIGIN_CACHE_CONTROL_HEADERS`<sup>Required</sup> <a name="USE_ORIGIN_CACHE_CONTROL_HEADERS" id="cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS"></a>
+##### `UseOriginCacheControlHeaders`<sup>Required</sup> <a name="UseOriginCacheControlHeaders" id="cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS"></a>
 
-```typescript
-public readonly USE_ORIGIN_CACHE_CONTROL_HEADERS: ICachePolicy;
+```go
+func UseOriginCacheControlHeaders() ICachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ICachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy
 
 Designed for use with an origin that returns Cache-Control HTTP response headers and does not serve different content based on values present in the query string.
 
 ---
 
-##### `USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS`<sup>Required</sup> <a name="USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS" id="cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS"></a>
+##### `UseOriginCacheControlHeadersQueryStrings`<sup>Required</sup> <a name="UseOriginCacheControlHeadersQueryStrings" id="cdk-constructs.ThronCachePolicy.property.USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS"></a>
 
-```typescript
-public readonly USE_ORIGIN_CACHE_CONTROL_HEADERS_QUERY_STRINGS: ICachePolicy;
+```go
+func UseOriginCacheControlHeadersQueryStrings() ICachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ICachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ICachePolicy
 
 Designed for use with an origin that returns Cache-Control HTTP response headers and serves different content based on values present in the query string.
 
@@ -3425,29 +3426,29 @@ Designed for use with an origin that returns Cache-Control HTTP response headers
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronCloudFrontDistribution.Initializer"></a>
 
-```typescript
-import { ThronCloudFrontDistribution } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronCloudFrontDistribution(scope: Stack, id: string, props: ThronCloudFrontDistributionProps)
+cdkconstructs.NewThronCloudFrontDistribution(scope Stack, id *string, props ThronCloudFrontDistributionProps) ThronCloudFrontDistribution
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.Stack</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronCloudFrontDistribution.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps">ThronCloudFrontDistributionProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronCloudFrontDistribution.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronCloudFrontDistribution.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -3461,30 +3462,30 @@ new ThronCloudFrontDistribution(scope: Stack, id: string, props: ThronCloudFront
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.isValidVersion">isValidVersion</a></code> | Validates `version` against frontend conventions. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.isValidVersion">IsValidVersion</a></code> | Validates `version` against frontend conventions. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronCloudFrontDistribution.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronCloudFrontDistribution.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `isValidVersion` <a name="isValidVersion" id="cdk-constructs.ThronCloudFrontDistribution.isValidVersion"></a>
+##### `IsValidVersion` <a name="IsValidVersion" id="cdk-constructs.ThronCloudFrontDistribution.isValidVersion"></a>
 
-```typescript
-public isValidVersion(version?: string): boolean
+```go
+func IsValidVersion(version *string) *bool
 ```
 
 Validates `version` against frontend conventions.
 
 ###### `version`<sup>Optional</sup> <a name="version" id="cdk-constructs.ThronCloudFrontDistribution.isValidVersion.parameter.version"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -3492,16 +3493,16 @@ Validates `version` against frontend conventions.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronCloudFrontDistribution.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronCloudFrontDistribution.isConstruct"></a>
 
-```typescript
-import { ThronCloudFrontDistribution } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronCloudFrontDistribution.isConstruct(x: any)
+cdkconstructs.ThronCloudFrontDistribution_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -3522,7 +3523,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronCloudFrontDistribution.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -3532,195 +3533,195 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.cachePolicy">cachePolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.CachePolicy</code> | Custom Cache Policy for the distribution. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.certificate">certificate</a></code> | <code>aws-cdk-lib.aws_certificatemanager.Certificate</code> | Certificate used for validating the domain name. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObject">defaultRootObject</a></code> | <code>string</code> | Object that you want CloudFront to request from your origin when a user requests the root URL for your distribution. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectCachePolicy">defaultRootObjectCachePolicy</a></code> | <code><a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectResponseHeaderPolicy">defaultRootObjectResponseHeaderPolicy</a></code> | <code><a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.deployBucket">deployBucket</a></code> | <code>aws-cdk-lib.aws_s3_deployment.BucketDeployment</code> | Populates an S3 bucket with the contents of .zip files from your local disk. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.description">description</a></code> | <code>string</code> | Description of the CloudFront Distribution. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.distribution">distribution</a></code> | <code>aws-cdk-lib.aws_cloudfront.Distribution</code> | CloudFront distribution with associated origins and caching behaviors. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.domainName">domainName</a></code> | <code>string</code> | Validated FQDN. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.oac">oac</a></code> | <code>aws-cdk-lib.aws_cloudfront.CfnOriginAccessControl</code> | Origin Access Control used to block public access to the S3 bucket so that users can access the content in the bucket only through CloudFront. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.responseHeaderPolicy">responseHeaderPolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicy</code> | Custom Response Headers Policy. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.sourcePublicAsset">sourcePublicAsset</a></code> | <code>string</code> | Source path from which to deploy the contents of frontend. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.version">version</a></code> | <code>string</code> | Prefix key used for versioning. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.websiteBucket">websiteBucket</a></code> | <code>aws-cdk-lib.aws_s3.Bucket</code> | S3 Bucket where is stored the frontend static resources. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.cachePolicy">CachePolicy</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.CachePolicy</code> | Custom Cache Policy for the distribution. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.certificate">Certificate</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_certificatemanager.Certificate</code> | Certificate used for validating the domain name. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObject">DefaultRootObject</a></code> | <code>*string</code> | Object that you want CloudFront to request from your origin when a user requests the root URL for your distribution. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectCachePolicy">DefaultRootObjectCachePolicy</a></code> | <code><a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectResponseHeaderPolicy">DefaultRootObjectResponseHeaderPolicy</a></code> | <code><a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.deployBucket">DeployBucket</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_s3_deployment.BucketDeployment</code> | Populates an S3 bucket with the contents of .zip files from your local disk. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.description">Description</a></code> | <code>*string</code> | Description of the CloudFront Distribution. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.distribution">Distribution</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.Distribution</code> | CloudFront distribution with associated origins and caching behaviors. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.domainName">DomainName</a></code> | <code>*string</code> | Validated FQDN. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.oac">Oac</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.CfnOriginAccessControl</code> | Origin Access Control used to block public access to the S3 bucket so that users can access the content in the bucket only through CloudFront. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.responseHeaderPolicy">ResponseHeaderPolicy</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ResponseHeadersPolicy</code> | Custom Response Headers Policy. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.sourcePublicAsset">SourcePublicAsset</a></code> | <code>*string</code> | Source path from which to deploy the contents of frontend. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.version">Version</a></code> | <code>*string</code> | Prefix key used for versioning. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistribution.property.websiteBucket">WebsiteBucket</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_s3.Bucket</code> | S3 Bucket where is stored the frontend static resources. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronCloudFrontDistribution.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronCloudFrontDistribution.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `cachePolicy`<sup>Required</sup> <a name="cachePolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.cachePolicy"></a>
+##### `CachePolicy`<sup>Required</sup> <a name="CachePolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.cachePolicy"></a>
 
-```typescript
-public readonly cachePolicy: CachePolicy;
+```go
+func CachePolicy() CachePolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.CachePolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.CachePolicy
 
 Custom Cache Policy for the distribution.
 
 ---
 
-##### `certificate`<sup>Required</sup> <a name="certificate" id="cdk-constructs.ThronCloudFrontDistribution.property.certificate"></a>
+##### `Certificate`<sup>Required</sup> <a name="Certificate" id="cdk-constructs.ThronCloudFrontDistribution.property.certificate"></a>
 
-```typescript
-public readonly certificate: Certificate;
+```go
+func Certificate() Certificate
 ```
 
-- *Type:* aws-cdk-lib.aws_certificatemanager.Certificate
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_certificatemanager.Certificate
 
 Certificate used for validating the domain name.
 
 ---
 
-##### `defaultRootObject`<sup>Required</sup> <a name="defaultRootObject" id="cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObject"></a>
+##### `DefaultRootObject`<sup>Required</sup> <a name="DefaultRootObject" id="cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObject"></a>
 
-```typescript
-public readonly defaultRootObject: string;
+```go
+func DefaultRootObject() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Object that you want CloudFront to request from your origin when a user requests the root URL for your distribution.
 
 ---
 
-##### `defaultRootObjectCachePolicy`<sup>Required</sup> <a name="defaultRootObjectCachePolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectCachePolicy"></a>
+##### `DefaultRootObjectCachePolicy`<sup>Required</sup> <a name="DefaultRootObjectCachePolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectCachePolicy"></a>
 
-```typescript
-public readonly defaultRootObjectCachePolicy: ThronCachePolicy;
+```go
+func DefaultRootObjectCachePolicy() ThronCachePolicy
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a>
 
 ---
 
-##### `defaultRootObjectResponseHeaderPolicy`<sup>Required</sup> <a name="defaultRootObjectResponseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectResponseHeaderPolicy"></a>
+##### `DefaultRootObjectResponseHeaderPolicy`<sup>Required</sup> <a name="DefaultRootObjectResponseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.defaultRootObjectResponseHeaderPolicy"></a>
 
-```typescript
-public readonly defaultRootObjectResponseHeaderPolicy: ThronResponseHeaderPolicy;
+```go
+func DefaultRootObjectResponseHeaderPolicy() ThronResponseHeaderPolicy
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a>
 
 ---
 
-##### `deployBucket`<sup>Required</sup> <a name="deployBucket" id="cdk-constructs.ThronCloudFrontDistribution.property.deployBucket"></a>
+##### `DeployBucket`<sup>Required</sup> <a name="DeployBucket" id="cdk-constructs.ThronCloudFrontDistribution.property.deployBucket"></a>
 
-```typescript
-public readonly deployBucket: BucketDeployment;
+```go
+func DeployBucket() BucketDeployment
 ```
 
-- *Type:* aws-cdk-lib.aws_s3_deployment.BucketDeployment
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_s3_deployment.BucketDeployment
 
 Populates an S3 bucket with the contents of .zip files from your local disk.
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="cdk-constructs.ThronCloudFrontDistribution.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="cdk-constructs.ThronCloudFrontDistribution.property.description"></a>
 
-```typescript
-public readonly description: string;
+```go
+func Description() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Description of the CloudFront Distribution.
 
 ---
 
-##### `distribution`<sup>Required</sup> <a name="distribution" id="cdk-constructs.ThronCloudFrontDistribution.property.distribution"></a>
+##### `Distribution`<sup>Required</sup> <a name="Distribution" id="cdk-constructs.ThronCloudFrontDistribution.property.distribution"></a>
 
-```typescript
-public readonly distribution: Distribution;
+```go
+func Distribution() Distribution
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.Distribution
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.Distribution
 
 CloudFront distribution with associated origins and caching behaviors.
 
 ---
 
-##### `domainName`<sup>Required</sup> <a name="domainName" id="cdk-constructs.ThronCloudFrontDistribution.property.domainName"></a>
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="cdk-constructs.ThronCloudFrontDistribution.property.domainName"></a>
 
-```typescript
-public readonly domainName: string;
+```go
+func DomainName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Validated FQDN.
 
 ---
 
-##### `oac`<sup>Required</sup> <a name="oac" id="cdk-constructs.ThronCloudFrontDistribution.property.oac"></a>
+##### `Oac`<sup>Required</sup> <a name="Oac" id="cdk-constructs.ThronCloudFrontDistribution.property.oac"></a>
 
-```typescript
-public readonly oac: CfnOriginAccessControl;
+```go
+func Oac() CfnOriginAccessControl
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.CfnOriginAccessControl
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.CfnOriginAccessControl
 
 Origin Access Control used to block public access to the S3 bucket so that users can access the content in the bucket only through CloudFront.
 
 ---
 
-##### `responseHeaderPolicy`<sup>Required</sup> <a name="responseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.responseHeaderPolicy"></a>
+##### `ResponseHeaderPolicy`<sup>Required</sup> <a name="ResponseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistribution.property.responseHeaderPolicy"></a>
 
-```typescript
-public readonly responseHeaderPolicy: ResponseHeadersPolicy;
+```go
+func ResponseHeaderPolicy() ResponseHeadersPolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ResponseHeadersPolicy
 
 Custom Response Headers Policy.
 
 ---
 
-##### `sourcePublicAsset`<sup>Required</sup> <a name="sourcePublicAsset" id="cdk-constructs.ThronCloudFrontDistribution.property.sourcePublicAsset"></a>
+##### `SourcePublicAsset`<sup>Required</sup> <a name="SourcePublicAsset" id="cdk-constructs.ThronCloudFrontDistribution.property.sourcePublicAsset"></a>
 
-```typescript
-public readonly sourcePublicAsset: string;
+```go
+func SourcePublicAsset() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Source path from which to deploy the contents of frontend.
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.ThronCloudFrontDistribution.property.version"></a>
+##### `Version`<sup>Required</sup> <a name="Version" id="cdk-constructs.ThronCloudFrontDistribution.property.version"></a>
 
-```typescript
-public readonly version: string;
+```go
+func Version() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Prefix key used for versioning.
 
 ---
 
-##### `websiteBucket`<sup>Required</sup> <a name="websiteBucket" id="cdk-constructs.ThronCloudFrontDistribution.property.websiteBucket"></a>
+##### `WebsiteBucket`<sup>Required</sup> <a name="WebsiteBucket" id="cdk-constructs.ThronCloudFrontDistribution.property.websiteBucket"></a>
 
-```typescript
-public readonly websiteBucket: Bucket;
+```go
+func WebsiteBucket() Bucket
 ```
 
-- *Type:* aws-cdk-lib.aws_s3.Bucket
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_s3.Bucket
 
 S3 Bucket where is stored the frontend static resources.
 
@@ -3731,29 +3732,29 @@ S3 Bucket where is stored the frontend static resources.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronDockerLambda.Initializer"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronDockerLambda(scope: Stack, id: string, props: FunctionOptions)
+cdkconstructs.NewThronDockerLambda(scope Stack, id *string, props FunctionOptions) ThronDockerLambda
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronDockerLambda.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.Stack</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronDockerLambda.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronDockerLambda.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronDockerLambda.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronDockerLambda.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.FunctionOptions">FunctionOptions</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronDockerLambda.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronDockerLambda.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -3767,46 +3768,46 @@ new ThronDockerLambda(scope: Stack, id: string, props: FunctionOptions)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronDockerLambda.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addEventSource">addEventSource</a></code> | Adds an event source to this function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addEventSourceMapping">addEventSourceMapping</a></code> | Adds an event source that maps to this AWS Lambda function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addFunctionUrl">addFunctionUrl</a></code> | Adds a url to this lambda function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addPermission">addPermission</a></code> | Adds a permission to the Lambda resource policy. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addToRolePolicy">addToRolePolicy</a></code> | Adds a statement to the IAM role assumed by the instance. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.configureAsyncInvoke">configureAsyncInvoke</a></code> | Configures options for asynchronous invocation. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.considerWarningOnInvokeFunctionPermissions">considerWarningOnInvokeFunctionPermissions</a></code> | A warning will be added to functions under the following conditions: - permissions that include `lambda:InvokeFunction` are added to the unqualified function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvoke">grantInvoke</a></code> | Grant the given identity permissions to invoke this Lambda. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeCompositePrincipal">grantInvokeCompositePrincipal</a></code> | Grant multiple principals the ability to invoke this Lambda via CompositePrincipal. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeLatestVersion">grantInvokeLatestVersion</a></code> | Grant the given identity permissions to invoke the $LATEST version or unqualified version of this Lambda. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeUrl">grantInvokeUrl</a></code> | Grant the given identity permissions to invoke this Lambda Function URL. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeVersion">grantInvokeVersion</a></code> | Grant the given identity permissions to invoke the given version of this Lambda. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metric">metric</a></code> | Return the given named metric for this Function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricDuration">metricDuration</a></code> | How long execution of this Lambda takes. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricErrors">metricErrors</a></code> | How many invocations of this Lambda fail. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricInvocations">metricInvocations</a></code> | How often this Lambda is invoked. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricThrottles">metricThrottles</a></code> | How often this Lambda is throttled. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addAlias">addAlias</a></code> | Defines an alias for this function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addEnvironment">addEnvironment</a></code> | Adds an environment variable to this Lambda function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addLayers">addLayers</a></code> | Adds one or more Lambda Layers to this Lambda function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.invalidateVersionBasedOn">invalidateVersionBasedOn</a></code> | Mix additional information into the hash of the Version object. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addEndpointAlb">addEndpointAlb</a></code> | Add an endpoint the lambda function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.addLegacyEndpointAlb">addLegacyEndpointAlb</a></code> | Add a legacy endpoint to the lambda function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.applyRemovalPolicy">ApplyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addEventSource">AddEventSource</a></code> | Adds an event source to this function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addEventSourceMapping">AddEventSourceMapping</a></code> | Adds an event source that maps to this AWS Lambda function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addFunctionUrl">AddFunctionUrl</a></code> | Adds a url to this lambda function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addPermission">AddPermission</a></code> | Adds a permission to the Lambda resource policy. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addToRolePolicy">AddToRolePolicy</a></code> | Adds a statement to the IAM role assumed by the instance. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.configureAsyncInvoke">ConfigureAsyncInvoke</a></code> | Configures options for asynchronous invocation. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.considerWarningOnInvokeFunctionPermissions">ConsiderWarningOnInvokeFunctionPermissions</a></code> | A warning will be added to functions under the following conditions: - permissions that include `lambda:InvokeFunction` are added to the unqualified function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvoke">GrantInvoke</a></code> | Grant the given identity permissions to invoke this Lambda. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeCompositePrincipal">GrantInvokeCompositePrincipal</a></code> | Grant multiple principals the ability to invoke this Lambda via CompositePrincipal. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeLatestVersion">GrantInvokeLatestVersion</a></code> | Grant the given identity permissions to invoke the $LATEST version or unqualified version of this Lambda. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeUrl">GrantInvokeUrl</a></code> | Grant the given identity permissions to invoke this Lambda Function URL. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.grantInvokeVersion">GrantInvokeVersion</a></code> | Grant the given identity permissions to invoke the given version of this Lambda. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metric">Metric</a></code> | Return the given named metric for this Function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricDuration">MetricDuration</a></code> | How long execution of this Lambda takes. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricErrors">MetricErrors</a></code> | How many invocations of this Lambda fail. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricInvocations">MetricInvocations</a></code> | How often this Lambda is invoked. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricThrottles">MetricThrottles</a></code> | How often this Lambda is throttled. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addAlias">AddAlias</a></code> | Defines an alias for this function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addEnvironment">AddEnvironment</a></code> | Adds an environment variable to this Lambda function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addLayers">AddLayers</a></code> | Adds one or more Lambda Layers to this Lambda function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.invalidateVersionBasedOn">InvalidateVersionBasedOn</a></code> | Mix additional information into the hash of the Version object. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addEndpointAlb">AddEndpointAlb</a></code> | Add an endpoint the lambda function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.addLegacyEndpointAlb">AddLegacyEndpointAlb</a></code> | Add a legacy endpoint to the lambda function. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronDockerLambda.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronDockerLambda.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="cdk-constructs.ThronDockerLambda.applyRemovalPolicy"></a>
+##### `ApplyRemovalPolicy` <a name="ApplyRemovalPolicy" id="cdk-constructs.ThronDockerLambda.applyRemovalPolicy"></a>
 
-```typescript
-public applyRemovalPolicy(policy: RemovalPolicy): void
+```go
+func ApplyRemovalPolicy(policy RemovalPolicy)
 ```
 
 Apply the given removal policy to this resource.
@@ -3821,14 +3822,14 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 ###### `policy`<sup>Required</sup> <a name="policy" id="cdk-constructs.ThronDockerLambda.applyRemovalPolicy.parameter.policy"></a>
 
-- *Type:* aws-cdk-lib.RemovalPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.RemovalPolicy
 
 ---
 
-##### `addEventSource` <a name="addEventSource" id="cdk-constructs.ThronDockerLambda.addEventSource"></a>
+##### `AddEventSource` <a name="AddEventSource" id="cdk-constructs.ThronDockerLambda.addEventSource"></a>
 
-```typescript
-public addEventSource(source: IEventSource): void
+```go
+func AddEventSource(source IEventSource)
 ```
 
 Adds an event source to this function.
@@ -3843,48 +3844,48 @@ myFunction.addEventSource(new SqsEventSource(myQueue));
 
 ###### `source`<sup>Required</sup> <a name="source" id="cdk-constructs.ThronDockerLambda.addEventSource.parameter.source"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.IEventSource
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IEventSource
 
 ---
 
-##### `addEventSourceMapping` <a name="addEventSourceMapping" id="cdk-constructs.ThronDockerLambda.addEventSourceMapping"></a>
+##### `AddEventSourceMapping` <a name="AddEventSourceMapping" id="cdk-constructs.ThronDockerLambda.addEventSourceMapping"></a>
 
-```typescript
-public addEventSourceMapping(id: string, options: EventSourceMappingOptions): EventSourceMapping
+```go
+func AddEventSourceMapping(id *string, options EventSourceMappingOptions) EventSourceMapping
 ```
 
 Adds an event source that maps to this AWS Lambda function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronDockerLambda.addEventSourceMapping.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `options`<sup>Required</sup> <a name="options" id="cdk-constructs.ThronDockerLambda.addEventSourceMapping.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.EventSourceMappingOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.EventSourceMappingOptions
 
 ---
 
-##### `addFunctionUrl` <a name="addFunctionUrl" id="cdk-constructs.ThronDockerLambda.addFunctionUrl"></a>
+##### `AddFunctionUrl` <a name="AddFunctionUrl" id="cdk-constructs.ThronDockerLambda.addFunctionUrl"></a>
 
-```typescript
-public addFunctionUrl(options?: FunctionUrlOptions): FunctionUrl
+```go
+func AddFunctionUrl(options FunctionUrlOptions) FunctionUrl
 ```
 
 Adds a url to this lambda function.
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronDockerLambda.addFunctionUrl.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.FunctionUrlOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FunctionUrlOptions
 
 ---
 
-##### `addPermission` <a name="addPermission" id="cdk-constructs.ThronDockerLambda.addPermission"></a>
+##### `AddPermission` <a name="AddPermission" id="cdk-constructs.ThronDockerLambda.addPermission"></a>
 
-```typescript
-public addPermission(id: string, permission: Permission): void
+```go
+func AddPermission(id *string, permission Permission)
 ```
 
 Adds a permission to the Lambda resource policy.
@@ -3893,7 +3894,7 @@ Adds a permission to the Lambda resource policy.
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronDockerLambda.addPermission.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The id for the permission construct.
 
@@ -3901,44 +3902,44 @@ The id for the permission construct.
 
 ###### `permission`<sup>Required</sup> <a name="permission" id="cdk-constructs.ThronDockerLambda.addPermission.parameter.permission"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.Permission
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Permission
 
 The permission to grant to this Lambda function.
 
 ---
 
-##### `addToRolePolicy` <a name="addToRolePolicy" id="cdk-constructs.ThronDockerLambda.addToRolePolicy"></a>
+##### `AddToRolePolicy` <a name="AddToRolePolicy" id="cdk-constructs.ThronDockerLambda.addToRolePolicy"></a>
 
-```typescript
-public addToRolePolicy(statement: PolicyStatement): void
+```go
+func AddToRolePolicy(statement PolicyStatement)
 ```
 
 Adds a statement to the IAM role assumed by the instance.
 
 ###### `statement`<sup>Required</sup> <a name="statement" id="cdk-constructs.ThronDockerLambda.addToRolePolicy.parameter.statement"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.PolicyStatement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.PolicyStatement
 
 ---
 
-##### `configureAsyncInvoke` <a name="configureAsyncInvoke" id="cdk-constructs.ThronDockerLambda.configureAsyncInvoke"></a>
+##### `ConfigureAsyncInvoke` <a name="ConfigureAsyncInvoke" id="cdk-constructs.ThronDockerLambda.configureAsyncInvoke"></a>
 
-```typescript
-public configureAsyncInvoke(options: EventInvokeConfigOptions): void
+```go
+func ConfigureAsyncInvoke(options EventInvokeConfigOptions)
 ```
 
 Configures options for asynchronous invocation.
 
 ###### `options`<sup>Required</sup> <a name="options" id="cdk-constructs.ThronDockerLambda.configureAsyncInvoke.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.EventInvokeConfigOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.EventInvokeConfigOptions
 
 ---
 
-##### `considerWarningOnInvokeFunctionPermissions` <a name="considerWarningOnInvokeFunctionPermissions" id="cdk-constructs.ThronDockerLambda.considerWarningOnInvokeFunctionPermissions"></a>
+##### `ConsiderWarningOnInvokeFunctionPermissions` <a name="ConsiderWarningOnInvokeFunctionPermissions" id="cdk-constructs.ThronDockerLambda.considerWarningOnInvokeFunctionPermissions"></a>
 
-```typescript
-public considerWarningOnInvokeFunctionPermissions(scope: Construct, action: string): void
+```go
+func ConsiderWarningOnInvokeFunctionPermissions(scope Construct, action *string)
 ```
 
 A warning will be added to functions under the following conditions: - permissions that include `lambda:InvokeFunction` are added to the unqualified function.
@@ -3950,116 +3951,116 @@ This function is overridden as a noOp for QualifiedFunctionBase.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronDockerLambda.considerWarningOnInvokeFunctionPermissions.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `action`<sup>Required</sup> <a name="action" id="cdk-constructs.ThronDockerLambda.considerWarningOnInvokeFunctionPermissions.parameter.action"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `grantInvoke` <a name="grantInvoke" id="cdk-constructs.ThronDockerLambda.grantInvoke"></a>
+##### `GrantInvoke` <a name="GrantInvoke" id="cdk-constructs.ThronDockerLambda.grantInvoke"></a>
 
-```typescript
-public grantInvoke(grantee: IGrantable): Grant
+```go
+func GrantInvoke(grantee IGrantable) Grant
 ```
 
 Grant the given identity permissions to invoke this Lambda.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronDockerLambda.grantInvoke.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
-##### `grantInvokeCompositePrincipal` <a name="grantInvokeCompositePrincipal" id="cdk-constructs.ThronDockerLambda.grantInvokeCompositePrincipal"></a>
+##### `GrantInvokeCompositePrincipal` <a name="GrantInvokeCompositePrincipal" id="cdk-constructs.ThronDockerLambda.grantInvokeCompositePrincipal"></a>
 
-```typescript
-public grantInvokeCompositePrincipal(compositePrincipal: CompositePrincipal): Grant[]
+```go
+func GrantInvokeCompositePrincipal(compositePrincipal CompositePrincipal) *[]Grant
 ```
 
 Grant multiple principals the ability to invoke this Lambda via CompositePrincipal.
 
 ###### `compositePrincipal`<sup>Required</sup> <a name="compositePrincipal" id="cdk-constructs.ThronDockerLambda.grantInvokeCompositePrincipal.parameter.compositePrincipal"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.CompositePrincipal
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.CompositePrincipal
 
 ---
 
-##### `grantInvokeLatestVersion` <a name="grantInvokeLatestVersion" id="cdk-constructs.ThronDockerLambda.grantInvokeLatestVersion"></a>
+##### `GrantInvokeLatestVersion` <a name="GrantInvokeLatestVersion" id="cdk-constructs.ThronDockerLambda.grantInvokeLatestVersion"></a>
 
-```typescript
-public grantInvokeLatestVersion(grantee: IGrantable): Grant
+```go
+func GrantInvokeLatestVersion(grantee IGrantable) Grant
 ```
 
 Grant the given identity permissions to invoke the $LATEST version or unqualified version of this Lambda.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronDockerLambda.grantInvokeLatestVersion.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
-##### `grantInvokeUrl` <a name="grantInvokeUrl" id="cdk-constructs.ThronDockerLambda.grantInvokeUrl"></a>
+##### `GrantInvokeUrl` <a name="GrantInvokeUrl" id="cdk-constructs.ThronDockerLambda.grantInvokeUrl"></a>
 
-```typescript
-public grantInvokeUrl(grantee: IGrantable): Grant
+```go
+func GrantInvokeUrl(grantee IGrantable) Grant
 ```
 
 Grant the given identity permissions to invoke this Lambda Function URL.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronDockerLambda.grantInvokeUrl.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
-##### `grantInvokeVersion` <a name="grantInvokeVersion" id="cdk-constructs.ThronDockerLambda.grantInvokeVersion"></a>
+##### `GrantInvokeVersion` <a name="GrantInvokeVersion" id="cdk-constructs.ThronDockerLambda.grantInvokeVersion"></a>
 
-```typescript
-public grantInvokeVersion(grantee: IGrantable, version: IVersion): Grant
+```go
+func GrantInvokeVersion(grantee IGrantable, version IVersion) Grant
 ```
 
 Grant the given identity permissions to invoke the given version of this Lambda.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronDockerLambda.grantInvokeVersion.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
 ###### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.ThronDockerLambda.grantInvokeVersion.parameter.version"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.IVersion
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IVersion
 
 ---
 
-##### `metric` <a name="metric" id="cdk-constructs.ThronDockerLambda.metric"></a>
+##### `Metric` <a name="Metric" id="cdk-constructs.ThronDockerLambda.metric"></a>
 
-```typescript
-public metric(metricName: string, props?: MetricOptions): Metric
+```go
+func Metric(metricName *string, props MetricOptions) Metric
 ```
 
 Return the given named metric for this Function.
 
 ###### `metricName`<sup>Required</sup> <a name="metricName" id="cdk-constructs.ThronDockerLambda.metric.parameter.metricName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metric.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricDuration` <a name="metricDuration" id="cdk-constructs.ThronDockerLambda.metricDuration"></a>
+##### `MetricDuration` <a name="MetricDuration" id="cdk-constructs.ThronDockerLambda.metricDuration"></a>
 
-```typescript
-public metricDuration(props?: MetricOptions): Metric
+```go
+func MetricDuration(props MetricOptions) Metric
 ```
 
 How long execution of this Lambda takes.
@@ -4068,14 +4069,14 @@ Average over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricDuration.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricErrors` <a name="metricErrors" id="cdk-constructs.ThronDockerLambda.metricErrors"></a>
+##### `MetricErrors` <a name="MetricErrors" id="cdk-constructs.ThronDockerLambda.metricErrors"></a>
 
-```typescript
-public metricErrors(props?: MetricOptions): Metric
+```go
+func MetricErrors(props MetricOptions) Metric
 ```
 
 How many invocations of this Lambda fail.
@@ -4084,14 +4085,14 @@ Sum over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricErrors.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricInvocations` <a name="metricInvocations" id="cdk-constructs.ThronDockerLambda.metricInvocations"></a>
+##### `MetricInvocations` <a name="MetricInvocations" id="cdk-constructs.ThronDockerLambda.metricInvocations"></a>
 
-```typescript
-public metricInvocations(props?: MetricOptions): Metric
+```go
+func MetricInvocations(props MetricOptions) Metric
 ```
 
 How often this Lambda is invoked.
@@ -4100,14 +4101,14 @@ Sum over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricInvocations.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricThrottles` <a name="metricThrottles" id="cdk-constructs.ThronDockerLambda.metricThrottles"></a>
+##### `MetricThrottles` <a name="MetricThrottles" id="cdk-constructs.ThronDockerLambda.metricThrottles"></a>
 
-```typescript
-public metricThrottles(props?: MetricOptions): Metric
+```go
+func MetricThrottles(props MetricOptions) Metric
 ```
 
 How often this Lambda is throttled.
@@ -4116,14 +4117,14 @@ Sum over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricThrottles.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `addAlias` <a name="addAlias" id="cdk-constructs.ThronDockerLambda.addAlias"></a>
+##### `AddAlias` <a name="AddAlias" id="cdk-constructs.ThronDockerLambda.addAlias"></a>
 
-```typescript
-public addAlias(aliasName: string, options?: AliasOptions): Alias
+```go
+func AddAlias(aliasName *string, options AliasOptions) Alias
 ```
 
 Defines an alias for this function.
@@ -4146,7 +4147,7 @@ new lambda.Alias(this, 'AliasLive', {
 
 ###### `aliasName`<sup>Required</sup> <a name="aliasName" id="cdk-constructs.ThronDockerLambda.addAlias.parameter.aliasName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The name of the alias.
 
@@ -4154,16 +4155,16 @@ The name of the alias.
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronDockerLambda.addAlias.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.AliasOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.AliasOptions
 
 Alias options.
 
 ---
 
-##### `addEnvironment` <a name="addEnvironment" id="cdk-constructs.ThronDockerLambda.addEnvironment"></a>
+##### `AddEnvironment` <a name="AddEnvironment" id="cdk-constructs.ThronDockerLambda.addEnvironment"></a>
 
-```typescript
-public addEnvironment(key: string, value: string, options?: EnvironmentOptions): Function
+```go
+func AddEnvironment(key *string, value *string, options EnvironmentOptions) Function
 ```
 
 Adds an environment variable to this Lambda function.
@@ -4172,7 +4173,7 @@ If this is a ref to a Lambda function, this operation results in a no-op.
 
 ###### `key`<sup>Required</sup> <a name="key" id="cdk-constructs.ThronDockerLambda.addEnvironment.parameter.key"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The environment variable key.
 
@@ -4180,7 +4181,7 @@ The environment variable key.
 
 ###### `value`<sup>Required</sup> <a name="value" id="cdk-constructs.ThronDockerLambda.addEnvironment.parameter.value"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The environment variable's value.
 
@@ -4188,32 +4189,32 @@ The environment variable's value.
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronDockerLambda.addEnvironment.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.EnvironmentOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.EnvironmentOptions
 
 Environment variable options.
 
 ---
 
-##### `addLayers` <a name="addLayers" id="cdk-constructs.ThronDockerLambda.addLayers"></a>
+##### `AddLayers` <a name="AddLayers" id="cdk-constructs.ThronDockerLambda.addLayers"></a>
 
-```typescript
-public addLayers(layers: ILayerVersion): void
+```go
+func AddLayers(layers ILayerVersion)
 ```
 
 Adds one or more Lambda Layers to this Lambda function.
 
 ###### `layers`<sup>Required</sup> <a name="layers" id="cdk-constructs.ThronDockerLambda.addLayers.parameter.layers"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.ILayerVersion
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.ILayerVersion
 
 the layers to be added.
 
 ---
 
-##### `invalidateVersionBasedOn` <a name="invalidateVersionBasedOn" id="cdk-constructs.ThronDockerLambda.invalidateVersionBasedOn"></a>
+##### `InvalidateVersionBasedOn` <a name="InvalidateVersionBasedOn" id="cdk-constructs.ThronDockerLambda.invalidateVersionBasedOn"></a>
 
-```typescript
-public invalidateVersionBasedOn(x: string): void
+```go
+func InvalidateVersionBasedOn(x *string)
 ```
 
 Mix additional information into the hash of the Version object.
@@ -4235,21 +4236,21 @@ This method may be called more than once.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronDockerLambda.invalidateVersionBasedOn.parameter.x"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `addEndpointAlb` <a name="addEndpointAlb" id="cdk-constructs.ThronDockerLambda.addEndpointAlb"></a>
+##### `AddEndpointAlb` <a name="AddEndpointAlb" id="cdk-constructs.ThronDockerLambda.addEndpointAlb"></a>
 
-```typescript
-public addEndpointAlb(name: string, endpointProps: ThronEndpointAlbProps): EndpointAlb
+```go
+func AddEndpointAlb(name *string, endpointProps ThronEndpointAlbProps) EndpointAlb
 ```
 
 Add an endpoint the lambda function.
 
 ###### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.ThronDockerLambda.addEndpointAlb.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -4259,17 +4260,17 @@ Add an endpoint the lambda function.
 
 ---
 
-##### `addLegacyEndpointAlb` <a name="addLegacyEndpointAlb" id="cdk-constructs.ThronDockerLambda.addLegacyEndpointAlb"></a>
+##### `AddLegacyEndpointAlb` <a name="AddLegacyEndpointAlb" id="cdk-constructs.ThronDockerLambda.addLegacyEndpointAlb"></a>
 
-```typescript
-public addLegacyEndpointAlb(name: string, endpointProps: LegacyEndpointAlbProps): EndpointAlb
+```go
+func AddLegacyEndpointAlb(name *string, endpointProps LegacyEndpointAlbProps) EndpointAlb
 ```
 
 Add a legacy endpoint to the lambda function.
 
 ###### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.ThronDockerLambda.addLegacyEndpointAlb.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -4283,29 +4284,29 @@ Add a legacy endpoint to the lambda function.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronDockerLambda.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.classifyVersionProperty">classifyVersionProperty</a></code> | Record whether specific properties in the `AWS::Lambda::Function` resource should also be associated to the Version resource. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.fromFunctionArn">fromFunctionArn</a></code> | Import a lambda function into the CDK using its ARN. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.fromFunctionAttributes">fromFunctionAttributes</a></code> | Creates a Lambda function object which represents a function not defined within this stack. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.fromFunctionName">fromFunctionName</a></code> | Import a lambda function into the CDK using its name. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricAll">metricAll</a></code> | Return the given named metric for this Lambda. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllConcurrentExecutions">metricAllConcurrentExecutions</a></code> | Metric for the number of concurrent executions across all Lambdas. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllDuration">metricAllDuration</a></code> | Metric for the Duration executing all Lambdas. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllErrors">metricAllErrors</a></code> | Metric for the number of Errors executing all Lambdas. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllInvocations">metricAllInvocations</a></code> | Metric for the number of invocations of all Lambdas. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllThrottles">metricAllThrottles</a></code> | Metric for the number of throttled invocations of all Lambdas. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllUnreservedConcurrentExecutions">metricAllUnreservedConcurrentExecutions</a></code> | Metric for the number of unreserved concurrent executions across all Lambdas. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.isOwnedResource">IsOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.isResource">IsResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.classifyVersionProperty">ClassifyVersionProperty</a></code> | Record whether specific properties in the `AWS::Lambda::Function` resource should also be associated to the Version resource. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.fromFunctionArn">FromFunctionArn</a></code> | Import a lambda function into the CDK using its ARN. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.fromFunctionAttributes">FromFunctionAttributes</a></code> | Creates a Lambda function object which represents a function not defined within this stack. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.fromFunctionName">FromFunctionName</a></code> | Import a lambda function into the CDK using its name. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricAll">MetricAll</a></code> | Return the given named metric for this Lambda. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllConcurrentExecutions">MetricAllConcurrentExecutions</a></code> | Metric for the number of concurrent executions across all Lambdas. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllDuration">MetricAllDuration</a></code> | Metric for the Duration executing all Lambdas. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllErrors">MetricAllErrors</a></code> | Metric for the number of Errors executing all Lambdas. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllInvocations">MetricAllInvocations</a></code> | Metric for the number of invocations of all Lambdas. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllThrottles">MetricAllThrottles</a></code> | Metric for the number of throttled invocations of all Lambdas. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.metricAllUnreservedConcurrentExecutions">MetricAllUnreservedConcurrentExecutions</a></code> | Metric for the number of unreserved concurrent executions across all Lambdas. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronDockerLambda.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronDockerLambda.isConstruct"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.isConstruct(x: any)
+cdkconstructs.ThronDockerLambda_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -4326,50 +4327,50 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronDockerLambda.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isOwnedResource` <a name="isOwnedResource" id="cdk-constructs.ThronDockerLambda.isOwnedResource"></a>
+##### `IsOwnedResource` <a name="IsOwnedResource" id="cdk-constructs.ThronDockerLambda.isOwnedResource"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.isOwnedResource(construct: IConstruct)
+cdkconstructs.ThronDockerLambda_IsOwnedResource(construct IConstruct) *bool
 ```
 
 Returns true if the construct was created by CDK, and false otherwise.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronDockerLambda.isOwnedResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `isResource` <a name="isResource" id="cdk-constructs.ThronDockerLambda.isResource"></a>
+##### `IsResource` <a name="IsResource" id="cdk-constructs.ThronDockerLambda.isResource"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.isResource(construct: IConstruct)
+cdkconstructs.ThronDockerLambda_IsResource(construct IConstruct) *bool
 ```
 
 Check whether the given construct is a Resource.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronDockerLambda.isResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `classifyVersionProperty` <a name="classifyVersionProperty" id="cdk-constructs.ThronDockerLambda.classifyVersionProperty"></a>
+##### `ClassifyVersionProperty` <a name="ClassifyVersionProperty" id="cdk-constructs.ThronDockerLambda.classifyVersionProperty"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.classifyVersionProperty(propertyName: string, locked: boolean)
+cdkconstructs.ThronDockerLambda_ClassifyVersionProperty(propertyName *string, locked *bool)
 ```
 
 Record whether specific properties in the `AWS::Lambda::Function` resource should also be associated to the Version resource.
@@ -4378,7 +4379,7 @@ See 'currentVersion' section in the module README for more details.
 
 ###### `propertyName`<sup>Required</sup> <a name="propertyName" id="cdk-constructs.ThronDockerLambda.classifyVersionProperty.parameter.propertyName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The property to classify.
 
@@ -4386,18 +4387,18 @@ The property to classify.
 
 ###### `locked`<sup>Required</sup> <a name="locked" id="cdk-constructs.ThronDockerLambda.classifyVersionProperty.parameter.locked"></a>
 
-- *Type:* boolean
+- *Type:* *bool
 
 whether the property should be associated to the version or not.
 
 ---
 
-##### `fromFunctionArn` <a name="fromFunctionArn" id="cdk-constructs.ThronDockerLambda.fromFunctionArn"></a>
+##### `FromFunctionArn` <a name="FromFunctionArn" id="cdk-constructs.ThronDockerLambda.fromFunctionArn"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.fromFunctionArn(scope: Construct, id: string, functionArn: string)
+cdkconstructs.ThronDockerLambda_FromFunctionArn(scope Construct, id *string, functionArn *string) IFunction
 ```
 
 Import a lambda function into the CDK using its ARN.
@@ -4407,28 +4408,28 @@ in the same account and region as the stack you are importing it into.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronDockerLambda.fromFunctionArn.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronDockerLambda.fromFunctionArn.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `functionArn`<sup>Required</sup> <a name="functionArn" id="cdk-constructs.ThronDockerLambda.fromFunctionArn.parameter.functionArn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `fromFunctionAttributes` <a name="fromFunctionAttributes" id="cdk-constructs.ThronDockerLambda.fromFunctionAttributes"></a>
+##### `FromFunctionAttributes` <a name="FromFunctionAttributes" id="cdk-constructs.ThronDockerLambda.fromFunctionAttributes"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.fromFunctionAttributes(scope: Construct, id: string, attrs: FunctionAttributes)
+cdkconstructs.ThronDockerLambda_FromFunctionAttributes(scope Construct, id *string, attrs FunctionAttributes) IFunction
 ```
 
 Creates a Lambda function object which represents a function not defined within this stack.
@@ -4438,7 +4439,7 @@ if this imported lambda is in the same account and region as the stack you are i
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronDockerLambda.fromFunctionAttributes.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 The parent construct.
 
@@ -4446,7 +4447,7 @@ The parent construct.
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronDockerLambda.fromFunctionAttributes.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The name of the lambda construct.
 
@@ -4454,155 +4455,155 @@ The name of the lambda construct.
 
 ###### `attrs`<sup>Required</sup> <a name="attrs" id="cdk-constructs.ThronDockerLambda.fromFunctionAttributes.parameter.attrs"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.FunctionAttributes
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FunctionAttributes
 
 the attributes of the function to import.
 
 ---
 
-##### `fromFunctionName` <a name="fromFunctionName" id="cdk-constructs.ThronDockerLambda.fromFunctionName"></a>
+##### `FromFunctionName` <a name="FromFunctionName" id="cdk-constructs.ThronDockerLambda.fromFunctionName"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.fromFunctionName(scope: Construct, id: string, functionName: string)
+cdkconstructs.ThronDockerLambda_FromFunctionName(scope Construct, id *string, functionName *string) IFunction
 ```
 
 Import a lambda function into the CDK using its name.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronDockerLambda.fromFunctionName.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronDockerLambda.fromFunctionName.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `functionName`<sup>Required</sup> <a name="functionName" id="cdk-constructs.ThronDockerLambda.fromFunctionName.parameter.functionName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `metricAll` <a name="metricAll" id="cdk-constructs.ThronDockerLambda.metricAll"></a>
+##### `MetricAll` <a name="MetricAll" id="cdk-constructs.ThronDockerLambda.metricAll"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.metricAll(metricName: string, props?: MetricOptions)
+cdkconstructs.ThronDockerLambda_MetricAll(metricName *string, props MetricOptions) Metric
 ```
 
 Return the given named metric for this Lambda.
 
 ###### `metricName`<sup>Required</sup> <a name="metricName" id="cdk-constructs.ThronDockerLambda.metricAll.parameter.metricName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricAll.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllConcurrentExecutions` <a name="metricAllConcurrentExecutions" id="cdk-constructs.ThronDockerLambda.metricAllConcurrentExecutions"></a>
+##### `MetricAllConcurrentExecutions` <a name="MetricAllConcurrentExecutions" id="cdk-constructs.ThronDockerLambda.metricAllConcurrentExecutions"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.metricAllConcurrentExecutions(props?: MetricOptions)
+cdkconstructs.ThronDockerLambda_MetricAllConcurrentExecutions(props MetricOptions) Metric
 ```
 
 Metric for the number of concurrent executions across all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricAllConcurrentExecutions.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllDuration` <a name="metricAllDuration" id="cdk-constructs.ThronDockerLambda.metricAllDuration"></a>
+##### `MetricAllDuration` <a name="MetricAllDuration" id="cdk-constructs.ThronDockerLambda.metricAllDuration"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.metricAllDuration(props?: MetricOptions)
+cdkconstructs.ThronDockerLambda_MetricAllDuration(props MetricOptions) Metric
 ```
 
 Metric for the Duration executing all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricAllDuration.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllErrors` <a name="metricAllErrors" id="cdk-constructs.ThronDockerLambda.metricAllErrors"></a>
+##### `MetricAllErrors` <a name="MetricAllErrors" id="cdk-constructs.ThronDockerLambda.metricAllErrors"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.metricAllErrors(props?: MetricOptions)
+cdkconstructs.ThronDockerLambda_MetricAllErrors(props MetricOptions) Metric
 ```
 
 Metric for the number of Errors executing all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricAllErrors.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllInvocations` <a name="metricAllInvocations" id="cdk-constructs.ThronDockerLambda.metricAllInvocations"></a>
+##### `MetricAllInvocations` <a name="MetricAllInvocations" id="cdk-constructs.ThronDockerLambda.metricAllInvocations"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.metricAllInvocations(props?: MetricOptions)
+cdkconstructs.ThronDockerLambda_MetricAllInvocations(props MetricOptions) Metric
 ```
 
 Metric for the number of invocations of all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricAllInvocations.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllThrottles` <a name="metricAllThrottles" id="cdk-constructs.ThronDockerLambda.metricAllThrottles"></a>
+##### `MetricAllThrottles` <a name="MetricAllThrottles" id="cdk-constructs.ThronDockerLambda.metricAllThrottles"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.metricAllThrottles(props?: MetricOptions)
+cdkconstructs.ThronDockerLambda_MetricAllThrottles(props MetricOptions) Metric
 ```
 
 Metric for the number of throttled invocations of all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricAllThrottles.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllUnreservedConcurrentExecutions` <a name="metricAllUnreservedConcurrentExecutions" id="cdk-constructs.ThronDockerLambda.metricAllUnreservedConcurrentExecutions"></a>
+##### `MetricAllUnreservedConcurrentExecutions` <a name="MetricAllUnreservedConcurrentExecutions" id="cdk-constructs.ThronDockerLambda.metricAllUnreservedConcurrentExecutions"></a>
 
-```typescript
-import { ThronDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronDockerLambda.metricAllUnreservedConcurrentExecutions(props?: MetricOptions)
+cdkconstructs.ThronDockerLambda_MetricAllUnreservedConcurrentExecutions(props MetricOptions) Metric
 ```
 
 Metric for the number of unreserved concurrent executions across all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronDockerLambda.metricAllUnreservedConcurrentExecutions.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
@@ -4610,50 +4611,50 @@ Metric for the number of unreserved concurrent executions across all Lambdas.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.architecture">architecture</a></code> | <code>aws-cdk-lib.aws_lambda.Architecture</code> | The architecture of this Lambda Function (this is an optional attribute and defaults to X86_64). |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.connections">connections</a></code> | <code>aws-cdk-lib.aws_ec2.Connections</code> | Access the Connections object. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.functionArn">functionArn</a></code> | <code>string</code> | ARN of this function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.functionName">functionName</a></code> | <code>string</code> | Name of this function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.grantPrincipal">grantPrincipal</a></code> | <code>aws-cdk-lib.aws_iam.IPrincipal</code> | The principal this Lambda Function is running as. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.isBoundToVpc">isBoundToVpc</a></code> | <code>boolean</code> | Whether or not this Lambda function was bound to a VPC. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.latestVersion">latestVersion</a></code> | <code>aws-cdk-lib.aws_lambda.IVersion</code> | The `$LATEST` version of this function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.permissionsNode">permissionsNode</a></code> | <code>constructs.Node</code> | The construct node where permissions are attached. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.resourceArnsForGrantInvoke">resourceArnsForGrantInvoke</a></code> | <code>string[]</code> | The ARN(s) to put into the resource field of the generated IAM policy for grantInvoke(). |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | Execution role associated with this function. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.currentVersion">currentVersion</a></code> | <code>aws-cdk-lib.aws_lambda.Version</code> | Returns a `lambda.Version` which represents the current version of this Lambda function. A new version will be created every time the function's configuration changes. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.logGroup">logGroup</a></code> | <code>aws-cdk-lib.aws_logs.ILogGroup</code> | The LogGroup where the Lambda function's logs are made available. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.runtime">runtime</a></code> | <code>aws-cdk-lib.aws_lambda.Runtime</code> | The runtime configured for this lambda. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.deadLetterQueue">deadLetterQueue</a></code> | <code>aws-cdk-lib.aws_sqs.IQueue</code> | The DLQ (as queue) associated with this Lambda Function (this is an optional attribute). |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.deadLetterTopic">deadLetterTopic</a></code> | <code>aws-cdk-lib.aws_sns.ITopic</code> | The DLQ (as topic) associated with this Lambda Function (this is an optional attribute). |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | The timeout configured for this lambda. |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.apiGatewayEndpoints">apiGatewayEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a>}</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.endpoints">endpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronDockerLambda.property.legacyEndpoints">legacyEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.env">Env</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.architecture">Architecture</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture</code> | The architecture of this Lambda Function (this is an optional attribute and defaults to X86_64). |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.connections">Connections</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Connections</code> | Access the Connections object. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.functionArn">FunctionArn</a></code> | <code>*string</code> | ARN of this function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.functionName">FunctionName</a></code> | <code>*string</code> | Name of this function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.grantPrincipal">GrantPrincipal</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal</code> | The principal this Lambda Function is running as. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.isBoundToVpc">IsBoundToVpc</a></code> | <code>*bool</code> | Whether or not this Lambda function was bound to a VPC. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.latestVersion">LatestVersion</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IVersion</code> | The `$LATEST` version of this function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.permissionsNode">PermissionsNode</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The construct node where permissions are attached. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.resourceArnsForGrantInvoke">ResourceArnsForGrantInvoke</a></code> | <code>*[]*string</code> | The ARN(s) to put into the resource field of the generated IAM policy for grantInvoke(). |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.role">Role</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole</code> | Execution role associated with this function. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.currentVersion">CurrentVersion</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Version</code> | Returns a `lambda.Version` which represents the current version of this Lambda function. A new version will be created every time the function's configuration changes. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.logGroup">LogGroup</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_logs.ILogGroup</code> | The LogGroup where the Lambda function's logs are made available. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.runtime">Runtime</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Runtime</code> | The runtime configured for this lambda. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.deadLetterQueue">DeadLetterQueue</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_sqs.IQueue</code> | The DLQ (as queue) associated with this Lambda Function (this is an optional attribute). |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.deadLetterTopic">DeadLetterTopic</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_sns.ITopic</code> | The DLQ (as topic) associated with this Lambda Function (this is an optional attribute). |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.timeout">Timeout</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The timeout configured for this lambda. |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.apiGatewayEndpoints">ApiGatewayEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.endpoints">Endpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronDockerLambda.property.legacyEndpoints">LegacyEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a></code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronDockerLambda.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronDockerLambda.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-constructs.ThronDockerLambda.property.env"></a>
+##### `Env`<sup>Required</sup> <a name="Env" id="cdk-constructs.ThronDockerLambda.property.env"></a>
 
-```typescript
-public readonly env: ResourceEnvironment;
+```go
+func Env() ResourceEnvironment
 ```
 
-- *Type:* aws-cdk-lib.ResourceEnvironment
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment
 
 The environment this resource belongs to.
 
@@ -4666,37 +4667,37 @@ that might be different than the stack they were imported into.
 
 ---
 
-##### `stack`<sup>Required</sup> <a name="stack" id="cdk-constructs.ThronDockerLambda.property.stack"></a>
+##### `Stack`<sup>Required</sup> <a name="Stack" id="cdk-constructs.ThronDockerLambda.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+func Stack() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The stack in which this resource is defined.
 
 ---
 
-##### `architecture`<sup>Required</sup> <a name="architecture" id="cdk-constructs.ThronDockerLambda.property.architecture"></a>
+##### `Architecture`<sup>Required</sup> <a name="Architecture" id="cdk-constructs.ThronDockerLambda.property.architecture"></a>
 
-```typescript
-public readonly architecture: Architecture;
+```go
+func Architecture() Architecture
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Architecture
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture
 
 The architecture of this Lambda Function (this is an optional attribute and defaults to X86_64).
 
 ---
 
-##### `connections`<sup>Required</sup> <a name="connections" id="cdk-constructs.ThronDockerLambda.property.connections"></a>
+##### `Connections`<sup>Required</sup> <a name="Connections" id="cdk-constructs.ThronDockerLambda.property.connections"></a>
 
-```typescript
-public readonly connections: Connections;
+```go
+func Connections() Connections
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.Connections
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Connections
 
 Access the Connections object.
 
@@ -4704,49 +4705,49 @@ Will fail if not a VPC-enabled Lambda Function
 
 ---
 
-##### `functionArn`<sup>Required</sup> <a name="functionArn" id="cdk-constructs.ThronDockerLambda.property.functionArn"></a>
+##### `FunctionArn`<sup>Required</sup> <a name="FunctionArn" id="cdk-constructs.ThronDockerLambda.property.functionArn"></a>
 
-```typescript
-public readonly functionArn: string;
+```go
+func FunctionArn() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ARN of this function.
 
 ---
 
-##### `functionName`<sup>Required</sup> <a name="functionName" id="cdk-constructs.ThronDockerLambda.property.functionName"></a>
+##### `FunctionName`<sup>Required</sup> <a name="FunctionName" id="cdk-constructs.ThronDockerLambda.property.functionName"></a>
 
-```typescript
-public readonly functionName: string;
+```go
+func FunctionName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Name of this function.
 
 ---
 
-##### `grantPrincipal`<sup>Required</sup> <a name="grantPrincipal" id="cdk-constructs.ThronDockerLambda.property.grantPrincipal"></a>
+##### `GrantPrincipal`<sup>Required</sup> <a name="GrantPrincipal" id="cdk-constructs.ThronDockerLambda.property.grantPrincipal"></a>
 
-```typescript
-public readonly grantPrincipal: IPrincipal;
+```go
+func GrantPrincipal() IPrincipal
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IPrincipal
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal
 
 The principal this Lambda Function is running as.
 
 ---
 
-##### `isBoundToVpc`<sup>Required</sup> <a name="isBoundToVpc" id="cdk-constructs.ThronDockerLambda.property.isBoundToVpc"></a>
+##### `IsBoundToVpc`<sup>Required</sup> <a name="IsBoundToVpc" id="cdk-constructs.ThronDockerLambda.property.isBoundToVpc"></a>
 
-```typescript
-public readonly isBoundToVpc: boolean;
+```go
+func IsBoundToVpc() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether or not this Lambda function was bound to a VPC.
 
@@ -4754,13 +4755,13 @@ If this is is `false`, trying to access the `connections` object will fail.
 
 ---
 
-##### `latestVersion`<sup>Required</sup> <a name="latestVersion" id="cdk-constructs.ThronDockerLambda.property.latestVersion"></a>
+##### `LatestVersion`<sup>Required</sup> <a name="LatestVersion" id="cdk-constructs.ThronDockerLambda.property.latestVersion"></a>
 
-```typescript
-public readonly latestVersion: IVersion;
+```go
+func LatestVersion() IVersion
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.IVersion
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IVersion
 
 The `$LATEST` version of this function.
 
@@ -4773,49 +4774,49 @@ function configuration, use `lambdaFunction.currentVersion` instead.
 
 ---
 
-##### `permissionsNode`<sup>Required</sup> <a name="permissionsNode" id="cdk-constructs.ThronDockerLambda.property.permissionsNode"></a>
+##### `PermissionsNode`<sup>Required</sup> <a name="PermissionsNode" id="cdk-constructs.ThronDockerLambda.property.permissionsNode"></a>
 
-```typescript
-public readonly permissionsNode: Node;
+```go
+func PermissionsNode() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The construct node where permissions are attached.
 
 ---
 
-##### `resourceArnsForGrantInvoke`<sup>Required</sup> <a name="resourceArnsForGrantInvoke" id="cdk-constructs.ThronDockerLambda.property.resourceArnsForGrantInvoke"></a>
+##### `ResourceArnsForGrantInvoke`<sup>Required</sup> <a name="ResourceArnsForGrantInvoke" id="cdk-constructs.ThronDockerLambda.property.resourceArnsForGrantInvoke"></a>
 
-```typescript
-public readonly resourceArnsForGrantInvoke: string[];
+```go
+func ResourceArnsForGrantInvoke() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 The ARN(s) to put into the resource field of the generated IAM policy for grantInvoke().
 
 ---
 
-##### `role`<sup>Optional</sup> <a name="role" id="cdk-constructs.ThronDockerLambda.property.role"></a>
+##### `Role`<sup>Optional</sup> <a name="Role" id="cdk-constructs.ThronDockerLambda.property.role"></a>
 
-```typescript
-public readonly role: IRole;
+```go
+func Role() IRole
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IRole
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole
 
 Execution role associated with this function.
 
 ---
 
-##### `currentVersion`<sup>Required</sup> <a name="currentVersion" id="cdk-constructs.ThronDockerLambda.property.currentVersion"></a>
+##### `CurrentVersion`<sup>Required</sup> <a name="CurrentVersion" id="cdk-constructs.ThronDockerLambda.property.currentVersion"></a>
 
-```typescript
-public readonly currentVersion: Version;
+```go
+func CurrentVersion() Version
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Version
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Version
 
 Returns a `lambda.Version` which represents the current version of this Lambda function. A new version will be created every time the function's configuration changes.
 
@@ -4824,13 +4825,13 @@ prop when initializing the `lambda.Function`.
 
 ---
 
-##### `logGroup`<sup>Required</sup> <a name="logGroup" id="cdk-constructs.ThronDockerLambda.property.logGroup"></a>
+##### `LogGroup`<sup>Required</sup> <a name="LogGroup" id="cdk-constructs.ThronDockerLambda.property.logGroup"></a>
 
-```typescript
-public readonly logGroup: ILogGroup;
+```go
+func LogGroup() ILogGroup
 ```
 
-- *Type:* aws-cdk-lib.aws_logs.ILogGroup
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_logs.ILogGroup
 
 The LogGroup where the Lambda function's logs are made available.
 
@@ -4843,81 +4844,81 @@ to never expire even if it was configured with a different value.
 
 ---
 
-##### `runtime`<sup>Required</sup> <a name="runtime" id="cdk-constructs.ThronDockerLambda.property.runtime"></a>
+##### `Runtime`<sup>Required</sup> <a name="Runtime" id="cdk-constructs.ThronDockerLambda.property.runtime"></a>
 
-```typescript
-public readonly runtime: Runtime;
+```go
+func Runtime() Runtime
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Runtime
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Runtime
 
 The runtime configured for this lambda.
 
 ---
 
-##### `deadLetterQueue`<sup>Optional</sup> <a name="deadLetterQueue" id="cdk-constructs.ThronDockerLambda.property.deadLetterQueue"></a>
+##### `DeadLetterQueue`<sup>Optional</sup> <a name="DeadLetterQueue" id="cdk-constructs.ThronDockerLambda.property.deadLetterQueue"></a>
 
-```typescript
-public readonly deadLetterQueue: IQueue;
+```go
+func DeadLetterQueue() IQueue
 ```
 
-- *Type:* aws-cdk-lib.aws_sqs.IQueue
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_sqs.IQueue
 
 The DLQ (as queue) associated with this Lambda Function (this is an optional attribute).
 
 ---
 
-##### `deadLetterTopic`<sup>Optional</sup> <a name="deadLetterTopic" id="cdk-constructs.ThronDockerLambda.property.deadLetterTopic"></a>
+##### `DeadLetterTopic`<sup>Optional</sup> <a name="DeadLetterTopic" id="cdk-constructs.ThronDockerLambda.property.deadLetterTopic"></a>
 
-```typescript
-public readonly deadLetterTopic: ITopic;
+```go
+func DeadLetterTopic() ITopic
 ```
 
-- *Type:* aws-cdk-lib.aws_sns.ITopic
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_sns.ITopic
 
 The DLQ (as topic) associated with this Lambda Function (this is an optional attribute).
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="cdk-constructs.ThronDockerLambda.property.timeout"></a>
+##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="cdk-constructs.ThronDockerLambda.property.timeout"></a>
 
-```typescript
-public readonly timeout: Duration;
+```go
+func Timeout() Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 The timeout configured for this lambda.
 
 ---
 
-##### `apiGatewayEndpoints`<sup>Optional</sup> <a name="apiGatewayEndpoints" id="cdk-constructs.ThronDockerLambda.property.apiGatewayEndpoints"></a>
+##### `ApiGatewayEndpoints`<sup>Optional</sup> <a name="ApiGatewayEndpoints" id="cdk-constructs.ThronDockerLambda.property.apiGatewayEndpoints"></a>
 
-```typescript
-public readonly apiGatewayEndpoints: {[ key: string ]: ThronCreatedApiGatewayEndpoint};
+```go
+func ApiGatewayEndpoints() *map[string]ThronCreatedApiGatewayEndpoint
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a>
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="cdk-constructs.ThronDockerLambda.property.endpoints"></a>
+##### `Endpoints`<sup>Optional</sup> <a name="Endpoints" id="cdk-constructs.ThronDockerLambda.property.endpoints"></a>
 
-```typescript
-public readonly endpoints: {[ key: string ]: EndpointAlb};
+```go
+func Endpoints() *map[string]EndpointAlb
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>
 
 ---
 
-##### `legacyEndpoints`<sup>Optional</sup> <a name="legacyEndpoints" id="cdk-constructs.ThronDockerLambda.property.legacyEndpoints"></a>
+##### `LegacyEndpoints`<sup>Optional</sup> <a name="LegacyEndpoints" id="cdk-constructs.ThronDockerLambda.property.legacyEndpoints"></a>
 
-```typescript
-public readonly legacyEndpoints: {[ key: string ]: EndpointAlb};
+```go
+func LegacyEndpoints() *map[string]EndpointAlb
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>
 
 ---
 
@@ -4926,29 +4927,29 @@ public readonly legacyEndpoints: {[ key: string ]: EndpointAlb};
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronEc2Service.Initializer"></a>
 
-```typescript
-import { ThronEc2Service } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronEc2Service(scope: Stack, id: string, props: ThronEc2ServiceProps)
+cdkconstructs.NewThronEc2Service(scope Stack, id *string, props ThronEc2ServiceProps) ThronEc2Service
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2Service.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.Stack</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2Service.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2Service.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2Service.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronEc2Service.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronEc2ServiceProps">ThronEc2ServiceProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2Service.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2Service.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -4962,42 +4963,42 @@ new ThronEc2Service(scope: Stack, id: string, props: ThronEc2ServiceProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2Service.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronEc2Service.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
-| <code><a href="#cdk-constructs.ThronEc2Service.addVolume">addVolume</a></code> | Adds a volume to the Service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.associateCloudMapService">associateCloudMapService</a></code> | Associates this service with a CloudMap service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.attachToApplicationTargetGroup">attachToApplicationTargetGroup</a></code> | This method is called to attach this service to an Application Load Balancer. |
-| <code><a href="#cdk-constructs.ThronEc2Service.attachToClassicLB">attachToClassicLB</a></code> | Registers the service as a target of a Classic Load Balancer (CLB). |
-| <code><a href="#cdk-constructs.ThronEc2Service.attachToNetworkTargetGroup">attachToNetworkTargetGroup</a></code> | This method is called to attach this service to a Network Load Balancer. |
-| <code><a href="#cdk-constructs.ThronEc2Service.autoScaleTaskCount">autoScaleTaskCount</a></code> | An attribute representing the minimum and maximum task count for an AutoScalingGroup. |
-| <code><a href="#cdk-constructs.ThronEc2Service.enableCloudMap">enableCloudMap</a></code> | Enable CloudMap service discovery for the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.enableDeploymentAlarms">enableDeploymentAlarms</a></code> | Enable Deployment Alarms which take advantage of arbitrary alarms and configure them after service initialization. |
-| <code><a href="#cdk-constructs.ThronEc2Service.enableServiceConnect">enableServiceConnect</a></code> | Enable Service Connect on this service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.loadBalancerTarget">loadBalancerTarget</a></code> | Return a load balancing target for a specific container and port. |
-| <code><a href="#cdk-constructs.ThronEc2Service.metric">metric</a></code> | This method returns the specified CloudWatch metric name for this service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.metricCpuUtilization">metricCpuUtilization</a></code> | This method returns the CloudWatch metric for this service's CPU utilization. |
-| <code><a href="#cdk-constructs.ThronEc2Service.metricMemoryUtilization">metricMemoryUtilization</a></code> | This method returns the CloudWatch metric for this service's memory utilization. |
-| <code><a href="#cdk-constructs.ThronEc2Service.registerLoadBalancerTargets">registerLoadBalancerTargets</a></code> | Use this function to create all load balancer targets to be registered in this service, add them to target groups, and attach target groups to listeners accordingly. |
-| <code><a href="#cdk-constructs.ThronEc2Service.addPlacementConstraints">addPlacementConstraints</a></code> | Adds one or more placement constraints to use for tasks in the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.addPlacementStrategies">addPlacementStrategies</a></code> | Adds one or more placement strategies to use for tasks in the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.addEndpointAlb">addEndpointAlb</a></code> | Add an endpoint for the EC2 service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.addLegacyEndpointAlb">addLegacyEndpointAlb</a></code> | Add a legacy endpoint for the EC2 service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.addTargetScaling">addTargetScaling</a></code> | Configures an EC2 service as a scalable target. |
+| <code><a href="#cdk-constructs.ThronEc2Service.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronEc2Service.applyRemovalPolicy">ApplyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+| <code><a href="#cdk-constructs.ThronEc2Service.addVolume">AddVolume</a></code> | Adds a volume to the Service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.associateCloudMapService">AssociateCloudMapService</a></code> | Associates this service with a CloudMap service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.attachToApplicationTargetGroup">AttachToApplicationTargetGroup</a></code> | This method is called to attach this service to an Application Load Balancer. |
+| <code><a href="#cdk-constructs.ThronEc2Service.attachToClassicLB">AttachToClassicLB</a></code> | Registers the service as a target of a Classic Load Balancer (CLB). |
+| <code><a href="#cdk-constructs.ThronEc2Service.attachToNetworkTargetGroup">AttachToNetworkTargetGroup</a></code> | This method is called to attach this service to a Network Load Balancer. |
+| <code><a href="#cdk-constructs.ThronEc2Service.autoScaleTaskCount">AutoScaleTaskCount</a></code> | An attribute representing the minimum and maximum task count for an AutoScalingGroup. |
+| <code><a href="#cdk-constructs.ThronEc2Service.enableCloudMap">EnableCloudMap</a></code> | Enable CloudMap service discovery for the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.enableDeploymentAlarms">EnableDeploymentAlarms</a></code> | Enable Deployment Alarms which take advantage of arbitrary alarms and configure them after service initialization. |
+| <code><a href="#cdk-constructs.ThronEc2Service.enableServiceConnect">EnableServiceConnect</a></code> | Enable Service Connect on this service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.loadBalancerTarget">LoadBalancerTarget</a></code> | Return a load balancing target for a specific container and port. |
+| <code><a href="#cdk-constructs.ThronEc2Service.metric">Metric</a></code> | This method returns the specified CloudWatch metric name for this service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.metricCpuUtilization">MetricCpuUtilization</a></code> | This method returns the CloudWatch metric for this service's CPU utilization. |
+| <code><a href="#cdk-constructs.ThronEc2Service.metricMemoryUtilization">MetricMemoryUtilization</a></code> | This method returns the CloudWatch metric for this service's memory utilization. |
+| <code><a href="#cdk-constructs.ThronEc2Service.registerLoadBalancerTargets">RegisterLoadBalancerTargets</a></code> | Use this function to create all load balancer targets to be registered in this service, add them to target groups, and attach target groups to listeners accordingly. |
+| <code><a href="#cdk-constructs.ThronEc2Service.addPlacementConstraints">AddPlacementConstraints</a></code> | Adds one or more placement constraints to use for tasks in the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.addPlacementStrategies">AddPlacementStrategies</a></code> | Adds one or more placement strategies to use for tasks in the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.addEndpointAlb">AddEndpointAlb</a></code> | Add an endpoint for the EC2 service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.addLegacyEndpointAlb">AddLegacyEndpointAlb</a></code> | Add a legacy endpoint for the EC2 service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.addTargetScaling">AddTargetScaling</a></code> | Configures an EC2 service as a scalable target. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronEc2Service.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronEc2Service.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="cdk-constructs.ThronEc2Service.applyRemovalPolicy"></a>
+##### `ApplyRemovalPolicy` <a name="ApplyRemovalPolicy" id="cdk-constructs.ThronEc2Service.applyRemovalPolicy"></a>
 
-```typescript
-public applyRemovalPolicy(policy: RemovalPolicy): void
+```go
+func ApplyRemovalPolicy(policy RemovalPolicy)
 ```
 
 Apply the given removal policy to this resource.
@@ -5012,42 +5013,42 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 ###### `policy`<sup>Required</sup> <a name="policy" id="cdk-constructs.ThronEc2Service.applyRemovalPolicy.parameter.policy"></a>
 
-- *Type:* aws-cdk-lib.RemovalPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.RemovalPolicy
 
 ---
 
-##### `addVolume` <a name="addVolume" id="cdk-constructs.ThronEc2Service.addVolume"></a>
+##### `AddVolume` <a name="AddVolume" id="cdk-constructs.ThronEc2Service.addVolume"></a>
 
-```typescript
-public addVolume(volume: ServiceManagedVolume): void
+```go
+func AddVolume(volume ServiceManagedVolume)
 ```
 
 Adds a volume to the Service.
 
 ###### `volume`<sup>Required</sup> <a name="volume" id="cdk-constructs.ThronEc2Service.addVolume.parameter.volume"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.ServiceManagedVolume
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ServiceManagedVolume
 
 ---
 
-##### `associateCloudMapService` <a name="associateCloudMapService" id="cdk-constructs.ThronEc2Service.associateCloudMapService"></a>
+##### `AssociateCloudMapService` <a name="AssociateCloudMapService" id="cdk-constructs.ThronEc2Service.associateCloudMapService"></a>
 
-```typescript
-public associateCloudMapService(options: AssociateCloudMapServiceOptions): void
+```go
+func AssociateCloudMapService(options AssociateCloudMapServiceOptions)
 ```
 
 Associates this service with a CloudMap service.
 
 ###### `options`<sup>Required</sup> <a name="options" id="cdk-constructs.ThronEc2Service.associateCloudMapService.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.AssociateCloudMapServiceOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.AssociateCloudMapServiceOptions
 
 ---
 
-##### `attachToApplicationTargetGroup` <a name="attachToApplicationTargetGroup" id="cdk-constructs.ThronEc2Service.attachToApplicationTargetGroup"></a>
+##### `AttachToApplicationTargetGroup` <a name="AttachToApplicationTargetGroup" id="cdk-constructs.ThronEc2Service.attachToApplicationTargetGroup"></a>
 
-```typescript
-public attachToApplicationTargetGroup(targetGroup: IApplicationTargetGroup): LoadBalancerTargetProps
+```go
+func AttachToApplicationTargetGroup(targetGroup IApplicationTargetGroup) LoadBalancerTargetProps
 ```
 
 This method is called to attach this service to an Application Load Balancer.
@@ -5057,14 +5058,14 @@ to add this service to a load balancer.
 
 ###### `targetGroup`<sup>Required</sup> <a name="targetGroup" id="cdk-constructs.ThronEc2Service.attachToApplicationTargetGroup.parameter.targetGroup"></a>
 
-- *Type:* aws-cdk-lib.aws_elasticloadbalancingv2.IApplicationTargetGroup
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.IApplicationTargetGroup
 
 ---
 
-##### `attachToClassicLB` <a name="attachToClassicLB" id="cdk-constructs.ThronEc2Service.attachToClassicLB"></a>
+##### `AttachToClassicLB` <a name="AttachToClassicLB" id="cdk-constructs.ThronEc2Service.attachToClassicLB"></a>
 
-```typescript
-public attachToClassicLB(loadBalancer: LoadBalancer): void
+```go
+func AttachToClassicLB(loadBalancer LoadBalancer)
 ```
 
 Registers the service as a target of a Classic Load Balancer (CLB).
@@ -5073,14 +5074,14 @@ Don't call this. Call `loadBalancer.addTarget()` instead.
 
 ###### `loadBalancer`<sup>Required</sup> <a name="loadBalancer" id="cdk-constructs.ThronEc2Service.attachToClassicLB.parameter.loadBalancer"></a>
 
-- *Type:* aws-cdk-lib.aws_elasticloadbalancing.LoadBalancer
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancing.LoadBalancer
 
 ---
 
-##### `attachToNetworkTargetGroup` <a name="attachToNetworkTargetGroup" id="cdk-constructs.ThronEc2Service.attachToNetworkTargetGroup"></a>
+##### `AttachToNetworkTargetGroup` <a name="AttachToNetworkTargetGroup" id="cdk-constructs.ThronEc2Service.attachToNetworkTargetGroup"></a>
 
-```typescript
-public attachToNetworkTargetGroup(targetGroup: INetworkTargetGroup): LoadBalancerTargetProps
+```go
+func AttachToNetworkTargetGroup(targetGroup INetworkTargetGroup) LoadBalancerTargetProps
 ```
 
 This method is called to attach this service to a Network Load Balancer.
@@ -5090,42 +5091,42 @@ to add this service to a load balancer.
 
 ###### `targetGroup`<sup>Required</sup> <a name="targetGroup" id="cdk-constructs.ThronEc2Service.attachToNetworkTargetGroup.parameter.targetGroup"></a>
 
-- *Type:* aws-cdk-lib.aws_elasticloadbalancingv2.INetworkTargetGroup
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.INetworkTargetGroup
 
 ---
 
-##### `autoScaleTaskCount` <a name="autoScaleTaskCount" id="cdk-constructs.ThronEc2Service.autoScaleTaskCount"></a>
+##### `AutoScaleTaskCount` <a name="AutoScaleTaskCount" id="cdk-constructs.ThronEc2Service.autoScaleTaskCount"></a>
 
-```typescript
-public autoScaleTaskCount(props: EnableScalingProps): ScalableTaskCount
+```go
+func AutoScaleTaskCount(props EnableScalingProps) ScalableTaskCount
 ```
 
 An attribute representing the minimum and maximum task count for an AutoScalingGroup.
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronEc2Service.autoScaleTaskCount.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_applicationautoscaling.EnableScalingProps
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.EnableScalingProps
 
 ---
 
-##### `enableCloudMap` <a name="enableCloudMap" id="cdk-constructs.ThronEc2Service.enableCloudMap"></a>
+##### `EnableCloudMap` <a name="EnableCloudMap" id="cdk-constructs.ThronEc2Service.enableCloudMap"></a>
 
-```typescript
-public enableCloudMap(options: CloudMapOptions): Service
+```go
+func EnableCloudMap(options CloudMapOptions) Service
 ```
 
 Enable CloudMap service discovery for the service.
 
 ###### `options`<sup>Required</sup> <a name="options" id="cdk-constructs.ThronEc2Service.enableCloudMap.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.CloudMapOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.CloudMapOptions
 
 ---
 
-##### `enableDeploymentAlarms` <a name="enableDeploymentAlarms" id="cdk-constructs.ThronEc2Service.enableDeploymentAlarms"></a>
+##### `EnableDeploymentAlarms` <a name="EnableDeploymentAlarms" id="cdk-constructs.ThronEc2Service.enableDeploymentAlarms"></a>
 
-```typescript
-public enableDeploymentAlarms(alarmNames: string[], options?: DeploymentAlarmOptions): void
+```go
+func EnableDeploymentAlarms(alarmNames *[]*string, options DeploymentAlarmOptions)
 ```
 
 Enable Deployment Alarms which take advantage of arbitrary alarms and configure them after service initialization.
@@ -5145,34 +5146,34 @@ metrics, and avoid this circular dependency.
 
 ###### `alarmNames`<sup>Required</sup> <a name="alarmNames" id="cdk-constructs.ThronEc2Service.enableDeploymentAlarms.parameter.alarmNames"></a>
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 ---
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronEc2Service.enableDeploymentAlarms.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.DeploymentAlarmOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.DeploymentAlarmOptions
 
 ---
 
-##### `enableServiceConnect` <a name="enableServiceConnect" id="cdk-constructs.ThronEc2Service.enableServiceConnect"></a>
+##### `EnableServiceConnect` <a name="EnableServiceConnect" id="cdk-constructs.ThronEc2Service.enableServiceConnect"></a>
 
-```typescript
-public enableServiceConnect(config?: ServiceConnectProps): void
+```go
+func EnableServiceConnect(config ServiceConnectProps)
 ```
 
 Enable Service Connect on this service.
 
 ###### `config`<sup>Optional</sup> <a name="config" id="cdk-constructs.ThronEc2Service.enableServiceConnect.parameter.config"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.ServiceConnectProps
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ServiceConnectProps
 
 ---
 
-##### `loadBalancerTarget` <a name="loadBalancerTarget" id="cdk-constructs.ThronEc2Service.loadBalancerTarget"></a>
+##### `LoadBalancerTarget` <a name="LoadBalancerTarget" id="cdk-constructs.ThronEc2Service.loadBalancerTarget"></a>
 
-```typescript
-public loadBalancerTarget(options: LoadBalancerTargetOptions): IEcsLoadBalancerTarget
+```go
+func LoadBalancerTarget(options LoadBalancerTargetOptions) IEcsLoadBalancerTarget
 ```
 
 Return a load balancing target for a specific container and port.
@@ -5186,7 +5187,7 @@ target, instead of the `Service` object itself.
 
 *Example*
 
-```typescript
+```go
 declare const listener: elbv2.ApplicationListener;
 declare const service: ecs.BaseService;
 listener.addTargets('ECS', {
@@ -5201,62 +5202,62 @@ listener.addTargets('ECS', {
 
 ###### `options`<sup>Required</sup> <a name="options" id="cdk-constructs.ThronEc2Service.loadBalancerTarget.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.LoadBalancerTargetOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.LoadBalancerTargetOptions
 
 ---
 
-##### `metric` <a name="metric" id="cdk-constructs.ThronEc2Service.metric"></a>
+##### `Metric` <a name="Metric" id="cdk-constructs.ThronEc2Service.metric"></a>
 
-```typescript
-public metric(metricName: string, props?: MetricOptions): Metric
+```go
+func Metric(metricName *string, props MetricOptions) Metric
 ```
 
 This method returns the specified CloudWatch metric name for this service.
 
 ###### `metricName`<sup>Required</sup> <a name="metricName" id="cdk-constructs.ThronEc2Service.metric.parameter.metricName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronEc2Service.metric.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricCpuUtilization` <a name="metricCpuUtilization" id="cdk-constructs.ThronEc2Service.metricCpuUtilization"></a>
+##### `MetricCpuUtilization` <a name="MetricCpuUtilization" id="cdk-constructs.ThronEc2Service.metricCpuUtilization"></a>
 
-```typescript
-public metricCpuUtilization(props?: MetricOptions): Metric
+```go
+func MetricCpuUtilization(props MetricOptions) Metric
 ```
 
 This method returns the CloudWatch metric for this service's CPU utilization.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronEc2Service.metricCpuUtilization.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricMemoryUtilization` <a name="metricMemoryUtilization" id="cdk-constructs.ThronEc2Service.metricMemoryUtilization"></a>
+##### `MetricMemoryUtilization` <a name="MetricMemoryUtilization" id="cdk-constructs.ThronEc2Service.metricMemoryUtilization"></a>
 
-```typescript
-public metricMemoryUtilization(props?: MetricOptions): Metric
+```go
+func MetricMemoryUtilization(props MetricOptions) Metric
 ```
 
 This method returns the CloudWatch metric for this service's memory utilization.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronEc2Service.metricMemoryUtilization.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `registerLoadBalancerTargets` <a name="registerLoadBalancerTargets" id="cdk-constructs.ThronEc2Service.registerLoadBalancerTargets"></a>
+##### `RegisterLoadBalancerTargets` <a name="RegisterLoadBalancerTargets" id="cdk-constructs.ThronEc2Service.registerLoadBalancerTargets"></a>
 
-```typescript
-public registerLoadBalancerTargets(targets: EcsTarget): void
+```go
+func RegisterLoadBalancerTargets(targets EcsTarget)
 ```
 
 Use this function to create all load balancer targets to be registered in this service, add them to target groups, and attach target groups to listeners accordingly.
@@ -5265,7 +5266,7 @@ Alternatively, you can use `listener.addTargets()` to create targets and add the
 
 *Example*
 
-```typescript
+```go
 declare const listener: elbv2.ApplicationListener;
 declare const service: ecs.BaseService;
 service.registerLoadBalancerTargets(
@@ -5283,14 +5284,14 @@ service.registerLoadBalancerTargets(
 
 ###### `targets`<sup>Required</sup> <a name="targets" id="cdk-constructs.ThronEc2Service.registerLoadBalancerTargets.parameter.targets"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.EcsTarget
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.EcsTarget
 
 ---
 
-##### `addPlacementConstraints` <a name="addPlacementConstraints" id="cdk-constructs.ThronEc2Service.addPlacementConstraints"></a>
+##### `AddPlacementConstraints` <a name="AddPlacementConstraints" id="cdk-constructs.ThronEc2Service.addPlacementConstraints"></a>
 
-```typescript
-public addPlacementConstraints(constraints: PlacementConstraint): void
+```go
+func AddPlacementConstraints(constraints PlacementConstraint)
 ```
 
 Adds one or more placement constraints to use for tasks in the service.
@@ -5300,14 +5301,14 @@ For more information, see
 
 ###### `constraints`<sup>Required</sup> <a name="constraints" id="cdk-constructs.ThronEc2Service.addPlacementConstraints.parameter.constraints"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.PlacementConstraint
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.PlacementConstraint
 
 ---
 
-##### `addPlacementStrategies` <a name="addPlacementStrategies" id="cdk-constructs.ThronEc2Service.addPlacementStrategies"></a>
+##### `AddPlacementStrategies` <a name="AddPlacementStrategies" id="cdk-constructs.ThronEc2Service.addPlacementStrategies"></a>
 
-```typescript
-public addPlacementStrategies(strategies: PlacementStrategy): void
+```go
+func AddPlacementStrategies(strategies PlacementStrategy)
 ```
 
 Adds one or more placement strategies to use for tasks in the service.
@@ -5317,21 +5318,21 @@ For more information, see
 
 ###### `strategies`<sup>Required</sup> <a name="strategies" id="cdk-constructs.ThronEc2Service.addPlacementStrategies.parameter.strategies"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.PlacementStrategy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.PlacementStrategy
 
 ---
 
-##### `addEndpointAlb` <a name="addEndpointAlb" id="cdk-constructs.ThronEc2Service.addEndpointAlb"></a>
+##### `AddEndpointAlb` <a name="AddEndpointAlb" id="cdk-constructs.ThronEc2Service.addEndpointAlb"></a>
 
-```typescript
-public addEndpointAlb(name: string, endpointProps: ThronEndpointAlbProps): EndpointAlb
+```go
+func AddEndpointAlb(name *string, endpointProps ThronEndpointAlbProps) EndpointAlb
 ```
 
 Add an endpoint for the EC2 service.
 
 ###### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.ThronEc2Service.addEndpointAlb.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -5341,17 +5342,17 @@ Add an endpoint for the EC2 service.
 
 ---
 
-##### `addLegacyEndpointAlb` <a name="addLegacyEndpointAlb" id="cdk-constructs.ThronEc2Service.addLegacyEndpointAlb"></a>
+##### `AddLegacyEndpointAlb` <a name="AddLegacyEndpointAlb" id="cdk-constructs.ThronEc2Service.addLegacyEndpointAlb"></a>
 
-```typescript
-public addLegacyEndpointAlb(name: string, endpointProps: LegacyEndpointAlbProps): EndpointAlb
+```go
+func AddLegacyEndpointAlb(name *string, endpointProps LegacyEndpointAlbProps) EndpointAlb
 ```
 
 Add a legacy endpoint for the EC2 service.
 
 ###### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.ThronEc2Service.addLegacyEndpointAlb.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -5361,10 +5362,10 @@ Add a legacy endpoint for the EC2 service.
 
 ---
 
-##### `addTargetScaling` <a name="addTargetScaling" id="cdk-constructs.ThronEc2Service.addTargetScaling"></a>
+##### `AddTargetScaling` <a name="AddTargetScaling" id="cdk-constructs.ThronEc2Service.addTargetScaling"></a>
 
-```typescript
-public addTargetScaling(targetScaling: ThronTargetScalingProps): ThronEc2TargetScaling
+```go
+func AddTargetScaling(targetScaling ThronTargetScalingProps) ThronEc2TargetScaling
 ```
 
 Configures an EC2 service as a scalable target.
@@ -5381,21 +5382,21 @@ target scaling property.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2Service.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronEc2Service.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
-| <code><a href="#cdk-constructs.ThronEc2Service.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
-| <code><a href="#cdk-constructs.ThronEc2Service.fromServiceArnWithCluster">fromServiceArnWithCluster</a></code> | Import an existing ECS/Fargate Service using the service cluster format. |
-| <code><a href="#cdk-constructs.ThronEc2Service.fromEc2ServiceArn">fromEc2ServiceArn</a></code> | Imports from the specified service ARN. |
-| <code><a href="#cdk-constructs.ThronEc2Service.fromEc2ServiceAttributes">fromEc2ServiceAttributes</a></code> | Imports from the specified service attributes. |
+| <code><a href="#cdk-constructs.ThronEc2Service.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronEc2Service.isOwnedResource">IsOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#cdk-constructs.ThronEc2Service.isResource">IsResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#cdk-constructs.ThronEc2Service.fromServiceArnWithCluster">FromServiceArnWithCluster</a></code> | Import an existing ECS/Fargate Service using the service cluster format. |
+| <code><a href="#cdk-constructs.ThronEc2Service.fromEc2ServiceArn">FromEc2ServiceArn</a></code> | Imports from the specified service ARN. |
+| <code><a href="#cdk-constructs.ThronEc2Service.fromEc2ServiceAttributes">FromEc2ServiceAttributes</a></code> | Imports from the specified service attributes. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronEc2Service.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronEc2Service.isConstruct"></a>
 
-```typescript
-import { ThronEc2Service } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2Service.isConstruct(x: any)
+cdkconstructs.ThronEc2Service_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -5416,50 +5417,50 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronEc2Service.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isOwnedResource` <a name="isOwnedResource" id="cdk-constructs.ThronEc2Service.isOwnedResource"></a>
+##### `IsOwnedResource` <a name="IsOwnedResource" id="cdk-constructs.ThronEc2Service.isOwnedResource"></a>
 
-```typescript
-import { ThronEc2Service } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2Service.isOwnedResource(construct: IConstruct)
+cdkconstructs.ThronEc2Service_IsOwnedResource(construct IConstruct) *bool
 ```
 
 Returns true if the construct was created by CDK, and false otherwise.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronEc2Service.isOwnedResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `isResource` <a name="isResource" id="cdk-constructs.ThronEc2Service.isResource"></a>
+##### `IsResource` <a name="IsResource" id="cdk-constructs.ThronEc2Service.isResource"></a>
 
-```typescript
-import { ThronEc2Service } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2Service.isResource(construct: IConstruct)
+cdkconstructs.ThronEc2Service_IsResource(construct IConstruct) *bool
 ```
 
 Check whether the given construct is a Resource.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronEc2Service.isResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `fromServiceArnWithCluster` <a name="fromServiceArnWithCluster" id="cdk-constructs.ThronEc2Service.fromServiceArnWithCluster"></a>
+##### `FromServiceArnWithCluster` <a name="FromServiceArnWithCluster" id="cdk-constructs.ThronEc2Service.fromServiceArnWithCluster"></a>
 
-```typescript
-import { ThronEc2Service } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2Service.fromServiceArnWithCluster(scope: Construct, id: string, serviceArn: string)
+cdkconstructs.ThronEc2Service_FromServiceArnWithCluster(scope Construct, id *string, serviceArn *string) IBaseService
 ```
 
 Import an existing ECS/Fargate Service using the service cluster format.
@@ -5470,75 +5471,75 @@ The format is the "new" format "arn:aws:ecs:region:aws_account_id:service/cluste
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2Service.fromServiceArnWithCluster.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2Service.fromServiceArnWithCluster.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `serviceArn`<sup>Required</sup> <a name="serviceArn" id="cdk-constructs.ThronEc2Service.fromServiceArnWithCluster.parameter.serviceArn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `fromEc2ServiceArn` <a name="fromEc2ServiceArn" id="cdk-constructs.ThronEc2Service.fromEc2ServiceArn"></a>
+##### `FromEc2ServiceArn` <a name="FromEc2ServiceArn" id="cdk-constructs.ThronEc2Service.fromEc2ServiceArn"></a>
 
-```typescript
-import { ThronEc2Service } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2Service.fromEc2ServiceArn(scope: Construct, id: string, ec2ServiceArn: string)
+cdkconstructs.ThronEc2Service_FromEc2ServiceArn(scope Construct, id *string, ec2ServiceArn *string) IEc2Service
 ```
 
 Imports from the specified service ARN.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2Service.fromEc2ServiceArn.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2Service.fromEc2ServiceArn.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `ec2ServiceArn`<sup>Required</sup> <a name="ec2ServiceArn" id="cdk-constructs.ThronEc2Service.fromEc2ServiceArn.parameter.ec2ServiceArn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `fromEc2ServiceAttributes` <a name="fromEc2ServiceAttributes" id="cdk-constructs.ThronEc2Service.fromEc2ServiceAttributes"></a>
+##### `FromEc2ServiceAttributes` <a name="FromEc2ServiceAttributes" id="cdk-constructs.ThronEc2Service.fromEc2ServiceAttributes"></a>
 
-```typescript
-import { ThronEc2Service } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2Service.fromEc2ServiceAttributes(scope: Construct, id: string, attrs: Ec2ServiceAttributes)
+cdkconstructs.ThronEc2Service_FromEc2ServiceAttributes(scope Construct, id *string, attrs Ec2ServiceAttributes) IBaseService
 ```
 
 Imports from the specified service attributes.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2Service.fromEc2ServiceAttributes.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2Service.fromEc2ServiceAttributes.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `attrs`<sup>Required</sup> <a name="attrs" id="cdk-constructs.ThronEc2Service.fromEc2ServiceAttributes.parameter.attrs"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.Ec2ServiceAttributes
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Ec2ServiceAttributes
 
 ---
 
@@ -5546,41 +5547,41 @@ Imports from the specified service attributes.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.cluster">cluster</a></code> | <code>aws-cdk-lib.aws_ecs.ICluster</code> | The cluster that hosts the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.connections">connections</a></code> | <code>aws-cdk-lib.aws_ec2.Connections</code> | The security groups which manage the allowed network traffic for the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.serviceArn">serviceArn</a></code> | <code>string</code> | The Amazon Resource Name (ARN) of the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.serviceName">serviceName</a></code> | <code>string</code> | The name of the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.taskDefinition">taskDefinition</a></code> | <code>aws-cdk-lib.aws_ecs.TaskDefinition</code> | The task definition to use for tasks in the service. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.cloudMapService">cloudMapService</a></code> | <code>aws-cdk-lib.aws_servicediscovery.IService</code> | The CloudMap service created for this service, if any. |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.ec2TaskDefinition">ec2TaskDefinition</a></code> | <code><a href="#cdk-constructs.ThronEc2TaskDefinition">ThronEc2TaskDefinition</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.endpoints">endpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.legacyEndpoints">legacyEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2Service.property.targetScaling">targetScaling</a></code> | <code><a href="#cdk-constructs.ThronTargetScaling">ThronTargetScaling</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.env">Env</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.cluster">Cluster</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ICluster</code> | The cluster that hosts the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.connections">Connections</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Connections</code> | The security groups which manage the allowed network traffic for the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | The Amazon Resource Name (ARN) of the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.serviceName">ServiceName</a></code> | <code>*string</code> | The name of the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.taskDefinition">TaskDefinition</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.TaskDefinition</code> | The task definition to use for tasks in the service. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.cloudMapService">CloudMapService</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_servicediscovery.IService</code> | The CloudMap service created for this service, if any. |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.ec2TaskDefinition">Ec2TaskDefinition</a></code> | <code><a href="#cdk-constructs.ThronEc2TaskDefinition">ThronEc2TaskDefinition</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.endpoints">Endpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.legacyEndpoints">LegacyEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2Service.property.targetScaling">TargetScaling</a></code> | <code><a href="#cdk-constructs.ThronTargetScaling">ThronTargetScaling</a></code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronEc2Service.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronEc2Service.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-constructs.ThronEc2Service.property.env"></a>
+##### `Env`<sup>Required</sup> <a name="Env" id="cdk-constructs.ThronEc2Service.property.env"></a>
 
-```typescript
-public readonly env: ResourceEnvironment;
+```go
+func Env() ResourceEnvironment
 ```
 
-- *Type:* aws-cdk-lib.ResourceEnvironment
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment
 
 The environment this resource belongs to.
 
@@ -5593,124 +5594,124 @@ that might be different than the stack they were imported into.
 
 ---
 
-##### `stack`<sup>Required</sup> <a name="stack" id="cdk-constructs.ThronEc2Service.property.stack"></a>
+##### `Stack`<sup>Required</sup> <a name="Stack" id="cdk-constructs.ThronEc2Service.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+func Stack() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The stack in which this resource is defined.
 
 ---
 
-##### `cluster`<sup>Required</sup> <a name="cluster" id="cdk-constructs.ThronEc2Service.property.cluster"></a>
+##### `Cluster`<sup>Required</sup> <a name="Cluster" id="cdk-constructs.ThronEc2Service.property.cluster"></a>
 
-```typescript
-public readonly cluster: ICluster;
+```go
+func Cluster() ICluster
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.ICluster
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ICluster
 
 The cluster that hosts the service.
 
 ---
 
-##### `connections`<sup>Required</sup> <a name="connections" id="cdk-constructs.ThronEc2Service.property.connections"></a>
+##### `Connections`<sup>Required</sup> <a name="Connections" id="cdk-constructs.ThronEc2Service.property.connections"></a>
 
-```typescript
-public readonly connections: Connections;
+```go
+func Connections() Connections
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.Connections
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Connections
 
 The security groups which manage the allowed network traffic for the service.
 
 ---
 
-##### `serviceArn`<sup>Required</sup> <a name="serviceArn" id="cdk-constructs.ThronEc2Service.property.serviceArn"></a>
+##### `ServiceArn`<sup>Required</sup> <a name="ServiceArn" id="cdk-constructs.ThronEc2Service.property.serviceArn"></a>
 
-```typescript
-public readonly serviceArn: string;
+```go
+func ServiceArn() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The Amazon Resource Name (ARN) of the service.
 
 ---
 
-##### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.ThronEc2Service.property.serviceName"></a>
+##### `ServiceName`<sup>Required</sup> <a name="ServiceName" id="cdk-constructs.ThronEc2Service.property.serviceName"></a>
 
-```typescript
-public readonly serviceName: string;
+```go
+func ServiceName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The name of the service.
 
 ---
 
-##### `taskDefinition`<sup>Required</sup> <a name="taskDefinition" id="cdk-constructs.ThronEc2Service.property.taskDefinition"></a>
+##### `TaskDefinition`<sup>Required</sup> <a name="TaskDefinition" id="cdk-constructs.ThronEc2Service.property.taskDefinition"></a>
 
-```typescript
-public readonly taskDefinition: TaskDefinition;
+```go
+func TaskDefinition() TaskDefinition
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.TaskDefinition
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.TaskDefinition
 
 The task definition to use for tasks in the service.
 
 ---
 
-##### `cloudMapService`<sup>Optional</sup> <a name="cloudMapService" id="cdk-constructs.ThronEc2Service.property.cloudMapService"></a>
+##### `CloudMapService`<sup>Optional</sup> <a name="CloudMapService" id="cdk-constructs.ThronEc2Service.property.cloudMapService"></a>
 
-```typescript
-public readonly cloudMapService: IService;
+```go
+func CloudMapService() IService
 ```
 
-- *Type:* aws-cdk-lib.aws_servicediscovery.IService
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_servicediscovery.IService
 
 The CloudMap service created for this service, if any.
 
 ---
 
-##### `ec2TaskDefinition`<sup>Required</sup> <a name="ec2TaskDefinition" id="cdk-constructs.ThronEc2Service.property.ec2TaskDefinition"></a>
+##### `Ec2TaskDefinition`<sup>Required</sup> <a name="Ec2TaskDefinition" id="cdk-constructs.ThronEc2Service.property.ec2TaskDefinition"></a>
 
-```typescript
-public readonly ec2TaskDefinition: ThronEc2TaskDefinition;
+```go
+func Ec2TaskDefinition() ThronEc2TaskDefinition
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronEc2TaskDefinition">ThronEc2TaskDefinition</a>
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="cdk-constructs.ThronEc2Service.property.endpoints"></a>
+##### `Endpoints`<sup>Optional</sup> <a name="Endpoints" id="cdk-constructs.ThronEc2Service.property.endpoints"></a>
 
-```typescript
-public readonly endpoints: {[ key: string ]: EndpointAlb};
+```go
+func Endpoints() *map[string]EndpointAlb
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>
 
 ---
 
-##### `legacyEndpoints`<sup>Optional</sup> <a name="legacyEndpoints" id="cdk-constructs.ThronEc2Service.property.legacyEndpoints"></a>
+##### `LegacyEndpoints`<sup>Optional</sup> <a name="LegacyEndpoints" id="cdk-constructs.ThronEc2Service.property.legacyEndpoints"></a>
 
-```typescript
-public readonly legacyEndpoints: {[ key: string ]: EndpointAlb};
+```go
+func LegacyEndpoints() *map[string]EndpointAlb
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>
 
 ---
 
-##### `targetScaling`<sup>Optional</sup> <a name="targetScaling" id="cdk-constructs.ThronEc2Service.property.targetScaling"></a>
+##### `TargetScaling`<sup>Optional</sup> <a name="TargetScaling" id="cdk-constructs.ThronEc2Service.property.targetScaling"></a>
 
-```typescript
-public readonly targetScaling: ThronTargetScaling;
+```go
+func TargetScaling() ThronTargetScaling
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronTargetScaling">ThronTargetScaling</a>
@@ -5722,29 +5723,29 @@ public readonly targetScaling: ThronTargetScaling;
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronEc2TargetScaling.Initializer"></a>
 
-```typescript
-import { ThronEc2TargetScaling } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronEc2TargetScaling(scope: Construct, id: string, props: ThronEc2TargetScalingProps)
+cdkconstructs.NewThronEc2TargetScaling(scope Construct, id *string, props ThronEc2TargetScalingProps) ThronEc2TargetScaling
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronEc2TargetScaling.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronEc2TargetScalingProps">ThronEc2TargetScalingProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2TargetScaling.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TargetScaling.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -5758,14 +5759,14 @@ new ThronEc2TargetScaling(scope: Construct, id: string, props: ThronEc2TargetSca
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.toString">ToString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronEc2TargetScaling.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronEc2TargetScaling.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
@@ -5774,16 +5775,16 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronEc2TargetScaling.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronEc2TargetScaling.isConstruct"></a>
 
-```typescript
-import { ThronEc2TargetScaling } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TargetScaling.isConstruct(x: any)
+cdkconstructs.ThronEc2TargetScaling_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -5804,7 +5805,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronEc2TargetScaling.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -5814,72 +5815,72 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.minCapacity">minCapacity</a></code> | <code>number</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.targetValue">targetValue</a></code> | <code>number</code> | The target value for the metric. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.predefinedMetric">predefinedMetric</a></code> | <code>aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.ec2Service">ec2Service</a></code> | <code>aws-cdk-lib.aws_ecs.Ec2Service</code> | Ec2 Service used as target resource. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.scalableTarget">scalableTarget</a></code> | <code>aws-cdk-lib.aws_applicationautoscaling.ScalableTarget</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.targetTrackingScalingPolicy">targetTrackingScalingPolicy</a></code> | <code>aws-cdk-lib.aws_applicationautoscaling.TargetTrackingScalingPolicy</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.targetValue">TargetValue</a></code> | <code>*f64</code> | The target value for the metric. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.predefinedMetric">PredefinedMetric</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.ec2Service">Ec2Service</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Ec2Service</code> | Ec2 Service used as target resource. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.scalableTarget">ScalableTarget</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.ScalableTarget</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TargetScaling.property.targetTrackingScalingPolicy">TargetTrackingScalingPolicy</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.TargetTrackingScalingPolicy</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronEc2TargetScaling.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronEc2TargetScaling.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `maxCapacity`<sup>Required</sup> <a name="maxCapacity" id="cdk-constructs.ThronEc2TargetScaling.property.maxCapacity"></a>
+##### `MaxCapacity`<sup>Required</sup> <a name="MaxCapacity" id="cdk-constructs.ThronEc2TargetScaling.property.maxCapacity"></a>
 
-```typescript
-public readonly maxCapacity: number;
+```go
+func MaxCapacity() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The maximum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `minCapacity`<sup>Required</sup> <a name="minCapacity" id="cdk-constructs.ThronEc2TargetScaling.property.minCapacity"></a>
+##### `MinCapacity`<sup>Required</sup> <a name="MinCapacity" id="cdk-constructs.ThronEc2TargetScaling.property.minCapacity"></a>
 
-```typescript
-public readonly minCapacity: number;
+```go
+func MinCapacity() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The minimum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `targetValue`<sup>Required</sup> <a name="targetValue" id="cdk-constructs.ThronEc2TargetScaling.property.targetValue"></a>
+##### `TargetValue`<sup>Required</sup> <a name="TargetValue" id="cdk-constructs.ThronEc2TargetScaling.property.targetValue"></a>
 
-```typescript
-public readonly targetValue: number;
+```go
+func TargetValue() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The target value for the metric.
 
 ---
 
-##### `predefinedMetric`<sup>Optional</sup> <a name="predefinedMetric" id="cdk-constructs.ThronEc2TargetScaling.property.predefinedMetric"></a>
+##### `PredefinedMetric`<sup>Optional</sup> <a name="PredefinedMetric" id="cdk-constructs.ThronEc2TargetScaling.property.predefinedMetric"></a>
 
-```typescript
-public readonly predefinedMetric: PredefinedMetric;
+```go
+func PredefinedMetric() PredefinedMetric
 ```
 
-- *Type:* aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric
 
 A predefined metric for application autoscaling.
 
@@ -5888,35 +5889,35 @@ scaling in will happen in the metric is lower than the target value.
 
 ---
 
-##### `ec2Service`<sup>Required</sup> <a name="ec2Service" id="cdk-constructs.ThronEc2TargetScaling.property.ec2Service"></a>
+##### `Ec2Service`<sup>Required</sup> <a name="Ec2Service" id="cdk-constructs.ThronEc2TargetScaling.property.ec2Service"></a>
 
-```typescript
-public readonly ec2Service: Ec2Service;
+```go
+func Ec2Service() Ec2Service
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.Ec2Service
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Ec2Service
 
 Ec2 Service used as target resource.
 
 ---
 
-##### `scalableTarget`<sup>Required</sup> <a name="scalableTarget" id="cdk-constructs.ThronEc2TargetScaling.property.scalableTarget"></a>
+##### `ScalableTarget`<sup>Required</sup> <a name="ScalableTarget" id="cdk-constructs.ThronEc2TargetScaling.property.scalableTarget"></a>
 
-```typescript
-public readonly scalableTarget: ScalableTarget;
+```go
+func ScalableTarget() ScalableTarget
 ```
 
-- *Type:* aws-cdk-lib.aws_applicationautoscaling.ScalableTarget
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.ScalableTarget
 
 ---
 
-##### `targetTrackingScalingPolicy`<sup>Required</sup> <a name="targetTrackingScalingPolicy" id="cdk-constructs.ThronEc2TargetScaling.property.targetTrackingScalingPolicy"></a>
+##### `TargetTrackingScalingPolicy`<sup>Required</sup> <a name="TargetTrackingScalingPolicy" id="cdk-constructs.ThronEc2TargetScaling.property.targetTrackingScalingPolicy"></a>
 
-```typescript
-public readonly targetTrackingScalingPolicy: TargetTrackingScalingPolicy;
+```go
+func TargetTrackingScalingPolicy() TargetTrackingScalingPolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_applicationautoscaling.TargetTrackingScalingPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.TargetTrackingScalingPolicy
 
 ---
 
@@ -5925,29 +5926,29 @@ public readonly targetTrackingScalingPolicy: TargetTrackingScalingPolicy;
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronEc2TaskDefinition.Initializer"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronEc2TaskDefinition(scope: Stack, id: string, props: ThronEc2TaskDefinitionProps)
+cdkconstructs.NewThronEc2TaskDefinition(scope Stack, id *string, props ThronEc2TaskDefinitionProps) ThronEc2TaskDefinition
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.Stack</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronEc2TaskDefinition.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps">ThronEc2TaskDefinitionProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2TaskDefinition.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TaskDefinition.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -5961,35 +5962,35 @@ new ThronEc2TaskDefinition(scope: Stack, id: string, props: ThronEc2TaskDefiniti
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addContainer">addContainer</a></code> | Tasks running in AWSVPC networking mode requires an additional environment variable for the region to be sourced. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addExtension">addExtension</a></code> | Adds the specified extension to the task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addFirelensLogRouter">addFirelensLogRouter</a></code> | Adds a firelens log router to the task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addInferenceAccelerator">addInferenceAccelerator</a></code> | Adds an inference accelerator to the task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addPlacementConstraint">addPlacementConstraint</a></code> | Adds the specified placement constraint to the task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addToExecutionRolePolicy">addToExecutionRolePolicy</a></code> | Adds a policy statement to the task execution IAM role. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addToTaskRolePolicy">addToTaskRolePolicy</a></code> | Adds a policy statement to the task IAM role. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addVolume">addVolume</a></code> | Adds a volume to the task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.findContainer">findContainer</a></code> | Returns the container that match the provided containerName. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.findPortMappingByName">findPortMappingByName</a></code> | Determine the existing port mapping for the provided name. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.grantRun">grantRun</a></code> | Grants permissions to run this task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.obtainExecutionRole">obtainExecutionRole</a></code> | Creates the task execution IAM role if it doesn't already exist. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.applyRemovalPolicy">ApplyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addContainer">AddContainer</a></code> | Tasks running in AWSVPC networking mode requires an additional environment variable for the region to be sourced. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addExtension">AddExtension</a></code> | Adds the specified extension to the task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addFirelensLogRouter">AddFirelensLogRouter</a></code> | Adds a firelens log router to the task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addInferenceAccelerator">AddInferenceAccelerator</a></code> | Adds an inference accelerator to the task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addPlacementConstraint">AddPlacementConstraint</a></code> | Adds the specified placement constraint to the task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addToExecutionRolePolicy">AddToExecutionRolePolicy</a></code> | Adds a policy statement to the task execution IAM role. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addToTaskRolePolicy">AddToTaskRolePolicy</a></code> | Adds a policy statement to the task IAM role. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.addVolume">AddVolume</a></code> | Adds a volume to the task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.findContainer">FindContainer</a></code> | Returns the container that match the provided containerName. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.findPortMappingByName">FindPortMappingByName</a></code> | Determine the existing port mapping for the provided name. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.grantRun">GrantRun</a></code> | Grants permissions to run this task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.obtainExecutionRole">ObtainExecutionRole</a></code> | Creates the task execution IAM role if it doesn't already exist. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronEc2TaskDefinition.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronEc2TaskDefinition.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="cdk-constructs.ThronEc2TaskDefinition.applyRemovalPolicy"></a>
+##### `ApplyRemovalPolicy` <a name="ApplyRemovalPolicy" id="cdk-constructs.ThronEc2TaskDefinition.applyRemovalPolicy"></a>
 
-```typescript
-public applyRemovalPolicy(policy: RemovalPolicy): void
+```go
+func ApplyRemovalPolicy(policy RemovalPolicy)
 ```
 
 Apply the given removal policy to this resource.
@@ -6004,14 +6005,14 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 ###### `policy`<sup>Required</sup> <a name="policy" id="cdk-constructs.ThronEc2TaskDefinition.applyRemovalPolicy.parameter.policy"></a>
 
-- *Type:* aws-cdk-lib.RemovalPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.RemovalPolicy
 
 ---
 
-##### `addContainer` <a name="addContainer" id="cdk-constructs.ThronEc2TaskDefinition.addContainer"></a>
+##### `AddContainer` <a name="AddContainer" id="cdk-constructs.ThronEc2TaskDefinition.addContainer"></a>
 
-```typescript
-public addContainer(id: string, props: ContainerDefinitionOptions): ContainerDefinition
+```go
+func AddContainer(id *string, props ContainerDefinitionOptions) ContainerDefinition
 ```
 
 Tasks running in AWSVPC networking mode requires an additional environment variable for the region to be sourced.
@@ -6020,20 +6021,20 @@ This override adds in the additional environment variable as required
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TaskDefinition.addContainer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronEc2TaskDefinition.addContainer.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.ContainerDefinitionOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerDefinitionOptions
 
 ---
 
-##### `addExtension` <a name="addExtension" id="cdk-constructs.ThronEc2TaskDefinition.addExtension"></a>
+##### `AddExtension` <a name="AddExtension" id="cdk-constructs.ThronEc2TaskDefinition.addExtension"></a>
 
-```typescript
-public addExtension(extension: ITaskDefinitionExtension): void
+```go
+func AddExtension(extension ITaskDefinitionExtension)
 ```
 
 Adds the specified extension to the task definition.
@@ -6043,134 +6044,134 @@ a task definition.
 
 ###### `extension`<sup>Required</sup> <a name="extension" id="cdk-constructs.ThronEc2TaskDefinition.addExtension.parameter.extension"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.ITaskDefinitionExtension
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ITaskDefinitionExtension
 
 ---
 
-##### `addFirelensLogRouter` <a name="addFirelensLogRouter" id="cdk-constructs.ThronEc2TaskDefinition.addFirelensLogRouter"></a>
+##### `AddFirelensLogRouter` <a name="AddFirelensLogRouter" id="cdk-constructs.ThronEc2TaskDefinition.addFirelensLogRouter"></a>
 
-```typescript
-public addFirelensLogRouter(id: string, props: FirelensLogRouterDefinitionOptions): FirelensLogRouter
+```go
+func AddFirelensLogRouter(id *string, props FirelensLogRouterDefinitionOptions) FirelensLogRouter
 ```
 
 Adds a firelens log router to the task definition.
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TaskDefinition.addFirelensLogRouter.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronEc2TaskDefinition.addFirelensLogRouter.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.FirelensLogRouterDefinitionOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.FirelensLogRouterDefinitionOptions
 
 ---
 
-##### ~~`addInferenceAccelerator`~~ <a name="addInferenceAccelerator" id="cdk-constructs.ThronEc2TaskDefinition.addInferenceAccelerator"></a>
+##### ~~`AddInferenceAccelerator`~~ <a name="AddInferenceAccelerator" id="cdk-constructs.ThronEc2TaskDefinition.addInferenceAccelerator"></a>
 
-```typescript
-public addInferenceAccelerator(inferenceAccelerator: InferenceAccelerator): void
+```go
+func AddInferenceAccelerator(inferenceAccelerator InferenceAccelerator)
 ```
 
 Adds an inference accelerator to the task definition.
 
 ###### `inferenceAccelerator`<sup>Required</sup> <a name="inferenceAccelerator" id="cdk-constructs.ThronEc2TaskDefinition.addInferenceAccelerator.parameter.inferenceAccelerator"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.InferenceAccelerator
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.InferenceAccelerator
 
 ---
 
-##### `addPlacementConstraint` <a name="addPlacementConstraint" id="cdk-constructs.ThronEc2TaskDefinition.addPlacementConstraint"></a>
+##### `AddPlacementConstraint` <a name="AddPlacementConstraint" id="cdk-constructs.ThronEc2TaskDefinition.addPlacementConstraint"></a>
 
-```typescript
-public addPlacementConstraint(constraint: PlacementConstraint): void
+```go
+func AddPlacementConstraint(constraint PlacementConstraint)
 ```
 
 Adds the specified placement constraint to the task definition.
 
 ###### `constraint`<sup>Required</sup> <a name="constraint" id="cdk-constructs.ThronEc2TaskDefinition.addPlacementConstraint.parameter.constraint"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.PlacementConstraint
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.PlacementConstraint
 
 ---
 
-##### `addToExecutionRolePolicy` <a name="addToExecutionRolePolicy" id="cdk-constructs.ThronEc2TaskDefinition.addToExecutionRolePolicy"></a>
+##### `AddToExecutionRolePolicy` <a name="AddToExecutionRolePolicy" id="cdk-constructs.ThronEc2TaskDefinition.addToExecutionRolePolicy"></a>
 
-```typescript
-public addToExecutionRolePolicy(statement: PolicyStatement): void
+```go
+func AddToExecutionRolePolicy(statement PolicyStatement)
 ```
 
 Adds a policy statement to the task execution IAM role.
 
 ###### `statement`<sup>Required</sup> <a name="statement" id="cdk-constructs.ThronEc2TaskDefinition.addToExecutionRolePolicy.parameter.statement"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.PolicyStatement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.PolicyStatement
 
 ---
 
-##### `addToTaskRolePolicy` <a name="addToTaskRolePolicy" id="cdk-constructs.ThronEc2TaskDefinition.addToTaskRolePolicy"></a>
+##### `AddToTaskRolePolicy` <a name="AddToTaskRolePolicy" id="cdk-constructs.ThronEc2TaskDefinition.addToTaskRolePolicy"></a>
 
-```typescript
-public addToTaskRolePolicy(statement: PolicyStatement): void
+```go
+func AddToTaskRolePolicy(statement PolicyStatement)
 ```
 
 Adds a policy statement to the task IAM role.
 
 ###### `statement`<sup>Required</sup> <a name="statement" id="cdk-constructs.ThronEc2TaskDefinition.addToTaskRolePolicy.parameter.statement"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.PolicyStatement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.PolicyStatement
 
 ---
 
-##### `addVolume` <a name="addVolume" id="cdk-constructs.ThronEc2TaskDefinition.addVolume"></a>
+##### `AddVolume` <a name="AddVolume" id="cdk-constructs.ThronEc2TaskDefinition.addVolume"></a>
 
-```typescript
-public addVolume(volume: Volume): void
+```go
+func AddVolume(volume Volume)
 ```
 
 Adds a volume to the task definition.
 
 ###### `volume`<sup>Required</sup> <a name="volume" id="cdk-constructs.ThronEc2TaskDefinition.addVolume.parameter.volume"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.Volume
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Volume
 
 ---
 
-##### `findContainer` <a name="findContainer" id="cdk-constructs.ThronEc2TaskDefinition.findContainer"></a>
+##### `FindContainer` <a name="FindContainer" id="cdk-constructs.ThronEc2TaskDefinition.findContainer"></a>
 
-```typescript
-public findContainer(containerName: string): ContainerDefinition
+```go
+func FindContainer(containerName *string) ContainerDefinition
 ```
 
 Returns the container that match the provided containerName.
 
 ###### `containerName`<sup>Required</sup> <a name="containerName" id="cdk-constructs.ThronEc2TaskDefinition.findContainer.parameter.containerName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `findPortMappingByName` <a name="findPortMappingByName" id="cdk-constructs.ThronEc2TaskDefinition.findPortMappingByName"></a>
+##### `FindPortMappingByName` <a name="FindPortMappingByName" id="cdk-constructs.ThronEc2TaskDefinition.findPortMappingByName"></a>
 
-```typescript
-public findPortMappingByName(name: string): PortMapping
+```go
+func FindPortMappingByName(name *string) PortMapping
 ```
 
 Determine the existing port mapping for the provided name.
 
 ###### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.ThronEc2TaskDefinition.findPortMappingByName.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 : port mapping name.
 
 ---
 
-##### `grantRun` <a name="grantRun" id="cdk-constructs.ThronEc2TaskDefinition.grantRun"></a>
+##### `GrantRun` <a name="GrantRun" id="cdk-constructs.ThronEc2TaskDefinition.grantRun"></a>
 
-```typescript
-public grantRun(grantee: IGrantable): Grant
+```go
+func GrantRun(grantee IGrantable) Grant
 ```
 
 Grants permissions to run this task definition.
@@ -6182,16 +6183,16 @@ This will grant the following permissions:
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronEc2TaskDefinition.grantRun.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 Principal to grant consume rights to.
 
 ---
 
-##### `obtainExecutionRole` <a name="obtainExecutionRole" id="cdk-constructs.ThronEc2TaskDefinition.obtainExecutionRole"></a>
+##### `ObtainExecutionRole` <a name="ObtainExecutionRole" id="cdk-constructs.ThronEc2TaskDefinition.obtainExecutionRole"></a>
 
-```typescript
-public obtainExecutionRole(): IRole
+```go
+func ObtainExecutionRole() IRole
 ```
 
 Creates the task execution IAM role if it doesn't already exist.
@@ -6200,22 +6201,22 @@ Creates the task execution IAM role if it doesn't already exist.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionArn">fromTaskDefinitionArn</a></code> | Imports a task definition from the specified task definition ARN. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionAttributes">fromTaskDefinitionAttributes</a></code> | Create a task definition from a task definition reference. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionArn">fromEc2TaskDefinitionArn</a></code> | Imports a task definition from the specified task definition ARN. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes">fromEc2TaskDefinitionAttributes</a></code> | Imports an existing Ec2 task definition from its attributes. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.isOwnedResource">IsOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.isResource">IsResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionArn">FromTaskDefinitionArn</a></code> | Imports a task definition from the specified task definition ARN. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionAttributes">FromTaskDefinitionAttributes</a></code> | Create a task definition from a task definition reference. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionArn">FromEc2TaskDefinitionArn</a></code> | Imports a task definition from the specified task definition ARN. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes">FromEc2TaskDefinitionAttributes</a></code> | Imports an existing Ec2 task definition from its attributes. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronEc2TaskDefinition.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronEc2TaskDefinition.isConstruct"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TaskDefinition.isConstruct(x: any)
+cdkconstructs.ThronEc2TaskDefinition_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -6236,50 +6237,50 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronEc2TaskDefinition.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isOwnedResource` <a name="isOwnedResource" id="cdk-constructs.ThronEc2TaskDefinition.isOwnedResource"></a>
+##### `IsOwnedResource` <a name="IsOwnedResource" id="cdk-constructs.ThronEc2TaskDefinition.isOwnedResource"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TaskDefinition.isOwnedResource(construct: IConstruct)
+cdkconstructs.ThronEc2TaskDefinition_IsOwnedResource(construct IConstruct) *bool
 ```
 
 Returns true if the construct was created by CDK, and false otherwise.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronEc2TaskDefinition.isOwnedResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `isResource` <a name="isResource" id="cdk-constructs.ThronEc2TaskDefinition.isResource"></a>
+##### `IsResource` <a name="IsResource" id="cdk-constructs.ThronEc2TaskDefinition.isResource"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TaskDefinition.isResource(construct: IConstruct)
+cdkconstructs.ThronEc2TaskDefinition_IsResource(construct IConstruct) *bool
 ```
 
 Check whether the given construct is a Resource.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronEc2TaskDefinition.isResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `fromTaskDefinitionArn` <a name="fromTaskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionArn"></a>
+##### `FromTaskDefinitionArn` <a name="FromTaskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionArn"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TaskDefinition.fromTaskDefinitionArn(scope: Construct, id: string, taskDefinitionArn: string)
+cdkconstructs.ThronEc2TaskDefinition_FromTaskDefinitionArn(scope Construct, id *string, taskDefinitionArn *string) ITaskDefinition
 ```
 
 Imports a task definition from the specified task definition ARN.
@@ -6288,103 +6289,103 @@ The task will have a compatibility of EC2+Fargate.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionArn.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionArn.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `taskDefinitionArn`<sup>Required</sup> <a name="taskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionArn.parameter.taskDefinitionArn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `fromTaskDefinitionAttributes` <a name="fromTaskDefinitionAttributes" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionAttributes"></a>
+##### `FromTaskDefinitionAttributes` <a name="FromTaskDefinitionAttributes" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionAttributes"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TaskDefinition.fromTaskDefinitionAttributes(scope: Construct, id: string, attrs: TaskDefinitionAttributes)
+cdkconstructs.ThronEc2TaskDefinition_FromTaskDefinitionAttributes(scope Construct, id *string, attrs TaskDefinitionAttributes) ITaskDefinition
 ```
 
 Create a task definition from a task definition reference.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionAttributes.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionAttributes.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `attrs`<sup>Required</sup> <a name="attrs" id="cdk-constructs.ThronEc2TaskDefinition.fromTaskDefinitionAttributes.parameter.attrs"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.TaskDefinitionAttributes
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.TaskDefinitionAttributes
 
 ---
 
-##### `fromEc2TaskDefinitionArn` <a name="fromEc2TaskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionArn"></a>
+##### `FromEc2TaskDefinitionArn` <a name="FromEc2TaskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionArn"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TaskDefinition.fromEc2TaskDefinitionArn(scope: Construct, id: string, ec2TaskDefinitionArn: string)
+cdkconstructs.ThronEc2TaskDefinition_FromEc2TaskDefinitionArn(scope Construct, id *string, ec2TaskDefinitionArn *string) IEc2TaskDefinition
 ```
 
 Imports a task definition from the specified task definition ARN.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionArn.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionArn.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `ec2TaskDefinitionArn`<sup>Required</sup> <a name="ec2TaskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionArn.parameter.ec2TaskDefinitionArn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `fromEc2TaskDefinitionAttributes` <a name="fromEc2TaskDefinitionAttributes" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes"></a>
+##### `FromEc2TaskDefinitionAttributes` <a name="FromEc2TaskDefinitionAttributes" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes"></a>
 
-```typescript
-import { ThronEc2TaskDefinition } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes(scope: Construct, id: string, attrs: Ec2TaskDefinitionAttributes)
+cdkconstructs.ThronEc2TaskDefinition_FromEc2TaskDefinitionAttributes(scope Construct, id *string, attrs Ec2TaskDefinitionAttributes) IEc2TaskDefinition
 ```
 
 Imports an existing Ec2 task definition from its attributes.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `attrs`<sup>Required</sup> <a name="attrs" id="cdk-constructs.ThronEc2TaskDefinition.fromEc2TaskDefinitionAttributes.parameter.attrs"></a>
 
-- *Type:* aws-cdk-lib.aws_ecs.Ec2TaskDefinitionAttributes
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Ec2TaskDefinitionAttributes
 
 ---
 
@@ -6392,49 +6393,49 @@ Imports an existing Ec2 task definition from its attributes.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.compatibility">compatibility</a></code> | <code>aws-cdk-lib.aws_ecs.Compatibility</code> | The task launch type compatibility requirement. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.family">family</a></code> | <code>string</code> | The name of a family that this task definition is registered to. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.inferenceAccelerators">inferenceAccelerators</a></code> | <code>aws-cdk-lib.aws_ecs.InferenceAccelerator[]</code> | Public getter method to access list of inference accelerators attached to the instance. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.isEc2Compatible">isEc2Compatible</a></code> | <code>boolean</code> | Return true if the task definition can be run on an EC2 cluster. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.isExternalCompatible">isExternalCompatible</a></code> | <code>boolean</code> | Return true if the task definition can be run on a ECS anywhere cluster. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.isFargateCompatible">isFargateCompatible</a></code> | <code>boolean</code> | Return true if the task definition can be run on a Fargate cluster. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.networkMode">networkMode</a></code> | <code>aws-cdk-lib.aws_ecs.NetworkMode</code> | The networking mode to use for the containers in the task. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.taskDefinitionArn">taskDefinitionArn</a></code> | <code>string</code> | The full Amazon Resource Name (ARN) of the task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.taskRole">taskRole</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | The name of the IAM role that grants containers in the task permission to call AWS APIs on your behalf. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.ephemeralStorageGiB">ephemeralStorageGiB</a></code> | <code>number</code> | The amount (in GiB) of ephemeral storage to be allocated to the task. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.executionRole">executionRole</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | Execution role for this task definition. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.pidMode">pidMode</a></code> | <code>aws-cdk-lib.aws_ecs.PidMode</code> | The process namespace to use for the containers in the task. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.referencesSecretJsonField">referencesSecretJsonField</a></code> | <code>boolean</code> | Whether this task definition has at least a container that references a specific JSON field of a secret stored in Secrets Manager. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.defaultContainer">defaultContainer</a></code> | <code>aws-cdk-lib.aws_ecs.ContainerDefinition</code> | Default container for this task. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.container">container</a></code> | <code>aws-cdk-lib.aws_ecs.ContainerDefinition</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.logs">logs</a></code> | <code>aws-cdk-lib.aws_logs.LogGroup</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.port">port</a></code> | <code>number</code> | The port exposed for connection. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.prometheusMetricsPath">prometheusMetricsPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.env">Env</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.compatibility">Compatibility</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Compatibility</code> | The task launch type compatibility requirement. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.family">Family</a></code> | <code>*string</code> | The name of a family that this task definition is registered to. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.inferenceAccelerators">InferenceAccelerators</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.InferenceAccelerator</code> | Public getter method to access list of inference accelerators attached to the instance. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.isEc2Compatible">IsEc2Compatible</a></code> | <code>*bool</code> | Return true if the task definition can be run on an EC2 cluster. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.isExternalCompatible">IsExternalCompatible</a></code> | <code>*bool</code> | Return true if the task definition can be run on a ECS anywhere cluster. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.isFargateCompatible">IsFargateCompatible</a></code> | <code>*bool</code> | Return true if the task definition can be run on a Fargate cluster. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.networkMode">NetworkMode</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.NetworkMode</code> | The networking mode to use for the containers in the task. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.taskDefinitionArn">TaskDefinitionArn</a></code> | <code>*string</code> | The full Amazon Resource Name (ARN) of the task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.taskRole">TaskRole</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole</code> | The name of the IAM role that grants containers in the task permission to call AWS APIs on your behalf. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.ephemeralStorageGiB">EphemeralStorageGiB</a></code> | <code>*f64</code> | The amount (in GiB) of ephemeral storage to be allocated to the task. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.executionRole">ExecutionRole</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole</code> | Execution role for this task definition. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.pidMode">PidMode</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.PidMode</code> | The process namespace to use for the containers in the task. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.referencesSecretJsonField">ReferencesSecretJsonField</a></code> | <code>*bool</code> | Whether this task definition has at least a container that references a specific JSON field of a secret stored in Secrets Manager. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.defaultContainer">DefaultContainer</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerDefinition</code> | Default container for this task. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.container">Container</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerDefinition</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.logs">Logs</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_logs.LogGroup</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.port">Port</a></code> | <code>*f64</code> | The port exposed for connection. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinition.property.prometheusMetricsPath">PrometheusMetricsPath</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronEc2TaskDefinition.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronEc2TaskDefinition.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-constructs.ThronEc2TaskDefinition.property.env"></a>
+##### `Env`<sup>Required</sup> <a name="Env" id="cdk-constructs.ThronEc2TaskDefinition.property.env"></a>
 
-```typescript
-public readonly env: ResourceEnvironment;
+```go
+func Env() ResourceEnvironment
 ```
 
-- *Type:* aws-cdk-lib.ResourceEnvironment
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment
 
 The environment this resource belongs to.
 
@@ -6447,37 +6448,37 @@ that might be different than the stack they were imported into.
 
 ---
 
-##### `stack`<sup>Required</sup> <a name="stack" id="cdk-constructs.ThronEc2TaskDefinition.property.stack"></a>
+##### `Stack`<sup>Required</sup> <a name="Stack" id="cdk-constructs.ThronEc2TaskDefinition.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+func Stack() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The stack in which this resource is defined.
 
 ---
 
-##### `compatibility`<sup>Required</sup> <a name="compatibility" id="cdk-constructs.ThronEc2TaskDefinition.property.compatibility"></a>
+##### `Compatibility`<sup>Required</sup> <a name="Compatibility" id="cdk-constructs.ThronEc2TaskDefinition.property.compatibility"></a>
 
-```typescript
-public readonly compatibility: Compatibility;
+```go
+func Compatibility() Compatibility
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.Compatibility
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Compatibility
 
 The task launch type compatibility requirement.
 
 ---
 
-##### `family`<sup>Required</sup> <a name="family" id="cdk-constructs.ThronEc2TaskDefinition.property.family"></a>
+##### `Family`<sup>Required</sup> <a name="Family" id="cdk-constructs.ThronEc2TaskDefinition.property.family"></a>
 
-```typescript
-public readonly family: string;
+```go
+func Family() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The name of a family that this task definition is registered to.
 
@@ -6485,97 +6486,97 @@ A family groups multiple versions of a task definition.
 
 ---
 
-##### `inferenceAccelerators`<sup>Required</sup> <a name="inferenceAccelerators" id="cdk-constructs.ThronEc2TaskDefinition.property.inferenceAccelerators"></a>
+##### `InferenceAccelerators`<sup>Required</sup> <a name="InferenceAccelerators" id="cdk-constructs.ThronEc2TaskDefinition.property.inferenceAccelerators"></a>
 
-```typescript
-public readonly inferenceAccelerators: InferenceAccelerator[];
+```go
+func InferenceAccelerators() *[]InferenceAccelerator
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.InferenceAccelerator[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.InferenceAccelerator
 
 Public getter method to access list of inference accelerators attached to the instance.
 
 ---
 
-##### `isEc2Compatible`<sup>Required</sup> <a name="isEc2Compatible" id="cdk-constructs.ThronEc2TaskDefinition.property.isEc2Compatible"></a>
+##### `IsEc2Compatible`<sup>Required</sup> <a name="IsEc2Compatible" id="cdk-constructs.ThronEc2TaskDefinition.property.isEc2Compatible"></a>
 
-```typescript
-public readonly isEc2Compatible: boolean;
+```go
+func IsEc2Compatible() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Return true if the task definition can be run on an EC2 cluster.
 
 ---
 
-##### `isExternalCompatible`<sup>Required</sup> <a name="isExternalCompatible" id="cdk-constructs.ThronEc2TaskDefinition.property.isExternalCompatible"></a>
+##### `IsExternalCompatible`<sup>Required</sup> <a name="IsExternalCompatible" id="cdk-constructs.ThronEc2TaskDefinition.property.isExternalCompatible"></a>
 
-```typescript
-public readonly isExternalCompatible: boolean;
+```go
+func IsExternalCompatible() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Return true if the task definition can be run on a ECS anywhere cluster.
 
 ---
 
-##### `isFargateCompatible`<sup>Required</sup> <a name="isFargateCompatible" id="cdk-constructs.ThronEc2TaskDefinition.property.isFargateCompatible"></a>
+##### `IsFargateCompatible`<sup>Required</sup> <a name="IsFargateCompatible" id="cdk-constructs.ThronEc2TaskDefinition.property.isFargateCompatible"></a>
 
-```typescript
-public readonly isFargateCompatible: boolean;
+```go
+func IsFargateCompatible() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Return true if the task definition can be run on a Fargate cluster.
 
 ---
 
-##### `networkMode`<sup>Required</sup> <a name="networkMode" id="cdk-constructs.ThronEc2TaskDefinition.property.networkMode"></a>
+##### `NetworkMode`<sup>Required</sup> <a name="NetworkMode" id="cdk-constructs.ThronEc2TaskDefinition.property.networkMode"></a>
 
-```typescript
-public readonly networkMode: NetworkMode;
+```go
+func NetworkMode() NetworkMode
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.NetworkMode
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.NetworkMode
 
 The networking mode to use for the containers in the task.
 
 ---
 
-##### `taskDefinitionArn`<sup>Required</sup> <a name="taskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.property.taskDefinitionArn"></a>
+##### `TaskDefinitionArn`<sup>Required</sup> <a name="TaskDefinitionArn" id="cdk-constructs.ThronEc2TaskDefinition.property.taskDefinitionArn"></a>
 
-```typescript
-public readonly taskDefinitionArn: string;
+```go
+func TaskDefinitionArn() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The full Amazon Resource Name (ARN) of the task definition.
 
 ---
 
-##### `taskRole`<sup>Required</sup> <a name="taskRole" id="cdk-constructs.ThronEc2TaskDefinition.property.taskRole"></a>
+##### `TaskRole`<sup>Required</sup> <a name="TaskRole" id="cdk-constructs.ThronEc2TaskDefinition.property.taskRole"></a>
 
-```typescript
-public readonly taskRole: IRole;
+```go
+func TaskRole() IRole
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IRole
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole
 
 The name of the IAM role that grants containers in the task permission to call AWS APIs on your behalf.
 
 ---
 
-##### `ephemeralStorageGiB`<sup>Optional</sup> <a name="ephemeralStorageGiB" id="cdk-constructs.ThronEc2TaskDefinition.property.ephemeralStorageGiB"></a>
+##### `EphemeralStorageGiB`<sup>Optional</sup> <a name="EphemeralStorageGiB" id="cdk-constructs.ThronEc2TaskDefinition.property.ephemeralStorageGiB"></a>
 
-```typescript
-public readonly ephemeralStorageGiB: number;
+```go
+func EphemeralStorageGiB() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The amount (in GiB) of ephemeral storage to be allocated to the task.
 
@@ -6583,25 +6584,25 @@ Only supported in Fargate platform version 1.4.0 or later.
 
 ---
 
-##### `executionRole`<sup>Optional</sup> <a name="executionRole" id="cdk-constructs.ThronEc2TaskDefinition.property.executionRole"></a>
+##### `ExecutionRole`<sup>Optional</sup> <a name="ExecutionRole" id="cdk-constructs.ThronEc2TaskDefinition.property.executionRole"></a>
 
-```typescript
-public readonly executionRole: IRole;
+```go
+func ExecutionRole() IRole
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IRole
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole
 
 Execution role for this task definition.
 
 ---
 
-##### `pidMode`<sup>Optional</sup> <a name="pidMode" id="cdk-constructs.ThronEc2TaskDefinition.property.pidMode"></a>
+##### `PidMode`<sup>Optional</sup> <a name="PidMode" id="cdk-constructs.ThronEc2TaskDefinition.property.pidMode"></a>
 
-```typescript
-public readonly pidMode: PidMode;
+```go
+func PidMode() PidMode
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.PidMode
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.PidMode
 
 The process namespace to use for the containers in the task.
 
@@ -6613,25 +6614,25 @@ information, see [Task Definition Parameters](https://docs.aws.amazon.com/Amazon
 
 ---
 
-##### `referencesSecretJsonField`<sup>Optional</sup> <a name="referencesSecretJsonField" id="cdk-constructs.ThronEc2TaskDefinition.property.referencesSecretJsonField"></a>
+##### `ReferencesSecretJsonField`<sup>Optional</sup> <a name="ReferencesSecretJsonField" id="cdk-constructs.ThronEc2TaskDefinition.property.referencesSecretJsonField"></a>
 
-```typescript
-public readonly referencesSecretJsonField: boolean;
+```go
+func ReferencesSecretJsonField() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether this task definition has at least a container that references a specific JSON field of a secret stored in Secrets Manager.
 
 ---
 
-##### `defaultContainer`<sup>Optional</sup> <a name="defaultContainer" id="cdk-constructs.ThronEc2TaskDefinition.property.defaultContainer"></a>
+##### `DefaultContainer`<sup>Optional</sup> <a name="DefaultContainer" id="cdk-constructs.ThronEc2TaskDefinition.property.defaultContainer"></a>
 
-```typescript
-public readonly defaultContainer: ContainerDefinition;
+```go
+func DefaultContainer() ContainerDefinition
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.ContainerDefinition
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerDefinition
 
 Default container for this task.
 
@@ -6641,45 +6642,45 @@ container.
 
 ---
 
-##### `container`<sup>Required</sup> <a name="container" id="cdk-constructs.ThronEc2TaskDefinition.property.container"></a>
+##### `Container`<sup>Required</sup> <a name="Container" id="cdk-constructs.ThronEc2TaskDefinition.property.container"></a>
 
-```typescript
-public readonly container: ContainerDefinition;
+```go
+func Container() ContainerDefinition
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.ContainerDefinition
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerDefinition
 
 ---
 
-##### `logs`<sup>Required</sup> <a name="logs" id="cdk-constructs.ThronEc2TaskDefinition.property.logs"></a>
+##### `Logs`<sup>Required</sup> <a name="Logs" id="cdk-constructs.ThronEc2TaskDefinition.property.logs"></a>
 
-```typescript
-public readonly logs: LogGroup;
+```go
+func Logs() LogGroup
 ```
 
-- *Type:* aws-cdk-lib.aws_logs.LogGroup
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_logs.LogGroup
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="cdk-constructs.ThronEc2TaskDefinition.property.port"></a>
+##### `Port`<sup>Optional</sup> <a name="Port" id="cdk-constructs.ThronEc2TaskDefinition.property.port"></a>
 
-```typescript
-public readonly port: number;
+```go
+func Port() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The port exposed for connection.
 
 ---
 
-##### `prometheusMetricsPath`<sup>Optional</sup> <a name="prometheusMetricsPath" id="cdk-constructs.ThronEc2TaskDefinition.property.prometheusMetricsPath"></a>
+##### `PrometheusMetricsPath`<sup>Optional</sup> <a name="PrometheusMetricsPath" id="cdk-constructs.ThronEc2TaskDefinition.property.prometheusMetricsPath"></a>
 
-```typescript
-public readonly prometheusMetricsPath: string;
+```go
+func PrometheusMetricsPath() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -6693,29 +6694,29 @@ of creating also its domain following THRON's convention.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronEndpointApiGateway.Initializer"></a>
 
-```typescript
-import { ThronEndpointApiGateway } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronEndpointApiGateway(scope: Construct, id: string, props: ThronEndpointApiGatewayProps)
+cdkconstructs.NewThronEndpointApiGateway(scope Construct, id *string, props ThronEndpointApiGatewayProps) ThronEndpointApiGateway
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEndpointApiGateway.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEndpointApiGateway.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEndpointApiGateway.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEndpointApiGateway.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronEndpointApiGateway.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps">ThronEndpointApiGatewayProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronEndpointApiGateway.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronEndpointApiGateway.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -6729,14 +6730,14 @@ new ThronEndpointApiGateway(scope: Construct, id: string, props: ThronEndpointAp
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEndpointApiGateway.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronEndpointApiGateway.toString">ToString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronEndpointApiGateway.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronEndpointApiGateway.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
@@ -6745,16 +6746,16 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronEndpointApiGateway.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronEndpointApiGateway.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronEndpointApiGateway.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronEndpointApiGateway.isConstruct"></a>
 
-```typescript
-import { ThronEndpointApiGateway } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronEndpointApiGateway.isConstruct(x: any)
+cdkconstructs.ThronEndpointApiGateway_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -6775,7 +6776,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronEndpointApiGateway.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -6785,17 +6786,17 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEndpointApiGateway.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronEndpointApiGateway.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronEndpointApiGateway.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronEndpointApiGateway.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
@@ -6808,97 +6809,104 @@ Construct creating a multi environment pipeline.
 
 *Example*
 
-```typescript
-  const projectId: string = `productsynctest`;
-  const prefix: string = projectId;
+```go
+// Example automatically generated from non-compiling source. May contain errors.
+projectId := "productsynctest"
+prefix := projectId
 
-  // Construct a custom image to be used for the build
-  const defaultBuildImage: IBuildImage = ThronLambdaMicroservicePipeline.buildImageFromDockerfile(
-    this,
-    `${prefix}-cicd-build-docker`,
-    path.join(__dirname, `../Docker/build-image`)
-  );
+// Construct a custom image to be used for the build
+defaultBuildImage := thronLambdaMicroservicePipeline_BuildImageFromDockerfile(this,
+fmt.Sprintf("%v-cicd-build-docker", prefix), path.join(__dirname, jsii.String("../Docker/build-image")))
 
-  // Import an image from another repo
-  const superSpecialImage: IBuildImage = ThronLambdaMicroservicePipeline.buildImageFromRepository(
-    this,
-    `super-special-repo`,
-    `v1.2.1`
-  );
+// Import an image from another repo
+superSpecialImage := thronLambdaMicroservicePipeline_BuildImageFromRepository(this, jsii.String("super-special-repo"), jsii.String("v1.2.1"))
 
-  // Pipeline Instantiation
-  const testConstruct = new ThronLambdaMicroservicePipeline(this, `${prefix}-cicd-pipeline-project`, {
-    projectId,
-    customBuildImage: defaultBuildImage,
-    preExistingArtifactBucket: `very-special-bucket`,
-    lambdas: {
-      eventemitter: {},
-      http: {},
-      importprocessing: {},
-      // Step with additional env variables
-      importvalidation: {
-        environmentalVariables: {
-          specialVar: { value: `YEAH` }
-        }
-      },
-      export: {}
-    },
-    tests: {
-      // Step with custom build image
-      Docs: { customBuildImage: superSpecialImage },
-      Lint: {},
-      // Step with more powerful build container
-      Vuln: { computeType: ComputeType.MEDIUM },
-      TestUnit: {},
-      TestIntegration: {}
-    },
-    cicdConfig: {
-      development: {
-        capabilities: [
-          PipelineCapability.BUILD,
-          PipelineCapability.TEST,
-          PipelineCapability.NOTIFY_ON_START,
-          PipelineCapability.NOTIFY_ON_FAIL,
-          PipelineCapability.NOTIFY_ON_SUCCESS
-        ],
-        webhookUrl: "https://example.com"
-      },
-      quality: {
-        capabilities: [
-          PipelineCapability.BUILD,
-          PipelineCapability.NOTIFY_ON_SUCCESS
-        ],
-      },
-    }
-  });
+// Pipeline Instantiation
+testConstruct := NewThronLambdaMicroservicePipeline(this, fmt.Sprintf("%v-cicd-pipeline-project", prefix), map[string]interface{}{
+	"projectId": jsii.String(projectId),
+	"customBuildImage": defaultBuildImage,
+	"preExistingArtifactBucket": jsii.String("very-special-bucket"),
+	"lambdas": map[string]map[string]interface{}{
+		"eventemitter": map[string]interface{}{
+		},
+		"http": map[string]interface{}{
+		},
+		"importprocessing": map[string]interface{}{
+		},
+		// Step with additional env variables
+		"importvalidation": map[string]map[string]map[string]*string{
+			"environmentalVariables": map[string]map[string]*string{
+				"specialVar": map[string]*string{
+					"value": jsii.String("YEAH"),
+				},
+			},
+		},
+		"export": map[string]interface{}{
+		},
+	},
+	"tests": map[string]map[string]interface{}{
+		// Step with custom build image
+		"Docs": map[string]interface{}{
+			"customBuildImage": superSpecialImage,
+		},
+		"Lint": map[string]interface{}{
+		},
+		// Step with more powerful build container
+		"Vuln": map[string]interface{}{
+			"computeType": ComputeType_MEDIUM,
+		},
+		"TestUnit": map[string]interface{}{
+		},
+		"TestIntegration": map[string]interface{}{
+		},
+	},
+	"cicdConfig": map[string]map[string]interface{}{
+		"development": map[string]interface{}{
+			"capabilities": []interface{}{
+				PipelineCapability_BUILD,
+				PipelineCapability_TEST,
+				PipelineCapability_NOTIFY_ON_START,
+				PipelineCapability_NOTIFY_ON_FAIL,
+				PipelineCapability_NOTIFY_ON_SUCCESS,
+			},
+			"webhookUrl": jsii.String("https://example.com"),
+		},
+		"quality": map[string][]interface{}{
+			"capabilities": []interface{}{
+				PipelineCapability_BUILD,
+				PipelineCapability_NOTIFY_ON_SUCCESS,
+			},
+		},
+	},
+})
 ```
 
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronLambdaMicroservicePipeline.Initializer"></a>
 
-```typescript
-import { ThronLambdaMicroservicePipeline } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronLambdaMicroservicePipeline(scope: Construct, id: string, props: ThronLambdaMicroservicePipelineProps)
+cdkconstructs.NewThronLambdaMicroservicePipeline(scope Construct, id *string, props ThronLambdaMicroservicePipelineProps) ThronLambdaMicroservicePipeline
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps">ThronLambdaMicroservicePipelineProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronLambdaMicroservicePipeline.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronLambdaMicroservicePipeline.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -6912,14 +6920,14 @@ new ThronLambdaMicroservicePipeline(scope: Construct, id: string, props: ThronLa
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.toString">ToString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronLambdaMicroservicePipeline.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronLambdaMicroservicePipeline.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
@@ -6928,18 +6936,18 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromDockerfile">buildImageFromDockerfile</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromRepository">buildImageFromRepository</a></code> | Constructs a Build Image to be used in the pipeline steps. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromDockerfile">BuildImageFromDockerfile</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromRepository">BuildImageFromRepository</a></code> | Constructs a Build Image to be used in the pipeline steps. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronLambdaMicroservicePipeline.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronLambdaMicroservicePipeline.isConstruct"></a>
 
-```typescript
-import { ThronLambdaMicroservicePipeline } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronLambdaMicroservicePipeline.isConstruct(x: any)
+cdkconstructs.ThronLambdaMicroservicePipeline_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -6960,23 +6968,23 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronLambdaMicroservicePipeline.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `buildImageFromDockerfile` <a name="buildImageFromDockerfile" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromDockerfile"></a>
+##### `BuildImageFromDockerfile` <a name="BuildImageFromDockerfile" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromDockerfile"></a>
 
-```typescript
-import { ThronLambdaMicroservicePipeline } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronLambdaMicroservicePipeline.buildImageFromDockerfile(scope: Construct, repositoryName: string, dockerfilePath: string)
+cdkconstructs.ThronLambdaMicroservicePipeline_BuildImageFromDockerfile(scope Construct, repositoryName *string, dockerfilePath *string) IBuildImage
 ```
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromDockerfile.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 CDK scope to generate the construct in.
 
@@ -6984,7 +6992,7 @@ CDK scope to generate the construct in.
 
 ###### `repositoryName`<sup>Required</sup> <a name="repositoryName" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromDockerfile.parameter.repositoryName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 Name of the repository that will be created to host the image in.
 
@@ -6992,25 +7000,25 @@ Name of the repository that will be created to host the image in.
 
 ###### `dockerfilePath`<sup>Required</sup> <a name="dockerfilePath" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromDockerfile.parameter.dockerfilePath"></a>
 
-- *Type:* string
+- *Type:* *string
 
 Path of the docker file to build.
 
 ---
 
-##### `buildImageFromRepository` <a name="buildImageFromRepository" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromRepository"></a>
+##### `BuildImageFromRepository` <a name="BuildImageFromRepository" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromRepository"></a>
 
-```typescript
-import { ThronLambdaMicroservicePipeline } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronLambdaMicroservicePipeline.buildImageFromRepository(scope: Construct, repositoryName: string, imageTag?: string)
+cdkconstructs.ThronLambdaMicroservicePipeline_BuildImageFromRepository(scope Construct, repositoryName *string, imageTag *string) IBuildImage
 ```
 
 Constructs a Build Image to be used in the pipeline steps.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromRepository.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 CDK scope to generate the construct in.
 
@@ -7018,7 +7026,7 @@ CDK scope to generate the construct in.
 
 ###### `repositoryName`<sup>Required</sup> <a name="repositoryName" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromRepository.parameter.repositoryName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 Name of the private repository to pull the image from.
 
@@ -7026,7 +7034,7 @@ Name of the private repository to pull the image from.
 
 ###### `imageTag`<sup>Optional</sup> <a name="imageTag" id="cdk-constructs.ThronLambdaMicroservicePipeline.buildImageFromRepository.parameter.imageTag"></a>
 
-- *Type:* string
+- *Type:* *string
 
 Tag of the image.
 
@@ -7038,30 +7046,30 @@ Defaults to `latest`
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.property.pipelines">pipelines</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronLambdaSingleEnvPipeline">ThronLambdaSingleEnvPipeline</a>}</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.property.pipelines">Pipelines</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronLambdaSingleEnvPipeline">ThronLambdaSingleEnvPipeline</a></code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronLambdaMicroservicePipeline.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronLambdaMicroservicePipeline.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `pipelines`<sup>Required</sup> <a name="pipelines" id="cdk-constructs.ThronLambdaMicroservicePipeline.property.pipelines"></a>
+##### `Pipelines`<sup>Required</sup> <a name="Pipelines" id="cdk-constructs.ThronLambdaMicroservicePipeline.property.pipelines"></a>
 
-```typescript
-public readonly pipelines: {[ key: string ]: ThronLambdaSingleEnvPipeline};
+```go
+func Pipelines() *map[string]ThronLambdaSingleEnvPipeline
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronLambdaSingleEnvPipeline">ThronLambdaSingleEnvPipeline</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronLambdaSingleEnvPipeline">ThronLambdaSingleEnvPipeline</a>
 
 ---
 
@@ -7069,17 +7077,17 @@ public readonly pipelines: {[ key: string ]: ThronLambdaSingleEnvPipeline};
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.property.DeployConfigs">DeployConfigs</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.EnvironmentConfig">EnvironmentConfig</a>}</code> | Static and hardcoded deploy configs for the various environments. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipeline.property.DeployConfigs">DeployConfigs</a></code> | <code>*map[string]<a href="#cdk-constructs.EnvironmentConfig">EnvironmentConfig</a></code> | Static and hardcoded deploy configs for the various environments. |
 
 ---
 
 ##### `DeployConfigs`<sup>Required</sup> <a name="DeployConfigs" id="cdk-constructs.ThronLambdaMicroservicePipeline.property.DeployConfigs"></a>
 
-```typescript
-public readonly DeployConfigs: {[ key: string ]: EnvironmentConfig};
+```go
+func DeployConfigs() *map[string]EnvironmentConfig
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.EnvironmentConfig">EnvironmentConfig</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.EnvironmentConfig">EnvironmentConfig</a>
 
 Static and hardcoded deploy configs for the various environments.
 
@@ -7087,41 +7095,42 @@ Static and hardcoded deploy configs for the various environments.
 
 ### ThronLambdaSingleEnvPipeline <a name="ThronLambdaSingleEnvPipeline" id="cdk-constructs.ThronLambdaSingleEnvPipeline"></a>
 
-- *Implements:* aws-cdk-lib.aws_iam.IGrantable
+- *Implements:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 Class instantiating a pipeline for a single environment.
 
 Depending on its configuration one might
-- Enable or disable the `TEST` Stage
-- Enable or disable the `BUILD` Stage
-- Enable or disable MsTeams Notifications on various pipeline state change. See {@link PipelineCapability} for more
-You should create `ThronLambdaSingleEnvPipeline` instances via the {@link ThronLambdaSingleEnvPipelineBuilder} builder class
+
+* Enable or disable the `TEST` Stage
+* Enable or disable the `BUILD` Stage
+* Enable or disable MsTeams Notifications on various pipeline state change. See {@link PipelineCapability} for more
+  You should create `ThronLambdaSingleEnvPipeline` instances via the {@link ThronLambdaSingleEnvPipelineBuilder} builder class
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer"></a>
 
-```typescript
-import { ThronLambdaSingleEnvPipeline } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronLambdaSingleEnvPipeline(scope: Construct, id: string, props: ThronLambdaSingleEnvPipelineProps)
+cdkconstructs.NewThronLambdaSingleEnvPipeline(scope Construct, id *string, props ThronLambdaSingleEnvPipelineProps) ThronLambdaSingleEnvPipeline
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps">ThronLambdaSingleEnvPipelineProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronLambdaSingleEnvPipeline.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -7135,26 +7144,26 @@ new ThronLambdaSingleEnvPipeline(scope: Construct, id: string, props: ThronLambd
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.addNotifyLambda">addNotifyLambda</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.generateBuildSteps">generateBuildSteps</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.generateDeploySteps">generateDeploySteps</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.generateTestSteps">generateTestSteps</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.addNotifyLambda">AddNotifyLambda</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.generateBuildSteps">GenerateBuildSteps</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.generateDeploySteps">GenerateDeploySteps</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.generateTestSteps">GenerateTestSteps</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronLambdaSingleEnvPipeline.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronLambdaSingleEnvPipeline.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `addNotifyLambda` <a name="addNotifyLambda" id="cdk-constructs.ThronLambdaSingleEnvPipeline.addNotifyLambda"></a>
+##### `AddNotifyLambda` <a name="AddNotifyLambda" id="cdk-constructs.ThronLambdaSingleEnvPipeline.addNotifyLambda"></a>
 
-```typescript
-public addNotifyLambda(props: ThronLambdaSingleEnvPipelineProps, pipeline: Pipeline): void
+```go
+func AddNotifyLambda(props ThronLambdaSingleEnvPipelineProps, pipeline Pipeline)
 ```
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronLambdaSingleEnvPipeline.addNotifyLambda.parameter.props"></a>
@@ -7165,14 +7174,14 @@ public addNotifyLambda(props: ThronLambdaSingleEnvPipelineProps, pipeline: Pipel
 
 ###### `pipeline`<sup>Required</sup> <a name="pipeline" id="cdk-constructs.ThronLambdaSingleEnvPipeline.addNotifyLambda.parameter.pipeline"></a>
 
-- *Type:* aws-cdk-lib.aws_codepipeline.Pipeline
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codepipeline.Pipeline
 
 ---
 
-##### `generateBuildSteps` <a name="generateBuildSteps" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateBuildSteps"></a>
+##### `GenerateBuildSteps` <a name="GenerateBuildSteps" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateBuildSteps"></a>
 
-```typescript
-public generateBuildSteps(props: ThronLambdaSingleEnvPipelineProps, stageName: string): StageProducts
+```go
+func GenerateBuildSteps(props ThronLambdaSingleEnvPipelineProps, stageName *string) StageProducts
 ```
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateBuildSteps.parameter.props"></a>
@@ -7183,14 +7192,14 @@ public generateBuildSteps(props: ThronLambdaSingleEnvPipelineProps, stageName: s
 
 ###### `stageName`<sup>Required</sup> <a name="stageName" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateBuildSteps.parameter.stageName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `generateDeploySteps` <a name="generateDeploySteps" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateDeploySteps"></a>
+##### `GenerateDeploySteps` <a name="GenerateDeploySteps" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateDeploySteps"></a>
 
-```typescript
-public generateDeploySteps(props: ThronLambdaSingleEnvPipelineProps, stageName: string): StageProducts
+```go
+func GenerateDeploySteps(props ThronLambdaSingleEnvPipelineProps, stageName *string) StageProducts
 ```
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateDeploySteps.parameter.props"></a>
@@ -7201,14 +7210,14 @@ public generateDeploySteps(props: ThronLambdaSingleEnvPipelineProps, stageName: 
 
 ###### `stageName`<sup>Required</sup> <a name="stageName" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateDeploySteps.parameter.stageName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `generateTestSteps` <a name="generateTestSteps" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateTestSteps"></a>
+##### `GenerateTestSteps` <a name="GenerateTestSteps" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateTestSteps"></a>
 
-```typescript
-public generateTestSteps(props: ThronLambdaSingleEnvPipelineProps, stageName: string): StageProducts
+```go
+func GenerateTestSteps(props ThronLambdaSingleEnvPipelineProps, stageName *string) StageProducts
 ```
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateTestSteps.parameter.props"></a>
@@ -7219,7 +7228,7 @@ public generateTestSteps(props: ThronLambdaSingleEnvPipelineProps, stageName: st
 
 ###### `stageName`<sup>Required</sup> <a name="stageName" id="cdk-constructs.ThronLambdaSingleEnvPipeline.generateTestSteps.parameter.stageName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -7227,16 +7236,16 @@ public generateTestSteps(props: ThronLambdaSingleEnvPipelineProps, stageName: st
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronLambdaSingleEnvPipeline.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronLambdaSingleEnvPipeline.isConstruct"></a>
 
-```typescript
-import { ThronLambdaSingleEnvPipeline } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronLambdaSingleEnvPipeline.isConstruct(x: any)
+cdkconstructs.ThronLambdaSingleEnvPipeline_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -7257,7 +7266,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronLambdaSingleEnvPipeline.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -7267,30 +7276,30 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.property.grantPrincipal">grantPrincipal</a></code> | <code>aws-cdk-lib.aws_iam.IPrincipal</code> | The principal to grant permissions to. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipeline.property.grantPrincipal">GrantPrincipal</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal</code> | The principal to grant permissions to. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronLambdaSingleEnvPipeline.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronLambdaSingleEnvPipeline.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `grantPrincipal`<sup>Required</sup> <a name="grantPrincipal" id="cdk-constructs.ThronLambdaSingleEnvPipeline.property.grantPrincipal"></a>
+##### `GrantPrincipal`<sup>Required</sup> <a name="GrantPrincipal" id="cdk-constructs.ThronLambdaSingleEnvPipeline.property.grantPrincipal"></a>
 
-```typescript
-public readonly grantPrincipal: IPrincipal;
+```go
+func GrantPrincipal() IPrincipal
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IPrincipal
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal
 
 The principal to grant permissions to.
 
@@ -7303,23 +7312,23 @@ A construct that injects NewRelic configuration into a Lambda function.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronNewRelicContextInjector.Initializer"></a>
 
-```typescript
-import { ThronNewRelicContextInjector } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronNewRelicContextInjector(scope: Construct, id: string, props: ThronNewRelicContextInjectorOptions)
+cdkconstructs.NewThronNewRelicContextInjector(scope Construct, id *string, props ThronNewRelicContextInjectorOptions) ThronNewRelicContextInjector
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.Initializer.parameter.id">id</a></code> | <code>string</code> | - The scoped construct ID. |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.Initializer.parameter.id">id</a></code> | <code>*string</code> | - The scoped construct ID. |
 | <code><a href="#cdk-constructs.ThronNewRelicContextInjector.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronNewRelicContextInjectorOptions">ThronNewRelicContextInjectorOptions</a></code> | - The NewRelic configuration options. |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronNewRelicContextInjector.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 The scope in which this construct is defined.
 
@@ -7327,7 +7336,7 @@ The scope in which this construct is defined.
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronNewRelicContextInjector.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The scoped construct ID.
 
@@ -7345,30 +7354,30 @@ The NewRelic configuration options.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.injectEnvironment">injectEnvironment</a></code> | Injects the NewRelic environment variables into the given Lambda function. |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.injectEnvironment">InjectEnvironment</a></code> | Injects the NewRelic environment variables into the given Lambda function. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronNewRelicContextInjector.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronNewRelicContextInjector.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `injectEnvironment` <a name="injectEnvironment" id="cdk-constructs.ThronNewRelicContextInjector.injectEnvironment"></a>
+##### `InjectEnvironment` <a name="InjectEnvironment" id="cdk-constructs.ThronNewRelicContextInjector.injectEnvironment"></a>
 
-```typescript
-public injectEnvironment(lambdaFunction: Function): void
+```go
+func InjectEnvironment(lambdaFunction Function)
 ```
 
 Injects the NewRelic environment variables into the given Lambda function.
 
 ###### `lambdaFunction`<sup>Required</sup> <a name="lambdaFunction" id="cdk-constructs.ThronNewRelicContextInjector.injectEnvironment.parameter.lambdaFunction"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.Function
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Function
 
 The Lambda function to inject the environment variables into.
 
@@ -7378,16 +7387,16 @@ The Lambda function to inject the environment variables into.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronNewRelicContextInjector.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronNewRelicContextInjector.isConstruct"></a>
 
-```typescript
-import { ThronNewRelicContextInjector } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicContextInjector.isConstruct(x: any)
+cdkconstructs.ThronNewRelicContextInjector_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -7408,7 +7417,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronNewRelicContextInjector.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -7418,30 +7427,30 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.property.newRelicEnvironment">newRelicEnvironment</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjector.property.newRelicEnvironment">NewRelicEnvironment</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronNewRelicContextInjector.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronNewRelicContextInjector.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `newRelicEnvironment`<sup>Required</sup> <a name="newRelicEnvironment" id="cdk-constructs.ThronNewRelicContextInjector.property.newRelicEnvironment"></a>
+##### `NewRelicEnvironment`<sup>Required</sup> <a name="NewRelicEnvironment" id="cdk-constructs.ThronNewRelicContextInjector.property.newRelicEnvironment"></a>
 
-```typescript
-public readonly newRelicEnvironment: {[ key: string ]: string};
+```go
+func NewRelicEnvironment() *map[string]*string
 ```
 
-- *Type:* {[ key: string ]: string}
+- *Type:* *map[string]*string
 
 ---
 
@@ -7452,23 +7461,23 @@ A Lambda Docker function with NewRelic integration.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronNewRelicDockerLambda.Initializer"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronNewRelicDockerLambda(scope: Stack, id: string, props: NewRelicFunctionOptions)
+cdkconstructs.NewThronNewRelicDockerLambda(scope Stack, id *string, props NewRelicFunctionOptions) ThronNewRelicDockerLambda
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.Stack</code> | - The scope in which this construct is defined. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.Initializer.parameter.id">id</a></code> | <code>string</code> | - The scoped construct ID. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | - The scope in which this construct is defined. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.Initializer.parameter.id">id</a></code> | <code>*string</code> | - The scoped construct ID. |
 | <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.NewRelicFunctionOptions">NewRelicFunctionOptions</a></code> | - The function properties including NewRelic configuration overrides. |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronNewRelicDockerLambda.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The scope in which this construct is defined.
 
@@ -7476,7 +7485,7 @@ The scope in which this construct is defined.
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronNewRelicDockerLambda.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The scoped construct ID.
 
@@ -7494,46 +7503,46 @@ The function properties including NewRelic configuration overrides.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEventSource">addEventSource</a></code> | Adds an event source to this function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEventSourceMapping">addEventSourceMapping</a></code> | Adds an event source that maps to this AWS Lambda function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addFunctionUrl">addFunctionUrl</a></code> | Adds a url to this lambda function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addPermission">addPermission</a></code> | Adds a permission to the Lambda resource policy. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addToRolePolicy">addToRolePolicy</a></code> | Adds a statement to the IAM role assumed by the instance. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.configureAsyncInvoke">configureAsyncInvoke</a></code> | Configures options for asynchronous invocation. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.considerWarningOnInvokeFunctionPermissions">considerWarningOnInvokeFunctionPermissions</a></code> | A warning will be added to functions under the following conditions: - permissions that include `lambda:InvokeFunction` are added to the unqualified function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvoke">grantInvoke</a></code> | Grant the given identity permissions to invoke this Lambda. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeCompositePrincipal">grantInvokeCompositePrincipal</a></code> | Grant multiple principals the ability to invoke this Lambda via CompositePrincipal. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeLatestVersion">grantInvokeLatestVersion</a></code> | Grant the given identity permissions to invoke the $LATEST version or unqualified version of this Lambda. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeUrl">grantInvokeUrl</a></code> | Grant the given identity permissions to invoke this Lambda Function URL. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeVersion">grantInvokeVersion</a></code> | Grant the given identity permissions to invoke the given version of this Lambda. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metric">metric</a></code> | Return the given named metric for this Function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricDuration">metricDuration</a></code> | How long execution of this Lambda takes. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricErrors">metricErrors</a></code> | How many invocations of this Lambda fail. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricInvocations">metricInvocations</a></code> | How often this Lambda is invoked. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricThrottles">metricThrottles</a></code> | How often this Lambda is throttled. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addAlias">addAlias</a></code> | Defines an alias for this function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEnvironment">addEnvironment</a></code> | Adds an environment variable to this Lambda function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addLayers">addLayers</a></code> | Adds one or more Lambda Layers to this Lambda function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.invalidateVersionBasedOn">invalidateVersionBasedOn</a></code> | Mix additional information into the hash of the Version object. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEndpointAlb">addEndpointAlb</a></code> | Add an endpoint the lambda function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addLegacyEndpointAlb">addLegacyEndpointAlb</a></code> | Add a legacy endpoint to the lambda function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.applyRemovalPolicy">ApplyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEventSource">AddEventSource</a></code> | Adds an event source to this function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEventSourceMapping">AddEventSourceMapping</a></code> | Adds an event source that maps to this AWS Lambda function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addFunctionUrl">AddFunctionUrl</a></code> | Adds a url to this lambda function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addPermission">AddPermission</a></code> | Adds a permission to the Lambda resource policy. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addToRolePolicy">AddToRolePolicy</a></code> | Adds a statement to the IAM role assumed by the instance. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.configureAsyncInvoke">ConfigureAsyncInvoke</a></code> | Configures options for asynchronous invocation. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.considerWarningOnInvokeFunctionPermissions">ConsiderWarningOnInvokeFunctionPermissions</a></code> | A warning will be added to functions under the following conditions: - permissions that include `lambda:InvokeFunction` are added to the unqualified function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvoke">GrantInvoke</a></code> | Grant the given identity permissions to invoke this Lambda. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeCompositePrincipal">GrantInvokeCompositePrincipal</a></code> | Grant multiple principals the ability to invoke this Lambda via CompositePrincipal. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeLatestVersion">GrantInvokeLatestVersion</a></code> | Grant the given identity permissions to invoke the $LATEST version or unqualified version of this Lambda. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeUrl">GrantInvokeUrl</a></code> | Grant the given identity permissions to invoke this Lambda Function URL. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.grantInvokeVersion">GrantInvokeVersion</a></code> | Grant the given identity permissions to invoke the given version of this Lambda. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metric">Metric</a></code> | Return the given named metric for this Function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricDuration">MetricDuration</a></code> | How long execution of this Lambda takes. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricErrors">MetricErrors</a></code> | How many invocations of this Lambda fail. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricInvocations">MetricInvocations</a></code> | How often this Lambda is invoked. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricThrottles">MetricThrottles</a></code> | How often this Lambda is throttled. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addAlias">AddAlias</a></code> | Defines an alias for this function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEnvironment">AddEnvironment</a></code> | Adds an environment variable to this Lambda function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addLayers">AddLayers</a></code> | Adds one or more Lambda Layers to this Lambda function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.invalidateVersionBasedOn">InvalidateVersionBasedOn</a></code> | Mix additional information into the hash of the Version object. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addEndpointAlb">AddEndpointAlb</a></code> | Add an endpoint the lambda function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.addLegacyEndpointAlb">AddLegacyEndpointAlb</a></code> | Add a legacy endpoint to the lambda function. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronNewRelicDockerLambda.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronNewRelicDockerLambda.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="cdk-constructs.ThronNewRelicDockerLambda.applyRemovalPolicy"></a>
+##### `ApplyRemovalPolicy` <a name="ApplyRemovalPolicy" id="cdk-constructs.ThronNewRelicDockerLambda.applyRemovalPolicy"></a>
 
-```typescript
-public applyRemovalPolicy(policy: RemovalPolicy): void
+```go
+func ApplyRemovalPolicy(policy RemovalPolicy)
 ```
 
 Apply the given removal policy to this resource.
@@ -7548,14 +7557,14 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 ###### `policy`<sup>Required</sup> <a name="policy" id="cdk-constructs.ThronNewRelicDockerLambda.applyRemovalPolicy.parameter.policy"></a>
 
-- *Type:* aws-cdk-lib.RemovalPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.RemovalPolicy
 
 ---
 
-##### `addEventSource` <a name="addEventSource" id="cdk-constructs.ThronNewRelicDockerLambda.addEventSource"></a>
+##### `AddEventSource` <a name="AddEventSource" id="cdk-constructs.ThronNewRelicDockerLambda.addEventSource"></a>
 
-```typescript
-public addEventSource(source: IEventSource): void
+```go
+func AddEventSource(source IEventSource)
 ```
 
 Adds an event source to this function.
@@ -7570,48 +7579,48 @@ myFunction.addEventSource(new SqsEventSource(myQueue));
 
 ###### `source`<sup>Required</sup> <a name="source" id="cdk-constructs.ThronNewRelicDockerLambda.addEventSource.parameter.source"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.IEventSource
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IEventSource
 
 ---
 
-##### `addEventSourceMapping` <a name="addEventSourceMapping" id="cdk-constructs.ThronNewRelicDockerLambda.addEventSourceMapping"></a>
+##### `AddEventSourceMapping` <a name="AddEventSourceMapping" id="cdk-constructs.ThronNewRelicDockerLambda.addEventSourceMapping"></a>
 
-```typescript
-public addEventSourceMapping(id: string, options: EventSourceMappingOptions): EventSourceMapping
+```go
+func AddEventSourceMapping(id *string, options EventSourceMappingOptions) EventSourceMapping
 ```
 
 Adds an event source that maps to this AWS Lambda function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronNewRelicDockerLambda.addEventSourceMapping.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `options`<sup>Required</sup> <a name="options" id="cdk-constructs.ThronNewRelicDockerLambda.addEventSourceMapping.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.EventSourceMappingOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.EventSourceMappingOptions
 
 ---
 
-##### `addFunctionUrl` <a name="addFunctionUrl" id="cdk-constructs.ThronNewRelicDockerLambda.addFunctionUrl"></a>
+##### `AddFunctionUrl` <a name="AddFunctionUrl" id="cdk-constructs.ThronNewRelicDockerLambda.addFunctionUrl"></a>
 
-```typescript
-public addFunctionUrl(options?: FunctionUrlOptions): FunctionUrl
+```go
+func AddFunctionUrl(options FunctionUrlOptions) FunctionUrl
 ```
 
 Adds a url to this lambda function.
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronNewRelicDockerLambda.addFunctionUrl.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.FunctionUrlOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FunctionUrlOptions
 
 ---
 
-##### `addPermission` <a name="addPermission" id="cdk-constructs.ThronNewRelicDockerLambda.addPermission"></a>
+##### `AddPermission` <a name="AddPermission" id="cdk-constructs.ThronNewRelicDockerLambda.addPermission"></a>
 
-```typescript
-public addPermission(id: string, permission: Permission): void
+```go
+func AddPermission(id *string, permission Permission)
 ```
 
 Adds a permission to the Lambda resource policy.
@@ -7620,7 +7629,7 @@ Adds a permission to the Lambda resource policy.
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronNewRelicDockerLambda.addPermission.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The id for the permission construct.
 
@@ -7628,44 +7637,44 @@ The id for the permission construct.
 
 ###### `permission`<sup>Required</sup> <a name="permission" id="cdk-constructs.ThronNewRelicDockerLambda.addPermission.parameter.permission"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.Permission
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Permission
 
 The permission to grant to this Lambda function.
 
 ---
 
-##### `addToRolePolicy` <a name="addToRolePolicy" id="cdk-constructs.ThronNewRelicDockerLambda.addToRolePolicy"></a>
+##### `AddToRolePolicy` <a name="AddToRolePolicy" id="cdk-constructs.ThronNewRelicDockerLambda.addToRolePolicy"></a>
 
-```typescript
-public addToRolePolicy(statement: PolicyStatement): void
+```go
+func AddToRolePolicy(statement PolicyStatement)
 ```
 
 Adds a statement to the IAM role assumed by the instance.
 
 ###### `statement`<sup>Required</sup> <a name="statement" id="cdk-constructs.ThronNewRelicDockerLambda.addToRolePolicy.parameter.statement"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.PolicyStatement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.PolicyStatement
 
 ---
 
-##### `configureAsyncInvoke` <a name="configureAsyncInvoke" id="cdk-constructs.ThronNewRelicDockerLambda.configureAsyncInvoke"></a>
+##### `ConfigureAsyncInvoke` <a name="ConfigureAsyncInvoke" id="cdk-constructs.ThronNewRelicDockerLambda.configureAsyncInvoke"></a>
 
-```typescript
-public configureAsyncInvoke(options: EventInvokeConfigOptions): void
+```go
+func ConfigureAsyncInvoke(options EventInvokeConfigOptions)
 ```
 
 Configures options for asynchronous invocation.
 
 ###### `options`<sup>Required</sup> <a name="options" id="cdk-constructs.ThronNewRelicDockerLambda.configureAsyncInvoke.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.EventInvokeConfigOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.EventInvokeConfigOptions
 
 ---
 
-##### `considerWarningOnInvokeFunctionPermissions` <a name="considerWarningOnInvokeFunctionPermissions" id="cdk-constructs.ThronNewRelicDockerLambda.considerWarningOnInvokeFunctionPermissions"></a>
+##### `ConsiderWarningOnInvokeFunctionPermissions` <a name="ConsiderWarningOnInvokeFunctionPermissions" id="cdk-constructs.ThronNewRelicDockerLambda.considerWarningOnInvokeFunctionPermissions"></a>
 
-```typescript
-public considerWarningOnInvokeFunctionPermissions(scope: Construct, action: string): void
+```go
+func ConsiderWarningOnInvokeFunctionPermissions(scope Construct, action *string)
 ```
 
 A warning will be added to functions under the following conditions: - permissions that include `lambda:InvokeFunction` are added to the unqualified function.
@@ -7677,116 +7686,116 @@ This function is overridden as a noOp for QualifiedFunctionBase.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronNewRelicDockerLambda.considerWarningOnInvokeFunctionPermissions.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `action`<sup>Required</sup> <a name="action" id="cdk-constructs.ThronNewRelicDockerLambda.considerWarningOnInvokeFunctionPermissions.parameter.action"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `grantInvoke` <a name="grantInvoke" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvoke"></a>
+##### `GrantInvoke` <a name="GrantInvoke" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvoke"></a>
 
-```typescript
-public grantInvoke(grantee: IGrantable): Grant
+```go
+func GrantInvoke(grantee IGrantable) Grant
 ```
 
 Grant the given identity permissions to invoke this Lambda.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvoke.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
-##### `grantInvokeCompositePrincipal` <a name="grantInvokeCompositePrincipal" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeCompositePrincipal"></a>
+##### `GrantInvokeCompositePrincipal` <a name="GrantInvokeCompositePrincipal" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeCompositePrincipal"></a>
 
-```typescript
-public grantInvokeCompositePrincipal(compositePrincipal: CompositePrincipal): Grant[]
+```go
+func GrantInvokeCompositePrincipal(compositePrincipal CompositePrincipal) *[]Grant
 ```
 
 Grant multiple principals the ability to invoke this Lambda via CompositePrincipal.
 
 ###### `compositePrincipal`<sup>Required</sup> <a name="compositePrincipal" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeCompositePrincipal.parameter.compositePrincipal"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.CompositePrincipal
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.CompositePrincipal
 
 ---
 
-##### `grantInvokeLatestVersion` <a name="grantInvokeLatestVersion" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeLatestVersion"></a>
+##### `GrantInvokeLatestVersion` <a name="GrantInvokeLatestVersion" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeLatestVersion"></a>
 
-```typescript
-public grantInvokeLatestVersion(grantee: IGrantable): Grant
+```go
+func GrantInvokeLatestVersion(grantee IGrantable) Grant
 ```
 
 Grant the given identity permissions to invoke the $LATEST version or unqualified version of this Lambda.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeLatestVersion.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
-##### `grantInvokeUrl` <a name="grantInvokeUrl" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeUrl"></a>
+##### `GrantInvokeUrl` <a name="GrantInvokeUrl" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeUrl"></a>
 
-```typescript
-public grantInvokeUrl(grantee: IGrantable): Grant
+```go
+func GrantInvokeUrl(grantee IGrantable) Grant
 ```
 
 Grant the given identity permissions to invoke this Lambda Function URL.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeUrl.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
-##### `grantInvokeVersion` <a name="grantInvokeVersion" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeVersion"></a>
+##### `GrantInvokeVersion` <a name="GrantInvokeVersion" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeVersion"></a>
 
-```typescript
-public grantInvokeVersion(grantee: IGrantable, version: IVersion): Grant
+```go
+func GrantInvokeVersion(grantee IGrantable, version IVersion) Grant
 ```
 
 Grant the given identity permissions to invoke the given version of this Lambda.
 
 ###### `grantee`<sup>Required</sup> <a name="grantee" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeVersion.parameter.grantee"></a>
 
-- *Type:* aws-cdk-lib.aws_iam.IGrantable
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 ---
 
 ###### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.ThronNewRelicDockerLambda.grantInvokeVersion.parameter.version"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.IVersion
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IVersion
 
 ---
 
-##### `metric` <a name="metric" id="cdk-constructs.ThronNewRelicDockerLambda.metric"></a>
+##### `Metric` <a name="Metric" id="cdk-constructs.ThronNewRelicDockerLambda.metric"></a>
 
-```typescript
-public metric(metricName: string, props?: MetricOptions): Metric
+```go
+func Metric(metricName *string, props MetricOptions) Metric
 ```
 
 Return the given named metric for this Function.
 
 ###### `metricName`<sup>Required</sup> <a name="metricName" id="cdk-constructs.ThronNewRelicDockerLambda.metric.parameter.metricName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metric.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricDuration` <a name="metricDuration" id="cdk-constructs.ThronNewRelicDockerLambda.metricDuration"></a>
+##### `MetricDuration` <a name="MetricDuration" id="cdk-constructs.ThronNewRelicDockerLambda.metricDuration"></a>
 
-```typescript
-public metricDuration(props?: MetricOptions): Metric
+```go
+func MetricDuration(props MetricOptions) Metric
 ```
 
 How long execution of this Lambda takes.
@@ -7795,14 +7804,14 @@ Average over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricDuration.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricErrors` <a name="metricErrors" id="cdk-constructs.ThronNewRelicDockerLambda.metricErrors"></a>
+##### `MetricErrors` <a name="MetricErrors" id="cdk-constructs.ThronNewRelicDockerLambda.metricErrors"></a>
 
-```typescript
-public metricErrors(props?: MetricOptions): Metric
+```go
+func MetricErrors(props MetricOptions) Metric
 ```
 
 How many invocations of this Lambda fail.
@@ -7811,14 +7820,14 @@ Sum over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricErrors.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricInvocations` <a name="metricInvocations" id="cdk-constructs.ThronNewRelicDockerLambda.metricInvocations"></a>
+##### `MetricInvocations` <a name="MetricInvocations" id="cdk-constructs.ThronNewRelicDockerLambda.metricInvocations"></a>
 
-```typescript
-public metricInvocations(props?: MetricOptions): Metric
+```go
+func MetricInvocations(props MetricOptions) Metric
 ```
 
 How often this Lambda is invoked.
@@ -7827,14 +7836,14 @@ Sum over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricInvocations.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricThrottles` <a name="metricThrottles" id="cdk-constructs.ThronNewRelicDockerLambda.metricThrottles"></a>
+##### `MetricThrottles` <a name="MetricThrottles" id="cdk-constructs.ThronNewRelicDockerLambda.metricThrottles"></a>
 
-```typescript
-public metricThrottles(props?: MetricOptions): Metric
+```go
+func MetricThrottles(props MetricOptions) Metric
 ```
 
 How often this Lambda is throttled.
@@ -7843,14 +7852,14 @@ Sum over 5 minutes
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricThrottles.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `addAlias` <a name="addAlias" id="cdk-constructs.ThronNewRelicDockerLambda.addAlias"></a>
+##### `AddAlias` <a name="AddAlias" id="cdk-constructs.ThronNewRelicDockerLambda.addAlias"></a>
 
-```typescript
-public addAlias(aliasName: string, options?: AliasOptions): Alias
+```go
+func AddAlias(aliasName *string, options AliasOptions) Alias
 ```
 
 Defines an alias for this function.
@@ -7873,7 +7882,7 @@ new lambda.Alias(this, 'AliasLive', {
 
 ###### `aliasName`<sup>Required</sup> <a name="aliasName" id="cdk-constructs.ThronNewRelicDockerLambda.addAlias.parameter.aliasName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The name of the alias.
 
@@ -7881,16 +7890,16 @@ The name of the alias.
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronNewRelicDockerLambda.addAlias.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.AliasOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.AliasOptions
 
 Alias options.
 
 ---
 
-##### `addEnvironment` <a name="addEnvironment" id="cdk-constructs.ThronNewRelicDockerLambda.addEnvironment"></a>
+##### `AddEnvironment` <a name="AddEnvironment" id="cdk-constructs.ThronNewRelicDockerLambda.addEnvironment"></a>
 
-```typescript
-public addEnvironment(key: string, value: string, options?: EnvironmentOptions): Function
+```go
+func AddEnvironment(key *string, value *string, options EnvironmentOptions) Function
 ```
 
 Adds an environment variable to this Lambda function.
@@ -7899,7 +7908,7 @@ If this is a ref to a Lambda function, this operation results in a no-op.
 
 ###### `key`<sup>Required</sup> <a name="key" id="cdk-constructs.ThronNewRelicDockerLambda.addEnvironment.parameter.key"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The environment variable key.
 
@@ -7907,7 +7916,7 @@ The environment variable key.
 
 ###### `value`<sup>Required</sup> <a name="value" id="cdk-constructs.ThronNewRelicDockerLambda.addEnvironment.parameter.value"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The environment variable's value.
 
@@ -7915,32 +7924,32 @@ The environment variable's value.
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronNewRelicDockerLambda.addEnvironment.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.EnvironmentOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.EnvironmentOptions
 
 Environment variable options.
 
 ---
 
-##### `addLayers` <a name="addLayers" id="cdk-constructs.ThronNewRelicDockerLambda.addLayers"></a>
+##### `AddLayers` <a name="AddLayers" id="cdk-constructs.ThronNewRelicDockerLambda.addLayers"></a>
 
-```typescript
-public addLayers(layers: ILayerVersion): void
+```go
+func AddLayers(layers ILayerVersion)
 ```
 
 Adds one or more Lambda Layers to this Lambda function.
 
 ###### `layers`<sup>Required</sup> <a name="layers" id="cdk-constructs.ThronNewRelicDockerLambda.addLayers.parameter.layers"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.ILayerVersion
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.ILayerVersion
 
 the layers to be added.
 
 ---
 
-##### `invalidateVersionBasedOn` <a name="invalidateVersionBasedOn" id="cdk-constructs.ThronNewRelicDockerLambda.invalidateVersionBasedOn"></a>
+##### `InvalidateVersionBasedOn` <a name="InvalidateVersionBasedOn" id="cdk-constructs.ThronNewRelicDockerLambda.invalidateVersionBasedOn"></a>
 
-```typescript
-public invalidateVersionBasedOn(x: string): void
+```go
+func InvalidateVersionBasedOn(x *string)
 ```
 
 Mix additional information into the hash of the Version object.
@@ -7962,21 +7971,21 @@ This method may be called more than once.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronNewRelicDockerLambda.invalidateVersionBasedOn.parameter.x"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `addEndpointAlb` <a name="addEndpointAlb" id="cdk-constructs.ThronNewRelicDockerLambda.addEndpointAlb"></a>
+##### `AddEndpointAlb` <a name="AddEndpointAlb" id="cdk-constructs.ThronNewRelicDockerLambda.addEndpointAlb"></a>
 
-```typescript
-public addEndpointAlb(name: string, endpointProps: ThronEndpointAlbProps): EndpointAlb
+```go
+func AddEndpointAlb(name *string, endpointProps ThronEndpointAlbProps) EndpointAlb
 ```
 
 Add an endpoint the lambda function.
 
 ###### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.ThronNewRelicDockerLambda.addEndpointAlb.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -7986,17 +7995,17 @@ Add an endpoint the lambda function.
 
 ---
 
-##### `addLegacyEndpointAlb` <a name="addLegacyEndpointAlb" id="cdk-constructs.ThronNewRelicDockerLambda.addLegacyEndpointAlb"></a>
+##### `AddLegacyEndpointAlb` <a name="AddLegacyEndpointAlb" id="cdk-constructs.ThronNewRelicDockerLambda.addLegacyEndpointAlb"></a>
 
-```typescript
-public addLegacyEndpointAlb(name: string, endpointProps: LegacyEndpointAlbProps): EndpointAlb
+```go
+func AddLegacyEndpointAlb(name *string, endpointProps LegacyEndpointAlbProps) EndpointAlb
 ```
 
 Add a legacy endpoint to the lambda function.
 
 ###### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.ThronNewRelicDockerLambda.addLegacyEndpointAlb.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -8010,29 +8019,29 @@ Add a legacy endpoint to the lambda function.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.classifyVersionProperty">classifyVersionProperty</a></code> | Record whether specific properties in the `AWS::Lambda::Function` resource should also be associated to the Version resource. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.fromFunctionArn">fromFunctionArn</a></code> | Import a lambda function into the CDK using its ARN. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.fromFunctionAttributes">fromFunctionAttributes</a></code> | Creates a Lambda function object which represents a function not defined within this stack. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.fromFunctionName">fromFunctionName</a></code> | Import a lambda function into the CDK using its name. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAll">metricAll</a></code> | Return the given named metric for this Lambda. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllConcurrentExecutions">metricAllConcurrentExecutions</a></code> | Metric for the number of concurrent executions across all Lambdas. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllDuration">metricAllDuration</a></code> | Metric for the Duration executing all Lambdas. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllErrors">metricAllErrors</a></code> | Metric for the number of Errors executing all Lambdas. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllInvocations">metricAllInvocations</a></code> | Metric for the number of invocations of all Lambdas. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllThrottles">metricAllThrottles</a></code> | Metric for the number of throttled invocations of all Lambdas. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllUnreservedConcurrentExecutions">metricAllUnreservedConcurrentExecutions</a></code> | Metric for the number of unreserved concurrent executions across all Lambdas. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.isOwnedResource">IsOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.isResource">IsResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.classifyVersionProperty">ClassifyVersionProperty</a></code> | Record whether specific properties in the `AWS::Lambda::Function` resource should also be associated to the Version resource. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.fromFunctionArn">FromFunctionArn</a></code> | Import a lambda function into the CDK using its ARN. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.fromFunctionAttributes">FromFunctionAttributes</a></code> | Creates a Lambda function object which represents a function not defined within this stack. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.fromFunctionName">FromFunctionName</a></code> | Import a lambda function into the CDK using its name. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAll">MetricAll</a></code> | Return the given named metric for this Lambda. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllConcurrentExecutions">MetricAllConcurrentExecutions</a></code> | Metric for the number of concurrent executions across all Lambdas. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllDuration">MetricAllDuration</a></code> | Metric for the Duration executing all Lambdas. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllErrors">MetricAllErrors</a></code> | Metric for the number of Errors executing all Lambdas. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllInvocations">MetricAllInvocations</a></code> | Metric for the number of invocations of all Lambdas. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllThrottles">MetricAllThrottles</a></code> | Metric for the number of throttled invocations of all Lambdas. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.metricAllUnreservedConcurrentExecutions">MetricAllUnreservedConcurrentExecutions</a></code> | Metric for the number of unreserved concurrent executions across all Lambdas. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronNewRelicDockerLambda.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronNewRelicDockerLambda.isConstruct"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.isConstruct(x: any)
+cdkconstructs.ThronNewRelicDockerLambda_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -8053,50 +8062,50 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronNewRelicDockerLambda.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isOwnedResource` <a name="isOwnedResource" id="cdk-constructs.ThronNewRelicDockerLambda.isOwnedResource"></a>
+##### `IsOwnedResource` <a name="IsOwnedResource" id="cdk-constructs.ThronNewRelicDockerLambda.isOwnedResource"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.isOwnedResource(construct: IConstruct)
+cdkconstructs.ThronNewRelicDockerLambda_IsOwnedResource(construct IConstruct) *bool
 ```
 
 Returns true if the construct was created by CDK, and false otherwise.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronNewRelicDockerLambda.isOwnedResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `isResource` <a name="isResource" id="cdk-constructs.ThronNewRelicDockerLambda.isResource"></a>
+##### `IsResource` <a name="IsResource" id="cdk-constructs.ThronNewRelicDockerLambda.isResource"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.isResource(construct: IConstruct)
+cdkconstructs.ThronNewRelicDockerLambda_IsResource(construct IConstruct) *bool
 ```
 
 Check whether the given construct is a Resource.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronNewRelicDockerLambda.isResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `classifyVersionProperty` <a name="classifyVersionProperty" id="cdk-constructs.ThronNewRelicDockerLambda.classifyVersionProperty"></a>
+##### `ClassifyVersionProperty` <a name="ClassifyVersionProperty" id="cdk-constructs.ThronNewRelicDockerLambda.classifyVersionProperty"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.classifyVersionProperty(propertyName: string, locked: boolean)
+cdkconstructs.ThronNewRelicDockerLambda_ClassifyVersionProperty(propertyName *string, locked *bool)
 ```
 
 Record whether specific properties in the `AWS::Lambda::Function` resource should also be associated to the Version resource.
@@ -8105,7 +8114,7 @@ See 'currentVersion' section in the module README for more details.
 
 ###### `propertyName`<sup>Required</sup> <a name="propertyName" id="cdk-constructs.ThronNewRelicDockerLambda.classifyVersionProperty.parameter.propertyName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The property to classify.
 
@@ -8113,18 +8122,18 @@ The property to classify.
 
 ###### `locked`<sup>Required</sup> <a name="locked" id="cdk-constructs.ThronNewRelicDockerLambda.classifyVersionProperty.parameter.locked"></a>
 
-- *Type:* boolean
+- *Type:* *bool
 
 whether the property should be associated to the version or not.
 
 ---
 
-##### `fromFunctionArn` <a name="fromFunctionArn" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionArn"></a>
+##### `FromFunctionArn` <a name="FromFunctionArn" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionArn"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.fromFunctionArn(scope: Construct, id: string, functionArn: string)
+cdkconstructs.ThronNewRelicDockerLambda_FromFunctionArn(scope Construct, id *string, functionArn *string) IFunction
 ```
 
 Import a lambda function into the CDK using its ARN.
@@ -8134,28 +8143,28 @@ in the same account and region as the stack you are importing it into.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionArn.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionArn.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `functionArn`<sup>Required</sup> <a name="functionArn" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionArn.parameter.functionArn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `fromFunctionAttributes` <a name="fromFunctionAttributes" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionAttributes"></a>
+##### `FromFunctionAttributes` <a name="FromFunctionAttributes" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionAttributes"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.fromFunctionAttributes(scope: Construct, id: string, attrs: FunctionAttributes)
+cdkconstructs.ThronNewRelicDockerLambda_FromFunctionAttributes(scope Construct, id *string, attrs FunctionAttributes) IFunction
 ```
 
 Creates a Lambda function object which represents a function not defined within this stack.
@@ -8165,7 +8174,7 @@ if this imported lambda is in the same account and region as the stack you are i
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionAttributes.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 The parent construct.
 
@@ -8173,7 +8182,7 @@ The parent construct.
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionAttributes.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The name of the lambda construct.
 
@@ -8181,155 +8190,155 @@ The name of the lambda construct.
 
 ###### `attrs`<sup>Required</sup> <a name="attrs" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionAttributes.parameter.attrs"></a>
 
-- *Type:* aws-cdk-lib.aws_lambda.FunctionAttributes
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FunctionAttributes
 
 the attributes of the function to import.
 
 ---
 
-##### `fromFunctionName` <a name="fromFunctionName" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionName"></a>
+##### `FromFunctionName` <a name="FromFunctionName" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionName"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.fromFunctionName(scope: Construct, id: string, functionName: string)
+cdkconstructs.ThronNewRelicDockerLambda_FromFunctionName(scope Construct, id *string, functionName *string) IFunction
 ```
 
 Import a lambda function into the CDK using its name.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionName.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionName.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `functionName`<sup>Required</sup> <a name="functionName" id="cdk-constructs.ThronNewRelicDockerLambda.fromFunctionName.parameter.functionName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `metricAll` <a name="metricAll" id="cdk-constructs.ThronNewRelicDockerLambda.metricAll"></a>
+##### `MetricAll` <a name="MetricAll" id="cdk-constructs.ThronNewRelicDockerLambda.metricAll"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.metricAll(metricName: string, props?: MetricOptions)
+cdkconstructs.ThronNewRelicDockerLambda_MetricAll(metricName *string, props MetricOptions) Metric
 ```
 
 Return the given named metric for this Lambda.
 
 ###### `metricName`<sup>Required</sup> <a name="metricName" id="cdk-constructs.ThronNewRelicDockerLambda.metricAll.parameter.metricName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricAll.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllConcurrentExecutions` <a name="metricAllConcurrentExecutions" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllConcurrentExecutions"></a>
+##### `MetricAllConcurrentExecutions` <a name="MetricAllConcurrentExecutions" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllConcurrentExecutions"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.metricAllConcurrentExecutions(props?: MetricOptions)
+cdkconstructs.ThronNewRelicDockerLambda_MetricAllConcurrentExecutions(props MetricOptions) Metric
 ```
 
 Metric for the number of concurrent executions across all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllConcurrentExecutions.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllDuration` <a name="metricAllDuration" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllDuration"></a>
+##### `MetricAllDuration` <a name="MetricAllDuration" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllDuration"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.metricAllDuration(props?: MetricOptions)
+cdkconstructs.ThronNewRelicDockerLambda_MetricAllDuration(props MetricOptions) Metric
 ```
 
 Metric for the Duration executing all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllDuration.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllErrors` <a name="metricAllErrors" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllErrors"></a>
+##### `MetricAllErrors` <a name="MetricAllErrors" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllErrors"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.metricAllErrors(props?: MetricOptions)
+cdkconstructs.ThronNewRelicDockerLambda_MetricAllErrors(props MetricOptions) Metric
 ```
 
 Metric for the number of Errors executing all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllErrors.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllInvocations` <a name="metricAllInvocations" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllInvocations"></a>
+##### `MetricAllInvocations` <a name="MetricAllInvocations" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllInvocations"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.metricAllInvocations(props?: MetricOptions)
+cdkconstructs.ThronNewRelicDockerLambda_MetricAllInvocations(props MetricOptions) Metric
 ```
 
 Metric for the number of invocations of all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllInvocations.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllThrottles` <a name="metricAllThrottles" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllThrottles"></a>
+##### `MetricAllThrottles` <a name="MetricAllThrottles" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllThrottles"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.metricAllThrottles(props?: MetricOptions)
+cdkconstructs.ThronNewRelicDockerLambda_MetricAllThrottles(props MetricOptions) Metric
 ```
 
 Metric for the number of throttled invocations of all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllThrottles.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
-##### `metricAllUnreservedConcurrentExecutions` <a name="metricAllUnreservedConcurrentExecutions" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllUnreservedConcurrentExecutions"></a>
+##### `MetricAllUnreservedConcurrentExecutions` <a name="MetricAllUnreservedConcurrentExecutions" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllUnreservedConcurrentExecutions"></a>
 
-```typescript
-import { ThronNewRelicDockerLambda } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronNewRelicDockerLambda.metricAllUnreservedConcurrentExecutions(props?: MetricOptions)
+cdkconstructs.ThronNewRelicDockerLambda_MetricAllUnreservedConcurrentExecutions(props MetricOptions) Metric
 ```
 
 Metric for the number of unreserved concurrent executions across all Lambdas.
 
 ###### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronNewRelicDockerLambda.metricAllUnreservedConcurrentExecutions.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudwatch.MetricOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudwatch.MetricOptions
 
 ---
 
@@ -8337,50 +8346,50 @@ Metric for the number of unreserved concurrent executions across all Lambdas.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.architecture">architecture</a></code> | <code>aws-cdk-lib.aws_lambda.Architecture</code> | The architecture of this Lambda Function (this is an optional attribute and defaults to X86_64). |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.connections">connections</a></code> | <code>aws-cdk-lib.aws_ec2.Connections</code> | Access the Connections object. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.functionArn">functionArn</a></code> | <code>string</code> | ARN of this function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.functionName">functionName</a></code> | <code>string</code> | Name of this function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.grantPrincipal">grantPrincipal</a></code> | <code>aws-cdk-lib.aws_iam.IPrincipal</code> | The principal this Lambda Function is running as. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.isBoundToVpc">isBoundToVpc</a></code> | <code>boolean</code> | Whether or not this Lambda function was bound to a VPC. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.latestVersion">latestVersion</a></code> | <code>aws-cdk-lib.aws_lambda.IVersion</code> | The `$LATEST` version of this function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.permissionsNode">permissionsNode</a></code> | <code>constructs.Node</code> | The construct node where permissions are attached. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.resourceArnsForGrantInvoke">resourceArnsForGrantInvoke</a></code> | <code>string[]</code> | The ARN(s) to put into the resource field of the generated IAM policy for grantInvoke(). |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | Execution role associated with this function. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.currentVersion">currentVersion</a></code> | <code>aws-cdk-lib.aws_lambda.Version</code> | Returns a `lambda.Version` which represents the current version of this Lambda function. A new version will be created every time the function's configuration changes. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.logGroup">logGroup</a></code> | <code>aws-cdk-lib.aws_logs.ILogGroup</code> | The LogGroup where the Lambda function's logs are made available. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.runtime">runtime</a></code> | <code>aws-cdk-lib.aws_lambda.Runtime</code> | The runtime configured for this lambda. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterQueue">deadLetterQueue</a></code> | <code>aws-cdk-lib.aws_sqs.IQueue</code> | The DLQ (as queue) associated with this Lambda Function (this is an optional attribute). |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterTopic">deadLetterTopic</a></code> | <code>aws-cdk-lib.aws_sns.ITopic</code> | The DLQ (as topic) associated with this Lambda Function (this is an optional attribute). |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | The timeout configured for this lambda. |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.apiGatewayEndpoints">apiGatewayEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a>}</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.endpoints">endpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.legacyEndpoints">legacyEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.env">Env</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.architecture">Architecture</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture</code> | The architecture of this Lambda Function (this is an optional attribute and defaults to X86_64). |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.connections">Connections</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Connections</code> | Access the Connections object. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.functionArn">FunctionArn</a></code> | <code>*string</code> | ARN of this function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.functionName">FunctionName</a></code> | <code>*string</code> | Name of this function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.grantPrincipal">GrantPrincipal</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal</code> | The principal this Lambda Function is running as. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.isBoundToVpc">IsBoundToVpc</a></code> | <code>*bool</code> | Whether or not this Lambda function was bound to a VPC. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.latestVersion">LatestVersion</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IVersion</code> | The `$LATEST` version of this function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.permissionsNode">PermissionsNode</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The construct node where permissions are attached. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.resourceArnsForGrantInvoke">ResourceArnsForGrantInvoke</a></code> | <code>*[]*string</code> | The ARN(s) to put into the resource field of the generated IAM policy for grantInvoke(). |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.role">Role</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole</code> | Execution role associated with this function. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.currentVersion">CurrentVersion</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Version</code> | Returns a `lambda.Version` which represents the current version of this Lambda function. A new version will be created every time the function's configuration changes. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.logGroup">LogGroup</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_logs.ILogGroup</code> | The LogGroup where the Lambda function's logs are made available. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.runtime">Runtime</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Runtime</code> | The runtime configured for this lambda. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterQueue">DeadLetterQueue</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_sqs.IQueue</code> | The DLQ (as queue) associated with this Lambda Function (this is an optional attribute). |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterTopic">DeadLetterTopic</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_sns.ITopic</code> | The DLQ (as topic) associated with this Lambda Function (this is an optional attribute). |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.timeout">Timeout</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The timeout configured for this lambda. |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.apiGatewayEndpoints">ApiGatewayEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.endpoints">Endpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronNewRelicDockerLambda.property.legacyEndpoints">LegacyEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a></code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronNewRelicDockerLambda.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronNewRelicDockerLambda.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-constructs.ThronNewRelicDockerLambda.property.env"></a>
+##### `Env`<sup>Required</sup> <a name="Env" id="cdk-constructs.ThronNewRelicDockerLambda.property.env"></a>
 
-```typescript
-public readonly env: ResourceEnvironment;
+```go
+func Env() ResourceEnvironment
 ```
 
-- *Type:* aws-cdk-lib.ResourceEnvironment
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment
 
 The environment this resource belongs to.
 
@@ -8393,37 +8402,37 @@ that might be different than the stack they were imported into.
 
 ---
 
-##### `stack`<sup>Required</sup> <a name="stack" id="cdk-constructs.ThronNewRelicDockerLambda.property.stack"></a>
+##### `Stack`<sup>Required</sup> <a name="Stack" id="cdk-constructs.ThronNewRelicDockerLambda.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+func Stack() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The stack in which this resource is defined.
 
 ---
 
-##### `architecture`<sup>Required</sup> <a name="architecture" id="cdk-constructs.ThronNewRelicDockerLambda.property.architecture"></a>
+##### `Architecture`<sup>Required</sup> <a name="Architecture" id="cdk-constructs.ThronNewRelicDockerLambda.property.architecture"></a>
 
-```typescript
-public readonly architecture: Architecture;
+```go
+func Architecture() Architecture
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Architecture
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture
 
 The architecture of this Lambda Function (this is an optional attribute and defaults to X86_64).
 
 ---
 
-##### `connections`<sup>Required</sup> <a name="connections" id="cdk-constructs.ThronNewRelicDockerLambda.property.connections"></a>
+##### `Connections`<sup>Required</sup> <a name="Connections" id="cdk-constructs.ThronNewRelicDockerLambda.property.connections"></a>
 
-```typescript
-public readonly connections: Connections;
+```go
+func Connections() Connections
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.Connections
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Connections
 
 Access the Connections object.
 
@@ -8431,49 +8440,49 @@ Will fail if not a VPC-enabled Lambda Function
 
 ---
 
-##### `functionArn`<sup>Required</sup> <a name="functionArn" id="cdk-constructs.ThronNewRelicDockerLambda.property.functionArn"></a>
+##### `FunctionArn`<sup>Required</sup> <a name="FunctionArn" id="cdk-constructs.ThronNewRelicDockerLambda.property.functionArn"></a>
 
-```typescript
-public readonly functionArn: string;
+```go
+func FunctionArn() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ARN of this function.
 
 ---
 
-##### `functionName`<sup>Required</sup> <a name="functionName" id="cdk-constructs.ThronNewRelicDockerLambda.property.functionName"></a>
+##### `FunctionName`<sup>Required</sup> <a name="FunctionName" id="cdk-constructs.ThronNewRelicDockerLambda.property.functionName"></a>
 
-```typescript
-public readonly functionName: string;
+```go
+func FunctionName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Name of this function.
 
 ---
 
-##### `grantPrincipal`<sup>Required</sup> <a name="grantPrincipal" id="cdk-constructs.ThronNewRelicDockerLambda.property.grantPrincipal"></a>
+##### `GrantPrincipal`<sup>Required</sup> <a name="GrantPrincipal" id="cdk-constructs.ThronNewRelicDockerLambda.property.grantPrincipal"></a>
 
-```typescript
-public readonly grantPrincipal: IPrincipal;
+```go
+func GrantPrincipal() IPrincipal
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IPrincipal
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal
 
 The principal this Lambda Function is running as.
 
 ---
 
-##### `isBoundToVpc`<sup>Required</sup> <a name="isBoundToVpc" id="cdk-constructs.ThronNewRelicDockerLambda.property.isBoundToVpc"></a>
+##### `IsBoundToVpc`<sup>Required</sup> <a name="IsBoundToVpc" id="cdk-constructs.ThronNewRelicDockerLambda.property.isBoundToVpc"></a>
 
-```typescript
-public readonly isBoundToVpc: boolean;
+```go
+func IsBoundToVpc() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether or not this Lambda function was bound to a VPC.
 
@@ -8481,13 +8490,13 @@ If this is is `false`, trying to access the `connections` object will fail.
 
 ---
 
-##### `latestVersion`<sup>Required</sup> <a name="latestVersion" id="cdk-constructs.ThronNewRelicDockerLambda.property.latestVersion"></a>
+##### `LatestVersion`<sup>Required</sup> <a name="LatestVersion" id="cdk-constructs.ThronNewRelicDockerLambda.property.latestVersion"></a>
 
-```typescript
-public readonly latestVersion: IVersion;
+```go
+func LatestVersion() IVersion
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.IVersion
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IVersion
 
 The `$LATEST` version of this function.
 
@@ -8500,49 +8509,49 @@ function configuration, use `lambdaFunction.currentVersion` instead.
 
 ---
 
-##### `permissionsNode`<sup>Required</sup> <a name="permissionsNode" id="cdk-constructs.ThronNewRelicDockerLambda.property.permissionsNode"></a>
+##### `PermissionsNode`<sup>Required</sup> <a name="PermissionsNode" id="cdk-constructs.ThronNewRelicDockerLambda.property.permissionsNode"></a>
 
-```typescript
-public readonly permissionsNode: Node;
+```go
+func PermissionsNode() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The construct node where permissions are attached.
 
 ---
 
-##### `resourceArnsForGrantInvoke`<sup>Required</sup> <a name="resourceArnsForGrantInvoke" id="cdk-constructs.ThronNewRelicDockerLambda.property.resourceArnsForGrantInvoke"></a>
+##### `ResourceArnsForGrantInvoke`<sup>Required</sup> <a name="ResourceArnsForGrantInvoke" id="cdk-constructs.ThronNewRelicDockerLambda.property.resourceArnsForGrantInvoke"></a>
 
-```typescript
-public readonly resourceArnsForGrantInvoke: string[];
+```go
+func ResourceArnsForGrantInvoke() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 The ARN(s) to put into the resource field of the generated IAM policy for grantInvoke().
 
 ---
 
-##### `role`<sup>Optional</sup> <a name="role" id="cdk-constructs.ThronNewRelicDockerLambda.property.role"></a>
+##### `Role`<sup>Optional</sup> <a name="Role" id="cdk-constructs.ThronNewRelicDockerLambda.property.role"></a>
 
-```typescript
-public readonly role: IRole;
+```go
+func Role() IRole
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IRole
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole
 
 Execution role associated with this function.
 
 ---
 
-##### `currentVersion`<sup>Required</sup> <a name="currentVersion" id="cdk-constructs.ThronNewRelicDockerLambda.property.currentVersion"></a>
+##### `CurrentVersion`<sup>Required</sup> <a name="CurrentVersion" id="cdk-constructs.ThronNewRelicDockerLambda.property.currentVersion"></a>
 
-```typescript
-public readonly currentVersion: Version;
+```go
+func CurrentVersion() Version
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Version
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Version
 
 Returns a `lambda.Version` which represents the current version of this Lambda function. A new version will be created every time the function's configuration changes.
 
@@ -8551,13 +8560,13 @@ prop when initializing the `lambda.Function`.
 
 ---
 
-##### `logGroup`<sup>Required</sup> <a name="logGroup" id="cdk-constructs.ThronNewRelicDockerLambda.property.logGroup"></a>
+##### `LogGroup`<sup>Required</sup> <a name="LogGroup" id="cdk-constructs.ThronNewRelicDockerLambda.property.logGroup"></a>
 
-```typescript
-public readonly logGroup: ILogGroup;
+```go
+func LogGroup() ILogGroup
 ```
 
-- *Type:* aws-cdk-lib.aws_logs.ILogGroup
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_logs.ILogGroup
 
 The LogGroup where the Lambda function's logs are made available.
 
@@ -8570,114 +8579,114 @@ to never expire even if it was configured with a different value.
 
 ---
 
-##### `runtime`<sup>Required</sup> <a name="runtime" id="cdk-constructs.ThronNewRelicDockerLambda.property.runtime"></a>
+##### `Runtime`<sup>Required</sup> <a name="Runtime" id="cdk-constructs.ThronNewRelicDockerLambda.property.runtime"></a>
 
-```typescript
-public readonly runtime: Runtime;
+```go
+func Runtime() Runtime
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Runtime
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Runtime
 
 The runtime configured for this lambda.
 
 ---
 
-##### `deadLetterQueue`<sup>Optional</sup> <a name="deadLetterQueue" id="cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterQueue"></a>
+##### `DeadLetterQueue`<sup>Optional</sup> <a name="DeadLetterQueue" id="cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterQueue"></a>
 
-```typescript
-public readonly deadLetterQueue: IQueue;
+```go
+func DeadLetterQueue() IQueue
 ```
 
-- *Type:* aws-cdk-lib.aws_sqs.IQueue
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_sqs.IQueue
 
 The DLQ (as queue) associated with this Lambda Function (this is an optional attribute).
 
 ---
 
-##### `deadLetterTopic`<sup>Optional</sup> <a name="deadLetterTopic" id="cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterTopic"></a>
+##### `DeadLetterTopic`<sup>Optional</sup> <a name="DeadLetterTopic" id="cdk-constructs.ThronNewRelicDockerLambda.property.deadLetterTopic"></a>
 
-```typescript
-public readonly deadLetterTopic: ITopic;
+```go
+func DeadLetterTopic() ITopic
 ```
 
-- *Type:* aws-cdk-lib.aws_sns.ITopic
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_sns.ITopic
 
 The DLQ (as topic) associated with this Lambda Function (this is an optional attribute).
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="cdk-constructs.ThronNewRelicDockerLambda.property.timeout"></a>
+##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="cdk-constructs.ThronNewRelicDockerLambda.property.timeout"></a>
 
-```typescript
-public readonly timeout: Duration;
+```go
+func Timeout() Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 The timeout configured for this lambda.
 
 ---
 
-##### `apiGatewayEndpoints`<sup>Optional</sup> <a name="apiGatewayEndpoints" id="cdk-constructs.ThronNewRelicDockerLambda.property.apiGatewayEndpoints"></a>
+##### `ApiGatewayEndpoints`<sup>Optional</sup> <a name="ApiGatewayEndpoints" id="cdk-constructs.ThronNewRelicDockerLambda.property.apiGatewayEndpoints"></a>
 
-```typescript
-public readonly apiGatewayEndpoints: {[ key: string ]: ThronCreatedApiGatewayEndpoint};
+```go
+func ApiGatewayEndpoints() *map[string]ThronCreatedApiGatewayEndpoint
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint">ThronCreatedApiGatewayEndpoint</a>
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="cdk-constructs.ThronNewRelicDockerLambda.property.endpoints"></a>
+##### `Endpoints`<sup>Optional</sup> <a name="Endpoints" id="cdk-constructs.ThronNewRelicDockerLambda.property.endpoints"></a>
 
-```typescript
-public readonly endpoints: {[ key: string ]: EndpointAlb};
+```go
+func Endpoints() *map[string]EndpointAlb
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>
 
 ---
 
-##### `legacyEndpoints`<sup>Optional</sup> <a name="legacyEndpoints" id="cdk-constructs.ThronNewRelicDockerLambda.property.legacyEndpoints"></a>
+##### `LegacyEndpoints`<sup>Optional</sup> <a name="LegacyEndpoints" id="cdk-constructs.ThronNewRelicDockerLambda.property.legacyEndpoints"></a>
 
-```typescript
-public readonly legacyEndpoints: {[ key: string ]: EndpointAlb};
+```go
+func LegacyEndpoints() *map[string]EndpointAlb
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.EndpointAlb">EndpointAlb</a>
 
 ---
 
 
 ### ThronPipelineBuildProject <a name="ThronPipelineBuildProject" id="cdk-constructs.ThronPipelineBuildProject"></a>
 
-- *Implements:* aws-cdk-lib.aws_iam.IGrantable
+- *Implements:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IGrantable
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronPipelineBuildProject.Initializer"></a>
 
-```typescript
-import { ThronPipelineBuildProject } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronPipelineBuildProject(scope: Construct, id: string, props: ThronPipelineBuildProjectProps)
+cdkconstructs.NewThronPipelineBuildProject(scope Construct, id *string, props ThronPipelineBuildProjectProps) ThronPipelineBuildProject
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronPipelineBuildProject.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps">ThronPipelineBuildProjectProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronPipelineBuildProject.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronPipelineBuildProject.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -8691,41 +8700,41 @@ new ThronPipelineBuildProject(scope: Construct, id: string, props: ThronPipeline
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.allowCDKAccessToAccount">allowCDKAccessToAccount</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.allowEcrForRepo">allowEcrForRepo</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.allowCDKAccessToAccount">AllowCDKAccessToAccount</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.allowEcrForRepo">AllowEcrForRepo</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronPipelineBuildProject.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronPipelineBuildProject.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `allowCDKAccessToAccount` <a name="allowCDKAccessToAccount" id="cdk-constructs.ThronPipelineBuildProject.allowCDKAccessToAccount"></a>
+##### `AllowCDKAccessToAccount` <a name="AllowCDKAccessToAccount" id="cdk-constructs.ThronPipelineBuildProject.allowCDKAccessToAccount"></a>
 
-```typescript
-public allowCDKAccessToAccount(accountId: string): void
+```go
+func AllowCDKAccessToAccount(accountId *string)
 ```
 
 ###### `accountId`<sup>Required</sup> <a name="accountId" id="cdk-constructs.ThronPipelineBuildProject.allowCDKAccessToAccount.parameter.accountId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `allowEcrForRepo` <a name="allowEcrForRepo" id="cdk-constructs.ThronPipelineBuildProject.allowEcrForRepo"></a>
+##### `AllowEcrForRepo` <a name="AllowEcrForRepo" id="cdk-constructs.ThronPipelineBuildProject.allowEcrForRepo"></a>
 
-```typescript
-public allowEcrForRepo(ecrRepository: Repository): void
+```go
+func AllowEcrForRepo(ecrRepository Repository)
 ```
 
 ###### `ecrRepository`<sup>Required</sup> <a name="ecrRepository" id="cdk-constructs.ThronPipelineBuildProject.allowEcrForRepo.parameter.ecrRepository"></a>
 
-- *Type:* aws-cdk-lib.aws_ecr.Repository
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecr.Repository
 
 ---
 
@@ -8733,16 +8742,16 @@ public allowEcrForRepo(ecrRepository: Repository): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronPipelineBuildProject.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronPipelineBuildProject.isConstruct"></a>
 
-```typescript
-import { ThronPipelineBuildProject } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronPipelineBuildProject.isConstruct(x: any)
+cdkconstructs.ThronPipelineBuildProject_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -8763,7 +8772,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronPipelineBuildProject.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -8773,65 +8782,65 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.grantPrincipal">grantPrincipal</a></code> | <code>aws-cdk-lib.aws_iam.IPrincipal</code> | The principal to grant permissions to. |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.buildName">buildName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.project">project</a></code> | <code>aws-cdk-lib.aws_codebuild.Project</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.Role</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.grantPrincipal">GrantPrincipal</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal</code> | The principal to grant permissions to. |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.buildName">BuildName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.project">Project</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.Project</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProject.property.role">Role</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.Role</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronPipelineBuildProject.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronPipelineBuildProject.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `grantPrincipal`<sup>Required</sup> <a name="grantPrincipal" id="cdk-constructs.ThronPipelineBuildProject.property.grantPrincipal"></a>
+##### `GrantPrincipal`<sup>Required</sup> <a name="GrantPrincipal" id="cdk-constructs.ThronPipelineBuildProject.property.grantPrincipal"></a>
 
-```typescript
-public readonly grantPrincipal: IPrincipal;
+```go
+func GrantPrincipal() IPrincipal
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IPrincipal
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IPrincipal
 
 The principal to grant permissions to.
 
 ---
 
-##### `buildName`<sup>Required</sup> <a name="buildName" id="cdk-constructs.ThronPipelineBuildProject.property.buildName"></a>
+##### `BuildName`<sup>Required</sup> <a name="BuildName" id="cdk-constructs.ThronPipelineBuildProject.property.buildName"></a>
 
-```typescript
-public readonly buildName: string;
+```go
+func BuildName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="cdk-constructs.ThronPipelineBuildProject.property.project"></a>
+##### `Project`<sup>Required</sup> <a name="Project" id="cdk-constructs.ThronPipelineBuildProject.property.project"></a>
 
-```typescript
-public readonly project: Project;
+```go
+func Project() Project
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.Project
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.Project
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="cdk-constructs.ThronPipelineBuildProject.property.role"></a>
+##### `Role`<sup>Required</sup> <a name="Role" id="cdk-constructs.ThronPipelineBuildProject.property.role"></a>
 
-```typescript
-public readonly role: Role;
+```go
+func Role() Role
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.Role
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.Role
 
 ---
 
@@ -8840,35 +8849,35 @@ public readonly role: Role;
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronResponseHeaderPolicy.Initializer"></a>
 
-```typescript
-import { ThronResponseHeaderPolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronResponseHeaderPolicy(scope: Construct, id: string, props?: ResponseHeadersPolicyProps)
+cdkconstructs.NewThronResponseHeaderPolicy(scope Construct, id *string, props ResponseHeadersPolicyProps) ThronResponseHeaderPolicy
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicyProps</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.props">props</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ResponseHeadersPolicyProps</code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `props`<sup>Optional</sup> <a name="props" id="cdk-constructs.ThronResponseHeaderPolicy.Initializer.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicyProps
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ResponseHeadersPolicyProps
 
 ---
 
@@ -8876,23 +8885,23 @@ new ThronResponseHeaderPolicy(scope: Construct, id: string, props?: ResponseHead
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.applyRemovalPolicy">ApplyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronResponseHeaderPolicy.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronResponseHeaderPolicy.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="cdk-constructs.ThronResponseHeaderPolicy.applyRemovalPolicy"></a>
+##### `ApplyRemovalPolicy` <a name="ApplyRemovalPolicy" id="cdk-constructs.ThronResponseHeaderPolicy.applyRemovalPolicy"></a>
 
-```typescript
-public applyRemovalPolicy(policy: RemovalPolicy): void
+```go
+func ApplyRemovalPolicy(policy RemovalPolicy)
 ```
 
 Apply the given removal policy to this resource.
@@ -8907,7 +8916,7 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 ###### `policy`<sup>Required</sup> <a name="policy" id="cdk-constructs.ThronResponseHeaderPolicy.applyRemovalPolicy.parameter.policy"></a>
 
-- *Type:* aws-cdk-lib.RemovalPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.RemovalPolicy
 
 ---
 
@@ -8915,21 +8924,21 @@ account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.fromResponseHeadersPolicyId">fromResponseHeadersPolicyId</a></code> | Import an existing Response Headers Policy from its ID. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.default">default</a></code> | Generates a `ThronResponseHeaderPolicy` with all the default values. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.defaultWithOverrides">defaultWithOverrides</a></code> | Generates a `ThronResponseHeaderPolicy` with all the default values except for the ones passed on `props`. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.isOwnedResource">IsOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.isResource">IsResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.fromResponseHeadersPolicyId">FromResponseHeadersPolicyId</a></code> | Import an existing Response Headers Policy from its ID. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.default">Default</a></code> | Generates a `ThronResponseHeaderPolicy` with all the default values. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.defaultWithOverrides">DefaultWithOverrides</a></code> | Generates a `ThronResponseHeaderPolicy` with all the default values except for the ones passed on `props`. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronResponseHeaderPolicy.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronResponseHeaderPolicy.isConstruct"></a>
 
-```typescript
-import { ThronResponseHeaderPolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronResponseHeaderPolicy.isConstruct(x: any)
+cdkconstructs.ThronResponseHeaderPolicy_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -8950,113 +8959,113 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronResponseHeaderPolicy.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isOwnedResource` <a name="isOwnedResource" id="cdk-constructs.ThronResponseHeaderPolicy.isOwnedResource"></a>
+##### `IsOwnedResource` <a name="IsOwnedResource" id="cdk-constructs.ThronResponseHeaderPolicy.isOwnedResource"></a>
 
-```typescript
-import { ThronResponseHeaderPolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronResponseHeaderPolicy.isOwnedResource(construct: IConstruct)
+cdkconstructs.ThronResponseHeaderPolicy_IsOwnedResource(construct IConstruct) *bool
 ```
 
 Returns true if the construct was created by CDK, and false otherwise.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronResponseHeaderPolicy.isOwnedResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `isResource` <a name="isResource" id="cdk-constructs.ThronResponseHeaderPolicy.isResource"></a>
+##### `IsResource` <a name="IsResource" id="cdk-constructs.ThronResponseHeaderPolicy.isResource"></a>
 
-```typescript
-import { ThronResponseHeaderPolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronResponseHeaderPolicy.isResource(construct: IConstruct)
+cdkconstructs.ThronResponseHeaderPolicy_IsResource(construct IConstruct) *bool
 ```
 
 Check whether the given construct is a Resource.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronResponseHeaderPolicy.isResource.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 ---
 
-##### `fromResponseHeadersPolicyId` <a name="fromResponseHeadersPolicyId" id="cdk-constructs.ThronResponseHeaderPolicy.fromResponseHeadersPolicyId"></a>
+##### `FromResponseHeadersPolicyId` <a name="FromResponseHeadersPolicyId" id="cdk-constructs.ThronResponseHeaderPolicy.fromResponseHeadersPolicyId"></a>
 
-```typescript
-import { ThronResponseHeaderPolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronResponseHeaderPolicy.fromResponseHeadersPolicyId(scope: Construct, id: string, responseHeadersPolicyId: string)
+cdkconstructs.ThronResponseHeaderPolicy_FromResponseHeadersPolicyId(scope Construct, id *string, responseHeadersPolicyId *string) IResponseHeadersPolicy
 ```
 
 Import an existing Response Headers Policy from its ID.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronResponseHeaderPolicy.fromResponseHeadersPolicyId.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronResponseHeaderPolicy.fromResponseHeadersPolicyId.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `responseHeadersPolicyId`<sup>Required</sup> <a name="responseHeadersPolicyId" id="cdk-constructs.ThronResponseHeaderPolicy.fromResponseHeadersPolicyId.parameter.responseHeadersPolicyId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `default` <a name="default" id="cdk-constructs.ThronResponseHeaderPolicy.default"></a>
+##### `Default` <a name="Default" id="cdk-constructs.ThronResponseHeaderPolicy.default"></a>
 
-```typescript
-import { ThronResponseHeaderPolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronResponseHeaderPolicy.default(scope: Construct, id: string)
+cdkconstructs.ThronResponseHeaderPolicy_Default(scope Construct, id *string) ThronResponseHeaderPolicy
 ```
 
 Generates a `ThronResponseHeaderPolicy` with all the default values.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronResponseHeaderPolicy.default.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronResponseHeaderPolicy.default.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `defaultWithOverrides` <a name="defaultWithOverrides" id="cdk-constructs.ThronResponseHeaderPolicy.defaultWithOverrides"></a>
+##### `DefaultWithOverrides` <a name="DefaultWithOverrides" id="cdk-constructs.ThronResponseHeaderPolicy.defaultWithOverrides"></a>
 
-```typescript
-import { ThronResponseHeaderPolicy } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronResponseHeaderPolicy.defaultWithOverrides(scope: Construct, id: string, props: ThronResponseHeaderPolicyProps)
+cdkconstructs.ThronResponseHeaderPolicy_DefaultWithOverrides(scope Construct, id *string, props ThronResponseHeaderPolicyProps) ThronResponseHeaderPolicy
 ```
 
 Generates a `ThronResponseHeaderPolicy` with all the default values except for the ones passed on `props`.
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronResponseHeaderPolicy.defaultWithOverrides.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronResponseHeaderPolicy.defaultWithOverrides.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -9070,32 +9079,32 @@ Generates a `ThronResponseHeaderPolicy` with all the default values except for t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.responseHeadersPolicyId">responseHeadersPolicyId</a></code> | <code>string</code> | The ID of the response headers policy. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.env">Env</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.responseHeadersPolicyId">ResponseHeadersPolicyId</a></code> | <code>*string</code> | The ID of the response headers policy. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronResponseHeaderPolicy.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronResponseHeaderPolicy.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-constructs.ThronResponseHeaderPolicy.property.env"></a>
+##### `Env`<sup>Required</sup> <a name="Env" id="cdk-constructs.ThronResponseHeaderPolicy.property.env"></a>
 
-```typescript
-public readonly env: ResourceEnvironment;
+```go
+func Env() ResourceEnvironment
 ```
 
-- *Type:* aws-cdk-lib.ResourceEnvironment
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ResourceEnvironment
 
 The environment this resource belongs to.
 
@@ -9108,25 +9117,25 @@ that might be different than the stack they were imported into.
 
 ---
 
-##### `stack`<sup>Required</sup> <a name="stack" id="cdk-constructs.ThronResponseHeaderPolicy.property.stack"></a>
+##### `Stack`<sup>Required</sup> <a name="Stack" id="cdk-constructs.ThronResponseHeaderPolicy.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+func Stack() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The stack in which this resource is defined.
 
 ---
 
-##### `responseHeadersPolicyId`<sup>Required</sup> <a name="responseHeadersPolicyId" id="cdk-constructs.ThronResponseHeaderPolicy.property.responseHeadersPolicyId"></a>
+##### `ResponseHeadersPolicyId`<sup>Required</sup> <a name="ResponseHeadersPolicyId" id="cdk-constructs.ThronResponseHeaderPolicy.property.responseHeadersPolicyId"></a>
 
-```typescript
-public readonly responseHeadersPolicyId: string;
+```go
+func ResponseHeadersPolicyId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the response headers policy.
 
@@ -9136,69 +9145,69 @@ The ID of the response headers policy.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS">CORS_ALLOW_ALL_ORIGINS</a></code> | <code>aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow simple CORS requests from any origin. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS">CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS</a></code> | <code>aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow simple CORS requests from any origin and add a set of security headers to all responses that CloudFront sends to viewers. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT">CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT</a></code> | <code>aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow CORS requests from any origin, including preflight requests. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS">CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS</a></code> | <code>aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow CORS requests from any origin, including preflight requests, and add a set of security headers to all responses that CloudFront sends to viewers. |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.SECURITY_HEADERS">SECURITY_HEADERS</a></code> | <code>aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to add a set of security headers to all responses that CloudFront sends to viewers. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS">CorsAllowAllOrigins</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow simple CORS requests from any origin. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS">CorsAllowAllOriginsAndSecurityHeaders</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow simple CORS requests from any origin and add a set of security headers to all responses that CloudFront sends to viewers. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT">CorsAllowAllOriginsWithPreflight</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow CORS requests from any origin, including preflight requests. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS">CorsAllowAllOriginsWithPreflightAndSecurityHeaders</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to allow CORS requests from any origin, including preflight requests, and add a set of security headers to all responses that CloudFront sends to viewers. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicy.property.SECURITY_HEADERS">SecurityHeaders</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy</code> | Use this managed policy to add a set of security headers to all responses that CloudFront sends to viewers. |
 
 ---
 
-##### `CORS_ALLOW_ALL_ORIGINS`<sup>Required</sup> <a name="CORS_ALLOW_ALL_ORIGINS" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS"></a>
+##### `CorsAllowAllOrigins`<sup>Required</sup> <a name="CorsAllowAllOrigins" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS"></a>
 
-```typescript
-public readonly CORS_ALLOW_ALL_ORIGINS: IResponseHeadersPolicy;
+```go
+func CorsAllowAllOrigins() IResponseHeadersPolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy
 
 Use this managed policy to allow simple CORS requests from any origin.
 
 ---
 
-##### `CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS`<sup>Required</sup> <a name="CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS"></a>
+##### `CorsAllowAllOriginsAndSecurityHeaders`<sup>Required</sup> <a name="CorsAllowAllOriginsAndSecurityHeaders" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS"></a>
 
-```typescript
-public readonly CORS_ALLOW_ALL_ORIGINS_AND_SECURITY_HEADERS: IResponseHeadersPolicy;
+```go
+func CorsAllowAllOriginsAndSecurityHeaders() IResponseHeadersPolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy
 
 Use this managed policy to allow simple CORS requests from any origin and add a set of security headers to all responses that CloudFront sends to viewers.
 
 ---
 
-##### `CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT`<sup>Required</sup> <a name="CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT"></a>
+##### `CorsAllowAllOriginsWithPreflight`<sup>Required</sup> <a name="CorsAllowAllOriginsWithPreflight" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT"></a>
 
-```typescript
-public readonly CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT: IResponseHeadersPolicy;
+```go
+func CorsAllowAllOriginsWithPreflight() IResponseHeadersPolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy
 
 Use this managed policy to allow CORS requests from any origin, including preflight requests.
 
 ---
 
-##### `CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS`<sup>Required</sup> <a name="CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS"></a>
+##### `CorsAllowAllOriginsWithPreflightAndSecurityHeaders`<sup>Required</sup> <a name="CorsAllowAllOriginsWithPreflightAndSecurityHeaders" id="cdk-constructs.ThronResponseHeaderPolicy.property.CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS"></a>
 
-```typescript
-public readonly CORS_ALLOW_ALL_ORIGINS_WITH_PREFLIGHT_AND_SECURITY_HEADERS: IResponseHeadersPolicy;
+```go
+func CorsAllowAllOriginsWithPreflightAndSecurityHeaders() IResponseHeadersPolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy
 
 Use this managed policy to allow CORS requests from any origin, including preflight requests, and add a set of security headers to all responses that CloudFront sends to viewers.
 
 ---
 
-##### `SECURITY_HEADERS`<sup>Required</sup> <a name="SECURITY_HEADERS" id="cdk-constructs.ThronResponseHeaderPolicy.property.SECURITY_HEADERS"></a>
+##### `SecurityHeaders`<sup>Required</sup> <a name="SecurityHeaders" id="cdk-constructs.ThronResponseHeaderPolicy.property.SECURITY_HEADERS"></a>
 
-```typescript
-public readonly SECURITY_HEADERS: IResponseHeadersPolicy;
+```go
+func SecurityHeaders() IResponseHeadersPolicy
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.IResponseHeadersPolicy
 
 Use this managed policy to add a set of security headers to all responses that CloudFront sends to viewers.
 
@@ -9208,49 +9217,49 @@ Use this managed policy to add a set of security headers to all responses that C
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronStack.Initializer"></a>
 
-```typescript
-import { ThronStack } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronStack(scope: App, description?: string, suffix?: string, overrideAccount?: string, overrideRegion?: string)
+cdkconstructs.NewThronStack(scope App, description *string, suffix *string, overrideAccount *string, overrideRegion *string) ThronStack
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.App</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.suffix">suffix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.overrideAccount">overrideAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.overrideRegion">overrideRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.App</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.description">description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.suffix">suffix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.overrideAccount">overrideAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.Initializer.parameter.overrideRegion">overrideRegion</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronStack.Initializer.parameter.scope"></a>
 
-- *Type:* aws-cdk-lib.App
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.App
 
 ---
 
 ##### `description`<sup>Optional</sup> <a name="description" id="cdk-constructs.ThronStack.Initializer.parameter.description"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `suffix`<sup>Optional</sup> <a name="suffix" id="cdk-constructs.ThronStack.Initializer.parameter.suffix"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `overrideAccount`<sup>Optional</sup> <a name="overrideAccount" id="cdk-constructs.ThronStack.Initializer.parameter.overrideAccount"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `overrideRegion`<sup>Optional</sup> <a name="overrideRegion" id="cdk-constructs.ThronStack.Initializer.parameter.overrideRegion"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -9258,36 +9267,36 @@ new ThronStack(scope: App, description?: string, suffix?: string, overrideAccoun
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronStack.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#cdk-constructs.ThronStack.addMetadata">addMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
-| <code><a href="#cdk-constructs.ThronStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
-| <code><a href="#cdk-constructs.ThronStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
-| <code><a href="#cdk-constructs.ThronStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
-| <code><a href="#cdk-constructs.ThronStack.formatArn">formatArn</a></code> | Creates an ARN from components. |
-| <code><a href="#cdk-constructs.ThronStack.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
-| <code><a href="#cdk-constructs.ThronStack.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
-| <code><a href="#cdk-constructs.ThronStack.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
-| <code><a href="#cdk-constructs.ThronStack.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
-| <code><a href="#cdk-constructs.ThronStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
-| <code><a href="#cdk-constructs.ThronStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
-| <code><a href="#cdk-constructs.ThronStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
-| <code><a href="#cdk-constructs.ThronStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
+| <code><a href="#cdk-constructs.ThronStack.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronStack.addDependency">AddDependency</a></code> | Add a dependency between this stack and another stack. |
+| <code><a href="#cdk-constructs.ThronStack.addMetadata">AddMetadata</a></code> | Adds an arbitrary key-value pair, with information you want to record about the stack. |
+| <code><a href="#cdk-constructs.ThronStack.addTransform">AddTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
+| <code><a href="#cdk-constructs.ThronStack.exportStringListValue">ExportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
+| <code><a href="#cdk-constructs.ThronStack.exportValue">ExportValue</a></code> | Create a CloudFormation Export for a string value. |
+| <code><a href="#cdk-constructs.ThronStack.formatArn">FormatArn</a></code> | Creates an ARN from components. |
+| <code><a href="#cdk-constructs.ThronStack.getLogicalId">GetLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
+| <code><a href="#cdk-constructs.ThronStack.regionalFact">RegionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
+| <code><a href="#cdk-constructs.ThronStack.renameLogicalId">RenameLogicalId</a></code> | Rename a generated logical identities. |
+| <code><a href="#cdk-constructs.ThronStack.reportMissingContextKey">ReportMissingContextKey</a></code> | Indicate that a context key was expected. |
+| <code><a href="#cdk-constructs.ThronStack.resolve">Resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
+| <code><a href="#cdk-constructs.ThronStack.splitArn">SplitArn</a></code> | Splits the provided ARN into its components. |
+| <code><a href="#cdk-constructs.ThronStack.toJsonString">ToJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
+| <code><a href="#cdk-constructs.ThronStack.toYamlString">ToYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronStack.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronStack.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `addDependency` <a name="addDependency" id="cdk-constructs.ThronStack.addDependency"></a>
+##### `AddDependency` <a name="AddDependency" id="cdk-constructs.ThronStack.addDependency"></a>
 
-```typescript
-public addDependency(target: Stack, reason?: string): void
+```go
+func AddDependency(target Stack, reason *string)
 ```
 
 Add a dependency between this stack and another stack.
@@ -9297,20 +9306,20 @@ app, and also supports nested stacks.
 
 ###### `target`<sup>Required</sup> <a name="target" id="cdk-constructs.ThronStack.addDependency.parameter.target"></a>
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 ---
 
 ###### `reason`<sup>Optional</sup> <a name="reason" id="cdk-constructs.ThronStack.addDependency.parameter.reason"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `addMetadata` <a name="addMetadata" id="cdk-constructs.ThronStack.addMetadata"></a>
+##### `AddMetadata` <a name="AddMetadata" id="cdk-constructs.ThronStack.addMetadata"></a>
 
-```typescript
-public addMetadata(key: string, value: any): void
+```go
+func AddMetadata(key *string, value interface{})
 ```
 
 Adds an arbitrary key-value pair, with information you want to record about the stack.
@@ -9321,20 +9330,20 @@ These get translated to the Metadata section of the generated template.
 
 ###### `key`<sup>Required</sup> <a name="key" id="cdk-constructs.ThronStack.addMetadata.parameter.key"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `value`<sup>Required</sup> <a name="value" id="cdk-constructs.ThronStack.addMetadata.parameter.value"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `addTransform` <a name="addTransform" id="cdk-constructs.ThronStack.addTransform"></a>
+##### `AddTransform` <a name="AddTransform" id="cdk-constructs.ThronStack.addTransform"></a>
 
-```typescript
-public addTransform(transform: string): void
+```go
+func AddTransform(transform *string)
 ```
 
 Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template.
@@ -9345,7 +9354,7 @@ Duplicate values are removed when stack is synthesized.
 
 *Example*
 
-```typescript
+```go
 declare const stack: Stack;
 
 stack.addTransform('AWS::Serverless-2016-10-31')
@@ -9354,16 +9363,16 @@ stack.addTransform('AWS::Serverless-2016-10-31')
 
 ###### `transform`<sup>Required</sup> <a name="transform" id="cdk-constructs.ThronStack.addTransform.parameter.transform"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The transform to add.
 
 ---
 
-##### `exportStringListValue` <a name="exportStringListValue" id="cdk-constructs.ThronStack.exportStringListValue"></a>
+##### `ExportStringListValue` <a name="ExportStringListValue" id="cdk-constructs.ThronStack.exportStringListValue"></a>
 
-```typescript
-public exportStringListValue(exportedValue: any, options?: ExportValueOptions): string[]
+```go
+func ExportStringListValue(exportedValue interface{}, options ExportValueOptions) *[]*string
 ```
 
 Create a CloudFormation Export for a string list value.
@@ -9388,20 +9397,20 @@ See `exportValue` for an example of this process.
 
 ###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="cdk-constructs.ThronStack.exportStringListValue.parameter.exportedValue"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronStack.exportStringListValue.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.ExportValueOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ExportValueOptions
 
 ---
 
-##### `exportValue` <a name="exportValue" id="cdk-constructs.ThronStack.exportValue"></a>
+##### `ExportValue` <a name="ExportValue" id="cdk-constructs.ThronStack.exportValue"></a>
 
-```typescript
-public exportValue(exportedValue: any, options?: ExportValueOptions): string
+```go
+func ExportValue(exportedValue interface{}, options ExportValueOptions) *string
 ```
 
 Create a CloudFormation Export for a string value.
@@ -9449,20 +9458,20 @@ Instead, the process takes two deployments:
 
 ###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="cdk-constructs.ThronStack.exportValue.parameter.exportedValue"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `options`<sup>Optional</sup> <a name="options" id="cdk-constructs.ThronStack.exportValue.parameter.options"></a>
 
-- *Type:* aws-cdk-lib.ExportValueOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ExportValueOptions
 
 ---
 
-##### `formatArn` <a name="formatArn" id="cdk-constructs.ThronStack.formatArn"></a>
+##### `FormatArn` <a name="FormatArn" id="cdk-constructs.ThronStack.formatArn"></a>
 
-```typescript
-public formatArn(components: ArnComponents): string
+```go
+func FormatArn(components ArnComponents) *string
 ```
 
 Creates an ARN from components.
@@ -9483,14 +9492,14 @@ can be 'undefined'.
 
 ###### `components`<sup>Required</sup> <a name="components" id="cdk-constructs.ThronStack.formatArn.parameter.components"></a>
 
-- *Type:* aws-cdk-lib.ArnComponents
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ArnComponents
 
 ---
 
-##### `getLogicalId` <a name="getLogicalId" id="cdk-constructs.ThronStack.getLogicalId"></a>
+##### `GetLogicalId` <a name="GetLogicalId" id="cdk-constructs.ThronStack.getLogicalId"></a>
 
-```typescript
-public getLogicalId(element: CfnElement): string
+```go
+func GetLogicalId(element CfnElement) *string
 ```
 
 Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource.
@@ -9505,16 +9514,16 @@ class and override this method.
 
 ###### `element`<sup>Required</sup> <a name="element" id="cdk-constructs.ThronStack.getLogicalId.parameter.element"></a>
 
-- *Type:* aws-cdk-lib.CfnElement
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.CfnElement
 
 The CloudFormation element for which a logical identity is needed.
 
 ---
 
-##### `regionalFact` <a name="regionalFact" id="cdk-constructs.ThronStack.regionalFact"></a>
+##### `RegionalFact` <a name="RegionalFact" id="cdk-constructs.ThronStack.regionalFact"></a>
 
-```typescript
-public regionalFact(factName: string, defaultValue?: string): string
+```go
+func RegionalFact(factName *string, defaultValue *string) *string
 ```
 
 Look up a fact value for the given fact for the region of this stack.
@@ -9537,20 +9546,20 @@ the given region.
 
 ###### `factName`<sup>Required</sup> <a name="factName" id="cdk-constructs.ThronStack.regionalFact.parameter.factName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="cdk-constructs.ThronStack.regionalFact.parameter.defaultValue"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `renameLogicalId` <a name="renameLogicalId" id="cdk-constructs.ThronStack.renameLogicalId"></a>
+##### `RenameLogicalId` <a name="RenameLogicalId" id="cdk-constructs.ThronStack.renameLogicalId"></a>
 
-```typescript
-public renameLogicalId(oldId: string, newId: string): void
+```go
+func RenameLogicalId(oldId *string, newId *string)
 ```
 
 Rename a generated logical identities.
@@ -9560,20 +9569,20 @@ override the `allocateLogicalId` method.
 
 ###### `oldId`<sup>Required</sup> <a name="oldId" id="cdk-constructs.ThronStack.renameLogicalId.parameter.oldId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `newId`<sup>Required</sup> <a name="newId" id="cdk-constructs.ThronStack.renameLogicalId.parameter.newId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `reportMissingContextKey` <a name="reportMissingContextKey" id="cdk-constructs.ThronStack.reportMissingContextKey"></a>
+##### `ReportMissingContextKey` <a name="ReportMissingContextKey" id="cdk-constructs.ThronStack.reportMissingContextKey"></a>
 
-```typescript
-public reportMissingContextKey(report: MissingContext): void
+```go
+func ReportMissingContextKey(report MissingContext)
 ```
 
 Indicate that a context key was expected.
@@ -9583,30 +9592,30 @@ the key should be supplied.
 
 ###### `report`<sup>Required</sup> <a name="report" id="cdk-constructs.ThronStack.reportMissingContextKey.parameter.report"></a>
 
-- *Type:* aws-cdk-lib.cloud_assembly_schema.MissingContext
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.cloud_assembly_schema.MissingContext
 
 The set of parameters needed to obtain the context.
 
 ---
 
-##### `resolve` <a name="resolve" id="cdk-constructs.ThronStack.resolve"></a>
+##### `Resolve` <a name="Resolve" id="cdk-constructs.ThronStack.resolve"></a>
 
-```typescript
-public resolve(obj: any): any
+```go
+func Resolve(obj interface{}) interface{}
 ```
 
 Resolve a tokenized value in the context of the current stack.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.ThronStack.resolve.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `splitArn` <a name="splitArn" id="cdk-constructs.ThronStack.splitArn"></a>
+##### `SplitArn` <a name="SplitArn" id="cdk-constructs.ThronStack.splitArn"></a>
 
-```typescript
-public splitArn(arn: string, arnFormat: ArnFormat): ArnComponents
+```go
+func SplitArn(arn *string, arnFormat ArnFormat) ArnComponents
 ```
 
 Splits the provided ARN into its components.
@@ -9618,7 +9627,7 @@ encoded as Tokens).
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="cdk-constructs.ThronStack.splitArn.parameter.arn"></a>
 
-- *Type:* string
+- *Type:* *string
 
 the ARN to split into its components.
 
@@ -9626,43 +9635,43 @@ the ARN to split into its components.
 
 ###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="cdk-constructs.ThronStack.splitArn.parameter.arnFormat"></a>
 
-- *Type:* aws-cdk-lib.ArnFormat
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ArnFormat
 
 the expected format of 'arn' - depends on what format the service 'arn' represents uses.
 
 ---
 
-##### `toJsonString` <a name="toJsonString" id="cdk-constructs.ThronStack.toJsonString"></a>
+##### `ToJsonString` <a name="ToJsonString" id="cdk-constructs.ThronStack.toJsonString"></a>
 
-```typescript
-public toJsonString(obj: any, space?: number): string
+```go
+func ToJsonString(obj interface{}, space *f64) *string
 ```
 
 Convert an object, potentially containing tokens, to a JSON string.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.ThronStack.toJsonString.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
 ###### `space`<sup>Optional</sup> <a name="space" id="cdk-constructs.ThronStack.toJsonString.parameter.space"></a>
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
-##### `toYamlString` <a name="toYamlString" id="cdk-constructs.ThronStack.toYamlString"></a>
+##### `ToYamlString` <a name="ToYamlString" id="cdk-constructs.ThronStack.toYamlString"></a>
 
-```typescript
-public toYamlString(obj: any): string
+```go
+func ToYamlString(obj interface{}) *string
 ```
 
 Convert an object, potentially containing tokens, to a YAML string.
 
 ###### `obj`<sup>Required</sup> <a name="obj" id="cdk-constructs.ThronStack.toYamlString.parameter.obj"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
@@ -9670,18 +9679,18 @@ Convert an object, potentially containing tokens, to a YAML string.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#cdk-constructs.ThronStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
-| <code><a href="#cdk-constructs.ThronStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+| <code><a href="#cdk-constructs.ThronStack.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronStack.isStack">IsStack</a></code> | Return whether the given object is a Stack. |
+| <code><a href="#cdk-constructs.ThronStack.of">Of</a></code> | Looks up the first stack scope in which `construct` is defined. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronStack.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronStack.isConstruct"></a>
 
-```typescript
-import { ThronStack } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronStack.isConstruct(x: any)
+cdkconstructs.ThronStack_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -9702,18 +9711,18 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronStack.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
 ---
 
-##### `isStack` <a name="isStack" id="cdk-constructs.ThronStack.isStack"></a>
+##### `IsStack` <a name="IsStack" id="cdk-constructs.ThronStack.isStack"></a>
 
-```typescript
-import { ThronStack } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronStack.isStack(x: any)
+cdkconstructs.ThronStack_IsStack(x interface{}) *bool
 ```
 
 Return whether the given object is a Stack.
@@ -9722,16 +9731,16 @@ We do attribute detection since we can't reliably use 'instanceof'.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronStack.isStack.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 ---
 
-##### `of` <a name="of" id="cdk-constructs.ThronStack.of"></a>
+##### `Of` <a name="Of" id="cdk-constructs.ThronStack.of"></a>
 
-```typescript
-import { ThronStack } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronStack.of(construct: IConstruct)
+cdkconstructs.ThronStack_Of(construct IConstruct) Stack
 ```
 
 Looks up the first stack scope in which `construct` is defined.
@@ -9740,7 +9749,7 @@ Fails if there is no stack up the tree.
 
 ###### `construct`<sup>Required</sup> <a name="construct" id="cdk-constructs.ThronStack.of.parameter.construct"></a>
 
-- *Type:* constructs.IConstruct
+- *Type:* github.com/aws/constructs-go/constructs/v10.IConstruct
 
 The construct to start the search from.
 
@@ -9750,53 +9759,53 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
-| <code><a href="#cdk-constructs.ThronStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
-| <code><a href="#cdk-constructs.ThronStack.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
-| <code><a href="#cdk-constructs.ThronStack.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
-| <code><a href="#cdk-constructs.ThronStack.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
-| <code><a href="#cdk-constructs.ThronStack.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
-| <code><a href="#cdk-constructs.ThronStack.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
-| <code><a href="#cdk-constructs.ThronStack.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
-| <code><a href="#cdk-constructs.ThronStack.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
-| <code><a href="#cdk-constructs.ThronStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
-| <code><a href="#cdk-constructs.ThronStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
-| <code><a href="#cdk-constructs.ThronStack.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
-| <code><a href="#cdk-constructs.ThronStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
-| <code><a href="#cdk-constructs.ThronStack.property.defaultValue">defaultValue</a></code> | <code><a href="#cdk-constructs.DefaultValue">DefaultValue</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronStack.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronStack.property.thronEnvironment">thronEnvironment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronStack.property.thronSitename">thronSitename</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronStack.property.account">Account</a></code> | <code>*string</code> | The AWS account into which this stack will be deployed. |
+| <code><a href="#cdk-constructs.ThronStack.property.artifactId">ArtifactId</a></code> | <code>*string</code> | The ID of the cloud assembly artifact for this stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.bundlingRequired">BundlingRequired</a></code> | <code>*bool</code> | Indicates whether the stack requires bundling or not. |
+| <code><a href="#cdk-constructs.ThronStack.property.dependencies">Dependencies</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | Return the stacks this stack depends on. |
+| <code><a href="#cdk-constructs.ThronStack.property.environment">Environment</a></code> | <code>*string</code> | The environment coordinates in which this stack is deployed. |
+| <code><a href="#cdk-constructs.ThronStack.property.nested">Nested</a></code> | <code>*bool</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
+| <code><a href="#cdk-constructs.ThronStack.property.notificationArns">NotificationArns</a></code> | <code>*[]*string</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.partition">Partition</a></code> | <code>*string</code> | The partition in which this stack is defined. |
+| <code><a href="#cdk-constructs.ThronStack.property.region">Region</a></code> | <code>*string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
+| <code><a href="#cdk-constructs.ThronStack.property.stackId">StackId</a></code> | <code>*string</code> | The ID of the stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.stackName">StackName</a></code> | <code>*string</code> | The concrete CloudFormation physical stack name. |
+| <code><a href="#cdk-constructs.ThronStack.property.synthesizer">Synthesizer</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.IStackSynthesizer</code> | Synthesis method for this stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.tags">Tags</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.TagManager</code> | Tags to be applied to the stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.templateFile">TemplateFile</a></code> | <code>*string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
+| <code><a href="#cdk-constructs.ThronStack.property.templateOptions">TemplateOptions</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
+| <code><a href="#cdk-constructs.ThronStack.property.urlSuffix">UrlSuffix</a></code> | <code>*string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+| <code><a href="#cdk-constructs.ThronStack.property.nestedStackParent">NestedStackParent</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | If this is a nested stack, returns it's parent stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.nestedStackResource">NestedStackResource</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
+| <code><a href="#cdk-constructs.ThronStack.property.terminationProtection">TerminationProtection</a></code> | <code>*bool</code> | Whether termination protection is enabled for this stack. |
+| <code><a href="#cdk-constructs.ThronStack.property.defaultValue">DefaultValue</a></code> | <code><a href="#cdk-constructs.DefaultValue">DefaultValue</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.property.thronEnvironment">ThronEnvironment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronStack.property.thronSitename">ThronSitename</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronStack.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronStack.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="cdk-constructs.ThronStack.property.account"></a>
+##### `Account`<sup>Required</sup> <a name="Account" id="cdk-constructs.ThronStack.property.account"></a>
 
-```typescript
-public readonly account: string;
+```go
+func Account() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The AWS account into which this stack will be deployed.
 
@@ -9819,25 +9828,25 @@ implement some other account-agnostic behavior.
 
 ---
 
-##### `artifactId`<sup>Required</sup> <a name="artifactId" id="cdk-constructs.ThronStack.property.artifactId"></a>
+##### `ArtifactId`<sup>Required</sup> <a name="ArtifactId" id="cdk-constructs.ThronStack.property.artifactId"></a>
 
-```typescript
-public readonly artifactId: string;
+```go
+func ArtifactId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the cloud assembly artifact for this stack.
 
 ---
 
-##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="cdk-constructs.ThronStack.property.availabilityZones"></a>
+##### `AvailabilityZones`<sup>Required</sup> <a name="AvailabilityZones" id="cdk-constructs.ThronStack.property.availabilityZones"></a>
 
-```typescript
-public readonly availabilityZones: string[];
+```go
+func AvailabilityZones() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack.
 
@@ -9854,37 +9863,37 @@ To specify a different strategy for selecting availability zones override this m
 
 ---
 
-##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="cdk-constructs.ThronStack.property.bundlingRequired"></a>
+##### `BundlingRequired`<sup>Required</sup> <a name="BundlingRequired" id="cdk-constructs.ThronStack.property.bundlingRequired"></a>
 
-```typescript
-public readonly bundlingRequired: boolean;
+```go
+func BundlingRequired() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Indicates whether the stack requires bundling or not.
 
 ---
 
-##### `dependencies`<sup>Required</sup> <a name="dependencies" id="cdk-constructs.ThronStack.property.dependencies"></a>
+##### `Dependencies`<sup>Required</sup> <a name="Dependencies" id="cdk-constructs.ThronStack.property.dependencies"></a>
 
-```typescript
-public readonly dependencies: Stack[];
+```go
+func Dependencies() *[]Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 Return the stacks this stack depends on.
 
 ---
 
-##### `environment`<sup>Required</sup> <a name="environment" id="cdk-constructs.ThronStack.property.environment"></a>
+##### `Environment`<sup>Required</sup> <a name="Environment" id="cdk-constructs.ThronStack.property.environment"></a>
 
-```typescript
-public readonly environment: string;
+```go
+func Environment() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The environment coordinates in which this stack is deployed.
 
@@ -9902,49 +9911,49 @@ region/account-agnostic.
 
 ---
 
-##### `nested`<sup>Required</sup> <a name="nested" id="cdk-constructs.ThronStack.property.nested"></a>
+##### `Nested`<sup>Required</sup> <a name="Nested" id="cdk-constructs.ThronStack.property.nested"></a>
 
-```typescript
-public readonly nested: boolean;
+```go
+func Nested() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent.
 
 ---
 
-##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="cdk-constructs.ThronStack.property.notificationArns"></a>
+##### `NotificationArns`<sup>Required</sup> <a name="NotificationArns" id="cdk-constructs.ThronStack.property.notificationArns"></a>
 
-```typescript
-public readonly notificationArns: string[];
+```go
+func NotificationArns() *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Returns the list of notification Amazon Resource Names (ARNs) for the current stack.
 
 ---
 
-##### `partition`<sup>Required</sup> <a name="partition" id="cdk-constructs.ThronStack.property.partition"></a>
+##### `Partition`<sup>Required</sup> <a name="Partition" id="cdk-constructs.ThronStack.property.partition"></a>
 
-```typescript
-public readonly partition: string;
+```go
+func Partition() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The partition in which this stack is defined.
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="cdk-constructs.ThronStack.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="cdk-constructs.ThronStack.property.region"></a>
 
-```typescript
-public readonly region: string;
+```go
+func Region() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The AWS region into which this stack will be deployed (e.g. `us-west-2`).
 
@@ -9967,13 +9976,13 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `stackId`<sup>Required</sup> <a name="stackId" id="cdk-constructs.ThronStack.property.stackId"></a>
+##### `StackId`<sup>Required</sup> <a name="StackId" id="cdk-constructs.ThronStack.property.stackId"></a>
 
-```typescript
-public readonly stackId: string;
+```go
+func StackId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ID of the stack.
 
@@ -9981,19 +9990,19 @@ The ID of the stack.
 
 *Example*
 
-```typescript
+```go
 // After resolving, looks like
 'arn:aws:cloudformation:us-west-2:123456789012:stack/teststack/51af3dc0-da77-11e4-872e-1234567db123'
 ```
 
 
-##### `stackName`<sup>Required</sup> <a name="stackName" id="cdk-constructs.ThronStack.property.stackName"></a>
+##### `StackName`<sup>Required</sup> <a name="StackName" id="cdk-constructs.ThronStack.property.stackName"></a>
 
-```typescript
-public readonly stackName: string;
+```go
+func StackName() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The concrete CloudFormation physical stack name.
 
@@ -10008,37 +10017,37 @@ you can use `Aws.STACK_NAME` directly.
 
 ---
 
-##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="cdk-constructs.ThronStack.property.synthesizer"></a>
+##### `Synthesizer`<sup>Required</sup> <a name="Synthesizer" id="cdk-constructs.ThronStack.property.synthesizer"></a>
 
-```typescript
-public readonly synthesizer: IStackSynthesizer;
+```go
+func Synthesizer() IStackSynthesizer
 ```
 
-- *Type:* aws-cdk-lib.IStackSynthesizer
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.IStackSynthesizer
 
 Synthesis method for this stack.
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="cdk-constructs.ThronStack.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="cdk-constructs.ThronStack.property.tags"></a>
 
-```typescript
-public readonly tags: TagManager;
+```go
+func Tags() TagManager
 ```
 
-- *Type:* aws-cdk-lib.TagManager
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.TagManager
 
 Tags to be applied to the stack.
 
 ---
 
-##### `templateFile`<sup>Required</sup> <a name="templateFile" id="cdk-constructs.ThronStack.property.templateFile"></a>
+##### `TemplateFile`<sup>Required</sup> <a name="TemplateFile" id="cdk-constructs.ThronStack.property.templateFile"></a>
 
-```typescript
-public readonly templateFile: string;
+```go
+func TemplateFile() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The name of the CloudFormation template file emitted to the output directory during synthesis.
 
@@ -10046,49 +10055,49 @@ Example value: `MyStack.template.json`
 
 ---
 
-##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="cdk-constructs.ThronStack.property.templateOptions"></a>
+##### `TemplateOptions`<sup>Required</sup> <a name="TemplateOptions" id="cdk-constructs.ThronStack.property.templateOptions"></a>
 
-```typescript
-public readonly templateOptions: ITemplateOptions;
+```go
+func TemplateOptions() ITemplateOptions
 ```
 
-- *Type:* aws-cdk-lib.ITemplateOptions
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.ITemplateOptions
 
 Options for CloudFormation template (like version, transform, description).
 
 ---
 
-##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="cdk-constructs.ThronStack.property.urlSuffix"></a>
+##### `UrlSuffix`<sup>Required</sup> <a name="UrlSuffix" id="cdk-constructs.ThronStack.property.urlSuffix"></a>
 
-```typescript
-public readonly urlSuffix: string;
+```go
+func UrlSuffix() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The Amazon domain suffix for the region in which this stack is defined.
 
 ---
 
-##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="cdk-constructs.ThronStack.property.nestedStackParent"></a>
+##### `NestedStackParent`<sup>Optional</sup> <a name="NestedStackParent" id="cdk-constructs.ThronStack.property.nestedStackParent"></a>
 
-```typescript
-public readonly nestedStackParent: Stack;
+```go
+func NestedStackParent() Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 If this is a nested stack, returns it's parent stack.
 
 ---
 
-##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="cdk-constructs.ThronStack.property.nestedStackResource"></a>
+##### `NestedStackResource`<sup>Optional</sup> <a name="NestedStackResource" id="cdk-constructs.ThronStack.property.nestedStackResource"></a>
 
-```typescript
-public readonly nestedStackResource: CfnResource;
+```go
+func NestedStackResource() CfnResource
 ```
 
-- *Type:* aws-cdk-lib.CfnResource
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.CfnResource
 
 If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource.
 
@@ -10096,55 +10105,55 @@ If this is a nested stack, this represents its `AWS::CloudFormation::Stack` reso
 
 ---
 
-##### `terminationProtection`<sup>Required</sup> <a name="terminationProtection" id="cdk-constructs.ThronStack.property.terminationProtection"></a>
+##### `TerminationProtection`<sup>Required</sup> <a name="TerminationProtection" id="cdk-constructs.ThronStack.property.terminationProtection"></a>
 
-```typescript
-public readonly terminationProtection: boolean;
+```go
+func TerminationProtection() *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether termination protection is enabled for this stack.
 
 ---
 
-##### `defaultValue`<sup>Required</sup> <a name="defaultValue" id="cdk-constructs.ThronStack.property.defaultValue"></a>
+##### `DefaultValue`<sup>Required</sup> <a name="DefaultValue" id="cdk-constructs.ThronStack.property.defaultValue"></a>
 
-```typescript
-public readonly defaultValue: DefaultValue;
+```go
+func DefaultValue() DefaultValue
 ```
 
 - *Type:* <a href="#cdk-constructs.DefaultValue">DefaultValue</a>
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="cdk-constructs.ThronStack.property.projectId"></a>
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="cdk-constructs.ThronStack.property.projectId"></a>
 
-```typescript
-public readonly projectId: string;
+```go
+func ProjectId() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `thronEnvironment`<sup>Required</sup> <a name="thronEnvironment" id="cdk-constructs.ThronStack.property.thronEnvironment"></a>
+##### `ThronEnvironment`<sup>Required</sup> <a name="ThronEnvironment" id="cdk-constructs.ThronStack.property.thronEnvironment"></a>
 
-```typescript
-public readonly thronEnvironment: string;
+```go
+func ThronEnvironment() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `thronSitename`<sup>Required</sup> <a name="thronSitename" id="cdk-constructs.ThronStack.property.thronSitename"></a>
+##### `ThronSitename`<sup>Required</sup> <a name="ThronSitename" id="cdk-constructs.ThronStack.property.thronSitename"></a>
 
-```typescript
-public readonly thronSitename: string;
+```go
+func ThronSitename() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -10153,29 +10162,29 @@ public readonly thronSitename: string;
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronTargetScaling.Initializer"></a>
 
-```typescript
-import { ThronTargetScaling } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronTargetScaling(scope: Construct, id: string, props: ThronTargetScalingProps)
+cdkconstructs.NewThronTargetScaling(scope Construct, id *string, props ThronTargetScalingProps) ThronTargetScaling
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronTargetScaling.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronTargetScaling.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronTargetScaling.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronTargetScaling.Initializer.parameter.id">id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#cdk-constructs.ThronTargetScaling.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronTargetScalingProps">ThronTargetScalingProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronTargetScaling.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronTargetScaling.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -10189,14 +10198,14 @@ new ThronTargetScaling(scope: Construct, id: string, props: ThronTargetScalingPr
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronTargetScaling.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronTargetScaling.toString">ToString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronTargetScaling.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronTargetScaling.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
@@ -10205,16 +10214,16 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronTargetScaling.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronTargetScaling.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronTargetScaling.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronTargetScaling.isConstruct"></a>
 
-```typescript
-import { ThronTargetScaling } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronTargetScaling.isConstruct(x: any)
+cdkconstructs.ThronTargetScaling_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -10235,7 +10244,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronTargetScaling.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -10245,69 +10254,69 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronTargetScaling.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronTargetScaling.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronTargetScaling.property.minCapacity">minCapacity</a></code> | <code>number</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronTargetScaling.property.targetValue">targetValue</a></code> | <code>number</code> | The target value for the metric. |
-| <code><a href="#cdk-constructs.ThronTargetScaling.property.predefinedMetric">predefinedMetric</a></code> | <code>aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
+| <code><a href="#cdk-constructs.ThronTargetScaling.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronTargetScaling.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronTargetScaling.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronTargetScaling.property.targetValue">TargetValue</a></code> | <code>*f64</code> | The target value for the metric. |
+| <code><a href="#cdk-constructs.ThronTargetScaling.property.predefinedMetric">PredefinedMetric</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronTargetScaling.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronTargetScaling.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `maxCapacity`<sup>Required</sup> <a name="maxCapacity" id="cdk-constructs.ThronTargetScaling.property.maxCapacity"></a>
+##### `MaxCapacity`<sup>Required</sup> <a name="MaxCapacity" id="cdk-constructs.ThronTargetScaling.property.maxCapacity"></a>
 
-```typescript
-public readonly maxCapacity: number;
+```go
+func MaxCapacity() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The maximum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `minCapacity`<sup>Required</sup> <a name="minCapacity" id="cdk-constructs.ThronTargetScaling.property.minCapacity"></a>
+##### `MinCapacity`<sup>Required</sup> <a name="MinCapacity" id="cdk-constructs.ThronTargetScaling.property.minCapacity"></a>
 
-```typescript
-public readonly minCapacity: number;
+```go
+func MinCapacity() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The minimum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `targetValue`<sup>Required</sup> <a name="targetValue" id="cdk-constructs.ThronTargetScaling.property.targetValue"></a>
+##### `TargetValue`<sup>Required</sup> <a name="TargetValue" id="cdk-constructs.ThronTargetScaling.property.targetValue"></a>
 
-```typescript
-public readonly targetValue: number;
+```go
+func TargetValue() *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The target value for the metric.
 
 ---
 
-##### `predefinedMetric`<sup>Optional</sup> <a name="predefinedMetric" id="cdk-constructs.ThronTargetScaling.property.predefinedMetric"></a>
+##### `PredefinedMetric`<sup>Optional</sup> <a name="PredefinedMetric" id="cdk-constructs.ThronTargetScaling.property.predefinedMetric"></a>
 
-```typescript
-public readonly predefinedMetric: PredefinedMetric;
+```go
+func PredefinedMetric() PredefinedMetric
 ```
 
-- *Type:* aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric
 
 A predefined metric for application autoscaling.
 
@@ -10326,77 +10335,79 @@ https://thron.atlassian.net/wiki/spaces/PPI/pages/1132888071/New+Network+Infrast
 
 *Example*
 
-```typescript
-   const vpc = new ThronVpc(this,'prova',{
-   ipv4Cidr: '10.8.0.0/16',
-   isNatHA: false,
-   prefix: 'prova',
-   gatewayEndpoints: [
-     GatewayVpcEndpointAwsService.S3
-   ],
-   interfaceEndpoints: [InterfaceVpcEndpointAwsService.EC2],
-   subnetsConfigs: [
-     {
-       availabilityZone: AvailabilityZone.A,
-       ipv4Cidr: '10.8.192.0/20',
-       ipv6CidrSlotNumber: 7,
-       type: SubnetType.PUBLIC
-     },
-     {
-       availabilityZone: AvailabilityZone.B,
-       ipv4Cidr: '10.8.208.0/20',
-       ipv6CidrSlotNumber: 8,
-       type: SubnetType.PUBLIC
-     },
-     {
-       availabilityZone: AvailabilityZone.C,
-       ipv4Cidr: '10.8.224.0/20',
-       ipv6CidrSlotNumber: 9,
-       type: SubnetType.PUBLIC
-     },
-     //
-     {
-       availabilityZone: AvailabilityZone.A,
-       ipv4Cidr: '10.8.0.0/18',
-       ipv6CidrSlotNumber: 1,
-       type: SubnetType.PRIVATE
-     },
-     {
-       availabilityZone: AvailabilityZone.B,
-       ipv4Cidr: '10.8.64.0/18',
-       ipv6CidrSlotNumber: 2,
-       type: SubnetType.PRIVATE
-     },
-     {
-       availabilityZone: AvailabilityZone.C,
-       ipv4Cidr: '10.8.128.0/18',
-       ipv6CidrSlotNumber: 3,
-       type: SubnetType.PRIVATE
-     }
-   ]
-  })
+```go
+// Example automatically generated from non-compiling source. May contain errors.
+vpc := NewThronVpc(this, jsii.String("prova"), map[string]interface{}{
+	"ipv4Cidr": jsii.String("10.8.0.0/16"),
+	"isNatHA": jsii.Boolean(false),
+	"prefix": jsii.String("prova"),
+	"gatewayEndpoints": []interface{}{
+		GatewayVpcEndpointAwsService_S3,
+	},
+	"interfaceEndpoints": []interface{}{
+		InterfaceVpcEndpointAwsService_EC2,
+	},
+	"subnetsConfigs": []map[string]interface{}{
+		map[string]interface{}{
+			"availabilityZone": AvailabilityZone_A,
+			"ipv4Cidr": jsii.String("10.8.192.0/20"),
+			"ipv6CidrSlotNumber": jsii.Number(7),
+			"type": SubnetType_PUBLIC,
+		},
+		map[string]interface{}{
+			"availabilityZone": AvailabilityZone_B,
+			"ipv4Cidr": jsii.String("10.8.208.0/20"),
+			"ipv6CidrSlotNumber": jsii.Number(8),
+			"type": SubnetType_PUBLIC,
+		},
+		map[string]interface{}{
+			"availabilityZone": AvailabilityZone_C,
+			"ipv4Cidr": jsii.String("10.8.224.0/20"),
+			"ipv6CidrSlotNumber": jsii.Number(9),
+			"type": SubnetType_PUBLIC,
+		},
+		map[string]interface{}{
+			"availabilityZone": AvailabilityZone_A,
+			"ipv4Cidr": jsii.String("10.8.0.0/18"),
+			"ipv6CidrSlotNumber": jsii.Number(1),
+			"type": SubnetType_PRIVATE,
+		},
+		map[string]interface{}{
+			"availabilityZone": AvailabilityZone_B,
+			"ipv4Cidr": jsii.String("10.8.64.0/18"),
+			"ipv6CidrSlotNumber": jsii.Number(2),
+			"type": SubnetType_PRIVATE,
+		},
+		map[string]interface{}{
+			"availabilityZone": AvailabilityZone_C,
+			"ipv4Cidr": jsii.String("10.8.128.0/18"),
+			"ipv6CidrSlotNumber": jsii.Number(3),
+			"type": SubnetType_PRIVATE,
+		},
+	},
+})
 ```
 
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronVpc.Initializer"></a>
 
-```typescript
-import { ThronVpc } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronVpc(scope: Construct, id: string, props: ThronVpcProps)
+cdkconstructs.NewThronVpc(scope Construct, id *string, props ThronVpcProps) ThronVpc
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronVpc.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | Construct on which to instantiate the VPC on. |
-| <code><a href="#cdk-constructs.ThronVpc.Initializer.parameter.id">id</a></code> | <code>string</code> | Logical id of the construct. |
+| <code><a href="#cdk-constructs.ThronVpc.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | Construct on which to instantiate the VPC on. |
+| <code><a href="#cdk-constructs.ThronVpc.Initializer.parameter.id">id</a></code> | <code>*string</code> | Logical id of the construct. |
 | <code><a href="#cdk-constructs.ThronVpc.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-constructs.ThronVpcProps">ThronVpcProps</a></code> | *No description.* |
 
 ---
 
 ##### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronVpc.Initializer.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 Construct on which to instantiate the VPC on.
 
@@ -10404,7 +10415,7 @@ Construct on which to instantiate the VPC on.
 
 ##### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronVpc.Initializer.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 Logical id of the construct.
 
@@ -10420,25 +10431,25 @@ Logical id of the construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronVpc.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#cdk-constructs.ThronVpc.addAtlasClusterPeering">addAtlasClusterPeering</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.addPeeringFromOtherAccount">addPeeringFromOtherAccount</a></code> | Adds a peering with another VPC in another account, along with the routes. |
-| <code><a href="#cdk-constructs.ThronVpc.addVpcPeering">addVpcPeering</a></code> | Adds a peering with another VPC, along with the routes. |
+| <code><a href="#cdk-constructs.ThronVpc.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-constructs.ThronVpc.addAtlasClusterPeering">AddAtlasClusterPeering</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.addPeeringFromOtherAccount">AddPeeringFromOtherAccount</a></code> | Adds a peering with another VPC in another account, along with the routes. |
+| <code><a href="#cdk-constructs.ThronVpc.addVpcPeering">AddVpcPeering</a></code> | Adds a peering with another VPC, along with the routes. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-constructs.ThronVpc.toString"></a>
+##### `ToString` <a name="ToString" id="cdk-constructs.ThronVpc.toString"></a>
 
-```typescript
-public toString(): string
+```go
+func ToString() *string
 ```
 
 Returns a string representation of this construct.
 
-##### `addAtlasClusterPeering` <a name="addAtlasClusterPeering" id="cdk-constructs.ThronVpc.addAtlasClusterPeering"></a>
+##### `AddAtlasClusterPeering` <a name="AddAtlasClusterPeering" id="cdk-constructs.ThronVpc.addAtlasClusterPeering"></a>
 
-```typescript
-public addAtlasClusterPeering(peeringConf: AtlasPeeringConf): string
+```go
+func AddAtlasClusterPeering(peeringConf AtlasPeeringConf) *string
 ```
 
 ###### `peeringConf`<sup>Required</sup> <a name="peeringConf" id="cdk-constructs.ThronVpc.addAtlasClusterPeering.parameter.peeringConf"></a>
@@ -10449,10 +10460,10 @@ Configuration for the atlas peering.
 
 ---
 
-##### `addPeeringFromOtherAccount` <a name="addPeeringFromOtherAccount" id="cdk-constructs.ThronVpc.addPeeringFromOtherAccount"></a>
+##### `AddPeeringFromOtherAccount` <a name="AddPeeringFromOtherAccount" id="cdk-constructs.ThronVpc.addPeeringFromOtherAccount"></a>
 
-```typescript
-public addPeeringFromOtherAccount(peerConfig: OtherAccountPeeringConfig): string
+```go
+func AddPeeringFromOtherAccount(peerConfig OtherAccountPeeringConfig) *string
 ```
 
 Adds a peering with another VPC in another account, along with the routes.
@@ -10465,10 +10476,10 @@ Peering configuration.
 
 ---
 
-##### `addVpcPeering` <a name="addVpcPeering" id="cdk-constructs.ThronVpc.addVpcPeering"></a>
+##### `AddVpcPeering` <a name="AddVpcPeering" id="cdk-constructs.ThronVpc.addVpcPeering"></a>
 
-```typescript
-public addVpcPeering(peerConfig: PeeringConfig): void
+```go
+func AddVpcPeering(peerConfig PeeringConfig)
 ```
 
 Adds a peering with another VPC, along with the routes.
@@ -10485,16 +10496,16 @@ Peering configuration.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronVpc.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-constructs.ThronVpc.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="cdk-constructs.ThronVpc.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="cdk-constructs.ThronVpc.isConstruct"></a>
 
-```typescript
-import { ThronVpc } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronVpc.isConstruct(x: any)
+cdkconstructs.ThronVpc_IsConstruct(x interface{}) *bool
 ```
 
 Checks if `x` is a construct.
@@ -10515,7 +10526,7 @@ this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="cdk-constructs.ThronVpc.isConstruct.parameter.x"></a>
 
-- *Type:* any
+- *Type:* interface{}
 
 Any object.
 
@@ -10525,140 +10536,140 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronVpc.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-constructs.ThronVpc.property.egressOnlyInternetGateway">egressOnlyInternetGateway</a></code> | <code>aws-cdk-lib.aws_ec2.CfnEgressOnlyInternetGateway</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.gatewayEndpoints">gatewayEndpoints</a></code> | <code>aws-cdk-lib.aws_ec2.GatewayVpcEndpoint[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.interfaceEndpoints">interfaceEndpoints</a></code> | <code>aws-cdk-lib.aws_ec2.InterfaceVpcEndpoint[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.internetGateway">internetGateway</a></code> | <code>aws-cdk-lib.aws_ec2.CfnInternetGateway</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.ipv4CidrBlock">ipv4CidrBlock</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.nats">nats</a></code> | <code>aws-cdk-lib.aws_ec2.CfnNatGateway[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.prefix">prefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.privateSubnets">privateSubnets</a></code> | <code>aws-cdk-lib.aws_ec2.Subnet[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.publicSubnets">publicSubnets</a></code> | <code>aws-cdk-lib.aws_ec2.Subnet[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronVpc.property.vpc">vpc</a></code> | <code>aws-cdk-lib.aws_ec2.Vpc</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#cdk-constructs.ThronVpc.property.egressOnlyInternetGateway">EgressOnlyInternetGateway</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.CfnEgressOnlyInternetGateway</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.gatewayEndpoints">GatewayEndpoints</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.GatewayVpcEndpoint</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.interfaceEndpoints">InterfaceEndpoints</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.InterfaceVpcEndpoint</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.internetGateway">InternetGateway</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.CfnInternetGateway</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.ipv4CidrBlock">Ipv4CidrBlock</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.nats">Nats</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.CfnNatGateway</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.prefix">Prefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.privateSubnets">PrivateSubnets</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Subnet</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.publicSubnets">PublicSubnets</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Subnet</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronVpc.property.vpc">Vpc</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Vpc</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-constructs.ThronVpc.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="cdk-constructs.ThronVpc.property.node"></a>
 
-```typescript
-public readonly node: Node;
+```go
+func Node() Node
 ```
 
-- *Type:* constructs.Node
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
 
 The tree node.
 
 ---
 
-##### `egressOnlyInternetGateway`<sup>Required</sup> <a name="egressOnlyInternetGateway" id="cdk-constructs.ThronVpc.property.egressOnlyInternetGateway"></a>
+##### `EgressOnlyInternetGateway`<sup>Required</sup> <a name="EgressOnlyInternetGateway" id="cdk-constructs.ThronVpc.property.egressOnlyInternetGateway"></a>
 
-```typescript
-public readonly egressOnlyInternetGateway: CfnEgressOnlyInternetGateway;
+```go
+func EgressOnlyInternetGateway() CfnEgressOnlyInternetGateway
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.CfnEgressOnlyInternetGateway
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.CfnEgressOnlyInternetGateway
 
 ---
 
-##### `gatewayEndpoints`<sup>Required</sup> <a name="gatewayEndpoints" id="cdk-constructs.ThronVpc.property.gatewayEndpoints"></a>
+##### `GatewayEndpoints`<sup>Required</sup> <a name="GatewayEndpoints" id="cdk-constructs.ThronVpc.property.gatewayEndpoints"></a>
 
-```typescript
-public readonly gatewayEndpoints: GatewayVpcEndpoint[];
+```go
+func GatewayEndpoints() *[]GatewayVpcEndpoint
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.GatewayVpcEndpoint[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.GatewayVpcEndpoint
 
 ---
 
-##### `interfaceEndpoints`<sup>Required</sup> <a name="interfaceEndpoints" id="cdk-constructs.ThronVpc.property.interfaceEndpoints"></a>
+##### `InterfaceEndpoints`<sup>Required</sup> <a name="InterfaceEndpoints" id="cdk-constructs.ThronVpc.property.interfaceEndpoints"></a>
 
-```typescript
-public readonly interfaceEndpoints: InterfaceVpcEndpoint[];
+```go
+func InterfaceEndpoints() *[]InterfaceVpcEndpoint
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.InterfaceVpcEndpoint[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.InterfaceVpcEndpoint
 
 ---
 
-##### `internetGateway`<sup>Required</sup> <a name="internetGateway" id="cdk-constructs.ThronVpc.property.internetGateway"></a>
+##### `InternetGateway`<sup>Required</sup> <a name="InternetGateway" id="cdk-constructs.ThronVpc.property.internetGateway"></a>
 
-```typescript
-public readonly internetGateway: CfnInternetGateway;
+```go
+func InternetGateway() CfnInternetGateway
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.CfnInternetGateway
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.CfnInternetGateway
 
 ---
 
-##### `ipv4CidrBlock`<sup>Required</sup> <a name="ipv4CidrBlock" id="cdk-constructs.ThronVpc.property.ipv4CidrBlock"></a>
+##### `Ipv4CidrBlock`<sup>Required</sup> <a name="Ipv4CidrBlock" id="cdk-constructs.ThronVpc.property.ipv4CidrBlock"></a>
 
-```typescript
-public readonly ipv4CidrBlock: string;
+```go
+func Ipv4CidrBlock() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `ipv6CidrBlock`<sup>Required</sup> <a name="ipv6CidrBlock" id="cdk-constructs.ThronVpc.property.ipv6CidrBlock"></a>
+##### `Ipv6CidrBlock`<sup>Required</sup> <a name="Ipv6CidrBlock" id="cdk-constructs.ThronVpc.property.ipv6CidrBlock"></a>
 
-```typescript
-public readonly ipv6CidrBlock: string;
+```go
+func Ipv6CidrBlock() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `nats`<sup>Required</sup> <a name="nats" id="cdk-constructs.ThronVpc.property.nats"></a>
+##### `Nats`<sup>Required</sup> <a name="Nats" id="cdk-constructs.ThronVpc.property.nats"></a>
 
-```typescript
-public readonly nats: CfnNatGateway[];
+```go
+func Nats() *[]CfnNatGateway
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.CfnNatGateway[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.CfnNatGateway
 
 ---
 
-##### `prefix`<sup>Required</sup> <a name="prefix" id="cdk-constructs.ThronVpc.property.prefix"></a>
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="cdk-constructs.ThronVpc.property.prefix"></a>
 
-```typescript
-public readonly prefix: string;
+```go
+func Prefix() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `privateSubnets`<sup>Required</sup> <a name="privateSubnets" id="cdk-constructs.ThronVpc.property.privateSubnets"></a>
+##### `PrivateSubnets`<sup>Required</sup> <a name="PrivateSubnets" id="cdk-constructs.ThronVpc.property.privateSubnets"></a>
 
-```typescript
-public readonly privateSubnets: Subnet[];
+```go
+func PrivateSubnets() *[]Subnet
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.Subnet[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Subnet
 
 ---
 
-##### `publicSubnets`<sup>Required</sup> <a name="publicSubnets" id="cdk-constructs.ThronVpc.property.publicSubnets"></a>
+##### `PublicSubnets`<sup>Required</sup> <a name="PublicSubnets" id="cdk-constructs.ThronVpc.property.publicSubnets"></a>
 
-```typescript
-public readonly publicSubnets: Subnet[];
+```go
+func PublicSubnets() *[]Subnet
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.Subnet[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Subnet
 
 ---
 
-##### `vpc`<sup>Required</sup> <a name="vpc" id="cdk-constructs.ThronVpc.property.vpc"></a>
+##### `Vpc`<sup>Required</sup> <a name="Vpc" id="cdk-constructs.ThronVpc.property.vpc"></a>
 
-```typescript
-public readonly vpc: Vpc;
+```go
+func Vpc() Vpc
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.Vpc
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.Vpc
 
 ---
 
@@ -10669,66 +10680,71 @@ public readonly vpc: Vpc;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.AtlasPeeringConf.Initializer"></a>
 
-```typescript
-import { AtlasPeeringConf } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const atlasPeeringConf: AtlasPeeringConf = { ... }
+&cdkconstructs.AtlasPeeringConf {
+	AtlasCidr: *string,
+	AtlasContainerId: *string,
+	AtlasProjectId: *string,
+	ClusterName: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.AtlasPeeringConf.property.atlasCidr">atlasCidr</a></code> | <code>string</code> | Cidr notation of the atlas cluster. |
-| <code><a href="#cdk-constructs.AtlasPeeringConf.property.atlasContainerId">atlasContainerId</a></code> | <code>string</code> | Id of the atlas network container. |
-| <code><a href="#cdk-constructs.AtlasPeeringConf.property.atlasProjectId">atlasProjectId</a></code> | <code>string</code> | Id of the atlas project. |
-| <code><a href="#cdk-constructs.AtlasPeeringConf.property.clusterName">clusterName</a></code> | <code>string</code> | Name of the cluster to be used as logical di. |
+| <code><a href="#cdk-constructs.AtlasPeeringConf.property.atlasCidr">AtlasCidr</a></code> | <code>*string</code> | Cidr notation of the atlas cluster. |
+| <code><a href="#cdk-constructs.AtlasPeeringConf.property.atlasContainerId">AtlasContainerId</a></code> | <code>*string</code> | Id of the atlas network container. |
+| <code><a href="#cdk-constructs.AtlasPeeringConf.property.atlasProjectId">AtlasProjectId</a></code> | <code>*string</code> | Id of the atlas project. |
+| <code><a href="#cdk-constructs.AtlasPeeringConf.property.clusterName">ClusterName</a></code> | <code>*string</code> | Name of the cluster to be used as logical di. |
 
 ---
 
-##### `atlasCidr`<sup>Required</sup> <a name="atlasCidr" id="cdk-constructs.AtlasPeeringConf.property.atlasCidr"></a>
+##### `AtlasCidr`<sup>Required</sup> <a name="AtlasCidr" id="cdk-constructs.AtlasPeeringConf.property.atlasCidr"></a>
 
-```typescript
-public readonly atlasCidr: string;
+```go
+AtlasCidr *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Cidr notation of the atlas cluster.
 
 ---
 
-##### `atlasContainerId`<sup>Required</sup> <a name="atlasContainerId" id="cdk-constructs.AtlasPeeringConf.property.atlasContainerId"></a>
+##### `AtlasContainerId`<sup>Required</sup> <a name="AtlasContainerId" id="cdk-constructs.AtlasPeeringConf.property.atlasContainerId"></a>
 
-```typescript
-public readonly atlasContainerId: string;
+```go
+AtlasContainerId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Id of the atlas network container.
 
 ---
 
-##### `atlasProjectId`<sup>Required</sup> <a name="atlasProjectId" id="cdk-constructs.AtlasPeeringConf.property.atlasProjectId"></a>
+##### `AtlasProjectId`<sup>Required</sup> <a name="AtlasProjectId" id="cdk-constructs.AtlasPeeringConf.property.atlasProjectId"></a>
 
-```typescript
-public readonly atlasProjectId: string;
+```go
+AtlasProjectId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Id of the atlas project.
 
 ---
 
-##### `clusterName`<sup>Required</sup> <a name="clusterName" id="cdk-constructs.AtlasPeeringConf.property.clusterName"></a>
+##### `ClusterName`<sup>Required</sup> <a name="ClusterName" id="cdk-constructs.AtlasPeeringConf.property.clusterName"></a>
 
-```typescript
-public readonly clusterName: string;
+```go
+ClusterName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Name of the cluster to be used as logical di.
 
@@ -10738,38 +10754,41 @@ Name of the cluster to be used as logical di.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.CicdEnvironment.Initializer"></a>
 
-```typescript
-import { CicdEnvironment } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const cicdEnvironment: CicdEnvironment = { ... }
+&cdkconstructs.CicdEnvironment {
+	Capabilities: *[]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.PipelineCapability,
+	WebhookUrl: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.CicdEnvironment.property.capabilities">capabilities</a></code> | <code><a href="#cdk-constructs.PipelineCapability">PipelineCapability</a>[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.CicdEnvironment.property.webhookUrl">webhookUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.CicdEnvironment.property.capabilities">Capabilities</a></code> | <code>*[]<a href="#cdk-constructs.PipelineCapability">PipelineCapability</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.CicdEnvironment.property.webhookUrl">WebhookUrl</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `capabilities`<sup>Required</sup> <a name="capabilities" id="cdk-constructs.CicdEnvironment.property.capabilities"></a>
+##### `Capabilities`<sup>Required</sup> <a name="Capabilities" id="cdk-constructs.CicdEnvironment.property.capabilities"></a>
 
-```typescript
-public readonly capabilities: PipelineCapability[];
+```go
+Capabilities *[]PipelineCapability
 ```
 
-- *Type:* <a href="#cdk-constructs.PipelineCapability">PipelineCapability</a>[]
+- *Type:* *[]<a href="#cdk-constructs.PipelineCapability">PipelineCapability</a>
 
 ---
 
-##### `webhookUrl`<sup>Optional</sup> <a name="webhookUrl" id="cdk-constructs.CicdEnvironment.property.webhookUrl"></a>
+##### `WebhookUrl`<sup>Optional</sup> <a name="WebhookUrl" id="cdk-constructs.CicdEnvironment.property.webhookUrl"></a>
 
-```typescript
-public readonly webhookUrl: string;
+```go
+WebhookUrl *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -10777,71 +10796,77 @@ public readonly webhookUrl: string;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.DeployConfig.Initializer"></a>
 
-```typescript
-import { DeployConfig } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const deployConfig: DeployConfig = { ... }
+&cdkconstructs.DeployConfig {
+	DeploymentAwsAccount: *string,
+	DeploymentAwsRegion: *string,
+	DeploymentEnvironment: *string,
+	DeploymentSitename: *string,
+	ProjectId: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DeployConfig.property.deploymentAwsAccount">deploymentAwsAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.DeployConfig.property.deploymentAwsRegion">deploymentAwsRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.DeployConfig.property.deploymentEnvironment">deploymentEnvironment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.DeployConfig.property.deploymentSitename">deploymentSitename</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.DeployConfig.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DeployConfig.property.deploymentAwsAccount">DeploymentAwsAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DeployConfig.property.deploymentAwsRegion">DeploymentAwsRegion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DeployConfig.property.deploymentEnvironment">DeploymentEnvironment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DeployConfig.property.deploymentSitename">DeploymentSitename</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DeployConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `deploymentAwsAccount`<sup>Required</sup> <a name="deploymentAwsAccount" id="cdk-constructs.DeployConfig.property.deploymentAwsAccount"></a>
+##### `DeploymentAwsAccount`<sup>Required</sup> <a name="DeploymentAwsAccount" id="cdk-constructs.DeployConfig.property.deploymentAwsAccount"></a>
 
-```typescript
-public readonly deploymentAwsAccount: string;
+```go
+DeploymentAwsAccount *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `deploymentAwsRegion`<sup>Required</sup> <a name="deploymentAwsRegion" id="cdk-constructs.DeployConfig.property.deploymentAwsRegion"></a>
+##### `DeploymentAwsRegion`<sup>Required</sup> <a name="DeploymentAwsRegion" id="cdk-constructs.DeployConfig.property.deploymentAwsRegion"></a>
 
-```typescript
-public readonly deploymentAwsRegion: string;
+```go
+DeploymentAwsRegion *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `deploymentEnvironment`<sup>Required</sup> <a name="deploymentEnvironment" id="cdk-constructs.DeployConfig.property.deploymentEnvironment"></a>
+##### `DeploymentEnvironment`<sup>Required</sup> <a name="DeploymentEnvironment" id="cdk-constructs.DeployConfig.property.deploymentEnvironment"></a>
 
-```typescript
-public readonly deploymentEnvironment: string;
+```go
+DeploymentEnvironment *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `deploymentSitename`<sup>Required</sup> <a name="deploymentSitename" id="cdk-constructs.DeployConfig.property.deploymentSitename"></a>
+##### `DeploymentSitename`<sup>Required</sup> <a name="DeploymentSitename" id="cdk-constructs.DeployConfig.property.deploymentSitename"></a>
 
-```typescript
-public readonly deploymentSitename: string;
+```go
+DeploymentSitename *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="cdk-constructs.DeployConfig.property.projectId"></a>
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="cdk-constructs.DeployConfig.property.projectId"></a>
 
-```typescript
-public readonly projectId: string;
+```go
+ProjectId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -10849,30 +10874,35 @@ public readonly projectId: string;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.DeployStepConf.Initializer"></a>
 
-```typescript
-import { DeployStepConf } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const deployStepConf: DeployStepConf = { ... }
+&cdkconstructs.DeployStepConf {
+	ComputeType: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType,
+	CustomBuildImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage,
+	EnvironmentalVariables: *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable,
+	EnvironmentConf: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.DeployConfig,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DeployStepConf.property.computeType">computeType</a></code> | <code>aws-cdk-lib.aws_codebuild.ComputeType</code> | Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference. |
-| <code><a href="#cdk-constructs.DeployStepConf.property.customBuildImage">customBuildImage</a></code> | <code>aws-cdk-lib.aws_codebuild.IBuildImage</code> | Build image to be used fot this step. |
-| <code><a href="#cdk-constructs.DeployStepConf.property.environmentalVariables">environmentalVariables</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}</code> | Map of additional env vars to pass to the build container. |
-| <code><a href="#cdk-constructs.DeployStepConf.property.environmentConf">environmentConf</a></code> | <code><a href="#cdk-constructs.DeployConfig">DeployConfig</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.DeployStepConf.property.computeType">ComputeType</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType</code> | Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference. |
+| <code><a href="#cdk-constructs.DeployStepConf.property.customBuildImage">CustomBuildImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage</code> | Build image to be used fot this step. |
+| <code><a href="#cdk-constructs.DeployStepConf.property.environmentalVariables">EnvironmentalVariables</a></code> | <code>*map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable</code> | Map of additional env vars to pass to the build container. |
+| <code><a href="#cdk-constructs.DeployStepConf.property.environmentConf">EnvironmentConf</a></code> | <code><a href="#cdk-constructs.DeployConfig">DeployConfig</a></code> | *No description.* |
 
 ---
 
-##### `computeType`<sup>Optional</sup> <a name="computeType" id="cdk-constructs.DeployStepConf.property.computeType"></a>
+##### `ComputeType`<sup>Optional</sup> <a name="ComputeType" id="cdk-constructs.DeployStepConf.property.computeType"></a>
 
-```typescript
-public readonly computeType: ComputeType;
+```go
+ComputeType ComputeType
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.ComputeType
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType
 
 Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference.
 
@@ -10880,34 +10910,34 @@ Defaults to `ComputeType.SMALL`
 
 ---
 
-##### `customBuildImage`<sup>Optional</sup> <a name="customBuildImage" id="cdk-constructs.DeployStepConf.property.customBuildImage"></a>
+##### `CustomBuildImage`<sup>Optional</sup> <a name="CustomBuildImage" id="cdk-constructs.DeployStepConf.property.customBuildImage"></a>
 
-```typescript
-public readonly customBuildImage: IBuildImage;
+```go
+CustomBuildImage IBuildImage
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.IBuildImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage
 
 Build image to be used fot this step.
 
 ---
 
-##### `environmentalVariables`<sup>Optional</sup> <a name="environmentalVariables" id="cdk-constructs.DeployStepConf.property.environmentalVariables"></a>
+##### `EnvironmentalVariables`<sup>Optional</sup> <a name="EnvironmentalVariables" id="cdk-constructs.DeployStepConf.property.environmentalVariables"></a>
 
-```typescript
-public readonly environmentalVariables: {[ key: string ]: BuildEnvironmentVariable};
+```go
+EnvironmentalVariables *map[string]BuildEnvironmentVariable
 ```
 
-- *Type:* {[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}
+- *Type:* *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable
 
 Map of additional env vars to pass to the build container.
 
 ---
 
-##### `environmentConf`<sup>Required</sup> <a name="environmentConf" id="cdk-constructs.DeployStepConf.property.environmentConf"></a>
+##### `EnvironmentConf`<sup>Required</sup> <a name="EnvironmentConf" id="cdk-constructs.DeployStepConf.property.environmentConf"></a>
 
-```typescript
-public readonly environmentConf: DeployConfig;
+```go
+EnvironmentConf DeployConfig
 ```
 
 - *Type:* <a href="#cdk-constructs.DeployConfig">DeployConfig</a>
@@ -10918,31 +10948,40 @@ public readonly environmentConf: DeployConfig;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ECRDeploymentProps.Initializer"></a>
 
-```typescript
-import { ECRDeploymentProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const eCRDeploymentProps: ECRDeploymentProps = { ... }
+&cdkconstructs.ECRDeploymentProps {
+	Dest: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.IImageName,
+	Src: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.IImageName,
+	BuildImage: *string,
+	Environment: *map[string]*string,
+	MemoryLimit: *f64,
+	Role: github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole,
+	Vpc: github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.IVpc,
+	VpcSubnets: github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.SubnetSelection,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.dest">dest</a></code> | <code><a href="#cdk-constructs.IImageName">IImageName</a></code> | The destination of the docker image. |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.src">src</a></code> | <code><a href="#cdk-constructs.IImageName">IImageName</a></code> | The source of the docker image. |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.buildImage">buildImage</a></code> | <code>string</code> | Image to use to build Golang lambda for custom resource, if download fails or is not wanted. |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | The environment variable to set. |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.memoryLimit">memoryLimit</a></code> | <code>number</code> | The amount of memory (in MiB) to allocate to the AWS Lambda function which replicates the files from the CDK bucket to the destination bucket. |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | Execution role associated with this function. |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.vpc">vpc</a></code> | <code>aws-cdk-lib.aws_ec2.IVpc</code> | The VPC network to place the deployment lambda handler in. |
-| <code><a href="#cdk-constructs.ECRDeploymentProps.property.vpcSubnets">vpcSubnets</a></code> | <code>aws-cdk-lib.aws_ec2.SubnetSelection</code> | Where in the VPC to place the deployment lambda handler. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.dest">Dest</a></code> | <code><a href="#cdk-constructs.IImageName">IImageName</a></code> | The destination of the docker image. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.src">Src</a></code> | <code><a href="#cdk-constructs.IImageName">IImageName</a></code> | The source of the docker image. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.buildImage">BuildImage</a></code> | <code>*string</code> | Image to use to build Golang lambda for custom resource, if download fails or is not wanted. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.environment">Environment</a></code> | <code>*map[string]*string</code> | The environment variable to set. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.memoryLimit">MemoryLimit</a></code> | <code>*f64</code> | The amount of memory (in MiB) to allocate to the AWS Lambda function which replicates the files from the CDK bucket to the destination bucket. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.role">Role</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole</code> | Execution role associated with this function. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.vpc">Vpc</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.IVpc</code> | The VPC network to place the deployment lambda handler in. |
+| <code><a href="#cdk-constructs.ECRDeploymentProps.property.vpcSubnets">VpcSubnets</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.SubnetSelection</code> | Where in the VPC to place the deployment lambda handler. |
 
 ---
 
-##### `dest`<sup>Required</sup> <a name="dest" id="cdk-constructs.ECRDeploymentProps.property.dest"></a>
+##### `Dest`<sup>Required</sup> <a name="Dest" id="cdk-constructs.ECRDeploymentProps.property.dest"></a>
 
-```typescript
-public readonly dest: IImageName;
+```go
+Dest IImageName
 ```
 
 - *Type:* <a href="#cdk-constructs.IImageName">IImageName</a>
@@ -10951,10 +10990,10 @@ The destination of the docker image.
 
 ---
 
-##### `src`<sup>Required</sup> <a name="src" id="cdk-constructs.ECRDeploymentProps.property.src"></a>
+##### `Src`<sup>Required</sup> <a name="Src" id="cdk-constructs.ECRDeploymentProps.property.src"></a>
 
-```typescript
-public readonly src: IImageName;
+```go
+Src IImageName
 ```
 
 - *Type:* <a href="#cdk-constructs.IImageName">IImageName</a>
@@ -10963,13 +11002,13 @@ The source of the docker image.
 
 ---
 
-##### `buildImage`<sup>Optional</sup> <a name="buildImage" id="cdk-constructs.ECRDeploymentProps.property.buildImage"></a>
+##### `BuildImage`<sup>Optional</sup> <a name="BuildImage" id="cdk-constructs.ECRDeploymentProps.property.buildImage"></a>
 
-```typescript
-public readonly buildImage: string;
+```go
+BuildImage *string
 ```
 
-- *Type:* string
+- *Type:* *string
 - *Default:* public.ecr.aws/sam/build-go1.x:latest
 
 Image to use to build Golang lambda for custom resource, if download fails or is not wanted.
@@ -10980,25 +11019,25 @@ Note that image should use yum as a package manager and have golang available.
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="cdk-constructs.ECRDeploymentProps.property.environment"></a>
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="cdk-constructs.ECRDeploymentProps.property.environment"></a>
 
-```typescript
-public readonly environment: {[ key: string ]: string};
+```go
+Environment *map[string]*string
 ```
 
-- *Type:* {[ key: string ]: string}
+- *Type:* *map[string]*string
 
 The environment variable to set.
 
 ---
 
-##### `memoryLimit`<sup>Optional</sup> <a name="memoryLimit" id="cdk-constructs.ECRDeploymentProps.property.memoryLimit"></a>
+##### `MemoryLimit`<sup>Optional</sup> <a name="MemoryLimit" id="cdk-constructs.ECRDeploymentProps.property.memoryLimit"></a>
 
-```typescript
-public readonly memoryLimit: number;
+```go
+MemoryLimit *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 512
 
 The amount of memory (in MiB) to allocate to the AWS Lambda function which replicates the files from the CDK bucket to the destination bucket.
@@ -11008,39 +11047,39 @@ accordingly.
 
 ---
 
-##### `role`<sup>Optional</sup> <a name="role" id="cdk-constructs.ECRDeploymentProps.property.role"></a>
+##### `Role`<sup>Optional</sup> <a name="Role" id="cdk-constructs.ECRDeploymentProps.property.role"></a>
 
-```typescript
-public readonly role: IRole;
+```go
+Role IRole
 ```
 
-- *Type:* aws-cdk-lib.aws_iam.IRole
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_iam.IRole
 - *Default:* A role is automatically created
 
 Execution role associated with this function.
 
 ---
 
-##### `vpc`<sup>Optional</sup> <a name="vpc" id="cdk-constructs.ECRDeploymentProps.property.vpc"></a>
+##### `Vpc`<sup>Optional</sup> <a name="Vpc" id="cdk-constructs.ECRDeploymentProps.property.vpc"></a>
 
-```typescript
-public readonly vpc: IVpc;
+```go
+Vpc IVpc
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.IVpc
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.IVpc
 - *Default:* None
 
 The VPC network to place the deployment lambda handler in.
 
 ---
 
-##### `vpcSubnets`<sup>Optional</sup> <a name="vpcSubnets" id="cdk-constructs.ECRDeploymentProps.property.vpcSubnets"></a>
+##### `VpcSubnets`<sup>Optional</sup> <a name="VpcSubnets" id="cdk-constructs.ECRDeploymentProps.property.vpcSubnets"></a>
 
-```typescript
-public readonly vpcSubnets: SubnetSelection;
+```go
+VpcSubnets SubnetSelection
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.SubnetSelection
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.SubnetSelection
 - *Default:* the Vpc default strategy if not specified
 
 Where in the VPC to place the deployment lambda handler.
@@ -11053,53 +11092,57 @@ Only used if 'vpc' is supplied.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.EndpointComponents.Initializer"></a>
 
-```typescript
-import { EndpointComponents } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const endpointComponents: EndpointComponents = { ... }
+&cdkconstructs.EndpointComponents {
+	Domain: *string,
+	FullRecord: *string,
+	Path: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.EndpointComponents.property.domain">domain</a></code> | <code>string</code> | The domain part of the endpoint, i.e. `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it`. |
-| <code><a href="#cdk-constructs.EndpointComponents.property.fullRecord">fullRecord</a></code> | <code>string</code> | The full endpoint record, i.e. `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it/api/adv1/productimports/`. |
-| <code><a href="#cdk-constructs.EndpointComponents.property.path">path</a></code> | <code>string</code> | The path of the endpoint, i.e. `/api/adv1/productimports/`. |
+| <code><a href="#cdk-constructs.EndpointComponents.property.domain">Domain</a></code> | <code>*string</code> | The domain part of the endpoint, i.e. `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it`. |
+| <code><a href="#cdk-constructs.EndpointComponents.property.fullRecord">FullRecord</a></code> | <code>*string</code> | The full endpoint record, i.e. `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it/api/adv1/productimports/`. |
+| <code><a href="#cdk-constructs.EndpointComponents.property.path">Path</a></code> | <code>*string</code> | The path of the endpoint, i.e. `/api/adv1/productimports/`. |
 
 ---
 
-##### `domain`<sup>Required</sup> <a name="domain" id="cdk-constructs.EndpointComponents.property.domain"></a>
+##### `Domain`<sup>Required</sup> <a name="Domain" id="cdk-constructs.EndpointComponents.property.domain"></a>
 
-```typescript
-public readonly domain: string;
+```go
+Domain *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The domain part of the endpoint, i.e. `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it`.
 
 ---
 
-##### `fullRecord`<sup>Required</sup> <a name="fullRecord" id="cdk-constructs.EndpointComponents.property.fullRecord"></a>
+##### `FullRecord`<sup>Required</sup> <a name="FullRecord" id="cdk-constructs.EndpointComponents.property.fullRecord"></a>
 
-```typescript
-public readonly fullRecord: string;
+```go
+FullRecord *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The full endpoint record, i.e. `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it/api/adv1/productimports/`.
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="cdk-constructs.EndpointComponents.property.path"></a>
+##### `Path`<sup>Required</sup> <a name="Path" id="cdk-constructs.EndpointComponents.property.path"></a>
 
-```typescript
-public readonly path: string;
+```go
+Path *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The path of the endpoint, i.e. `/api/adv1/productimports/`.
 
@@ -11109,60 +11152,65 @@ The path of the endpoint, i.e. `/api/adv1/productimports/`.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.EnvironmentConfig.Initializer"></a>
 
-```typescript
-import { EnvironmentConfig } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const environmentConfig: EnvironmentConfig = { ... }
+&cdkconstructs.EnvironmentConfig {
+	DeploymentAwsAccount: *string,
+	DeploymentAwsRegion: *string,
+	DeploymentEnvironment: *string,
+	DeploymentSitename: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentAwsAccount">deploymentAwsAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentAwsRegion">deploymentAwsRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentEnvironment">deploymentEnvironment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentSitename">deploymentSitename</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentAwsAccount">DeploymentAwsAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentAwsRegion">DeploymentAwsRegion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentEnvironment">DeploymentEnvironment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.EnvironmentConfig.property.deploymentSitename">DeploymentSitename</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `deploymentAwsAccount`<sup>Required</sup> <a name="deploymentAwsAccount" id="cdk-constructs.EnvironmentConfig.property.deploymentAwsAccount"></a>
+##### `DeploymentAwsAccount`<sup>Required</sup> <a name="DeploymentAwsAccount" id="cdk-constructs.EnvironmentConfig.property.deploymentAwsAccount"></a>
 
-```typescript
-public readonly deploymentAwsAccount: string;
+```go
+DeploymentAwsAccount *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `deploymentAwsRegion`<sup>Required</sup> <a name="deploymentAwsRegion" id="cdk-constructs.EnvironmentConfig.property.deploymentAwsRegion"></a>
+##### `DeploymentAwsRegion`<sup>Required</sup> <a name="DeploymentAwsRegion" id="cdk-constructs.EnvironmentConfig.property.deploymentAwsRegion"></a>
 
-```typescript
-public readonly deploymentAwsRegion: string;
+```go
+DeploymentAwsRegion *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `deploymentEnvironment`<sup>Required</sup> <a name="deploymentEnvironment" id="cdk-constructs.EnvironmentConfig.property.deploymentEnvironment"></a>
+##### `DeploymentEnvironment`<sup>Required</sup> <a name="DeploymentEnvironment" id="cdk-constructs.EnvironmentConfig.property.deploymentEnvironment"></a>
 
-```typescript
-public readonly deploymentEnvironment: string;
+```go
+DeploymentEnvironment *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `deploymentSitename`<sup>Required</sup> <a name="deploymentSitename" id="cdk-constructs.EnvironmentConfig.property.deploymentSitename"></a>
+##### `DeploymentSitename`<sup>Required</sup> <a name="DeploymentSitename" id="cdk-constructs.EnvironmentConfig.property.deploymentSitename"></a>
 
-```typescript
-public readonly deploymentSitename: string;
+```go
+DeploymentSitename *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -11170,27 +11218,32 @@ public readonly deploymentSitename: string;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.FullServiceProps.Initializer"></a>
 
-```typescript
-import { FullServiceProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const fullServiceProps: FullServiceProps = { ... }
+&cdkconstructs.FullServiceProps {
+	ServiceGroup: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ServiceGroup,
+	Version: *f64,
+	Visibility: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.EndpointVisibility,
+	ServiceName: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.FullServiceProps.property.serviceGroup">serviceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
-| <code><a href="#cdk-constructs.FullServiceProps.property.version">version</a></code> | <code>number</code> | The version of the API exposed by the endpoint. |
-| <code><a href="#cdk-constructs.FullServiceProps.property.visibility">visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
-| <code><a href="#cdk-constructs.FullServiceProps.property.serviceName">serviceName</a></code> | <code>string</code> | Name of the service the endpoint exposes. |
+| <code><a href="#cdk-constructs.FullServiceProps.property.serviceGroup">ServiceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
+| <code><a href="#cdk-constructs.FullServiceProps.property.version">Version</a></code> | <code>*f64</code> | The version of the API exposed by the endpoint. |
+| <code><a href="#cdk-constructs.FullServiceProps.property.visibility">Visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
+| <code><a href="#cdk-constructs.FullServiceProps.property.serviceName">ServiceName</a></code> | <code>*string</code> | Name of the service the endpoint exposes. |
 
 ---
 
-##### `serviceGroup`<sup>Required</sup> <a name="serviceGroup" id="cdk-constructs.FullServiceProps.property.serviceGroup"></a>
+##### `ServiceGroup`<sup>Required</sup> <a name="ServiceGroup" id="cdk-constructs.FullServiceProps.property.serviceGroup"></a>
 
-```typescript
-public readonly serviceGroup: ServiceGroup;
+```go
+ServiceGroup ServiceGroup
 ```
 
 - *Type:* <a href="#cdk-constructs.ServiceGroup">ServiceGroup</a>
@@ -11200,23 +11253,23 @@ Service group of the service.
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.FullServiceProps.property.version"></a>
+##### `Version`<sup>Required</sup> <a name="Version" id="cdk-constructs.FullServiceProps.property.version"></a>
 
-```typescript
-public readonly version: number;
+```go
+Version *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 1
 
 The version of the API exposed by the endpoint.
 
 ---
 
-##### `visibility`<sup>Required</sup> <a name="visibility" id="cdk-constructs.FullServiceProps.property.visibility"></a>
+##### `Visibility`<sup>Required</sup> <a name="Visibility" id="cdk-constructs.FullServiceProps.property.visibility"></a>
 
-```typescript
-public readonly visibility: EndpointVisibility;
+```go
+Visibility EndpointVisibility
 ```
 
 - *Type:* <a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a>
@@ -11226,13 +11279,13 @@ Wether the endpoint is private or public.
 
 ---
 
-##### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.FullServiceProps.property.serviceName"></a>
+##### `ServiceName`<sup>Required</sup> <a name="ServiceName" id="cdk-constructs.FullServiceProps.property.serviceName"></a>
 
-```typescript
-public readonly serviceName: string;
+```go
+ServiceName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Name of the service the endpoint exposes.
 
@@ -11242,66 +11295,82 @@ Name of the service the endpoint exposes.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.FunctionOptions.Initializer"></a>
 
-```typescript
-import { FunctionOptions } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const functionOptions: FunctionOptions = { ... }
+&cdkconstructs.FunctionOptions {
+	ApiGatewayEndpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronLambdaApiGatewayEndpointProps,
+	Architecture: github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture,
+	AreMultiValueHeadersEnabled: *bool,
+	Description: *string,
+	DockerContextPath: *string,
+	DockerfileName: *string,
+	Endpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronEndpointAlbProps,
+	Environment: *map[string]*string,
+	EphemeralStorageSize: github.com/aws/aws-cdk-go/awscdk/v2.Size,
+	ExistingDockerImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode,
+	Filesystem: github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FileSystem,
+	LegacyEndpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.LegacyEndpointAlbProps,
+	MemorySize: *f64,
+	ReservedConcurrentExecutions: *f64,
+	Timeout: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.FunctionOptions.property.apiGatewayEndpoints">apiGatewayEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a>}</code> | Api Gateway endpoints associated with this lambda. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.architecture">architecture</a></code> | <code>aws-cdk-lib.aws_lambda.Architecture</code> | The architecture the lambda function runs on. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.areMultiValueHeadersEnabled">areMultiValueHeadersEnabled</a></code> | <code>boolean</code> | Whether or not multi value headers are enabled. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.description">description</a></code> | <code>string</code> | A description of the function. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.dockerContextPath">dockerContextPath</a></code> | <code>string</code> | Context of docker build. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.dockerfileName">dockerfileName</a></code> | <code>string</code> | Name of Dockerfile. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.endpoints">endpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>}</code> | Endpoints associated with this lambda. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Key-value pairs that Lambda caches and makes available for your Lambda functions. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.ephemeralStorageSize">ephemeralStorageSize</a></code> | <code>aws-cdk-lib.Size</code> | The size of the function’s /tmp directory in MiB. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.existingDockerImage">existingDockerImage</a></code> | <code>aws-cdk-lib.aws_lambda.DockerImageCode</code> | Existing docker image. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.filesystem">filesystem</a></code> | <code>aws-cdk-lib.aws_lambda.FileSystem</code> | The filesystem configuration for the lambda function. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.legacyEndpoints">legacyEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>}</code> | Legacy endpoints associated with this lambda. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.memorySize">memorySize</a></code> | <code>number</code> | The amount of memory, in MB, that is allocated to your Lambda function. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.reservedConcurrentExecutions">reservedConcurrentExecutions</a></code> | <code>number</code> | The maximum of concurrent executions you want to reserve for the function. |
-| <code><a href="#cdk-constructs.FunctionOptions.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | The function execution time (in seconds) after which Lambda terminates the function. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.apiGatewayEndpoints">ApiGatewayEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a></code> | Api Gateway endpoints associated with this lambda. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.architecture">Architecture</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture</code> | The architecture the lambda function runs on. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.areMultiValueHeadersEnabled">AreMultiValueHeadersEnabled</a></code> | <code>*bool</code> | Whether or not multi value headers are enabled. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.description">Description</a></code> | <code>*string</code> | A description of the function. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.dockerContextPath">DockerContextPath</a></code> | <code>*string</code> | Context of docker build. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.dockerfileName">DockerfileName</a></code> | <code>*string</code> | Name of Dockerfile. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.endpoints">Endpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a></code> | Endpoints associated with this lambda. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.environment">Environment</a></code> | <code>*map[string]*string</code> | Key-value pairs that Lambda caches and makes available for your Lambda functions. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.ephemeralStorageSize">EphemeralStorageSize</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Size</code> | The size of the function’s /tmp directory in MiB. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.existingDockerImage">ExistingDockerImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode</code> | Existing docker image. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.filesystem">Filesystem</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FileSystem</code> | The filesystem configuration for the lambda function. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.legacyEndpoints">LegacyEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a></code> | Legacy endpoints associated with this lambda. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.memorySize">MemorySize</a></code> | <code>*f64</code> | The amount of memory, in MB, that is allocated to your Lambda function. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.reservedConcurrentExecutions">ReservedConcurrentExecutions</a></code> | <code>*f64</code> | The maximum of concurrent executions you want to reserve for the function. |
+| <code><a href="#cdk-constructs.FunctionOptions.property.timeout">Timeout</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The function execution time (in seconds) after which Lambda terminates the function. |
 
 ---
 
-##### `apiGatewayEndpoints`<sup>Optional</sup> <a name="apiGatewayEndpoints" id="cdk-constructs.FunctionOptions.property.apiGatewayEndpoints"></a>
+##### `ApiGatewayEndpoints`<sup>Optional</sup> <a name="ApiGatewayEndpoints" id="cdk-constructs.FunctionOptions.property.apiGatewayEndpoints"></a>
 
-```typescript
-public readonly apiGatewayEndpoints: {[ key: string ]: ThronLambdaApiGatewayEndpointProps};
+```go
+ApiGatewayEndpoints *map[string]ThronLambdaApiGatewayEndpointProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a>
 
 Api Gateway endpoints associated with this lambda.
 
 ---
 
-##### `architecture`<sup>Optional</sup> <a name="architecture" id="cdk-constructs.FunctionOptions.property.architecture"></a>
+##### `Architecture`<sup>Optional</sup> <a name="Architecture" id="cdk-constructs.FunctionOptions.property.architecture"></a>
 
-```typescript
-public readonly architecture: Architecture;
+```go
+Architecture Architecture
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Architecture
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture
 - *Default:* lambda.Architecture.X86_64
 
 The architecture the lambda function runs on.
 
 ---
 
-##### `areMultiValueHeadersEnabled`<sup>Optional</sup> <a name="areMultiValueHeadersEnabled" id="cdk-constructs.FunctionOptions.property.areMultiValueHeadersEnabled"></a>
+##### `AreMultiValueHeadersEnabled`<sup>Optional</sup> <a name="AreMultiValueHeadersEnabled" id="cdk-constructs.FunctionOptions.property.areMultiValueHeadersEnabled"></a>
 
-```typescript
-public readonly areMultiValueHeadersEnabled: boolean;
+```go
+AreMultiValueHeadersEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 - *Default:* false
 
 Whether or not multi value headers are enabled.
@@ -11311,63 +11380,63 @@ https://docs.aws.amazon.com/elasticloadbalancing/latest/application/lambda-funct
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="cdk-constructs.FunctionOptions.property.description"></a>
+##### `Description`<sup>Optional</sup> <a name="Description" id="cdk-constructs.FunctionOptions.property.description"></a>
 
-```typescript
-public readonly description: string;
+```go
+Description *string
 ```
 
-- *Type:* string
+- *Type:* *string
 - *Default:* No description.
 
 A description of the function.
 
 ---
 
-##### `dockerContextPath`<sup>Optional</sup> <a name="dockerContextPath" id="cdk-constructs.FunctionOptions.property.dockerContextPath"></a>
+##### `DockerContextPath`<sup>Optional</sup> <a name="DockerContextPath" id="cdk-constructs.FunctionOptions.property.dockerContextPath"></a>
 
-```typescript
-public readonly dockerContextPath: string;
+```go
+DockerContextPath *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Context of docker build.
 
 ---
 
-##### `dockerfileName`<sup>Optional</sup> <a name="dockerfileName" id="cdk-constructs.FunctionOptions.property.dockerfileName"></a>
+##### `DockerfileName`<sup>Optional</sup> <a name="DockerfileName" id="cdk-constructs.FunctionOptions.property.dockerfileName"></a>
 
-```typescript
-public readonly dockerfileName: string;
+```go
+DockerfileName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 - *Default:* Dockerfile
 
 Name of Dockerfile.
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="cdk-constructs.FunctionOptions.property.endpoints"></a>
+##### `Endpoints`<sup>Optional</sup> <a name="Endpoints" id="cdk-constructs.FunctionOptions.property.endpoints"></a>
 
-```typescript
-public readonly endpoints: {[ key: string ]: ThronEndpointAlbProps};
+```go
+Endpoints *map[string]ThronEndpointAlbProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>
 
 Endpoints associated with this lambda.
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="cdk-constructs.FunctionOptions.property.environment"></a>
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="cdk-constructs.FunctionOptions.property.environment"></a>
 
-```typescript
-public readonly environment: {[ key: string ]: string};
+```go
+Environment *map[string]*string
 ```
 
-- *Type:* {[ key: string ]: string}
+- *Type:* *map[string]*string
 - *Default:* No environment variables.
 
 Key-value pairs that Lambda caches and makes available for your Lambda functions.
@@ -11378,63 +11447,63 @@ Lambda function source code.
 
 ---
 
-##### `ephemeralStorageSize`<sup>Optional</sup> <a name="ephemeralStorageSize" id="cdk-constructs.FunctionOptions.property.ephemeralStorageSize"></a>
+##### `EphemeralStorageSize`<sup>Optional</sup> <a name="EphemeralStorageSize" id="cdk-constructs.FunctionOptions.property.ephemeralStorageSize"></a>
 
-```typescript
-public readonly ephemeralStorageSize: Size;
+```go
+EphemeralStorageSize Size
 ```
 
-- *Type:* aws-cdk-lib.Size
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Size
 - *Default:* 512 MiB
 
 The size of the function’s /tmp directory in MiB.
 
 ---
 
-##### `existingDockerImage`<sup>Optional</sup> <a name="existingDockerImage" id="cdk-constructs.FunctionOptions.property.existingDockerImage"></a>
+##### `ExistingDockerImage`<sup>Optional</sup> <a name="ExistingDockerImage" id="cdk-constructs.FunctionOptions.property.existingDockerImage"></a>
 
-```typescript
-public readonly existingDockerImage: DockerImageCode;
+```go
+ExistingDockerImage DockerImageCode
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.DockerImageCode
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode
 
 Existing docker image.
 
 ---
 
-##### `filesystem`<sup>Optional</sup> <a name="filesystem" id="cdk-constructs.FunctionOptions.property.filesystem"></a>
+##### `Filesystem`<sup>Optional</sup> <a name="Filesystem" id="cdk-constructs.FunctionOptions.property.filesystem"></a>
 
-```typescript
-public readonly filesystem: FileSystem;
+```go
+Filesystem FileSystem
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.FileSystem
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FileSystem
 - *Default:* will not mount any filesystem
 
 The filesystem configuration for the lambda function.
 
 ---
 
-##### `legacyEndpoints`<sup>Optional</sup> <a name="legacyEndpoints" id="cdk-constructs.FunctionOptions.property.legacyEndpoints"></a>
+##### `LegacyEndpoints`<sup>Optional</sup> <a name="LegacyEndpoints" id="cdk-constructs.FunctionOptions.property.legacyEndpoints"></a>
 
-```typescript
-public readonly legacyEndpoints: {[ key: string ]: LegacyEndpointAlbProps};
+```go
+LegacyEndpoints *map[string]LegacyEndpointAlbProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>
 
 Legacy endpoints associated with this lambda.
 
 ---
 
-##### `memorySize`<sup>Optional</sup> <a name="memorySize" id="cdk-constructs.FunctionOptions.property.memorySize"></a>
+##### `MemorySize`<sup>Optional</sup> <a name="MemorySize" id="cdk-constructs.FunctionOptions.property.memorySize"></a>
 
-```typescript
-public readonly memorySize: number;
+```go
+MemorySize *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 128
 
 The amount of memory, in MB, that is allocated to your Lambda function.
@@ -11445,26 +11514,26 @@ Developer Guide.
 
 ---
 
-##### `reservedConcurrentExecutions`<sup>Optional</sup> <a name="reservedConcurrentExecutions" id="cdk-constructs.FunctionOptions.property.reservedConcurrentExecutions"></a>
+##### `ReservedConcurrentExecutions`<sup>Optional</sup> <a name="ReservedConcurrentExecutions" id="cdk-constructs.FunctionOptions.property.reservedConcurrentExecutions"></a>
 
-```typescript
-public readonly reservedConcurrentExecutions: number;
+```go
+ReservedConcurrentExecutions *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* No specific limit - account limit.
 
 The maximum of concurrent executions you want to reserve for the function.
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="cdk-constructs.FunctionOptions.property.timeout"></a>
+##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="cdk-constructs.FunctionOptions.property.timeout"></a>
 
-```typescript
-public readonly timeout: Duration;
+```go
+Timeout Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 - *Default:* Duration.seconds(3)
 
 The function execution time (in seconds) after which Lambda terminates the function.
@@ -11478,30 +11547,35 @@ based on the function's expected execution time.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.LambdaConf.Initializer"></a>
 
-```typescript
-import { LambdaConf } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const lambdaConf: LambdaConf = { ... }
+&cdkconstructs.LambdaConf {
+	ComputeType: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType,
+	CustomBuildImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage,
+	EnvironmentalVariables: *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable,
+	DestinationEcrRepository: github.com/aws/aws-cdk-go/awscdk/v2.aws_ecr.Repository,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.LambdaConf.property.computeType">computeType</a></code> | <code>aws-cdk-lib.aws_codebuild.ComputeType</code> | Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference. |
-| <code><a href="#cdk-constructs.LambdaConf.property.customBuildImage">customBuildImage</a></code> | <code>aws-cdk-lib.aws_codebuild.IBuildImage</code> | Build image to be used fot this step. |
-| <code><a href="#cdk-constructs.LambdaConf.property.environmentalVariables">environmentalVariables</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}</code> | Map of additional env vars to pass to the build container. |
-| <code><a href="#cdk-constructs.LambdaConf.property.destinationEcrRepository">destinationEcrRepository</a></code> | <code>aws-cdk-lib.aws_ecr.Repository</code> | *No description.* |
+| <code><a href="#cdk-constructs.LambdaConf.property.computeType">ComputeType</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType</code> | Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference. |
+| <code><a href="#cdk-constructs.LambdaConf.property.customBuildImage">CustomBuildImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage</code> | Build image to be used fot this step. |
+| <code><a href="#cdk-constructs.LambdaConf.property.environmentalVariables">EnvironmentalVariables</a></code> | <code>*map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable</code> | Map of additional env vars to pass to the build container. |
+| <code><a href="#cdk-constructs.LambdaConf.property.destinationEcrRepository">DestinationEcrRepository</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecr.Repository</code> | *No description.* |
 
 ---
 
-##### `computeType`<sup>Optional</sup> <a name="computeType" id="cdk-constructs.LambdaConf.property.computeType"></a>
+##### `ComputeType`<sup>Optional</sup> <a name="ComputeType" id="cdk-constructs.LambdaConf.property.computeType"></a>
 
-```typescript
-public readonly computeType: ComputeType;
+```go
+ComputeType ComputeType
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.ComputeType
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType
 
 Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference.
 
@@ -11509,37 +11583,37 @@ Defaults to `ComputeType.SMALL`
 
 ---
 
-##### `customBuildImage`<sup>Optional</sup> <a name="customBuildImage" id="cdk-constructs.LambdaConf.property.customBuildImage"></a>
+##### `CustomBuildImage`<sup>Optional</sup> <a name="CustomBuildImage" id="cdk-constructs.LambdaConf.property.customBuildImage"></a>
 
-```typescript
-public readonly customBuildImage: IBuildImage;
+```go
+CustomBuildImage IBuildImage
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.IBuildImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage
 
 Build image to be used fot this step.
 
 ---
 
-##### `environmentalVariables`<sup>Optional</sup> <a name="environmentalVariables" id="cdk-constructs.LambdaConf.property.environmentalVariables"></a>
+##### `EnvironmentalVariables`<sup>Optional</sup> <a name="EnvironmentalVariables" id="cdk-constructs.LambdaConf.property.environmentalVariables"></a>
 
-```typescript
-public readonly environmentalVariables: {[ key: string ]: BuildEnvironmentVariable};
+```go
+EnvironmentalVariables *map[string]BuildEnvironmentVariable
 ```
 
-- *Type:* {[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}
+- *Type:* *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable
 
 Map of additional env vars to pass to the build container.
 
 ---
 
-##### `destinationEcrRepository`<sup>Required</sup> <a name="destinationEcrRepository" id="cdk-constructs.LambdaConf.property.destinationEcrRepository"></a>
+##### `DestinationEcrRepository`<sup>Required</sup> <a name="DestinationEcrRepository" id="cdk-constructs.LambdaConf.property.destinationEcrRepository"></a>
 
-```typescript
-public readonly destinationEcrRepository: Repository;
+```go
+DestinationEcrRepository Repository
 ```
 
-- *Type:* aws-cdk-lib.aws_ecr.Repository
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecr.Repository
 
 ---
 
@@ -11547,39 +11621,44 @@ public readonly destinationEcrRepository: Repository;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.LegacyEndpointAlbProps.Initializer"></a>
 
-```typescript
-import { LegacyEndpointAlbProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const legacyEndpointAlbProps: LegacyEndpointAlbProps = { ... }
+&cdkconstructs.LegacyEndpointAlbProps {
+	RoutingTokenPrefix: *string,
+	ServiceGroup: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ServiceGroup,
+	DeleteExistingDns: *bool,
+	Stack: github.com/aws/aws-cdk-go/awscdk/v2.Stack,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.routingTokenPrefix">routingTokenPrefix</a></code> | <code>string</code> | Routing path for the service, validated against `serviceGroup`. |
-| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.serviceGroup">serviceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
-| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.deleteExistingDns">deleteExistingDns</a></code> | <code>boolean</code> | DANGEROUS: Overwrite dns record if it already exists, otherwise it creates it. |
-| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The reference of parent Stack. |
+| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.routingTokenPrefix">RoutingTokenPrefix</a></code> | <code>*string</code> | Routing path for the service, validated against `serviceGroup`. |
+| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.serviceGroup">ServiceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
+| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.deleteExistingDns">DeleteExistingDns</a></code> | <code>*bool</code> | DANGEROUS: Overwrite dns record if it already exists, otherwise it creates it. |
+| <code><a href="#cdk-constructs.LegacyEndpointAlbProps.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The reference of parent Stack. |
 
 ---
 
-##### `routingTokenPrefix`<sup>Required</sup> <a name="routingTokenPrefix" id="cdk-constructs.LegacyEndpointAlbProps.property.routingTokenPrefix"></a>
+##### `RoutingTokenPrefix`<sup>Required</sup> <a name="RoutingTokenPrefix" id="cdk-constructs.LegacyEndpointAlbProps.property.routingTokenPrefix"></a>
 
-```typescript
-public readonly routingTokenPrefix: string;
+```go
+RoutingTokenPrefix *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Routing path for the service, validated against `serviceGroup`.
 
 ---
 
-##### `serviceGroup`<sup>Required</sup> <a name="serviceGroup" id="cdk-constructs.LegacyEndpointAlbProps.property.serviceGroup"></a>
+##### `ServiceGroup`<sup>Required</sup> <a name="ServiceGroup" id="cdk-constructs.LegacyEndpointAlbProps.property.serviceGroup"></a>
 
-```typescript
-public readonly serviceGroup: ServiceGroup;
+```go
+ServiceGroup ServiceGroup
 ```
 
 - *Type:* <a href="#cdk-constructs.ServiceGroup">ServiceGroup</a>
@@ -11588,26 +11667,26 @@ Service group of the service.
 
 ---
 
-##### `deleteExistingDns`<sup>Optional</sup> <a name="deleteExistingDns" id="cdk-constructs.LegacyEndpointAlbProps.property.deleteExistingDns"></a>
+##### `DeleteExistingDns`<sup>Optional</sup> <a name="DeleteExistingDns" id="cdk-constructs.LegacyEndpointAlbProps.property.deleteExistingDns"></a>
 
-```typescript
-public readonly deleteExistingDns: boolean;
+```go
+DeleteExistingDns *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 - *Default:* false
 
 DANGEROUS: Overwrite dns record if it already exists, otherwise it creates it.
 
 ---
 
-##### `stack`<sup>Optional</sup> <a name="stack" id="cdk-constructs.LegacyEndpointAlbProps.property.stack"></a>
+##### `Stack`<sup>Optional</sup> <a name="Stack" id="cdk-constructs.LegacyEndpointAlbProps.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+Stack Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The reference of parent Stack.
 
@@ -11617,67 +11696,84 @@ The reference of parent Stack.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.NewRelicFunctionOptions.Initializer"></a>
 
-```typescript
-import { NewRelicFunctionOptions } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const newRelicFunctionOptions: NewRelicFunctionOptions = { ... }
+&cdkconstructs.NewRelicFunctionOptions {
+	ApiGatewayEndpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronLambdaApiGatewayEndpointProps,
+	Architecture: github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture,
+	AreMultiValueHeadersEnabled: *bool,
+	Description: *string,
+	DockerContextPath: *string,
+	DockerfileName: *string,
+	Endpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronEndpointAlbProps,
+	Environment: *map[string]*string,
+	EphemeralStorageSize: github.com/aws/aws-cdk-go/awscdk/v2.Size,
+	ExistingDockerImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode,
+	Filesystem: github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FileSystem,
+	LegacyEndpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.LegacyEndpointAlbProps,
+	MemorySize: *f64,
+	ReservedConcurrentExecutions: *f64,
+	Timeout: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	NewRelicConfigOverrides: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.NewRelicLambdaConfigOverrides,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.apiGatewayEndpoints">apiGatewayEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a>}</code> | Api Gateway endpoints associated with this lambda. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.architecture">architecture</a></code> | <code>aws-cdk-lib.aws_lambda.Architecture</code> | The architecture the lambda function runs on. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.areMultiValueHeadersEnabled">areMultiValueHeadersEnabled</a></code> | <code>boolean</code> | Whether or not multi value headers are enabled. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.description">description</a></code> | <code>string</code> | A description of the function. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.dockerContextPath">dockerContextPath</a></code> | <code>string</code> | Context of docker build. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.dockerfileName">dockerfileName</a></code> | <code>string</code> | Name of Dockerfile. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.endpoints">endpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>}</code> | Endpoints associated with this lambda. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Key-value pairs that Lambda caches and makes available for your Lambda functions. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.ephemeralStorageSize">ephemeralStorageSize</a></code> | <code>aws-cdk-lib.Size</code> | The size of the function’s /tmp directory in MiB. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.existingDockerImage">existingDockerImage</a></code> | <code>aws-cdk-lib.aws_lambda.DockerImageCode</code> | Existing docker image. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.filesystem">filesystem</a></code> | <code>aws-cdk-lib.aws_lambda.FileSystem</code> | The filesystem configuration for the lambda function. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.legacyEndpoints">legacyEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>}</code> | Legacy endpoints associated with this lambda. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.memorySize">memorySize</a></code> | <code>number</code> | The amount of memory, in MB, that is allocated to your Lambda function. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.reservedConcurrentExecutions">reservedConcurrentExecutions</a></code> | <code>number</code> | The maximum of concurrent executions you want to reserve for the function. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | The function execution time (in seconds) after which Lambda terminates the function. |
-| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.newRelicConfigOverrides">newRelicConfigOverrides</a></code> | <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides">NewRelicLambdaConfigOverrides</a></code> | Explicit Overrides for NewRelic Configuration. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.apiGatewayEndpoints">ApiGatewayEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a></code> | Api Gateway endpoints associated with this lambda. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.architecture">Architecture</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture</code> | The architecture the lambda function runs on. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.areMultiValueHeadersEnabled">AreMultiValueHeadersEnabled</a></code> | <code>*bool</code> | Whether or not multi value headers are enabled. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.description">Description</a></code> | <code>*string</code> | A description of the function. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.dockerContextPath">DockerContextPath</a></code> | <code>*string</code> | Context of docker build. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.dockerfileName">DockerfileName</a></code> | <code>*string</code> | Name of Dockerfile. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.endpoints">Endpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a></code> | Endpoints associated with this lambda. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.environment">Environment</a></code> | <code>*map[string]*string</code> | Key-value pairs that Lambda caches and makes available for your Lambda functions. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.ephemeralStorageSize">EphemeralStorageSize</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Size</code> | The size of the function’s /tmp directory in MiB. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.existingDockerImage">ExistingDockerImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode</code> | Existing docker image. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.filesystem">Filesystem</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FileSystem</code> | The filesystem configuration for the lambda function. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.legacyEndpoints">LegacyEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a></code> | Legacy endpoints associated with this lambda. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.memorySize">MemorySize</a></code> | <code>*f64</code> | The amount of memory, in MB, that is allocated to your Lambda function. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.reservedConcurrentExecutions">ReservedConcurrentExecutions</a></code> | <code>*f64</code> | The maximum of concurrent executions you want to reserve for the function. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.timeout">Timeout</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The function execution time (in seconds) after which Lambda terminates the function. |
+| <code><a href="#cdk-constructs.NewRelicFunctionOptions.property.newRelicConfigOverrides">NewRelicConfigOverrides</a></code> | <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides">NewRelicLambdaConfigOverrides</a></code> | Explicit Overrides for NewRelic Configuration. |
 
 ---
 
-##### `apiGatewayEndpoints`<sup>Optional</sup> <a name="apiGatewayEndpoints" id="cdk-constructs.NewRelicFunctionOptions.property.apiGatewayEndpoints"></a>
+##### `ApiGatewayEndpoints`<sup>Optional</sup> <a name="ApiGatewayEndpoints" id="cdk-constructs.NewRelicFunctionOptions.property.apiGatewayEndpoints"></a>
 
-```typescript
-public readonly apiGatewayEndpoints: {[ key: string ]: ThronLambdaApiGatewayEndpointProps};
+```go
+ApiGatewayEndpoints *map[string]ThronLambdaApiGatewayEndpointProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps">ThronLambdaApiGatewayEndpointProps</a>
 
 Api Gateway endpoints associated with this lambda.
 
 ---
 
-##### `architecture`<sup>Optional</sup> <a name="architecture" id="cdk-constructs.NewRelicFunctionOptions.property.architecture"></a>
+##### `Architecture`<sup>Optional</sup> <a name="Architecture" id="cdk-constructs.NewRelicFunctionOptions.property.architecture"></a>
 
-```typescript
-public readonly architecture: Architecture;
+```go
+Architecture Architecture
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.Architecture
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.Architecture
 - *Default:* lambda.Architecture.X86_64
 
 The architecture the lambda function runs on.
 
 ---
 
-##### `areMultiValueHeadersEnabled`<sup>Optional</sup> <a name="areMultiValueHeadersEnabled" id="cdk-constructs.NewRelicFunctionOptions.property.areMultiValueHeadersEnabled"></a>
+##### `AreMultiValueHeadersEnabled`<sup>Optional</sup> <a name="AreMultiValueHeadersEnabled" id="cdk-constructs.NewRelicFunctionOptions.property.areMultiValueHeadersEnabled"></a>
 
-```typescript
-public readonly areMultiValueHeadersEnabled: boolean;
+```go
+AreMultiValueHeadersEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 - *Default:* false
 
 Whether or not multi value headers are enabled.
@@ -11687,63 +11783,63 @@ https://docs.aws.amazon.com/elasticloadbalancing/latest/application/lambda-funct
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="cdk-constructs.NewRelicFunctionOptions.property.description"></a>
+##### `Description`<sup>Optional</sup> <a name="Description" id="cdk-constructs.NewRelicFunctionOptions.property.description"></a>
 
-```typescript
-public readonly description: string;
+```go
+Description *string
 ```
 
-- *Type:* string
+- *Type:* *string
 - *Default:* No description.
 
 A description of the function.
 
 ---
 
-##### `dockerContextPath`<sup>Optional</sup> <a name="dockerContextPath" id="cdk-constructs.NewRelicFunctionOptions.property.dockerContextPath"></a>
+##### `DockerContextPath`<sup>Optional</sup> <a name="DockerContextPath" id="cdk-constructs.NewRelicFunctionOptions.property.dockerContextPath"></a>
 
-```typescript
-public readonly dockerContextPath: string;
+```go
+DockerContextPath *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Context of docker build.
 
 ---
 
-##### `dockerfileName`<sup>Optional</sup> <a name="dockerfileName" id="cdk-constructs.NewRelicFunctionOptions.property.dockerfileName"></a>
+##### `DockerfileName`<sup>Optional</sup> <a name="DockerfileName" id="cdk-constructs.NewRelicFunctionOptions.property.dockerfileName"></a>
 
-```typescript
-public readonly dockerfileName: string;
+```go
+DockerfileName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 - *Default:* Dockerfile
 
 Name of Dockerfile.
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="cdk-constructs.NewRelicFunctionOptions.property.endpoints"></a>
+##### `Endpoints`<sup>Optional</sup> <a name="Endpoints" id="cdk-constructs.NewRelicFunctionOptions.property.endpoints"></a>
 
-```typescript
-public readonly endpoints: {[ key: string ]: ThronEndpointAlbProps};
+```go
+Endpoints *map[string]ThronEndpointAlbProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>
 
 Endpoints associated with this lambda.
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="cdk-constructs.NewRelicFunctionOptions.property.environment"></a>
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="cdk-constructs.NewRelicFunctionOptions.property.environment"></a>
 
-```typescript
-public readonly environment: {[ key: string ]: string};
+```go
+Environment *map[string]*string
 ```
 
-- *Type:* {[ key: string ]: string}
+- *Type:* *map[string]*string
 - *Default:* No environment variables.
 
 Key-value pairs that Lambda caches and makes available for your Lambda functions.
@@ -11754,63 +11850,63 @@ Lambda function source code.
 
 ---
 
-##### `ephemeralStorageSize`<sup>Optional</sup> <a name="ephemeralStorageSize" id="cdk-constructs.NewRelicFunctionOptions.property.ephemeralStorageSize"></a>
+##### `EphemeralStorageSize`<sup>Optional</sup> <a name="EphemeralStorageSize" id="cdk-constructs.NewRelicFunctionOptions.property.ephemeralStorageSize"></a>
 
-```typescript
-public readonly ephemeralStorageSize: Size;
+```go
+EphemeralStorageSize Size
 ```
 
-- *Type:* aws-cdk-lib.Size
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Size
 - *Default:* 512 MiB
 
 The size of the function’s /tmp directory in MiB.
 
 ---
 
-##### `existingDockerImage`<sup>Optional</sup> <a name="existingDockerImage" id="cdk-constructs.NewRelicFunctionOptions.property.existingDockerImage"></a>
+##### `ExistingDockerImage`<sup>Optional</sup> <a name="ExistingDockerImage" id="cdk-constructs.NewRelicFunctionOptions.property.existingDockerImage"></a>
 
-```typescript
-public readonly existingDockerImage: DockerImageCode;
+```go
+ExistingDockerImage DockerImageCode
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.DockerImageCode
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.DockerImageCode
 
 Existing docker image.
 
 ---
 
-##### `filesystem`<sup>Optional</sup> <a name="filesystem" id="cdk-constructs.NewRelicFunctionOptions.property.filesystem"></a>
+##### `Filesystem`<sup>Optional</sup> <a name="Filesystem" id="cdk-constructs.NewRelicFunctionOptions.property.filesystem"></a>
 
-```typescript
-public readonly filesystem: FileSystem;
+```go
+Filesystem FileSystem
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.FileSystem
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.FileSystem
 - *Default:* will not mount any filesystem
 
 The filesystem configuration for the lambda function.
 
 ---
 
-##### `legacyEndpoints`<sup>Optional</sup> <a name="legacyEndpoints" id="cdk-constructs.NewRelicFunctionOptions.property.legacyEndpoints"></a>
+##### `LegacyEndpoints`<sup>Optional</sup> <a name="LegacyEndpoints" id="cdk-constructs.NewRelicFunctionOptions.property.legacyEndpoints"></a>
 
-```typescript
-public readonly legacyEndpoints: {[ key: string ]: LegacyEndpointAlbProps};
+```go
+LegacyEndpoints *map[string]LegacyEndpointAlbProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>
 
 Legacy endpoints associated with this lambda.
 
 ---
 
-##### `memorySize`<sup>Optional</sup> <a name="memorySize" id="cdk-constructs.NewRelicFunctionOptions.property.memorySize"></a>
+##### `MemorySize`<sup>Optional</sup> <a name="MemorySize" id="cdk-constructs.NewRelicFunctionOptions.property.memorySize"></a>
 
-```typescript
-public readonly memorySize: number;
+```go
+MemorySize *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 128
 
 The amount of memory, in MB, that is allocated to your Lambda function.
@@ -11821,26 +11917,26 @@ Developer Guide.
 
 ---
 
-##### `reservedConcurrentExecutions`<sup>Optional</sup> <a name="reservedConcurrentExecutions" id="cdk-constructs.NewRelicFunctionOptions.property.reservedConcurrentExecutions"></a>
+##### `ReservedConcurrentExecutions`<sup>Optional</sup> <a name="ReservedConcurrentExecutions" id="cdk-constructs.NewRelicFunctionOptions.property.reservedConcurrentExecutions"></a>
 
-```typescript
-public readonly reservedConcurrentExecutions: number;
+```go
+ReservedConcurrentExecutions *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* No specific limit - account limit.
 
 The maximum of concurrent executions you want to reserve for the function.
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="cdk-constructs.NewRelicFunctionOptions.property.timeout"></a>
+##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="cdk-constructs.NewRelicFunctionOptions.property.timeout"></a>
 
-```typescript
-public readonly timeout: Duration;
+```go
+Timeout Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 - *Default:* Duration.seconds(3)
 
 The function execution time (in seconds) after which Lambda terminates the function.
@@ -11850,10 +11946,10 @@ based on the function's expected execution time.
 
 ---
 
-##### `newRelicConfigOverrides`<sup>Optional</sup> <a name="newRelicConfigOverrides" id="cdk-constructs.NewRelicFunctionOptions.property.newRelicConfigOverrides"></a>
+##### `NewRelicConfigOverrides`<sup>Optional</sup> <a name="NewRelicConfigOverrides" id="cdk-constructs.NewRelicFunctionOptions.property.newRelicConfigOverrides"></a>
 
-```typescript
-public readonly newRelicConfigOverrides: NewRelicLambdaConfigOverrides;
+```go
+NewRelicConfigOverrides NewRelicLambdaConfigOverrides
 ```
 
 - *Type:* <a href="#cdk-constructs.NewRelicLambdaConfigOverrides">NewRelicLambdaConfigOverrides</a>
@@ -11867,115 +11963,125 @@ Explicit Overrides for NewRelic Configuration.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.NewRelicLambdaConfig.Initializer"></a>
 
-```typescript
-import { NewRelicLambdaConfig } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const newRelicLambdaConfig: NewRelicLambdaConfig = { ... }
+&cdkconstructs.NewRelicLambdaConfig {
+	NewRelicAccountId: *string,
+	NewRelicDistributedTracingEnabled: *bool,
+	NewRelicExtensionLogsEnabled: *bool,
+	NewRelicExtensionSendFunctionLogs: *bool,
+	NewRelicIgnoreExtensionChecks: *[]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.NewRelicIgnoreExtensionChecksOption,
+	NewRelicLambdaExtensionEnabled: *bool,
+	NewRelicLicenseKey: *string,
+	NewRelicLicenseKeyParameterName: *string,
+	NewRelicTrustedAccountKey: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicAccountId">newRelicAccountId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicDistributedTracingEnabled">newRelicDistributedTracingEnabled</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionLogsEnabled">newRelicExtensionLogsEnabled</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionSendFunctionLogs">newRelicExtensionSendFunctionLogs</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicIgnoreExtensionChecks">newRelicIgnoreExtensionChecks</a></code> | <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a>[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicLambdaExtensionEnabled">newRelicLambdaExtensionEnabled</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKey">newRelicLicenseKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKeyParameterName">newRelicLicenseKeyParameterName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicTrustedAccountKey">newRelicTrustedAccountKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicAccountId">NewRelicAccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicDistributedTracingEnabled">NewRelicDistributedTracingEnabled</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionLogsEnabled">NewRelicExtensionLogsEnabled</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionSendFunctionLogs">NewRelicExtensionSendFunctionLogs</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicIgnoreExtensionChecks">NewRelicIgnoreExtensionChecks</a></code> | <code>*[]<a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicLambdaExtensionEnabled">NewRelicLambdaExtensionEnabled</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKey">NewRelicLicenseKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKeyParameterName">NewRelicLicenseKeyParameterName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfig.property.newRelicTrustedAccountKey">NewRelicTrustedAccountKey</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `newRelicAccountId`<sup>Required</sup> <a name="newRelicAccountId" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicAccountId"></a>
+##### `NewRelicAccountId`<sup>Required</sup> <a name="NewRelicAccountId" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicAccountId"></a>
 
-```typescript
-public readonly newRelicAccountId: string;
+```go
+NewRelicAccountId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `newRelicDistributedTracingEnabled`<sup>Required</sup> <a name="newRelicDistributedTracingEnabled" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicDistributedTracingEnabled"></a>
+##### `NewRelicDistributedTracingEnabled`<sup>Required</sup> <a name="NewRelicDistributedTracingEnabled" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicDistributedTracingEnabled"></a>
 
-```typescript
-public readonly newRelicDistributedTracingEnabled: boolean;
+```go
+NewRelicDistributedTracingEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicExtensionLogsEnabled`<sup>Required</sup> <a name="newRelicExtensionLogsEnabled" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionLogsEnabled"></a>
+##### `NewRelicExtensionLogsEnabled`<sup>Required</sup> <a name="NewRelicExtensionLogsEnabled" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionLogsEnabled"></a>
 
-```typescript
-public readonly newRelicExtensionLogsEnabled: boolean;
+```go
+NewRelicExtensionLogsEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicExtensionSendFunctionLogs`<sup>Required</sup> <a name="newRelicExtensionSendFunctionLogs" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionSendFunctionLogs"></a>
+##### `NewRelicExtensionSendFunctionLogs`<sup>Required</sup> <a name="NewRelicExtensionSendFunctionLogs" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicExtensionSendFunctionLogs"></a>
 
-```typescript
-public readonly newRelicExtensionSendFunctionLogs: boolean;
+```go
+NewRelicExtensionSendFunctionLogs *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicIgnoreExtensionChecks`<sup>Required</sup> <a name="newRelicIgnoreExtensionChecks" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicIgnoreExtensionChecks"></a>
+##### `NewRelicIgnoreExtensionChecks`<sup>Required</sup> <a name="NewRelicIgnoreExtensionChecks" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicIgnoreExtensionChecks"></a>
 
-```typescript
-public readonly newRelicIgnoreExtensionChecks: NewRelicIgnoreExtensionChecksOption[];
+```go
+NewRelicIgnoreExtensionChecks *[]NewRelicIgnoreExtensionChecksOption
 ```
 
-- *Type:* <a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a>[]
+- *Type:* *[]<a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a>
 
 ---
 
-##### `newRelicLambdaExtensionEnabled`<sup>Required</sup> <a name="newRelicLambdaExtensionEnabled" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicLambdaExtensionEnabled"></a>
+##### `NewRelicLambdaExtensionEnabled`<sup>Required</sup> <a name="NewRelicLambdaExtensionEnabled" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicLambdaExtensionEnabled"></a>
 
-```typescript
-public readonly newRelicLambdaExtensionEnabled: boolean;
+```go
+NewRelicLambdaExtensionEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicLicenseKey`<sup>Required</sup> <a name="newRelicLicenseKey" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKey"></a>
+##### `NewRelicLicenseKey`<sup>Required</sup> <a name="NewRelicLicenseKey" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKey"></a>
 
-```typescript
-public readonly newRelicLicenseKey: string;
+```go
+NewRelicLicenseKey *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `newRelicLicenseKeyParameterName`<sup>Required</sup> <a name="newRelicLicenseKeyParameterName" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKeyParameterName"></a>
+##### `NewRelicLicenseKeyParameterName`<sup>Required</sup> <a name="NewRelicLicenseKeyParameterName" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicLicenseKeyParameterName"></a>
 
-```typescript
-public readonly newRelicLicenseKeyParameterName: string;
+```go
+NewRelicLicenseKeyParameterName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `newRelicTrustedAccountKey`<sup>Required</sup> <a name="newRelicTrustedAccountKey" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicTrustedAccountKey"></a>
+##### `NewRelicTrustedAccountKey`<sup>Required</sup> <a name="NewRelicTrustedAccountKey" id="cdk-constructs.NewRelicLambdaConfig.property.newRelicTrustedAccountKey"></a>
 
-```typescript
-public readonly newRelicTrustedAccountKey: string;
+```go
+NewRelicTrustedAccountKey *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -11983,115 +12089,125 @@ public readonly newRelicTrustedAccountKey: string;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.NewRelicLambdaConfigOverrides.Initializer"></a>
 
-```typescript
-import { NewRelicLambdaConfigOverrides } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const newRelicLambdaConfigOverrides: NewRelicLambdaConfigOverrides = { ... }
+&cdkconstructs.NewRelicLambdaConfigOverrides {
+	NewRelicAccountId: *string,
+	NewRelicDistributedTracingEnabled: *bool,
+	NewRelicExtensionLogsEnabled: *bool,
+	NewRelicExtensionSendFunctionLogs: *bool,
+	NewRelicIgnoreExtensionChecks: *[]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.NewRelicIgnoreExtensionChecksOption,
+	NewRelicLambdaExtensionEnabled: *bool,
+	NewRelicLicenseKey: *string,
+	NewRelicLicenseKeyParameterName: *string,
+	NewRelicTrustedAccountKey: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicAccountId">newRelicAccountId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicDistributedTracingEnabled">newRelicDistributedTracingEnabled</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionLogsEnabled">newRelicExtensionLogsEnabled</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionSendFunctionLogs">newRelicExtensionSendFunctionLogs</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicIgnoreExtensionChecks">newRelicIgnoreExtensionChecks</a></code> | <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a>[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLambdaExtensionEnabled">newRelicLambdaExtensionEnabled</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKey">newRelicLicenseKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKeyParameterName">newRelicLicenseKeyParameterName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicTrustedAccountKey">newRelicTrustedAccountKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicAccountId">NewRelicAccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicDistributedTracingEnabled">NewRelicDistributedTracingEnabled</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionLogsEnabled">NewRelicExtensionLogsEnabled</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionSendFunctionLogs">NewRelicExtensionSendFunctionLogs</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicIgnoreExtensionChecks">NewRelicIgnoreExtensionChecks</a></code> | <code>*[]<a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLambdaExtensionEnabled">NewRelicLambdaExtensionEnabled</a></code> | <code>*bool</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKey">NewRelicLicenseKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKeyParameterName">NewRelicLicenseKeyParameterName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicTrustedAccountKey">NewRelicTrustedAccountKey</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `newRelicAccountId`<sup>Optional</sup> <a name="newRelicAccountId" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicAccountId"></a>
+##### `NewRelicAccountId`<sup>Optional</sup> <a name="NewRelicAccountId" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicAccountId"></a>
 
-```typescript
-public readonly newRelicAccountId: string;
+```go
+NewRelicAccountId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `newRelicDistributedTracingEnabled`<sup>Optional</sup> <a name="newRelicDistributedTracingEnabled" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicDistributedTracingEnabled"></a>
+##### `NewRelicDistributedTracingEnabled`<sup>Optional</sup> <a name="NewRelicDistributedTracingEnabled" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicDistributedTracingEnabled"></a>
 
-```typescript
-public readonly newRelicDistributedTracingEnabled: boolean;
+```go
+NewRelicDistributedTracingEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicExtensionLogsEnabled`<sup>Optional</sup> <a name="newRelicExtensionLogsEnabled" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionLogsEnabled"></a>
+##### `NewRelicExtensionLogsEnabled`<sup>Optional</sup> <a name="NewRelicExtensionLogsEnabled" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionLogsEnabled"></a>
 
-```typescript
-public readonly newRelicExtensionLogsEnabled: boolean;
+```go
+NewRelicExtensionLogsEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicExtensionSendFunctionLogs`<sup>Optional</sup> <a name="newRelicExtensionSendFunctionLogs" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionSendFunctionLogs"></a>
+##### `NewRelicExtensionSendFunctionLogs`<sup>Optional</sup> <a name="NewRelicExtensionSendFunctionLogs" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicExtensionSendFunctionLogs"></a>
 
-```typescript
-public readonly newRelicExtensionSendFunctionLogs: boolean;
+```go
+NewRelicExtensionSendFunctionLogs *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicIgnoreExtensionChecks`<sup>Optional</sup> <a name="newRelicIgnoreExtensionChecks" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicIgnoreExtensionChecks"></a>
+##### `NewRelicIgnoreExtensionChecks`<sup>Optional</sup> <a name="NewRelicIgnoreExtensionChecks" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicIgnoreExtensionChecks"></a>
 
-```typescript
-public readonly newRelicIgnoreExtensionChecks: NewRelicIgnoreExtensionChecksOption[];
+```go
+NewRelicIgnoreExtensionChecks *[]NewRelicIgnoreExtensionChecksOption
 ```
 
-- *Type:* <a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a>[]
+- *Type:* *[]<a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption">NewRelicIgnoreExtensionChecksOption</a>
 
 ---
 
-##### `newRelicLambdaExtensionEnabled`<sup>Optional</sup> <a name="newRelicLambdaExtensionEnabled" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLambdaExtensionEnabled"></a>
+##### `NewRelicLambdaExtensionEnabled`<sup>Optional</sup> <a name="NewRelicLambdaExtensionEnabled" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLambdaExtensionEnabled"></a>
 
-```typescript
-public readonly newRelicLambdaExtensionEnabled: boolean;
+```go
+NewRelicLambdaExtensionEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 ---
 
-##### `newRelicLicenseKey`<sup>Optional</sup> <a name="newRelicLicenseKey" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKey"></a>
+##### `NewRelicLicenseKey`<sup>Optional</sup> <a name="NewRelicLicenseKey" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKey"></a>
 
-```typescript
-public readonly newRelicLicenseKey: string;
+```go
+NewRelicLicenseKey *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `newRelicLicenseKeyParameterName`<sup>Optional</sup> <a name="newRelicLicenseKeyParameterName" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKeyParameterName"></a>
+##### `NewRelicLicenseKeyParameterName`<sup>Optional</sup> <a name="NewRelicLicenseKeyParameterName" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicLicenseKeyParameterName"></a>
 
-```typescript
-public readonly newRelicLicenseKeyParameterName: string;
+```go
+NewRelicLicenseKeyParameterName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `newRelicTrustedAccountKey`<sup>Optional</sup> <a name="newRelicTrustedAccountKey" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicTrustedAccountKey"></a>
+##### `NewRelicTrustedAccountKey`<sup>Optional</sup> <a name="NewRelicTrustedAccountKey" id="cdk-constructs.NewRelicLambdaConfigOverrides.property.newRelicTrustedAccountKey"></a>
 
-```typescript
-public readonly newRelicTrustedAccountKey: string;
+```go
+NewRelicTrustedAccountKey *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -12101,28 +12217,31 @@ Configuration for the notifier webhook.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.NotifyConf.Initializer"></a>
 
-```typescript
-import { NotifyConf } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const notifyConf: NotifyConf = { ... }
+&cdkconstructs.NotifyConf {
+	NotifyCapabilities: *[]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.PipelineCapability,
+	WebhookUrl: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.NotifyConf.property.notifyCapabilities">notifyCapabilities</a></code> | <code><a href="#cdk-constructs.PipelineCapability">PipelineCapability</a>[]</code> | List of capabilities for notification purposes. |
-| <code><a href="#cdk-constructs.NotifyConf.property.webhookUrl">webhookUrl</a></code> | <code>string</code> | Ms Teams webhook url to send the notifications to. |
+| <code><a href="#cdk-constructs.NotifyConf.property.notifyCapabilities">NotifyCapabilities</a></code> | <code>*[]<a href="#cdk-constructs.PipelineCapability">PipelineCapability</a></code> | List of capabilities for notification purposes. |
+| <code><a href="#cdk-constructs.NotifyConf.property.webhookUrl">WebhookUrl</a></code> | <code>*string</code> | Ms Teams webhook url to send the notifications to. |
 
 ---
 
-##### `notifyCapabilities`<sup>Required</sup> <a name="notifyCapabilities" id="cdk-constructs.NotifyConf.property.notifyCapabilities"></a>
+##### `NotifyCapabilities`<sup>Required</sup> <a name="NotifyCapabilities" id="cdk-constructs.NotifyConf.property.notifyCapabilities"></a>
 
-```typescript
-public readonly notifyCapabilities: PipelineCapability[];
+```go
+NotifyCapabilities *[]PipelineCapability
 ```
 
-- *Type:* <a href="#cdk-constructs.PipelineCapability">PipelineCapability</a>[]
+- *Type:* *[]<a href="#cdk-constructs.PipelineCapability">PipelineCapability</a>
 
 List of capabilities for notification purposes.
 
@@ -12130,13 +12249,13 @@ All of them must start with `NOTIFY_ON`
 
 ---
 
-##### `webhookUrl`<sup>Required</sup> <a name="webhookUrl" id="cdk-constructs.NotifyConf.property.webhookUrl"></a>
+##### `WebhookUrl`<sup>Required</sup> <a name="WebhookUrl" id="cdk-constructs.NotifyConf.property.webhookUrl"></a>
 
-```typescript
-public readonly webhookUrl: string;
+```go
+WebhookUrl *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Ms Teams webhook url to send the notifications to.
 
@@ -12146,71 +12265,77 @@ Ms Teams webhook url to send the notifications to.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.NotifyLambdaEnv.Initializer"></a>
 
-```typescript
-import { NotifyLambdaEnv } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const notifyLambdaEnv: NotifyLambdaEnv = { ... }
+&cdkconstructs.NotifyLambdaEnv {
+	Branch: *string,
+	Env: *string,
+	ProjectId: *string,
+	Repository: *string,
+	WebhookUrl: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.branch">branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.env">env</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.repository">repository</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.webhookUrl">webhookUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.branch">Branch</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.env">Env</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.repository">Repository</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.NotifyLambdaEnv.property.webhookUrl">WebhookUrl</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `branch`<sup>Required</sup> <a name="branch" id="cdk-constructs.NotifyLambdaEnv.property.branch"></a>
+##### `Branch`<sup>Required</sup> <a name="Branch" id="cdk-constructs.NotifyLambdaEnv.property.branch"></a>
 
-```typescript
-public readonly branch: string;
+```go
+Branch *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `env`<sup>Required</sup> <a name="env" id="cdk-constructs.NotifyLambdaEnv.property.env"></a>
+##### `Env`<sup>Required</sup> <a name="Env" id="cdk-constructs.NotifyLambdaEnv.property.env"></a>
 
-```typescript
-public readonly env: string;
+```go
+Env *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="cdk-constructs.NotifyLambdaEnv.property.projectId"></a>
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="cdk-constructs.NotifyLambdaEnv.property.projectId"></a>
 
-```typescript
-public readonly projectId: string;
+```go
+ProjectId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `repository`<sup>Required</sup> <a name="repository" id="cdk-constructs.NotifyLambdaEnv.property.repository"></a>
+##### `Repository`<sup>Required</sup> <a name="Repository" id="cdk-constructs.NotifyLambdaEnv.property.repository"></a>
 
-```typescript
-public readonly repository: string;
+```go
+Repository *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `webhookUrl`<sup>Required</sup> <a name="webhookUrl" id="cdk-constructs.NotifyLambdaEnv.property.webhookUrl"></a>
+##### `WebhookUrl`<sup>Required</sup> <a name="WebhookUrl" id="cdk-constructs.NotifyLambdaEnv.property.webhookUrl"></a>
 
-```typescript
-public readonly webhookUrl: string;
+```go
+WebhookUrl *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -12218,26 +12343,30 @@ public readonly webhookUrl: string;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.OptionalServiceProps.Initializer"></a>
 
-```typescript
-import { OptionalServiceProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const optionalServiceProps: OptionalServiceProps = { ... }
+&cdkconstructs.OptionalServiceProps {
+	ServiceGroup: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ServiceGroup,
+	Version: *f64,
+	Visibility: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.EndpointVisibility,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.OptionalServiceProps.property.serviceGroup">serviceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
-| <code><a href="#cdk-constructs.OptionalServiceProps.property.version">version</a></code> | <code>number</code> | The version of the API exposed by the endpoint. |
-| <code><a href="#cdk-constructs.OptionalServiceProps.property.visibility">visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
+| <code><a href="#cdk-constructs.OptionalServiceProps.property.serviceGroup">ServiceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
+| <code><a href="#cdk-constructs.OptionalServiceProps.property.version">Version</a></code> | <code>*f64</code> | The version of the API exposed by the endpoint. |
+| <code><a href="#cdk-constructs.OptionalServiceProps.property.visibility">Visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
 
 ---
 
-##### `serviceGroup`<sup>Required</sup> <a name="serviceGroup" id="cdk-constructs.OptionalServiceProps.property.serviceGroup"></a>
+##### `ServiceGroup`<sup>Required</sup> <a name="ServiceGroup" id="cdk-constructs.OptionalServiceProps.property.serviceGroup"></a>
 
-```typescript
-public readonly serviceGroup: ServiceGroup;
+```go
+ServiceGroup ServiceGroup
 ```
 
 - *Type:* <a href="#cdk-constructs.ServiceGroup">ServiceGroup</a>
@@ -12247,23 +12376,23 @@ Service group of the service.
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.OptionalServiceProps.property.version"></a>
+##### `Version`<sup>Required</sup> <a name="Version" id="cdk-constructs.OptionalServiceProps.property.version"></a>
 
-```typescript
-public readonly version: number;
+```go
+Version *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 1
 
 The version of the API exposed by the endpoint.
 
 ---
 
-##### `visibility`<sup>Required</sup> <a name="visibility" id="cdk-constructs.OptionalServiceProps.property.visibility"></a>
+##### `Visibility`<sup>Required</sup> <a name="Visibility" id="cdk-constructs.OptionalServiceProps.property.visibility"></a>
 
-```typescript
-public readonly visibility: EndpointVisibility;
+```go
+Visibility EndpointVisibility
 ```
 
 - *Type:* <a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a>
@@ -12277,26 +12406,30 @@ Wether the endpoint is private or public.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.OptionalServicePropsPartial.Initializer"></a>
 
-```typescript
-import { OptionalServicePropsPartial } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const optionalServicePropsPartial: OptionalServicePropsPartial = { ... }
+&cdkconstructs.OptionalServicePropsPartial {
+	ServiceGroup: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ServiceGroup,
+	Version: *f64,
+	Visibility: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.EndpointVisibility,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.OptionalServicePropsPartial.property.serviceGroup">serviceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
-| <code><a href="#cdk-constructs.OptionalServicePropsPartial.property.version">version</a></code> | <code>number</code> | The version of the API exposed by the endpoint. |
-| <code><a href="#cdk-constructs.OptionalServicePropsPartial.property.visibility">visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
+| <code><a href="#cdk-constructs.OptionalServicePropsPartial.property.serviceGroup">ServiceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
+| <code><a href="#cdk-constructs.OptionalServicePropsPartial.property.version">Version</a></code> | <code>*f64</code> | The version of the API exposed by the endpoint. |
+| <code><a href="#cdk-constructs.OptionalServicePropsPartial.property.visibility">Visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
 
 ---
 
-##### `serviceGroup`<sup>Optional</sup> <a name="serviceGroup" id="cdk-constructs.OptionalServicePropsPartial.property.serviceGroup"></a>
+##### `ServiceGroup`<sup>Optional</sup> <a name="ServiceGroup" id="cdk-constructs.OptionalServicePropsPartial.property.serviceGroup"></a>
 
-```typescript
-public readonly serviceGroup: ServiceGroup;
+```go
+ServiceGroup ServiceGroup
 ```
 
 - *Type:* <a href="#cdk-constructs.ServiceGroup">ServiceGroup</a>
@@ -12306,23 +12439,23 @@ Service group of the service.
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="cdk-constructs.OptionalServicePropsPartial.property.version"></a>
+##### `Version`<sup>Optional</sup> <a name="Version" id="cdk-constructs.OptionalServicePropsPartial.property.version"></a>
 
-```typescript
-public readonly version: number;
+```go
+Version *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 1
 
 The version of the API exposed by the endpoint.
 
 ---
 
-##### `visibility`<sup>Optional</sup> <a name="visibility" id="cdk-constructs.OptionalServicePropsPartial.property.visibility"></a>
+##### `Visibility`<sup>Optional</sup> <a name="Visibility" id="cdk-constructs.OptionalServicePropsPartial.property.visibility"></a>
 
-```typescript
-public readonly visibility: EndpointVisibility;
+```go
+Visibility EndpointVisibility
 ```
 
 - *Type:* <a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a>
@@ -12336,79 +12469,85 @@ Wether the endpoint is private or public.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.OtherAccountPeeringConfig.Initializer"></a>
 
-```typescript
-import { OtherAccountPeeringConfig } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const otherAccountPeeringConfig: OtherAccountPeeringConfig = { ... }
+&cdkconstructs.OtherAccountPeeringConfig {
+	OtherVpcAccountId: *string,
+	OtherVpcCidr: *string,
+	OtherVpcId: *string,
+	OtherVpcRegion: *string,
+	UniquePeeringId: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcAccountId">otherVpcAccountId</a></code> | <code>string</code> | VPC to be peered account's ID. |
-| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcCidr">otherVpcCidr</a></code> | <code>string</code> | VPC to be peered mnemonic Id. |
-| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcId">otherVpcId</a></code> | <code>string</code> | VPC to be peered vpcId. |
-| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcRegion">otherVpcRegion</a></code> | <code>string</code> | VPC to be peered region. |
-| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.uniquePeeringId">uniquePeeringId</a></code> | <code>string</code> | VPC to be peered mnemonic Id. |
+| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcAccountId">OtherVpcAccountId</a></code> | <code>*string</code> | VPC to be peered account's ID. |
+| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcCidr">OtherVpcCidr</a></code> | <code>*string</code> | VPC to be peered mnemonic Id. |
+| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcId">OtherVpcId</a></code> | <code>*string</code> | VPC to be peered vpcId. |
+| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.otherVpcRegion">OtherVpcRegion</a></code> | <code>*string</code> | VPC to be peered region. |
+| <code><a href="#cdk-constructs.OtherAccountPeeringConfig.property.uniquePeeringId">UniquePeeringId</a></code> | <code>*string</code> | VPC to be peered mnemonic Id. |
 
 ---
 
-##### `otherVpcAccountId`<sup>Required</sup> <a name="otherVpcAccountId" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcAccountId"></a>
+##### `OtherVpcAccountId`<sup>Required</sup> <a name="OtherVpcAccountId" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcAccountId"></a>
 
-```typescript
-public readonly otherVpcAccountId: string;
+```go
+OtherVpcAccountId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 VPC to be peered account's ID.
 
 ---
 
-##### `otherVpcCidr`<sup>Required</sup> <a name="otherVpcCidr" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcCidr"></a>
+##### `OtherVpcCidr`<sup>Required</sup> <a name="OtherVpcCidr" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcCidr"></a>
 
-```typescript
-public readonly otherVpcCidr: string;
+```go
+OtherVpcCidr *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 VPC to be peered mnemonic Id.
 
 ---
 
-##### `otherVpcId`<sup>Required</sup> <a name="otherVpcId" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcId"></a>
+##### `OtherVpcId`<sup>Required</sup> <a name="OtherVpcId" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcId"></a>
 
-```typescript
-public readonly otherVpcId: string;
+```go
+OtherVpcId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 VPC to be peered vpcId.
 
 ---
 
-##### `otherVpcRegion`<sup>Required</sup> <a name="otherVpcRegion" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcRegion"></a>
+##### `OtherVpcRegion`<sup>Required</sup> <a name="OtherVpcRegion" id="cdk-constructs.OtherAccountPeeringConfig.property.otherVpcRegion"></a>
 
-```typescript
-public readonly otherVpcRegion: string;
+```go
+OtherVpcRegion *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 VPC to be peered region.
 
 ---
 
-##### `uniquePeeringId`<sup>Required</sup> <a name="uniquePeeringId" id="cdk-constructs.OtherAccountPeeringConfig.property.uniquePeeringId"></a>
+##### `UniquePeeringId`<sup>Required</sup> <a name="UniquePeeringId" id="cdk-constructs.OtherAccountPeeringConfig.property.uniquePeeringId"></a>
 
-```typescript
-public readonly uniquePeeringId: string;
+```go
+UniquePeeringId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 VPC to be peered mnemonic Id.
 
@@ -12420,40 +12559,43 @@ Route to add to the route tables, pointing to an already paired VPC.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.PeeringConfig.Initializer"></a>
 
-```typescript
-import { PeeringConfig } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const peeringConfig: PeeringConfig = { ... }
+&cdkconstructs.PeeringConfig {
+	OtherVpc: github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.IVpc,
+	PeeringId: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.PeeringConfig.property.otherVpc">otherVpc</a></code> | <code>aws-cdk-lib.aws_ec2.IVpc</code> | Id of vpc peering. |
-| <code><a href="#cdk-constructs.PeeringConfig.property.peeringId">peeringId</a></code> | <code>string</code> | Unique id for this route. |
+| <code><a href="#cdk-constructs.PeeringConfig.property.otherVpc">OtherVpc</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.IVpc</code> | Id of vpc peering. |
+| <code><a href="#cdk-constructs.PeeringConfig.property.peeringId">PeeringId</a></code> | <code>*string</code> | Unique id for this route. |
 
 ---
 
-##### `otherVpc`<sup>Required</sup> <a name="otherVpc" id="cdk-constructs.PeeringConfig.property.otherVpc"></a>
+##### `OtherVpc`<sup>Required</sup> <a name="OtherVpc" id="cdk-constructs.PeeringConfig.property.otherVpc"></a>
 
-```typescript
-public readonly otherVpc: IVpc;
+```go
+OtherVpc IVpc
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.IVpc
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.IVpc
 
 Id of vpc peering.
 
 ---
 
-##### `peeringId`<sup>Required</sup> <a name="peeringId" id="cdk-constructs.PeeringConfig.property.peeringId"></a>
+##### `PeeringId`<sup>Required</sup> <a name="PeeringId" id="cdk-constructs.PeeringConfig.property.peeringId"></a>
 
-```typescript
-public readonly peeringId: string;
+```go
+PeeringId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Unique id for this route.
 
@@ -12463,60 +12605,65 @@ Unique id for this route.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ProjectPreset.Initializer"></a>
 
-```typescript
-import { ProjectPreset } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const projectPreset: ProjectPreset = { ... }
+&cdkconstructs.ProjectPreset {
+	RepositoryBranchTagOrSha: *string,
+	RepositoryName: *string,
+	RepositoryRegion: *string,
+	SubConfigs: *[]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ProjectSubConfig,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ProjectPreset.property.repositoryBranchTagOrSha">repositoryBranchTagOrSha</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ProjectPreset.property.repositoryName">repositoryName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ProjectPreset.property.repositoryRegion">repositoryRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ProjectPreset.property.subConfigs">subConfigs</a></code> | <code><a href="#cdk-constructs.ProjectSubConfig">ProjectSubConfig</a>[]</code> | *No description.* |
+| <code><a href="#cdk-constructs.ProjectPreset.property.repositoryBranchTagOrSha">RepositoryBranchTagOrSha</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ProjectPreset.property.repositoryName">RepositoryName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ProjectPreset.property.repositoryRegion">RepositoryRegion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ProjectPreset.property.subConfigs">SubConfigs</a></code> | <code>*[]<a href="#cdk-constructs.ProjectSubConfig">ProjectSubConfig</a></code> | *No description.* |
 
 ---
 
-##### `repositoryBranchTagOrSha`<sup>Required</sup> <a name="repositoryBranchTagOrSha" id="cdk-constructs.ProjectPreset.property.repositoryBranchTagOrSha"></a>
+##### `RepositoryBranchTagOrSha`<sup>Required</sup> <a name="RepositoryBranchTagOrSha" id="cdk-constructs.ProjectPreset.property.repositoryBranchTagOrSha"></a>
 
-```typescript
-public readonly repositoryBranchTagOrSha: string;
+```go
+RepositoryBranchTagOrSha *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `repositoryName`<sup>Required</sup> <a name="repositoryName" id="cdk-constructs.ProjectPreset.property.repositoryName"></a>
+##### `RepositoryName`<sup>Required</sup> <a name="RepositoryName" id="cdk-constructs.ProjectPreset.property.repositoryName"></a>
 
-```typescript
-public readonly repositoryName: string;
+```go
+RepositoryName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `repositoryRegion`<sup>Required</sup> <a name="repositoryRegion" id="cdk-constructs.ProjectPreset.property.repositoryRegion"></a>
+##### `RepositoryRegion`<sup>Required</sup> <a name="RepositoryRegion" id="cdk-constructs.ProjectPreset.property.repositoryRegion"></a>
 
-```typescript
-public readonly repositoryRegion: string;
+```go
+RepositoryRegion *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `subConfigs`<sup>Required</sup> <a name="subConfigs" id="cdk-constructs.ProjectPreset.property.subConfigs"></a>
+##### `SubConfigs`<sup>Required</sup> <a name="SubConfigs" id="cdk-constructs.ProjectPreset.property.subConfigs"></a>
 
-```typescript
-public readonly subConfigs: ProjectSubConfig[];
+```go
+SubConfigs *[]ProjectSubConfig
 ```
 
-- *Type:* <a href="#cdk-constructs.ProjectSubConfig">ProjectSubConfig</a>[]
+- *Type:* *[]<a href="#cdk-constructs.ProjectSubConfig">ProjectSubConfig</a>
 
 ---
 
@@ -12524,38 +12671,41 @@ public readonly subConfigs: ProjectSubConfig[];
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ProjectSubConfig.Initializer"></a>
 
-```typescript
-import { ProjectSubConfig } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const projectSubConfig: ProjectSubConfig = { ... }
+&cdkconstructs.ProjectSubConfig {
+	ReplaceValue: *string,
+	SearchValue: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ProjectSubConfig.property.replaceValue">replaceValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ProjectSubConfig.property.searchValue">searchValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ProjectSubConfig.property.replaceValue">ReplaceValue</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ProjectSubConfig.property.searchValue">SearchValue</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `replaceValue`<sup>Required</sup> <a name="replaceValue" id="cdk-constructs.ProjectSubConfig.property.replaceValue"></a>
+##### `ReplaceValue`<sup>Required</sup> <a name="ReplaceValue" id="cdk-constructs.ProjectSubConfig.property.replaceValue"></a>
 
-```typescript
-public readonly replaceValue: string;
+```go
+ReplaceValue *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `searchValue`<sup>Required</sup> <a name="searchValue" id="cdk-constructs.ProjectSubConfig.property.searchValue"></a>
+##### `SearchValue`<sup>Required</sup> <a name="SearchValue" id="cdk-constructs.ProjectSubConfig.property.searchValue"></a>
 
-```typescript
-public readonly searchValue: string;
+```go
+SearchValue *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -12565,27 +12715,29 @@ SSMParameter Reader Configuration.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.SsmParameterReaderProps.Initializer"></a>
 
-```typescript
-import { SsmParameterReaderProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const ssmParameterReaderProps: SsmParameterReaderProps = { ... }
+&cdkconstructs.SsmParameterReaderProps {
+	ParameterName: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.SsmParameterReaderProps.property.parameterName">parameterName</a></code> | <code>string</code> | Complete name of the ssm parameter you want to read. |
+| <code><a href="#cdk-constructs.SsmParameterReaderProps.property.parameterName">ParameterName</a></code> | <code>*string</code> | Complete name of the ssm parameter you want to read. |
 
 ---
 
-##### `parameterName`<sup>Required</sup> <a name="parameterName" id="cdk-constructs.SsmParameterReaderProps.property.parameterName"></a>
+##### `ParameterName`<sup>Required</sup> <a name="ParameterName" id="cdk-constructs.SsmParameterReaderProps.property.parameterName"></a>
 
-```typescript
-public readonly parameterName: string;
+```go
+ParameterName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Complete name of the ssm parameter you want to read.
 
@@ -12595,49 +12747,53 @@ Complete name of the ssm parameter you want to read.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.StageProducts.Initializer"></a>
 
-```typescript
-import { StageProducts } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const stageProducts: StageProducts = { ... }
+&cdkconstructs.StageProducts {
+	Actions: *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_codepipeline_actions.Action,
+	BuildProjects: *[]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronPipelineBuildProject,
+	Name: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.StageProducts.property.actions">actions</a></code> | <code>aws-cdk-lib.aws_codepipeline_actions.Action[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.StageProducts.property.buildProjects">buildProjects</a></code> | <code><a href="#cdk-constructs.ThronPipelineBuildProject">ThronPipelineBuildProject</a>[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.StageProducts.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.StageProducts.property.actions">Actions</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_codepipeline_actions.Action</code> | *No description.* |
+| <code><a href="#cdk-constructs.StageProducts.property.buildProjects">BuildProjects</a></code> | <code>*[]<a href="#cdk-constructs.ThronPipelineBuildProject">ThronPipelineBuildProject</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.StageProducts.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `actions`<sup>Required</sup> <a name="actions" id="cdk-constructs.StageProducts.property.actions"></a>
+##### `Actions`<sup>Required</sup> <a name="Actions" id="cdk-constructs.StageProducts.property.actions"></a>
 
-```typescript
-public readonly actions: Action[];
+```go
+Actions *[]Action
 ```
 
-- *Type:* aws-cdk-lib.aws_codepipeline_actions.Action[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_codepipeline_actions.Action
 
 ---
 
-##### `buildProjects`<sup>Required</sup> <a name="buildProjects" id="cdk-constructs.StageProducts.property.buildProjects"></a>
+##### `BuildProjects`<sup>Required</sup> <a name="BuildProjects" id="cdk-constructs.StageProducts.property.buildProjects"></a>
 
-```typescript
-public readonly buildProjects: ThronPipelineBuildProject[];
+```go
+BuildProjects *[]ThronPipelineBuildProject
 ```
 
-- *Type:* <a href="#cdk-constructs.ThronPipelineBuildProject">ThronPipelineBuildProject</a>[]
+- *Type:* *[]<a href="#cdk-constructs.ThronPipelineBuildProject">ThronPipelineBuildProject</a>
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.StageProducts.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="cdk-constructs.StageProducts.property.name"></a>
 
-```typescript
-public readonly name: string;
+```go
+Name *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -12647,29 +12803,33 @@ Custom overrides for each single action in the pipeline.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.StepConfig.Initializer"></a>
 
-```typescript
-import { StepConfig } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const stepConfig: StepConfig = { ... }
+&cdkconstructs.StepConfig {
+	ComputeType: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType,
+	CustomBuildImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage,
+	EnvironmentalVariables: *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.StepConfig.property.computeType">computeType</a></code> | <code>aws-cdk-lib.aws_codebuild.ComputeType</code> | Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference. |
-| <code><a href="#cdk-constructs.StepConfig.property.customBuildImage">customBuildImage</a></code> | <code>aws-cdk-lib.aws_codebuild.IBuildImage</code> | Build image to be used fot this step. |
-| <code><a href="#cdk-constructs.StepConfig.property.environmentalVariables">environmentalVariables</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}</code> | Map of additional env vars to pass to the build container. |
+| <code><a href="#cdk-constructs.StepConfig.property.computeType">ComputeType</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType</code> | Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference. |
+| <code><a href="#cdk-constructs.StepConfig.property.customBuildImage">CustomBuildImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage</code> | Build image to be used fot this step. |
+| <code><a href="#cdk-constructs.StepConfig.property.environmentalVariables">EnvironmentalVariables</a></code> | <code>*map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable</code> | Map of additional env vars to pass to the build container. |
 
 ---
 
-##### `computeType`<sup>Optional</sup> <a name="computeType" id="cdk-constructs.StepConfig.property.computeType"></a>
+##### `ComputeType`<sup>Optional</sup> <a name="ComputeType" id="cdk-constructs.StepConfig.property.computeType"></a>
 
-```typescript
-public readonly computeType: ComputeType;
+```go
+ComputeType ComputeType
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.ComputeType
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType
 
 Specify the size of the build containers. See https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types for reference.
 
@@ -12677,25 +12837,25 @@ Defaults to `ComputeType.SMALL`
 
 ---
 
-##### `customBuildImage`<sup>Optional</sup> <a name="customBuildImage" id="cdk-constructs.StepConfig.property.customBuildImage"></a>
+##### `CustomBuildImage`<sup>Optional</sup> <a name="CustomBuildImage" id="cdk-constructs.StepConfig.property.customBuildImage"></a>
 
-```typescript
-public readonly customBuildImage: IBuildImage;
+```go
+CustomBuildImage IBuildImage
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.IBuildImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage
 
 Build image to be used fot this step.
 
 ---
 
-##### `environmentalVariables`<sup>Optional</sup> <a name="environmentalVariables" id="cdk-constructs.StepConfig.property.environmentalVariables"></a>
+##### `EnvironmentalVariables`<sup>Optional</sup> <a name="EnvironmentalVariables" id="cdk-constructs.StepConfig.property.environmentalVariables"></a>
 
-```typescript
-public readonly environmentalVariables: {[ key: string ]: BuildEnvironmentVariable};
+```go
+EnvironmentalVariables *map[string]BuildEnvironmentVariable
 ```
 
-- *Type:* {[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}
+- *Type:* *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable
 
 Map of additional env vars to pass to the build container.
 
@@ -12707,27 +12867,32 @@ Configuration to create a new subnet.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.SubnetConfigProps.Initializer"></a>
 
-```typescript
-import { SubnetConfigProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const subnetConfigProps: SubnetConfigProps = { ... }
+&cdkconstructs.SubnetConfigProps {
+	AvailabilityZone: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.AvailabilityZone,
+	Ipv4Cidr: *string,
+	Ipv6CidrSlotNumber: *f64,
+	Type: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.SubnetType,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.SubnetConfigProps.property.availabilityZone">availabilityZone</a></code> | <code><a href="#cdk-constructs.AvailabilityZone">AvailabilityZone</a></code> | The AZ in which to place the subnet. |
-| <code><a href="#cdk-constructs.SubnetConfigProps.property.ipv4Cidr">ipv4Cidr</a></code> | <code>string</code> | The ipv4 CIDR block to be assigned to this subnet. |
-| <code><a href="#cdk-constructs.SubnetConfigProps.property.ipv6CidrSlotNumber">ipv6CidrSlotNumber</a></code> | <code>number</code> | The ipv6 CIDR block to assigned to this subnet (1-255). |
-| <code><a href="#cdk-constructs.SubnetConfigProps.property.type">type</a></code> | <code><a href="#cdk-constructs.SubnetType">SubnetType</a></code> | Whether the subnet is public or private. |
+| <code><a href="#cdk-constructs.SubnetConfigProps.property.availabilityZone">AvailabilityZone</a></code> | <code><a href="#cdk-constructs.AvailabilityZone">AvailabilityZone</a></code> | The AZ in which to place the subnet. |
+| <code><a href="#cdk-constructs.SubnetConfigProps.property.ipv4Cidr">Ipv4Cidr</a></code> | <code>*string</code> | The ipv4 CIDR block to be assigned to this subnet. |
+| <code><a href="#cdk-constructs.SubnetConfigProps.property.ipv6CidrSlotNumber">Ipv6CidrSlotNumber</a></code> | <code>*f64</code> | The ipv6 CIDR block to assigned to this subnet (1-255). |
+| <code><a href="#cdk-constructs.SubnetConfigProps.property.type">Type</a></code> | <code><a href="#cdk-constructs.SubnetType">SubnetType</a></code> | Whether the subnet is public or private. |
 
 ---
 
-##### `availabilityZone`<sup>Required</sup> <a name="availabilityZone" id="cdk-constructs.SubnetConfigProps.property.availabilityZone"></a>
+##### `AvailabilityZone`<sup>Required</sup> <a name="AvailabilityZone" id="cdk-constructs.SubnetConfigProps.property.availabilityZone"></a>
 
-```typescript
-public readonly availabilityZone: AvailabilityZone;
+```go
+AvailabilityZone AvailabilityZone
 ```
 
 - *Type:* <a href="#cdk-constructs.AvailabilityZone">AvailabilityZone</a>
@@ -12736,25 +12901,25 @@ The AZ in which to place the subnet.
 
 ---
 
-##### `ipv4Cidr`<sup>Required</sup> <a name="ipv4Cidr" id="cdk-constructs.SubnetConfigProps.property.ipv4Cidr"></a>
+##### `Ipv4Cidr`<sup>Required</sup> <a name="Ipv4Cidr" id="cdk-constructs.SubnetConfigProps.property.ipv4Cidr"></a>
 
-```typescript
-public readonly ipv4Cidr: string;
+```go
+Ipv4Cidr *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The ipv4 CIDR block to be assigned to this subnet.
 
 ---
 
-##### `ipv6CidrSlotNumber`<sup>Required</sup> <a name="ipv6CidrSlotNumber" id="cdk-constructs.SubnetConfigProps.property.ipv6CidrSlotNumber"></a>
+##### `Ipv6CidrSlotNumber`<sup>Required</sup> <a name="Ipv6CidrSlotNumber" id="cdk-constructs.SubnetConfigProps.property.ipv6CidrSlotNumber"></a>
 
-```typescript
-public readonly ipv6CidrSlotNumber: number;
+```go
+Ipv6CidrSlotNumber *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The ipv6 CIDR block to assigned to this subnet (1-255).
 
@@ -12764,10 +12929,10 @@ The assigned slot is derived from the automatically assigned /56 VPC CIDR block.
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="cdk-constructs.SubnetConfigProps.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="cdk-constructs.SubnetConfigProps.property.type"></a>
 
-```typescript
-public readonly type: SubnetType;
+```go
+Type SubnetType
 ```
 
 - *Type:* <a href="#cdk-constructs.SubnetType">SubnetType</a>
@@ -12780,53 +12945,57 @@ Whether the subnet is public or private.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronAcmCertificateProps.Initializer"></a>
 
-```typescript
-import { ThronAcmCertificateProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronAcmCertificateProps: ThronAcmCertificateProps = { ... }
+&cdkconstructs.ThronAcmCertificateProps {
+	DomainName: *string,
+	Region: *string,
+	SubjectAlternativeNames: *[]*string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronAcmCertificateProps.property.domainName">domainName</a></code> | <code>string</code> | FQDN to issue the certificate for. |
-| <code><a href="#cdk-constructs.ThronAcmCertificateProps.property.region">region</a></code> | <code>string</code> | Region where to create the certificate, defaults to main stack region. |
-| <code><a href="#cdk-constructs.ThronAcmCertificateProps.property.subjectAlternativeNames">subjectAlternativeNames</a></code> | <code>string[]</code> | Alternative domain names on the certificate. |
+| <code><a href="#cdk-constructs.ThronAcmCertificateProps.property.domainName">DomainName</a></code> | <code>*string</code> | FQDN to issue the certificate for. |
+| <code><a href="#cdk-constructs.ThronAcmCertificateProps.property.region">Region</a></code> | <code>*string</code> | Region where to create the certificate, defaults to main stack region. |
+| <code><a href="#cdk-constructs.ThronAcmCertificateProps.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>*[]*string</code> | Alternative domain names on the certificate. |
 
 ---
 
-##### `domainName`<sup>Required</sup> <a name="domainName" id="cdk-constructs.ThronAcmCertificateProps.property.domainName"></a>
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="cdk-constructs.ThronAcmCertificateProps.property.domainName"></a>
 
-```typescript
-public readonly domainName: string;
+```go
+DomainName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 FQDN to issue the certificate for.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="cdk-constructs.ThronAcmCertificateProps.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="cdk-constructs.ThronAcmCertificateProps.property.region"></a>
 
-```typescript
-public readonly region: string;
+```go
+Region *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Region where to create the certificate, defaults to main stack region.
 
 ---
 
-##### `subjectAlternativeNames`<sup>Optional</sup> <a name="subjectAlternativeNames" id="cdk-constructs.ThronAcmCertificateProps.property.subjectAlternativeNames"></a>
+##### `SubjectAlternativeNames`<sup>Optional</sup> <a name="SubjectAlternativeNames" id="cdk-constructs.ThronAcmCertificateProps.property.subjectAlternativeNames"></a>
 
-```typescript
-public readonly subjectAlternativeNames: string[];
+```go
+SubjectAlternativeNames *[]*string
 ```
 
-- *Type:* string[]
+- *Type:* *[]*string
 
 Alternative domain names on the certificate.
 
@@ -12836,27 +13005,29 @@ Alternative domain names on the certificate.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronApiGatewayApiProps.Initializer"></a>
 
-```typescript
-import { ThronApiGatewayApiProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronApiGatewayApiProps: ThronApiGatewayApiProps = { ... }
+&cdkconstructs.ThronApiGatewayApiProps {
+	MainDomain: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayApiProps.property.mainDomain">mainDomain</a></code> | <code>string</code> | The main domain of the api gateway api, **without the cdn part**. |
+| <code><a href="#cdk-constructs.ThronApiGatewayApiProps.property.mainDomain">MainDomain</a></code> | <code>*string</code> | The main domain of the api gateway api, **without the cdn part**. |
 
 ---
 
-##### `mainDomain`<sup>Required</sup> <a name="mainDomain" id="cdk-constructs.ThronApiGatewayApiProps.property.mainDomain"></a>
+##### `MainDomain`<sup>Required</sup> <a name="MainDomain" id="cdk-constructs.ThronApiGatewayApiProps.property.mainDomain"></a>
 
-```typescript
-public readonly mainDomain: string;
+```go
+MainDomain *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The main domain of the api gateway api, **without the cdn part**.
 
@@ -12870,53 +13041,57 @@ Properties to instantiate a new ThronDomainAlias.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronApiGatewayDomainAliasProps.Initializer"></a>
 
-```typescript
-import { ThronApiGatewayDomainAliasProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronApiGatewayDomainAliasProps: ThronApiGatewayDomainAliasProps = { ... }
+&cdkconstructs.ThronApiGatewayDomainAliasProps {
+	ApiGatewayApi: github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.IRestApi,
+	DomainName: *string,
+	Prefix: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAliasProps.property.apiGatewayApi">apiGatewayApi</a></code> | <code>aws-cdk-lib.aws_apigateway.IRestApi</code> | API to create the alias to. |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAliasProps.property.domainName">domainName</a></code> | <code>string</code> | Domain name to alias the API Gateway Endpoint to. |
-| <code><a href="#cdk-constructs.ThronApiGatewayDomainAliasProps.property.prefix">prefix</a></code> | <code>string</code> | Unique id to add to CFN ids to prevent the first synth from failing. |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAliasProps.property.apiGatewayApi">ApiGatewayApi</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.IRestApi</code> | API to create the alias to. |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAliasProps.property.domainName">DomainName</a></code> | <code>*string</code> | Domain name to alias the API Gateway Endpoint to. |
+| <code><a href="#cdk-constructs.ThronApiGatewayDomainAliasProps.property.prefix">Prefix</a></code> | <code>*string</code> | Unique id to add to CFN ids to prevent the first synth from failing. |
 
 ---
 
-##### `apiGatewayApi`<sup>Required</sup> <a name="apiGatewayApi" id="cdk-constructs.ThronApiGatewayDomainAliasProps.property.apiGatewayApi"></a>
+##### `ApiGatewayApi`<sup>Required</sup> <a name="ApiGatewayApi" id="cdk-constructs.ThronApiGatewayDomainAliasProps.property.apiGatewayApi"></a>
 
-```typescript
-public readonly apiGatewayApi: IRestApi;
+```go
+ApiGatewayApi IRestApi
 ```
 
-- *Type:* aws-cdk-lib.aws_apigateway.IRestApi
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.IRestApi
 
 API to create the alias to.
 
 ---
 
-##### `domainName`<sup>Required</sup> <a name="domainName" id="cdk-constructs.ThronApiGatewayDomainAliasProps.property.domainName"></a>
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="cdk-constructs.ThronApiGatewayDomainAliasProps.property.domainName"></a>
 
-```typescript
-public readonly domainName: string;
+```go
+DomainName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Domain name to alias the API Gateway Endpoint to.
 
 ---
 
-##### `prefix`<sup>Required</sup> <a name="prefix" id="cdk-constructs.ThronApiGatewayDomainAliasProps.property.prefix"></a>
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="cdk-constructs.ThronApiGatewayDomainAliasProps.property.prefix"></a>
 
-```typescript
-public readonly prefix: string;
+```go
+Prefix *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Unique id to add to CFN ids to prevent the first synth from failing.
 
@@ -12926,49 +13101,53 @@ Unique id to add to CFN ids to prevent the first synth from failing.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronCachePolicyProps.Initializer"></a>
 
-```typescript
-import { ThronCachePolicyProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronCachePolicyProps: ThronCachePolicyProps = { ... }
+&cdkconstructs.ThronCachePolicyProps {
+	DefaultTtl: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	MaxTtl: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	MinTtl: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronCachePolicyProps.property.defaultTtl">defaultTtl</a></code> | <code>aws-cdk-lib.Duration</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronCachePolicyProps.property.maxTtl">maxTtl</a></code> | <code>aws-cdk-lib.Duration</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronCachePolicyProps.property.minTtl">minTtl</a></code> | <code>aws-cdk-lib.Duration</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCachePolicyProps.property.defaultTtl">DefaultTtl</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCachePolicyProps.property.maxTtl">MaxTtl</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCachePolicyProps.property.minTtl">MinTtl</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | *No description.* |
 
 ---
 
-##### `defaultTtl`<sup>Optional</sup> <a name="defaultTtl" id="cdk-constructs.ThronCachePolicyProps.property.defaultTtl"></a>
+##### `DefaultTtl`<sup>Optional</sup> <a name="DefaultTtl" id="cdk-constructs.ThronCachePolicyProps.property.defaultTtl"></a>
 
-```typescript
-public readonly defaultTtl: Duration;
+```go
+DefaultTtl Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 ---
 
-##### `maxTtl`<sup>Optional</sup> <a name="maxTtl" id="cdk-constructs.ThronCachePolicyProps.property.maxTtl"></a>
+##### `MaxTtl`<sup>Optional</sup> <a name="MaxTtl" id="cdk-constructs.ThronCachePolicyProps.property.maxTtl"></a>
 
-```typescript
-public readonly maxTtl: Duration;
+```go
+MaxTtl Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 ---
 
-##### `minTtl`<sup>Optional</sup> <a name="minTtl" id="cdk-constructs.ThronCachePolicyProps.property.minTtl"></a>
+##### `MinTtl`<sup>Optional</sup> <a name="MinTtl" id="cdk-constructs.ThronCachePolicyProps.property.minTtl"></a>
 
-```typescript
-public readonly minTtl: Duration;
+```go
+MinTtl Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 ---
 
@@ -12976,57 +13155,68 @@ public readonly minTtl: Duration;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronCloudFrontDistributionProps.Initializer"></a>
 
-```typescript
-import { ThronCloudFrontDistributionProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronCloudFrontDistributionProps: ThronCloudFrontDistributionProps = { ... }
+&cdkconstructs.ThronCloudFrontDistributionProps {
+	DomainName: *string,
+	Source: *string,
+	CachePolicy: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronCachePolicy,
+	DefaultRootObject: *string,
+	DefaultRootObjectCachePolicy: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronCachePolicy,
+	DefaultRootObjectResponseHeaderPolicy: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronResponseHeaderPolicy,
+	Description: *string,
+	Prune: *bool,
+	ResponseHeaderPolicy: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronResponseHeaderPolicy,
+	Version: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.domainName">domainName</a></code> | <code>string</code> | Validated FQDN. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.source">source</a></code> | <code>string</code> | Source path from which to deploy the contents of frontend. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.cachePolicy">cachePolicy</a></code> | <code><a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a></code> | CloudFront's Cache Policy to use on the distribution. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObject">defaultRootObject</a></code> | <code>string</code> | Object that you want CloudFront to request from your origin when a user requests the root URL for your distribution. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectCachePolicy">defaultRootObjectCachePolicy</a></code> | <code><a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectResponseHeaderPolicy">defaultRootObjectResponseHeaderPolicy</a></code> | <code><a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a></code> | CloudFront's Response Header Policy to use on the distribution. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.description">description</a></code> | <code>string</code> | Description of the cloudfront distribution; |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.prune">prune</a></code> | <code>boolean</code> | If this is set to false, files in the destination bucket that do not exist in the asset, will NOT be deleted during deployment (create/update). |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.responseHeaderPolicy">responseHeaderPolicy</a></code> | <code><a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a></code> | CloudFront's Response Header Policy to use on the distribution. |
-| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.version">version</a></code> | <code>string</code> | Prefix key used for versioning the s3 deployment bucket. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.domainName">DomainName</a></code> | <code>*string</code> | Validated FQDN. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.source">Source</a></code> | <code>*string</code> | Source path from which to deploy the contents of frontend. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.cachePolicy">CachePolicy</a></code> | <code><a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a></code> | CloudFront's Cache Policy to use on the distribution. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObject">DefaultRootObject</a></code> | <code>*string</code> | Object that you want CloudFront to request from your origin when a user requests the root URL for your distribution. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectCachePolicy">DefaultRootObjectCachePolicy</a></code> | <code><a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectResponseHeaderPolicy">DefaultRootObjectResponseHeaderPolicy</a></code> | <code><a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a></code> | CloudFront's Response Header Policy to use on the distribution. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.description">Description</a></code> | <code>*string</code> | Description of the cloudfront distribution; |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.prune">Prune</a></code> | <code>*bool</code> | If this is set to false, files in the destination bucket that do not exist in the asset, will NOT be deleted during deployment (create/update). |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.responseHeaderPolicy">ResponseHeaderPolicy</a></code> | <code><a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a></code> | CloudFront's Response Header Policy to use on the distribution. |
+| <code><a href="#cdk-constructs.ThronCloudFrontDistributionProps.property.version">Version</a></code> | <code>*string</code> | Prefix key used for versioning the s3 deployment bucket. |
 
 ---
 
-##### `domainName`<sup>Required</sup> <a name="domainName" id="cdk-constructs.ThronCloudFrontDistributionProps.property.domainName"></a>
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="cdk-constructs.ThronCloudFrontDistributionProps.property.domainName"></a>
 
-```typescript
-public readonly domainName: string;
+```go
+DomainName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Validated FQDN.
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="cdk-constructs.ThronCloudFrontDistributionProps.property.source"></a>
+##### `Source`<sup>Required</sup> <a name="Source" id="cdk-constructs.ThronCloudFrontDistributionProps.property.source"></a>
 
-```typescript
-public readonly source: string;
+```go
+Source *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Source path from which to deploy the contents of frontend.
 
 ---
 
-##### `cachePolicy`<sup>Optional</sup> <a name="cachePolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.cachePolicy"></a>
+##### `CachePolicy`<sup>Optional</sup> <a name="CachePolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.cachePolicy"></a>
 
-```typescript
-public readonly cachePolicy: ThronCachePolicy;
+```go
+CachePolicy ThronCachePolicy
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a>
@@ -13035,32 +13225,32 @@ CloudFront's Cache Policy to use on the distribution.
 
 ---
 
-##### `defaultRootObject`<sup>Optional</sup> <a name="defaultRootObject" id="cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObject"></a>
+##### `DefaultRootObject`<sup>Optional</sup> <a name="DefaultRootObject" id="cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObject"></a>
 
-```typescript
-public readonly defaultRootObject: string;
+```go
+DefaultRootObject *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Object that you want CloudFront to request from your origin when a user requests the root URL for your distribution.
 
 ---
 
-##### `defaultRootObjectCachePolicy`<sup>Optional</sup> <a name="defaultRootObjectCachePolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectCachePolicy"></a>
+##### `DefaultRootObjectCachePolicy`<sup>Optional</sup> <a name="DefaultRootObjectCachePolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectCachePolicy"></a>
 
-```typescript
-public readonly defaultRootObjectCachePolicy: ThronCachePolicy;
+```go
+DefaultRootObjectCachePolicy ThronCachePolicy
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronCachePolicy">ThronCachePolicy</a>
 
 ---
 
-##### `defaultRootObjectResponseHeaderPolicy`<sup>Optional</sup> <a name="defaultRootObjectResponseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectResponseHeaderPolicy"></a>
+##### `DefaultRootObjectResponseHeaderPolicy`<sup>Optional</sup> <a name="DefaultRootObjectResponseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.defaultRootObjectResponseHeaderPolicy"></a>
 
-```typescript
-public readonly defaultRootObjectResponseHeaderPolicy: ThronResponseHeaderPolicy;
+```go
+DefaultRootObjectResponseHeaderPolicy ThronResponseHeaderPolicy
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a>
@@ -13069,13 +13259,13 @@ CloudFront's Response Header Policy to use on the distribution.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="cdk-constructs.ThronCloudFrontDistributionProps.property.description"></a>
+##### `Description`<sup>Optional</sup> <a name="Description" id="cdk-constructs.ThronCloudFrontDistributionProps.property.description"></a>
 
-```typescript
-public readonly description: string;
+```go
+Description *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Description of the cloudfront distribution;
 
@@ -13083,23 +13273,23 @@ defaults to `domainName`
 
 ---
 
-##### `prune`<sup>Optional</sup> <a name="prune" id="cdk-constructs.ThronCloudFrontDistributionProps.property.prune"></a>
+##### `Prune`<sup>Optional</sup> <a name="Prune" id="cdk-constructs.ThronCloudFrontDistributionProps.property.prune"></a>
 
-```typescript
-public readonly prune: boolean;
+```go
+Prune *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 - *Default:* true
 
 If this is set to false, files in the destination bucket that do not exist in the asset, will NOT be deleted during deployment (create/update).
 
 ---
 
-##### `responseHeaderPolicy`<sup>Optional</sup> <a name="responseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.responseHeaderPolicy"></a>
+##### `ResponseHeaderPolicy`<sup>Optional</sup> <a name="ResponseHeaderPolicy" id="cdk-constructs.ThronCloudFrontDistributionProps.property.responseHeaderPolicy"></a>
 
-```typescript
-public readonly responseHeaderPolicy: ThronResponseHeaderPolicy;
+```go
+ResponseHeaderPolicy ThronResponseHeaderPolicy
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronResponseHeaderPolicy">ThronResponseHeaderPolicy</a>
@@ -13108,13 +13298,13 @@ CloudFront's Response Header Policy to use on the distribution.
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="cdk-constructs.ThronCloudFrontDistributionProps.property.version"></a>
+##### `Version`<sup>Optional</sup> <a name="Version" id="cdk-constructs.ThronCloudFrontDistributionProps.property.version"></a>
 
-```typescript
-public readonly version: string;
+```go
+Version *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Prefix key used for versioning the s3 deployment bucket.
 
@@ -13124,27 +13314,32 @@ Prefix key used for versioning the s3 deployment bucket.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.Initializer"></a>
 
-```typescript
-import { ThronCreatedApiGatewayEndpoint } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronCreatedApiGatewayEndpoint: ThronCreatedApiGatewayEndpoint = { ... }
+&cdkconstructs.ThronCreatedApiGatewayEndpoint {
+	ApiGatewayApi: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronApiGatewayApi,
+	FullEndpoint: *string,
+	MainDomain: *string,
+	Path: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.apiGatewayApi">apiGatewayApi</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayApi">ThronApiGatewayApi</a></code> | The ThronApiGatewayApi associated with the endpoint. |
-| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.fullEndpoint">fullEndpoint</a></code> | <code>string</code> | The full uri of the exposed api endpoint, i.e `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it/api/adv1/productimports/`. |
-| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.mainDomain">mainDomain</a></code> | <code>string</code> | The main domain of the api gateway endpoint, i.e `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it`. |
-| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.path">path</a></code> | <code>string</code> | The path of the exposed api endpoint, i.e `/api/adv1/productimports/`. |
+| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.apiGatewayApi">ApiGatewayApi</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayApi">ThronApiGatewayApi</a></code> | The ThronApiGatewayApi associated with the endpoint. |
+| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.fullEndpoint">FullEndpoint</a></code> | <code>*string</code> | The full uri of the exposed api endpoint, i.e `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it/api/adv1/productimports/`. |
+| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.mainDomain">MainDomain</a></code> | <code>*string</code> | The main domain of the api gateway endpoint, i.e `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it`. |
+| <code><a href="#cdk-constructs.ThronCreatedApiGatewayEndpoint.property.path">Path</a></code> | <code>*string</code> | The path of the exposed api endpoint, i.e `/api/adv1/productimports/`. |
 
 ---
 
-##### `apiGatewayApi`<sup>Required</sup> <a name="apiGatewayApi" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.apiGatewayApi"></a>
+##### `ApiGatewayApi`<sup>Required</sup> <a name="ApiGatewayApi" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.apiGatewayApi"></a>
 
-```typescript
-public readonly apiGatewayApi: ThronApiGatewayApi;
+```go
+ApiGatewayApi ThronApiGatewayApi
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronApiGatewayApi">ThronApiGatewayApi</a>
@@ -13153,37 +13348,37 @@ The ThronApiGatewayApi associated with the endpoint.
 
 ---
 
-##### `fullEndpoint`<sup>Required</sup> <a name="fullEndpoint" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.fullEndpoint"></a>
+##### `FullEndpoint`<sup>Required</sup> <a name="FullEndpoint" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.fullEndpoint"></a>
 
-```typescript
-public readonly fullEndpoint: string;
+```go
+FullEndpoint *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The full uri of the exposed api endpoint, i.e `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it/api/adv1/productimports/`.
 
 ---
 
-##### `mainDomain`<sup>Required</sup> <a name="mainDomain" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.mainDomain"></a>
+##### `MainDomain`<sup>Required</sup> <a name="MainDomain" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.mainDomain"></a>
 
-```typescript
-public readonly mainDomain: string;
+```go
+MainDomain *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The main domain of the api gateway endpoint, i.e `awsd04-product-api-adv1-productimports.4me.cdndev.weebo.it`.
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.path"></a>
+##### `Path`<sup>Required</sup> <a name="Path" id="cdk-constructs.ThronCreatedApiGatewayEndpoint.property.path"></a>
 
-```typescript
-public readonly path: string;
+```go
+Path *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The path of the exposed api endpoint, i.e `/api/adv1/productimports/`.
 
@@ -13193,193 +13388,208 @@ The path of the exposed api endpoint, i.e `/api/adv1/productimports/`.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronEc2ServiceProps.Initializer"></a>
 
-```typescript
-import { ThronEc2ServiceProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronEc2ServiceProps: ThronEc2ServiceProps = { ... }
+&cdkconstructs.ThronEc2ServiceProps {
+	Cpu: *f64,
+	Ram: *f64,
+	ContainerImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerImage,
+	Environment: *map[string]*string,
+	Port: *f64,
+	PrometheusMetricsPath: *string,
+	Secrets: *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Secret,
+	Cluster: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ClusterOption,
+	DockerContextPath: *string,
+	DockerfileName: *string,
+	Endpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronEndpointAlbProps,
+	HealthCheck: github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.HealthCheck,
+	LegacyEndpoints: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.LegacyEndpointAlbProps,
+	TargetScaling: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronTargetScalingProps,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.cpu">cpu</a></code> | <code>number</code> | The number of cpu units used by the task. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.ram">ram</a></code> | <code>number</code> | The amount (in MiB) of memory used by the task. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.containerImage">containerImage</a></code> | <code>aws-cdk-lib.aws_ecs.ContainerImage</code> | Container image to use for the container. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | The environment variables to pass to the container. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.port">port</a></code> | <code>number</code> | The port exposed for connection. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.prometheusMetricsPath">prometheusMetricsPath</a></code> | <code>string</code> | Path where Prometheus metrics are exposed. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.secrets">secrets</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_ecs.Secret}</code> | The secrets to pass to the container (got by valueFrom). |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.cluster">cluster</a></code> | <code><a href="#cdk-constructs.ClusterOption">ClusterOption</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.dockerContextPath">dockerContextPath</a></code> | <code>string</code> | Context of docker build. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.dockerfileName">dockerfileName</a></code> | <code>string</code> | Name of Dockerfile. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.endpoints">endpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>}</code> | Endpoints associated with this service. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.healthCheck">healthCheck</a></code> | <code>aws-cdk-lib.aws_elasticloadbalancingv2.HealthCheck</code> | Default healthcheck override. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.legacyEndpoints">legacyEndpoints</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>}</code> | Legacy endpoints associated with this service. |
-| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.targetScaling">targetScaling</a></code> | <code><a href="#cdk-constructs.ThronTargetScalingProps">ThronTargetScalingProps</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.cpu">Cpu</a></code> | <code>*f64</code> | The number of cpu units used by the task. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.ram">Ram</a></code> | <code>*f64</code> | The amount (in MiB) of memory used by the task. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.containerImage">ContainerImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerImage</code> | Container image to use for the container. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.environment">Environment</a></code> | <code>*map[string]*string</code> | The environment variables to pass to the container. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.port">Port</a></code> | <code>*f64</code> | The port exposed for connection. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.prometheusMetricsPath">PrometheusMetricsPath</a></code> | <code>*string</code> | Path where Prometheus metrics are exposed. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.secrets">Secrets</a></code> | <code>*map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Secret</code> | The secrets to pass to the container (got by valueFrom). |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.cluster">Cluster</a></code> | <code><a href="#cdk-constructs.ClusterOption">ClusterOption</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.dockerContextPath">DockerContextPath</a></code> | <code>*string</code> | Context of docker build. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.dockerfileName">DockerfileName</a></code> | <code>*string</code> | Name of Dockerfile. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.endpoints">Endpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a></code> | Endpoints associated with this service. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.healthCheck">HealthCheck</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.HealthCheck</code> | Default healthcheck override. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.legacyEndpoints">LegacyEndpoints</a></code> | <code>*map[string]<a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a></code> | Legacy endpoints associated with this service. |
+| <code><a href="#cdk-constructs.ThronEc2ServiceProps.property.targetScaling">TargetScaling</a></code> | <code><a href="#cdk-constructs.ThronTargetScalingProps">ThronTargetScalingProps</a></code> | *No description.* |
 
 ---
 
-##### `cpu`<sup>Required</sup> <a name="cpu" id="cdk-constructs.ThronEc2ServiceProps.property.cpu"></a>
+##### `Cpu`<sup>Required</sup> <a name="Cpu" id="cdk-constructs.ThronEc2ServiceProps.property.cpu"></a>
 
-```typescript
-public readonly cpu: number;
+```go
+Cpu *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The number of cpu units used by the task.
 
 ---
 
-##### `ram`<sup>Required</sup> <a name="ram" id="cdk-constructs.ThronEc2ServiceProps.property.ram"></a>
+##### `Ram`<sup>Required</sup> <a name="Ram" id="cdk-constructs.ThronEc2ServiceProps.property.ram"></a>
 
-```typescript
-public readonly ram: number;
+```go
+Ram *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The amount (in MiB) of memory used by the task.
 
 ---
 
-##### `containerImage`<sup>Optional</sup> <a name="containerImage" id="cdk-constructs.ThronEc2ServiceProps.property.containerImage"></a>
+##### `ContainerImage`<sup>Optional</sup> <a name="ContainerImage" id="cdk-constructs.ThronEc2ServiceProps.property.containerImage"></a>
 
-```typescript
-public readonly containerImage: ContainerImage;
+```go
+ContainerImage ContainerImage
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.ContainerImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerImage
 
 Container image to use for the container.
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="cdk-constructs.ThronEc2ServiceProps.property.environment"></a>
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="cdk-constructs.ThronEc2ServiceProps.property.environment"></a>
 
-```typescript
-public readonly environment: {[ key: string ]: string};
+```go
+Environment *map[string]*string
 ```
 
-- *Type:* {[ key: string ]: string}
+- *Type:* *map[string]*string
 - *Default:* No environment variables.
 
 The environment variables to pass to the container.
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="cdk-constructs.ThronEc2ServiceProps.property.port"></a>
+##### `Port`<sup>Optional</sup> <a name="Port" id="cdk-constructs.ThronEc2ServiceProps.property.port"></a>
 
-```typescript
-public readonly port: number;
+```go
+Port *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The port exposed for connection.
 
 ---
 
-##### `prometheusMetricsPath`<sup>Optional</sup> <a name="prometheusMetricsPath" id="cdk-constructs.ThronEc2ServiceProps.property.prometheusMetricsPath"></a>
+##### `PrometheusMetricsPath`<sup>Optional</sup> <a name="PrometheusMetricsPath" id="cdk-constructs.ThronEc2ServiceProps.property.prometheusMetricsPath"></a>
 
-```typescript
-public readonly prometheusMetricsPath: string;
+```go
+PrometheusMetricsPath *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Path where Prometheus metrics are exposed.
 
 ---
 
-##### `secrets`<sup>Optional</sup> <a name="secrets" id="cdk-constructs.ThronEc2ServiceProps.property.secrets"></a>
+##### `Secrets`<sup>Optional</sup> <a name="Secrets" id="cdk-constructs.ThronEc2ServiceProps.property.secrets"></a>
 
-```typescript
-public readonly secrets: {[ key: string ]: Secret};
+```go
+Secrets *map[string]Secret
 ```
 
-- *Type:* {[ key: string ]: aws-cdk-lib.aws_ecs.Secret}
+- *Type:* *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Secret
 
 The secrets to pass to the container (got by valueFrom).
 
 ---
 
-##### `cluster`<sup>Required</sup> <a name="cluster" id="cdk-constructs.ThronEc2ServiceProps.property.cluster"></a>
+##### `Cluster`<sup>Required</sup> <a name="Cluster" id="cdk-constructs.ThronEc2ServiceProps.property.cluster"></a>
 
-```typescript
-public readonly cluster: ClusterOption;
+```go
+Cluster ClusterOption
 ```
 
 - *Type:* <a href="#cdk-constructs.ClusterOption">ClusterOption</a>
 
 ---
 
-##### `dockerContextPath`<sup>Required</sup> <a name="dockerContextPath" id="cdk-constructs.ThronEc2ServiceProps.property.dockerContextPath"></a>
+##### `DockerContextPath`<sup>Required</sup> <a name="DockerContextPath" id="cdk-constructs.ThronEc2ServiceProps.property.dockerContextPath"></a>
 
-```typescript
-public readonly dockerContextPath: string;
+```go
+DockerContextPath *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Context of docker build.
 
 ---
 
-##### `dockerfileName`<sup>Optional</sup> <a name="dockerfileName" id="cdk-constructs.ThronEc2ServiceProps.property.dockerfileName"></a>
+##### `DockerfileName`<sup>Optional</sup> <a name="DockerfileName" id="cdk-constructs.ThronEc2ServiceProps.property.dockerfileName"></a>
 
-```typescript
-public readonly dockerfileName: string;
+```go
+DockerfileName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 - *Default:* Dockerfile
 
 Name of Dockerfile.
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="cdk-constructs.ThronEc2ServiceProps.property.endpoints"></a>
+##### `Endpoints`<sup>Optional</sup> <a name="Endpoints" id="cdk-constructs.ThronEc2ServiceProps.property.endpoints"></a>
 
-```typescript
-public readonly endpoints: {[ key: string ]: ThronEndpointAlbProps};
+```go
+Endpoints *map[string]ThronEndpointAlbProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.ThronEndpointAlbProps">ThronEndpointAlbProps</a>
 
 Endpoints associated with this service.
 
 ---
 
-##### `healthCheck`<sup>Optional</sup> <a name="healthCheck" id="cdk-constructs.ThronEc2ServiceProps.property.healthCheck"></a>
+##### `HealthCheck`<sup>Optional</sup> <a name="HealthCheck" id="cdk-constructs.ThronEc2ServiceProps.property.healthCheck"></a>
 
-```typescript
-public readonly healthCheck: HealthCheck;
+```go
+HealthCheck HealthCheck
 ```
 
-- *Type:* aws-cdk-lib.aws_elasticloadbalancingv2.HealthCheck
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_elasticloadbalancingv2.HealthCheck
 
 Default healthcheck override.
 
 ---
 
-##### `legacyEndpoints`<sup>Optional</sup> <a name="legacyEndpoints" id="cdk-constructs.ThronEc2ServiceProps.property.legacyEndpoints"></a>
+##### `LegacyEndpoints`<sup>Optional</sup> <a name="LegacyEndpoints" id="cdk-constructs.ThronEc2ServiceProps.property.legacyEndpoints"></a>
 
-```typescript
-public readonly legacyEndpoints: {[ key: string ]: LegacyEndpointAlbProps};
+```go
+LegacyEndpoints *map[string]LegacyEndpointAlbProps
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.LegacyEndpointAlbProps">LegacyEndpointAlbProps</a>
 
 Legacy endpoints associated with this service.
 
 ---
 
-##### `targetScaling`<sup>Optional</sup> <a name="targetScaling" id="cdk-constructs.ThronEc2ServiceProps.property.targetScaling"></a>
+##### `TargetScaling`<sup>Optional</sup> <a name="TargetScaling" id="cdk-constructs.ThronEc2ServiceProps.property.targetScaling"></a>
 
-```typescript
-public readonly targetScaling: ThronTargetScalingProps;
+```go
+TargetScaling ThronTargetScalingProps
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronTargetScalingProps">ThronTargetScalingProps</a>
@@ -13390,69 +13600,77 @@ public readonly targetScaling: ThronTargetScalingProps;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronEc2TargetScalingProps.Initializer"></a>
 
-```typescript
-import { ThronEc2TargetScalingProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronEc2TargetScalingProps: ThronEc2TargetScalingProps = { ... }
+&cdkconstructs.ThronEc2TargetScalingProps {
+	MaxCapacity: *f64,
+	MinCapacity: *f64,
+	TargetValue: *f64,
+	PredefinedMetric: github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric,
+	ScaleInCooldown: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	ScaleOutCooldown: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	Ec2Service: github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Ec2Service,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.minCapacity">minCapacity</a></code> | <code>number</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.targetValue">targetValue</a></code> | <code>number</code> | The target value for the metric. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.predefinedMetric">predefinedMetric</a></code> | <code>aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.scaleInCooldown">scaleInCooldown</a></code> | <code>aws-cdk-lib.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.scaleOutCooldown">scaleOutCooldown</a></code> | <code>aws-cdk-lib.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
-| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.ec2Service">ec2Service</a></code> | <code>aws-cdk-lib.aws_ecs.Ec2Service</code> | Ec2 Service used as target resource. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.targetValue">TargetValue</a></code> | <code>*f64</code> | The target value for the metric. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.predefinedMetric">PredefinedMetric</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.scaleInCooldown">ScaleInCooldown</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.scaleOutCooldown">ScaleOutCooldown</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
+| <code><a href="#cdk-constructs.ThronEc2TargetScalingProps.property.ec2Service">Ec2Service</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Ec2Service</code> | Ec2 Service used as target resource. |
 
 ---
 
-##### `maxCapacity`<sup>Required</sup> <a name="maxCapacity" id="cdk-constructs.ThronEc2TargetScalingProps.property.maxCapacity"></a>
+##### `MaxCapacity`<sup>Required</sup> <a name="MaxCapacity" id="cdk-constructs.ThronEc2TargetScalingProps.property.maxCapacity"></a>
 
-```typescript
-public readonly maxCapacity: number;
+```go
+MaxCapacity *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The maximum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `minCapacity`<sup>Required</sup> <a name="minCapacity" id="cdk-constructs.ThronEc2TargetScalingProps.property.minCapacity"></a>
+##### `MinCapacity`<sup>Required</sup> <a name="MinCapacity" id="cdk-constructs.ThronEc2TargetScalingProps.property.minCapacity"></a>
 
-```typescript
-public readonly minCapacity: number;
+```go
+MinCapacity *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The minimum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `targetValue`<sup>Required</sup> <a name="targetValue" id="cdk-constructs.ThronEc2TargetScalingProps.property.targetValue"></a>
+##### `TargetValue`<sup>Required</sup> <a name="TargetValue" id="cdk-constructs.ThronEc2TargetScalingProps.property.targetValue"></a>
 
-```typescript
-public readonly targetValue: number;
+```go
+TargetValue *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The target value for the metric.
 
 ---
 
-##### `predefinedMetric`<sup>Optional</sup> <a name="predefinedMetric" id="cdk-constructs.ThronEc2TargetScalingProps.property.predefinedMetric"></a>
+##### `PredefinedMetric`<sup>Optional</sup> <a name="PredefinedMetric" id="cdk-constructs.ThronEc2TargetScalingProps.property.predefinedMetric"></a>
 
-```typescript
-public readonly predefinedMetric: PredefinedMetric;
+```go
+PredefinedMetric PredefinedMetric
 ```
 
-- *Type:* aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric
 
 A predefined metric for application autoscaling.
 
@@ -13461,39 +13679,39 @@ scaling in will happen in the metric is lower than the target value.
 
 ---
 
-##### `scaleInCooldown`<sup>Optional</sup> <a name="scaleInCooldown" id="cdk-constructs.ThronEc2TargetScalingProps.property.scaleInCooldown"></a>
+##### `ScaleInCooldown`<sup>Optional</sup> <a name="ScaleInCooldown" id="cdk-constructs.ThronEc2TargetScalingProps.property.scaleInCooldown"></a>
 
-```typescript
-public readonly scaleInCooldown: Duration;
+```go
+ScaleInCooldown Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 - *Default:* Duration.minutes(300)
 
 The amount of time after a scale in activity completes before another scale in activity can start.
 
 ---
 
-##### `scaleOutCooldown`<sup>Optional</sup> <a name="scaleOutCooldown" id="cdk-constructs.ThronEc2TargetScalingProps.property.scaleOutCooldown"></a>
+##### `ScaleOutCooldown`<sup>Optional</sup> <a name="ScaleOutCooldown" id="cdk-constructs.ThronEc2TargetScalingProps.property.scaleOutCooldown"></a>
 
-```typescript
-public readonly scaleOutCooldown: Duration;
+```go
+ScaleOutCooldown Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 - *Default:* Duration.minutes(90)
 
 The amount of time after a scale in activity completes before another scale in activity can start.
 
 ---
 
-##### `ec2Service`<sup>Required</sup> <a name="ec2Service" id="cdk-constructs.ThronEc2TargetScalingProps.property.ec2Service"></a>
+##### `Ec2Service`<sup>Required</sup> <a name="Ec2Service" id="cdk-constructs.ThronEc2TargetScalingProps.property.ec2Service"></a>
 
-```typescript
-public readonly ec2Service: Ec2Service;
+```go
+Ec2Service Ec2Service
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.Ec2Service
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Ec2Service
 
 Ec2 Service used as target resource.
 
@@ -13503,106 +13721,114 @@ Ec2 Service used as target resource.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronEc2TaskDefinitionProps.Initializer"></a>
 
-```typescript
-import { ThronEc2TaskDefinitionProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronEc2TaskDefinitionProps: ThronEc2TaskDefinitionProps = { ... }
+&cdkconstructs.ThronEc2TaskDefinitionProps {
+	Cpu: *f64,
+	Ram: *f64,
+	ContainerImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerImage,
+	Environment: *map[string]*string,
+	Port: *f64,
+	PrometheusMetricsPath: *string,
+	Secrets: *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Secret,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.cpu">cpu</a></code> | <code>number</code> | The number of cpu units used by the task. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.ram">ram</a></code> | <code>number</code> | The amount (in MiB) of memory used by the task. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.containerImage">containerImage</a></code> | <code>aws-cdk-lib.aws_ecs.ContainerImage</code> | Container image to use for the container. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | The environment variables to pass to the container. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.port">port</a></code> | <code>number</code> | The port exposed for connection. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.prometheusMetricsPath">prometheusMetricsPath</a></code> | <code>string</code> | Path where Prometheus metrics are exposed. |
-| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.secrets">secrets</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_ecs.Secret}</code> | The secrets to pass to the container (got by valueFrom). |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.cpu">Cpu</a></code> | <code>*f64</code> | The number of cpu units used by the task. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.ram">Ram</a></code> | <code>*f64</code> | The amount (in MiB) of memory used by the task. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.containerImage">ContainerImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerImage</code> | Container image to use for the container. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.environment">Environment</a></code> | <code>*map[string]*string</code> | The environment variables to pass to the container. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.port">Port</a></code> | <code>*f64</code> | The port exposed for connection. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.prometheusMetricsPath">PrometheusMetricsPath</a></code> | <code>*string</code> | Path where Prometheus metrics are exposed. |
+| <code><a href="#cdk-constructs.ThronEc2TaskDefinitionProps.property.secrets">Secrets</a></code> | <code>*map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Secret</code> | The secrets to pass to the container (got by valueFrom). |
 
 ---
 
-##### `cpu`<sup>Required</sup> <a name="cpu" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.cpu"></a>
+##### `Cpu`<sup>Required</sup> <a name="Cpu" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.cpu"></a>
 
-```typescript
-public readonly cpu: number;
+```go
+Cpu *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The number of cpu units used by the task.
 
 ---
 
-##### `ram`<sup>Required</sup> <a name="ram" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.ram"></a>
+##### `Ram`<sup>Required</sup> <a name="Ram" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.ram"></a>
 
-```typescript
-public readonly ram: number;
+```go
+Ram *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The amount (in MiB) of memory used by the task.
 
 ---
 
-##### `containerImage`<sup>Optional</sup> <a name="containerImage" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.containerImage"></a>
+##### `ContainerImage`<sup>Optional</sup> <a name="ContainerImage" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.containerImage"></a>
 
-```typescript
-public readonly containerImage: ContainerImage;
+```go
+ContainerImage ContainerImage
 ```
 
-- *Type:* aws-cdk-lib.aws_ecs.ContainerImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.ContainerImage
 
 Container image to use for the container.
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.environment"></a>
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.environment"></a>
 
-```typescript
-public readonly environment: {[ key: string ]: string};
+```go
+Environment *map[string]*string
 ```
 
-- *Type:* {[ key: string ]: string}
+- *Type:* *map[string]*string
 - *Default:* No environment variables.
 
 The environment variables to pass to the container.
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.port"></a>
+##### `Port`<sup>Optional</sup> <a name="Port" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.port"></a>
 
-```typescript
-public readonly port: number;
+```go
+Port *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The port exposed for connection.
 
 ---
 
-##### `prometheusMetricsPath`<sup>Optional</sup> <a name="prometheusMetricsPath" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.prometheusMetricsPath"></a>
+##### `PrometheusMetricsPath`<sup>Optional</sup> <a name="PrometheusMetricsPath" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.prometheusMetricsPath"></a>
 
-```typescript
-public readonly prometheusMetricsPath: string;
+```go
+PrometheusMetricsPath *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Path where Prometheus metrics are exposed.
 
 ---
 
-##### `secrets`<sup>Optional</sup> <a name="secrets" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.secrets"></a>
+##### `Secrets`<sup>Optional</sup> <a name="Secrets" id="cdk-constructs.ThronEc2TaskDefinitionProps.property.secrets"></a>
 
-```typescript
-public readonly secrets: {[ key: string ]: Secret};
+```go
+Secrets *map[string]Secret
 ```
 
-- *Type:* {[ key: string ]: aws-cdk-lib.aws_ecs.Secret}
+- *Type:* *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_ecs.Secret
 
 The secrets to pass to the container (got by valueFrom).
 
@@ -13612,28 +13838,34 @@ The secrets to pass to the container (got by valueFrom).
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronEndpointAlbProps.Initializer"></a>
 
-```typescript
-import { ThronEndpointAlbProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronEndpointAlbProps: ThronEndpointAlbProps = { ... }
+&cdkconstructs.ThronEndpointAlbProps {
+	ServiceGroup: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ServiceGroup,
+	ServiceName: *string,
+	Stack: github.com/aws/aws-cdk-go/awscdk/v2.Stack,
+	Version: *f64,
+	Visibility: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.EndpointVisibility,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.serviceGroup">serviceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
-| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.serviceName">serviceName</a></code> | <code>string</code> | Name of the service the endpoint exposes. |
-| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The reference of parent Stack. |
-| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.version">version</a></code> | <code>number</code> | The version of the API exposed by the endpoint. |
-| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.visibility">visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
+| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.serviceGroup">ServiceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
+| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.serviceName">ServiceName</a></code> | <code>*string</code> | Name of the service the endpoint exposes. |
+| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.stack">Stack</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Stack</code> | The reference of parent Stack. |
+| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.version">Version</a></code> | <code>*f64</code> | The version of the API exposed by the endpoint. |
+| <code><a href="#cdk-constructs.ThronEndpointAlbProps.property.visibility">Visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
 
 ---
 
-##### `serviceGroup`<sup>Required</sup> <a name="serviceGroup" id="cdk-constructs.ThronEndpointAlbProps.property.serviceGroup"></a>
+##### `ServiceGroup`<sup>Required</sup> <a name="ServiceGroup" id="cdk-constructs.ThronEndpointAlbProps.property.serviceGroup"></a>
 
-```typescript
-public readonly serviceGroup: ServiceGroup;
+```go
+ServiceGroup ServiceGroup
 ```
 
 - *Type:* <a href="#cdk-constructs.ServiceGroup">ServiceGroup</a>
@@ -13642,47 +13874,47 @@ Service group of the service.
 
 ---
 
-##### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.ThronEndpointAlbProps.property.serviceName"></a>
+##### `ServiceName`<sup>Required</sup> <a name="ServiceName" id="cdk-constructs.ThronEndpointAlbProps.property.serviceName"></a>
 
-```typescript
-public readonly serviceName: string;
+```go
+ServiceName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Name of the service the endpoint exposes.
 
 ---
 
-##### `stack`<sup>Optional</sup> <a name="stack" id="cdk-constructs.ThronEndpointAlbProps.property.stack"></a>
+##### `Stack`<sup>Optional</sup> <a name="Stack" id="cdk-constructs.ThronEndpointAlbProps.property.stack"></a>
 
-```typescript
-public readonly stack: Stack;
+```go
+Stack Stack
 ```
 
-- *Type:* aws-cdk-lib.Stack
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Stack
 
 The reference of parent Stack.
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="cdk-constructs.ThronEndpointAlbProps.property.version"></a>
+##### `Version`<sup>Optional</sup> <a name="Version" id="cdk-constructs.ThronEndpointAlbProps.property.version"></a>
 
-```typescript
-public readonly version: number;
+```go
+Version *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 1
 
 The version of the API exposed by the endpoint.
 
 ---
 
-##### `visibility`<sup>Optional</sup> <a name="visibility" id="cdk-constructs.ThronEndpointAlbProps.property.visibility"></a>
+##### `Visibility`<sup>Optional</sup> <a name="Visibility" id="cdk-constructs.ThronEndpointAlbProps.property.visibility"></a>
 
-```typescript
-public readonly visibility: EndpointVisibility;
+```go
+Visibility EndpointVisibility
 ```
 
 - *Type:* <a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a>
@@ -13696,66 +13928,71 @@ Wether the endpoint is private or public.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronEndpointApiGatewayProps.Initializer"></a>
 
-```typescript
-import { ThronEndpointApiGatewayProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronEndpointApiGatewayProps: ThronEndpointApiGatewayProps = { ... }
+&cdkconstructs.ThronEndpointApiGatewayProps {
+	ApiGatewayApi: github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.IRestApi,
+	BasePath: *string,
+	LambdaFunction: github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IFunction,
+	Timeout: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.apiGatewayApi">apiGatewayApi</a></code> | <code>aws-cdk-lib.aws_apigateway.IRestApi</code> | The API on which the endpoint should be added. |
-| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.basePath">basePath</a></code> | <code>string</code> | The path on which to add the endpoint. |
-| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.lambdaFunction">lambdaFunction</a></code> | <code>aws-cdk-lib.aws_lambda.IFunction</code> | The function to attach to the endpoint. |
-| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | The timeout of the integration. |
+| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.apiGatewayApi">ApiGatewayApi</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.IRestApi</code> | The API on which the endpoint should be added. |
+| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.basePath">BasePath</a></code> | <code>*string</code> | The path on which to add the endpoint. |
+| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.lambdaFunction">LambdaFunction</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IFunction</code> | The function to attach to the endpoint. |
+| <code><a href="#cdk-constructs.ThronEndpointApiGatewayProps.property.timeout">Timeout</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The timeout of the integration. |
 
 ---
 
-##### `apiGatewayApi`<sup>Required</sup> <a name="apiGatewayApi" id="cdk-constructs.ThronEndpointApiGatewayProps.property.apiGatewayApi"></a>
+##### `ApiGatewayApi`<sup>Required</sup> <a name="ApiGatewayApi" id="cdk-constructs.ThronEndpointApiGatewayProps.property.apiGatewayApi"></a>
 
-```typescript
-public readonly apiGatewayApi: IRestApi;
+```go
+ApiGatewayApi IRestApi
 ```
 
-- *Type:* aws-cdk-lib.aws_apigateway.IRestApi
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_apigateway.IRestApi
 
 The API on which the endpoint should be added.
 
 ---
 
-##### `basePath`<sup>Required</sup> <a name="basePath" id="cdk-constructs.ThronEndpointApiGatewayProps.property.basePath"></a>
+##### `BasePath`<sup>Required</sup> <a name="BasePath" id="cdk-constructs.ThronEndpointApiGatewayProps.property.basePath"></a>
 
-```typescript
-public readonly basePath: string;
+```go
+BasePath *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The path on which to add the endpoint.
 
 ---
 
-##### `lambdaFunction`<sup>Required</sup> <a name="lambdaFunction" id="cdk-constructs.ThronEndpointApiGatewayProps.property.lambdaFunction"></a>
+##### `LambdaFunction`<sup>Required</sup> <a name="LambdaFunction" id="cdk-constructs.ThronEndpointApiGatewayProps.property.lambdaFunction"></a>
 
-```typescript
-public readonly lambdaFunction: IFunction;
+```go
+LambdaFunction IFunction
 ```
 
-- *Type:* aws-cdk-lib.aws_lambda.IFunction
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_lambda.IFunction
 
 The function to attach to the endpoint.
 
 ---
 
-##### `timeout`<sup>Required</sup> <a name="timeout" id="cdk-constructs.ThronEndpointApiGatewayProps.property.timeout"></a>
+##### `Timeout`<sup>Required</sup> <a name="Timeout" id="cdk-constructs.ThronEndpointApiGatewayProps.property.timeout"></a>
 
-```typescript
-public readonly timeout: Duration;
+```go
+Timeout Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 The timeout of the integration.
 
@@ -13765,93 +14002,101 @@ The timeout of the integration.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronHealthCheckOverride.Initializer"></a>
 
-```typescript
-import { ThronHealthCheckOverride } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronHealthCheckOverride: ThronHealthCheckOverride = { ... }
+&cdkconstructs.ThronHealthCheckOverride {
+	HealthyHttpCodes: *string,
+	HealthyThresholdCount: *f64,
+	Interval: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	Path: *string,
+	Port: *string,
+	Timeout: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	UnhealthyThresholdCount: *f64,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.healthyHttpCodes">healthyHttpCodes</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.healthyThresholdCount">healthyThresholdCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.interval">interval</a></code> | <code>aws-cdk-lib.Duration</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.path">path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.port">port</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.unhealthyThresholdCount">unhealthyThresholdCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.healthyHttpCodes">HealthyHttpCodes</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.healthyThresholdCount">HealthyThresholdCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.interval">Interval</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.path">Path</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.port">Port</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.timeout">Timeout</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheckOverride.property.unhealthyThresholdCount">UnhealthyThresholdCount</a></code> | <code>*f64</code> | *No description.* |
 
 ---
 
-##### `healthyHttpCodes`<sup>Optional</sup> <a name="healthyHttpCodes" id="cdk-constructs.ThronHealthCheckOverride.property.healthyHttpCodes"></a>
+##### `HealthyHttpCodes`<sup>Optional</sup> <a name="HealthyHttpCodes" id="cdk-constructs.ThronHealthCheckOverride.property.healthyHttpCodes"></a>
 
-```typescript
-public readonly healthyHttpCodes: string;
+```go
+HealthyHttpCodes *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `healthyThresholdCount`<sup>Optional</sup> <a name="healthyThresholdCount" id="cdk-constructs.ThronHealthCheckOverride.property.healthyThresholdCount"></a>
+##### `HealthyThresholdCount`<sup>Optional</sup> <a name="HealthyThresholdCount" id="cdk-constructs.ThronHealthCheckOverride.property.healthyThresholdCount"></a>
 
-```typescript
-public readonly healthyThresholdCount: number;
+```go
+HealthyThresholdCount *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
-##### `interval`<sup>Optional</sup> <a name="interval" id="cdk-constructs.ThronHealthCheckOverride.property.interval"></a>
+##### `Interval`<sup>Optional</sup> <a name="Interval" id="cdk-constructs.ThronHealthCheckOverride.property.interval"></a>
 
-```typescript
-public readonly interval: Duration;
+```go
+Interval Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="cdk-constructs.ThronHealthCheckOverride.property.path"></a>
+##### `Path`<sup>Optional</sup> <a name="Path" id="cdk-constructs.ThronHealthCheckOverride.property.path"></a>
 
-```typescript
-public readonly path: string;
+```go
+Path *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="cdk-constructs.ThronHealthCheckOverride.property.port"></a>
+##### `Port`<sup>Optional</sup> <a name="Port" id="cdk-constructs.ThronHealthCheckOverride.property.port"></a>
 
-```typescript
-public readonly port: string;
+```go
+Port *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="cdk-constructs.ThronHealthCheckOverride.property.timeout"></a>
+##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="cdk-constructs.ThronHealthCheckOverride.property.timeout"></a>
 
-```typescript
-public readonly timeout: Duration;
+```go
+Timeout Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 
 ---
 
-##### `unhealthyThresholdCount`<sup>Optional</sup> <a name="unhealthyThresholdCount" id="cdk-constructs.ThronHealthCheckOverride.property.unhealthyThresholdCount"></a>
+##### `UnhealthyThresholdCount`<sup>Optional</sup> <a name="UnhealthyThresholdCount" id="cdk-constructs.ThronHealthCheckOverride.property.unhealthyThresholdCount"></a>
 
-```typescript
-public readonly unhealthyThresholdCount: number;
+```go
+UnhealthyThresholdCount *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
@@ -13859,29 +14104,36 @@ public readonly unhealthyThresholdCount: number;
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.Initializer"></a>
 
-```typescript
-import { ThronLambdaApiGatewayEndpointProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronLambdaApiGatewayEndpointProps: ThronLambdaApiGatewayEndpointProps = { ... }
+&cdkconstructs.ThronLambdaApiGatewayEndpointProps {
+	ServiceGroup: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ServiceGroup,
+	Version: *f64,
+	Visibility: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.EndpointVisibility,
+	ServiceName: *string,
+	ApiGatewayOverride: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronApiGatewayApi,
+	PathOverride: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceGroup">serviceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
-| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.version">version</a></code> | <code>number</code> | The version of the API exposed by the endpoint. |
-| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.visibility">visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
-| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceName">serviceName</a></code> | <code>string</code> | Name of the service the endpoint exposes. |
-| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.apiGatewayOverride">apiGatewayOverride</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayApi">ThronApiGatewayApi</a></code> | If this params is provided, no new Api Gateway will be created. |
-| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.pathOverride">pathOverride</a></code> | <code>string</code> | If this params is provided, the path of the service will be overridden with the given one. |
+| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceGroup">ServiceGroup</a></code> | <code><a href="#cdk-constructs.ServiceGroup">ServiceGroup</a></code> | Service group of the service. |
+| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.version">Version</a></code> | <code>*f64</code> | The version of the API exposed by the endpoint. |
+| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.visibility">Visibility</a></code> | <code><a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a></code> | Wether the endpoint is private or public. |
+| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceName">ServiceName</a></code> | <code>*string</code> | Name of the service the endpoint exposes. |
+| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.apiGatewayOverride">ApiGatewayOverride</a></code> | <code><a href="#cdk-constructs.ThronApiGatewayApi">ThronApiGatewayApi</a></code> | If this params is provided, no new Api Gateway will be created. |
+| <code><a href="#cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.pathOverride">PathOverride</a></code> | <code>*string</code> | If this params is provided, the path of the service will be overridden with the given one. |
 
 ---
 
-##### `serviceGroup`<sup>Optional</sup> <a name="serviceGroup" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceGroup"></a>
+##### `ServiceGroup`<sup>Optional</sup> <a name="ServiceGroup" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceGroup"></a>
 
-```typescript
-public readonly serviceGroup: ServiceGroup;
+```go
+ServiceGroup ServiceGroup
 ```
 
 - *Type:* <a href="#cdk-constructs.ServiceGroup">ServiceGroup</a>
@@ -13891,23 +14143,23 @@ Service group of the service.
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.version"></a>
+##### `Version`<sup>Optional</sup> <a name="Version" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.version"></a>
 
-```typescript
-public readonly version: number;
+```go
+Version *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 - *Default:* 1
 
 The version of the API exposed by the endpoint.
 
 ---
 
-##### `visibility`<sup>Optional</sup> <a name="visibility" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.visibility"></a>
+##### `Visibility`<sup>Optional</sup> <a name="Visibility" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.visibility"></a>
 
-```typescript
-public readonly visibility: EndpointVisibility;
+```go
+Visibility EndpointVisibility
 ```
 
 - *Type:* <a href="#cdk-constructs.EndpointVisibility">EndpointVisibility</a>
@@ -13917,22 +14169,22 @@ Wether the endpoint is private or public.
 
 ---
 
-##### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceName"></a>
+##### `ServiceName`<sup>Required</sup> <a name="ServiceName" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.serviceName"></a>
 
-```typescript
-public readonly serviceName: string;
+```go
+ServiceName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Name of the service the endpoint exposes.
 
 ---
 
-##### `apiGatewayOverride`<sup>Optional</sup> <a name="apiGatewayOverride" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.apiGatewayOverride"></a>
+##### `ApiGatewayOverride`<sup>Optional</sup> <a name="ApiGatewayOverride" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.apiGatewayOverride"></a>
 
-```typescript
-public readonly apiGatewayOverride: ThronApiGatewayApi;
+```go
+ApiGatewayOverride ThronApiGatewayApi
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronApiGatewayApi">ThronApiGatewayApi</a>
@@ -13943,13 +14195,13 @@ Instead, the provided api gateway will be used
 
 ---
 
-##### `pathOverride`<sup>Optional</sup> <a name="pathOverride" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.pathOverride"></a>
+##### `PathOverride`<sup>Optional</sup> <a name="PathOverride" id="cdk-constructs.ThronLambdaApiGatewayEndpointProps.property.pathOverride"></a>
 
-```typescript
-public readonly pathOverride: string;
+```go
+PathOverride *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 If this params is provided, the path of the service will be overridden with the given one.
 
@@ -13961,74 +14213,84 @@ ThronLambdaMicroservicePipeline Props.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.Initializer"></a>
 
-```typescript
-import { ThronLambdaMicroservicePipelineProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronLambdaMicroservicePipelineProps: ThronLambdaMicroservicePipelineProps = { ... }
+&cdkconstructs.ThronLambdaMicroservicePipelineProps {
+	CicdConfig: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.CicdEnvironment,
+	CustomBuildImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage,
+	Lambdas: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.StepConfig,
+	ProjectId: *string,
+	Tests: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.StepConfig,
+	PreExistingArtifactBucket: *string,
+	PreExistingRepositoryName: *string,
+	ProjectPreset: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ProjectPreset,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.cicdConfig">cicdConfig</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.CicdEnvironment">CicdEnvironment</a>}</code> | Target accounts for pipeline and other CICD settings. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.customBuildImage">customBuildImage</a></code> | <code>aws-cdk-lib.aws_codebuild.IBuildImage</code> | Build Image to be used by default in all the lambda steps. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.lambdas">lambdas</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.StepConfig">StepConfig</a>}</code> | Map of all the lambdas id along with their {@link StepConfiguration}. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectId">projectId</a></code> | <code>string</code> | Id of the applicative project to use. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.tests">tests</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.StepConfig">StepConfig</a>}</code> | Map of all the tests id along with their {@link StepConfiguration}. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingArtifactBucket">preExistingArtifactBucket</a></code> | <code>string</code> | If specified, uses an existing bucket for storing artifacts. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingRepositoryName">preExistingRepositoryName</a></code> | <code>string</code> | If specified, define a source codecommit repository instead of creating one. |
-| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectPreset">projectPreset</a></code> | <code><a href="#cdk-constructs.ProjectPreset">ProjectPreset</a></code> | If specified, the new project will be initialized with the chosen codebase, after the subs have been performed Note: You cannot specify this attribute if `preExistingRepositoryName` is specified. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.cicdConfig">CicdConfig</a></code> | <code>*map[string]<a href="#cdk-constructs.CicdEnvironment">CicdEnvironment</a></code> | Target accounts for pipeline and other CICD settings. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.customBuildImage">CustomBuildImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage</code> | Build Image to be used by default in all the lambda steps. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.lambdas">Lambdas</a></code> | <code>*map[string]<a href="#cdk-constructs.StepConfig">StepConfig</a></code> | Map of all the lambdas id along with their {@link StepConfiguration}. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectId">ProjectId</a></code> | <code>*string</code> | Id of the applicative project to use. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.tests">Tests</a></code> | <code>*map[string]<a href="#cdk-constructs.StepConfig">StepConfig</a></code> | Map of all the tests id along with their {@link StepConfiguration}. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingArtifactBucket">PreExistingArtifactBucket</a></code> | <code>*string</code> | If specified, uses an existing bucket for storing artifacts. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingRepositoryName">PreExistingRepositoryName</a></code> | <code>*string</code> | If specified, define a source codecommit repository instead of creating one. |
+| <code><a href="#cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectPreset">ProjectPreset</a></code> | <code><a href="#cdk-constructs.ProjectPreset">ProjectPreset</a></code> | If specified, the new project will be initialized with the chosen codebase, after the subs have been performed Note: You cannot specify this attribute if `preExistingRepositoryName` is specified. |
 
 ---
 
-##### `cicdConfig`<sup>Required</sup> <a name="cicdConfig" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.cicdConfig"></a>
+##### `CicdConfig`<sup>Required</sup> <a name="CicdConfig" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.cicdConfig"></a>
 
-```typescript
-public readonly cicdConfig: {[ key: string ]: CicdEnvironment};
+```go
+CicdConfig *map[string]CicdEnvironment
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.CicdEnvironment">CicdEnvironment</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.CicdEnvironment">CicdEnvironment</a>
 
 Target accounts for pipeline and other CICD settings.
 
 ---
 
-##### `customBuildImage`<sup>Required</sup> <a name="customBuildImage" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.customBuildImage"></a>
+##### `CustomBuildImage`<sup>Required</sup> <a name="CustomBuildImage" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.customBuildImage"></a>
 
-```typescript
-public readonly customBuildImage: IBuildImage;
+```go
+CustomBuildImage IBuildImage
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.IBuildImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage
 
 Build Image to be used by default in all the lambda steps.
 
 ---
 
-##### `lambdas`<sup>Required</sup> <a name="lambdas" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.lambdas"></a>
+##### `Lambdas`<sup>Required</sup> <a name="Lambdas" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.lambdas"></a>
 
-```typescript
-public readonly lambdas: {[ key: string ]: StepConfig};
+```go
+Lambdas *map[string]StepConfig
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.StepConfig">StepConfig</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.StepConfig">StepConfig</a>
 
 Map of all the lambdas id along with their {@link StepConfiguration}.
 
 Lambdas ids must:
-- Be between 3 and 25 longs and only letters
-- Not be repeated (case insensitive).
+
+* Be between 3 and 25 longs and only letters
+* Not be repeated (case insensitive).
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectId"></a>
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectId"></a>
 
-```typescript
-public readonly projectId: string;
+```go
+ProjectId *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Id of the applicative project to use.
 
@@ -14038,41 +14300,42 @@ based on the environment
 
 ---
 
-##### `tests`<sup>Required</sup> <a name="tests" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.tests"></a>
+##### `Tests`<sup>Required</sup> <a name="Tests" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.tests"></a>
 
-```typescript
-public readonly tests: {[ key: string ]: StepConfig};
+```go
+Tests *map[string]StepConfig
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.StepConfig">StepConfig</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.StepConfig">StepConfig</a>
 
 Map of all the tests id along with their {@link StepConfiguration}.
 
 Test ids must:
-- Be between 3 and 25 longs and only letters
-- Not be repeated (case insensitive).
+
+* Be between 3 and 25 longs and only letters
+* Not be repeated (case insensitive).
 
 ---
 
-##### `preExistingArtifactBucket`<sup>Optional</sup> <a name="preExistingArtifactBucket" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingArtifactBucket"></a>
+##### `PreExistingArtifactBucket`<sup>Optional</sup> <a name="PreExistingArtifactBucket" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingArtifactBucket"></a>
 
-```typescript
-public readonly preExistingArtifactBucket: string;
+```go
+PreExistingArtifactBucket *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 If specified, uses an existing bucket for storing artifacts.
 
 ---
 
-##### `preExistingRepositoryName`<sup>Optional</sup> <a name="preExistingRepositoryName" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingRepositoryName"></a>
+##### `PreExistingRepositoryName`<sup>Optional</sup> <a name="PreExistingRepositoryName" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.preExistingRepositoryName"></a>
 
-```typescript
-public readonly preExistingRepositoryName: string;
+```go
+PreExistingRepositoryName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 If specified, define a source codecommit repository instead of creating one.
 
@@ -14080,10 +14343,10 @@ Note: You cannot specify this attribute if `projectPreset` is specified
 
 ---
 
-##### `projectPreset`<sup>Optional</sup> <a name="projectPreset" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectPreset"></a>
+##### `ProjectPreset`<sup>Optional</sup> <a name="ProjectPreset" id="cdk-constructs.ThronLambdaMicroservicePipelineProps.property.projectPreset"></a>
 
-```typescript
-public readonly projectPreset: ProjectPreset;
+```go
+ProjectPreset ProjectPreset
 ```
 
 - *Type:* <a href="#cdk-constructs.ProjectPreset">ProjectPreset</a>
@@ -14094,15 +14357,16 @@ If specified, the new project will be initialized with the chosen codebase, afte
 
 *Example*
 
-```typescript
-   {
-     repositoryBranchTagOrSha: "master",
-     repositoryName: "golang-project-template",
-     repositoryRegion: "eu-west-1",
-     subConfigs: [
-       { searchValue: "##project-name##", replaceValue: 'sample-project-id }
-     ]
-   }
+```go
+// Example automatically generated from non-compiling source. May contain errors.
+{repositoryBranchTagOrSha: "master",
+	     repositoryName"golang-project-template" , repositoryRegion"eu-west-1" , subConfigs[]map[string]*string{
+		map[string]*string{
+			"searchValue": jsii.String("##project-name##"),
+			"replaceValue": jsii.String("sample-project-id }"),
+		},
+	}
+}
 ```
 
 
@@ -14112,40 +14376,43 @@ Codecommit configuration for the Source Phase of the pipeline.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.Initializer"></a>
 
-```typescript
-import { ThronLambdaSingleEnvPipelineCodeCommitProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronLambdaSingleEnvPipelineCodeCommitProps: ThronLambdaSingleEnvPipelineCodeCommitProps = { ... }
+&cdkconstructs.ThronLambdaSingleEnvPipelineCodeCommitProps {
+	Branch: *string,
+	Repository: github.com/aws/aws-cdk-go/awscdk/v2.aws_codecommit.IRepository,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.branch">branch</a></code> | <code>string</code> | Repository branch on which the pipeline trigger is set. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.repository">repository</a></code> | <code>aws-cdk-lib.aws_codecommit.IRepository</code> | Repository on which the pipeline trigger is set. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.branch">Branch</a></code> | <code>*string</code> | Repository branch on which the pipeline trigger is set. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.repository">Repository</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codecommit.IRepository</code> | Repository on which the pipeline trigger is set. |
 
 ---
 
-##### `branch`<sup>Required</sup> <a name="branch" id="cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.branch"></a>
+##### `Branch`<sup>Required</sup> <a name="Branch" id="cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.branch"></a>
 
-```typescript
-public readonly branch: string;
+```go
+Branch *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Repository branch on which the pipeline trigger is set.
 
 ---
 
-##### `repository`<sup>Required</sup> <a name="repository" id="cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.repository"></a>
+##### `Repository`<sup>Required</sup> <a name="Repository" id="cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps.property.repository"></a>
 
-```typescript
-public readonly repository: IRepository;
+```go
+Repository IRepository
 ```
 
-- *Type:* aws-cdk-lib.aws_codecommit.IRepository
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codecommit.IRepository
 
 Repository on which the pipeline trigger is set.
 
@@ -14157,43 +14424,52 @@ ThronLambdaSingleEnvPipeline Props.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.Initializer"></a>
 
-```typescript
-import { ThronLambdaSingleEnvPipelineProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronLambdaSingleEnvPipelineProps: ThronLambdaSingleEnvPipelineProps = { ... }
+&cdkconstructs.ThronLambdaSingleEnvPipelineProps {
+	ArtifactBucket: github.com/aws/aws-cdk-go/awscdk/v2.aws_s3.IBucket,
+	CodeCommitConfig: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.ThronLambdaSingleEnvPipelineCodeCommitProps,
+	DeployConf: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.DeployStepConf,
+	LambdasConf: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.LambdaConf,
+	Prefix: *string,
+	TestConf: *map[string]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.StepConfig,
+	IsBuildEnabled: *bool,
+	NotifyConf: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.NotifyConf,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.artifactBucket">artifactBucket</a></code> | <code>aws-cdk-lib.aws_s3.IBucket</code> | The bucket to store the artifacts. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.codeCommitConfig">codeCommitConfig</a></code> | <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps">ThronLambdaSingleEnvPipelineCodeCommitProps</a></code> | The configuration for the code commit repository. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.deployConf">deployConf</a></code> | <code><a href="#cdk-constructs.DeployStepConf">DeployStepConf</a></code> | The Configuration for the Deploy Step. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.lambdasConf">lambdasConf</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.LambdaConf">LambdaConf</a>}</code> | Lambda Configurations. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.prefix">prefix</a></code> | <code>string</code> | Prefix for resources. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.testConf">testConf</a></code> | <code>{[ key: string ]: <a href="#cdk-constructs.StepConfig">StepConfig</a>}</code> | The ids of the tests to run. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.isBuildEnabled">isBuildEnabled</a></code> | <code>boolean</code> | Whether or not the build stage is enabled. |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.notifyConf">notifyConf</a></code> | <code><a href="#cdk-constructs.NotifyConf">NotifyConf</a></code> | Configuration for enabling pipeline notifications. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.artifactBucket">ArtifactBucket</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_s3.IBucket</code> | The bucket to store the artifacts. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.codeCommitConfig">CodeCommitConfig</a></code> | <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps">ThronLambdaSingleEnvPipelineCodeCommitProps</a></code> | The configuration for the code commit repository. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.deployConf">DeployConf</a></code> | <code><a href="#cdk-constructs.DeployStepConf">DeployStepConf</a></code> | The Configuration for the Deploy Step. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.lambdasConf">LambdasConf</a></code> | <code>*map[string]<a href="#cdk-constructs.LambdaConf">LambdaConf</a></code> | Lambda Configurations. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.prefix">Prefix</a></code> | <code>*string</code> | Prefix for resources. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.testConf">TestConf</a></code> | <code>*map[string]<a href="#cdk-constructs.StepConfig">StepConfig</a></code> | The ids of the tests to run. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.isBuildEnabled">IsBuildEnabled</a></code> | <code>*bool</code> | Whether or not the build stage is enabled. |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.notifyConf">NotifyConf</a></code> | <code><a href="#cdk-constructs.NotifyConf">NotifyConf</a></code> | Configuration for enabling pipeline notifications. |
 
 ---
 
-##### `artifactBucket`<sup>Required</sup> <a name="artifactBucket" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.artifactBucket"></a>
+##### `ArtifactBucket`<sup>Required</sup> <a name="ArtifactBucket" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.artifactBucket"></a>
 
-```typescript
-public readonly artifactBucket: IBucket;
+```go
+ArtifactBucket IBucket
 ```
 
-- *Type:* aws-cdk-lib.aws_s3.IBucket
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_s3.IBucket
 
 The bucket to store the artifacts.
 
 ---
 
-##### `codeCommitConfig`<sup>Required</sup> <a name="codeCommitConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.codeCommitConfig"></a>
+##### `CodeCommitConfig`<sup>Required</sup> <a name="CodeCommitConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.codeCommitConfig"></a>
 
-```typescript
-public readonly codeCommitConfig: ThronLambdaSingleEnvPipelineCodeCommitProps;
+```go
+CodeCommitConfig ThronLambdaSingleEnvPipelineCodeCommitProps
 ```
 
 - *Type:* <a href="#cdk-constructs.ThronLambdaSingleEnvPipelineCodeCommitProps">ThronLambdaSingleEnvPipelineCodeCommitProps</a>
@@ -14202,10 +14478,10 @@ The configuration for the code commit repository.
 
 ---
 
-##### `deployConf`<sup>Required</sup> <a name="deployConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.deployConf"></a>
+##### `DeployConf`<sup>Required</sup> <a name="DeployConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.deployConf"></a>
 
-```typescript
-public readonly deployConf: DeployStepConf;
+```go
+DeployConf DeployStepConf
 ```
 
 - *Type:* <a href="#cdk-constructs.DeployStepConf">DeployStepConf</a>
@@ -14214,49 +14490,49 @@ The Configuration for the Deploy Step.
 
 ---
 
-##### `lambdasConf`<sup>Required</sup> <a name="lambdasConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.lambdasConf"></a>
+##### `LambdasConf`<sup>Required</sup> <a name="LambdasConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.lambdasConf"></a>
 
-```typescript
-public readonly lambdasConf: {[ key: string ]: LambdaConf};
+```go
+LambdasConf *map[string]LambdaConf
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.LambdaConf">LambdaConf</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.LambdaConf">LambdaConf</a>
 
 Lambda Configurations.
 
 ---
 
-##### `prefix`<sup>Required</sup> <a name="prefix" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.prefix"></a>
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.prefix"></a>
 
-```typescript
-public readonly prefix: string;
+```go
+Prefix *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Prefix for resources.
 
 ---
 
-##### `testConf`<sup>Required</sup> <a name="testConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.testConf"></a>
+##### `TestConf`<sup>Required</sup> <a name="TestConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.testConf"></a>
 
-```typescript
-public readonly testConf: {[ key: string ]: StepConfig};
+```go
+TestConf *map[string]StepConfig
 ```
 
-- *Type:* {[ key: string ]: <a href="#cdk-constructs.StepConfig">StepConfig</a>}
+- *Type:* *map[string]<a href="#cdk-constructs.StepConfig">StepConfig</a>
 
 The ids of the tests to run.
 
 ---
 
-##### `isBuildEnabled`<sup>Optional</sup> <a name="isBuildEnabled" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.isBuildEnabled"></a>
+##### `IsBuildEnabled`<sup>Optional</sup> <a name="IsBuildEnabled" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.isBuildEnabled"></a>
 
-```typescript
-public readonly isBuildEnabled: boolean;
+```go
+IsBuildEnabled *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether or not the build stage is enabled.
 
@@ -14264,10 +14540,10 @@ Defaults to true
 
 ---
 
-##### `notifyConf`<sup>Optional</sup> <a name="notifyConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.notifyConf"></a>
+##### `NotifyConf`<sup>Optional</sup> <a name="NotifyConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineProps.property.notifyConf"></a>
 
-```typescript
-public readonly notifyConf: NotifyConf;
+```go
+NotifyConf NotifyConf
 ```
 
 - *Type:* <a href="#cdk-constructs.NotifyConf">NotifyConf</a>
@@ -14280,24 +14556,26 @@ Configuration for enabling pipeline notifications.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronNewRelicContextInjectorOptions.Initializer"></a>
 
-```typescript
-import { ThronNewRelicContextInjectorOptions } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronNewRelicContextInjectorOptions: ThronNewRelicContextInjectorOptions = { ... }
+&cdkconstructs.ThronNewRelicContextInjectorOptions {
+	NewRelicConfigOverrides: git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.NewRelicLambdaConfigOverrides,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronNewRelicContextInjectorOptions.property.newRelicConfigOverrides">newRelicConfigOverrides</a></code> | <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides">NewRelicLambdaConfigOverrides</a></code> | Explicit Overrides for NewRelic Configuration. |
+| <code><a href="#cdk-constructs.ThronNewRelicContextInjectorOptions.property.newRelicConfigOverrides">NewRelicConfigOverrides</a></code> | <code><a href="#cdk-constructs.NewRelicLambdaConfigOverrides">NewRelicLambdaConfigOverrides</a></code> | Explicit Overrides for NewRelic Configuration. |
 
 ---
 
-##### `newRelicConfigOverrides`<sup>Optional</sup> <a name="newRelicConfigOverrides" id="cdk-constructs.ThronNewRelicContextInjectorOptions.property.newRelicConfigOverrides"></a>
+##### `NewRelicConfigOverrides`<sup>Optional</sup> <a name="NewRelicConfigOverrides" id="cdk-constructs.ThronNewRelicContextInjectorOptions.property.newRelicConfigOverrides"></a>
 
-```typescript
-public readonly newRelicConfigOverrides: NewRelicLambdaConfigOverrides;
+```go
+NewRelicConfigOverrides NewRelicLambdaConfigOverrides
 ```
 
 - *Type:* <a href="#cdk-constructs.NewRelicLambdaConfigOverrides">NewRelicLambdaConfigOverrides</a>
@@ -14311,82 +14589,89 @@ Explicit Overrides for NewRelic Configuration.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronPipelineBuildProjectProps.Initializer"></a>
 
-```typescript
-import { ThronPipelineBuildProjectProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronPipelineBuildProjectProps: ThronPipelineBuildProjectProps = { ... }
+&cdkconstructs.ThronPipelineBuildProjectProps {
+	BuildName: *string,
+	ProjectPrefix: *string,
+	BuildImage: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage,
+	BuildSpecPath: *string,
+	ComputeType: github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType,
+	EnvironmentalVariables: *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.buildName">buildName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.projectPrefix">projectPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.buildImage">buildImage</a></code> | <code>aws-cdk-lib.aws_codebuild.IBuildImage</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.buildSpecPath">buildSpecPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.computeType">computeType</a></code> | <code>aws-cdk-lib.aws_codebuild.ComputeType</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.environmentalVariables">environmentalVariables</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.buildName">BuildName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.projectPrefix">ProjectPrefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.buildImage">BuildImage</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.buildSpecPath">BuildSpecPath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.computeType">ComputeType</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronPipelineBuildProjectProps.property.environmentalVariables">EnvironmentalVariables</a></code> | <code>*map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable</code> | *No description.* |
 
 ---
 
-##### `buildName`<sup>Required</sup> <a name="buildName" id="cdk-constructs.ThronPipelineBuildProjectProps.property.buildName"></a>
+##### `BuildName`<sup>Required</sup> <a name="BuildName" id="cdk-constructs.ThronPipelineBuildProjectProps.property.buildName"></a>
 
-```typescript
-public readonly buildName: string;
+```go
+BuildName *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `projectPrefix`<sup>Required</sup> <a name="projectPrefix" id="cdk-constructs.ThronPipelineBuildProjectProps.property.projectPrefix"></a>
+##### `ProjectPrefix`<sup>Required</sup> <a name="ProjectPrefix" id="cdk-constructs.ThronPipelineBuildProjectProps.property.projectPrefix"></a>
 
-```typescript
-public readonly projectPrefix: string;
+```go
+ProjectPrefix *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `buildImage`<sup>Optional</sup> <a name="buildImage" id="cdk-constructs.ThronPipelineBuildProjectProps.property.buildImage"></a>
+##### `BuildImage`<sup>Optional</sup> <a name="BuildImage" id="cdk-constructs.ThronPipelineBuildProjectProps.property.buildImage"></a>
 
-```typescript
-public readonly buildImage: IBuildImage;
+```go
+BuildImage IBuildImage
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.IBuildImage
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.IBuildImage
 
 ---
 
-##### `buildSpecPath`<sup>Optional</sup> <a name="buildSpecPath" id="cdk-constructs.ThronPipelineBuildProjectProps.property.buildSpecPath"></a>
+##### `BuildSpecPath`<sup>Optional</sup> <a name="BuildSpecPath" id="cdk-constructs.ThronPipelineBuildProjectProps.property.buildSpecPath"></a>
 
-```typescript
-public readonly buildSpecPath: string;
+```go
+BuildSpecPath *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `computeType`<sup>Optional</sup> <a name="computeType" id="cdk-constructs.ThronPipelineBuildProjectProps.property.computeType"></a>
+##### `ComputeType`<sup>Optional</sup> <a name="ComputeType" id="cdk-constructs.ThronPipelineBuildProjectProps.property.computeType"></a>
 
-```typescript
-public readonly computeType: ComputeType;
+```go
+ComputeType ComputeType
 ```
 
-- *Type:* aws-cdk-lib.aws_codebuild.ComputeType
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.ComputeType
 
 ---
 
-##### `environmentalVariables`<sup>Optional</sup> <a name="environmentalVariables" id="cdk-constructs.ThronPipelineBuildProjectProps.property.environmentalVariables"></a>
+##### `EnvironmentalVariables`<sup>Optional</sup> <a name="EnvironmentalVariables" id="cdk-constructs.ThronPipelineBuildProjectProps.property.environmentalVariables"></a>
 
-```typescript
-public readonly environmentalVariables: {[ key: string ]: BuildEnvironmentVariable};
+```go
+EnvironmentalVariables *map[string]BuildEnvironmentVariable
 ```
 
-- *Type:* {[ key: string ]: aws-cdk-lib.aws_codebuild.BuildEnvironmentVariable}
+- *Type:* *map[string]github.com/aws/aws-cdk-go/awscdk/v2.aws_codebuild.BuildEnvironmentVariable
 
 ---
 
@@ -14394,38 +14679,41 @@ public readonly environmentalVariables: {[ key: string ]: BuildEnvironmentVariab
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronResponseHeaderPolicyProps.Initializer"></a>
 
-```typescript
-import { ThronResponseHeaderPolicyProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronResponseHeaderPolicyProps: ThronResponseHeaderPolicyProps = { ... }
+&cdkconstructs.ThronResponseHeaderPolicyProps {
+	AdditionalCustomHeaders: *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ResponseCustomHeader,
+	Csp: *string,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicyProps.property.additionalCustomHeaders">additionalCustomHeaders</a></code> | <code>aws-cdk-lib.aws_cloudfront.ResponseCustomHeader[]</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronResponseHeaderPolicyProps.property.csp">csp</a></code> | <code>string</code> | Content Security Policy header to set. |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicyProps.property.additionalCustomHeaders">AdditionalCustomHeaders</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ResponseCustomHeader</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronResponseHeaderPolicyProps.property.csp">Csp</a></code> | <code>*string</code> | Content Security Policy header to set. |
 
 ---
 
-##### `additionalCustomHeaders`<sup>Optional</sup> <a name="additionalCustomHeaders" id="cdk-constructs.ThronResponseHeaderPolicyProps.property.additionalCustomHeaders"></a>
+##### `AdditionalCustomHeaders`<sup>Optional</sup> <a name="AdditionalCustomHeaders" id="cdk-constructs.ThronResponseHeaderPolicyProps.property.additionalCustomHeaders"></a>
 
-```typescript
-public readonly additionalCustomHeaders: ResponseCustomHeader[];
+```go
+AdditionalCustomHeaders *[]ResponseCustomHeader
 ```
 
-- *Type:* aws-cdk-lib.aws_cloudfront.ResponseCustomHeader[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_cloudfront.ResponseCustomHeader
 
 ---
 
-##### `csp`<sup>Optional</sup> <a name="csp" id="cdk-constructs.ThronResponseHeaderPolicyProps.property.csp"></a>
+##### `Csp`<sup>Optional</sup> <a name="Csp" id="cdk-constructs.ThronResponseHeaderPolicyProps.property.csp"></a>
 
-```typescript
-public readonly csp: string;
+```go
+Csp *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Content Security Policy header to set.
 
@@ -14435,68 +14723,75 @@ Content Security Policy header to set.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronTargetScalingProps.Initializer"></a>
 
-```typescript
-import { ThronTargetScalingProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronTargetScalingProps: ThronTargetScalingProps = { ... }
+&cdkconstructs.ThronTargetScalingProps {
+	MaxCapacity: *f64,
+	MinCapacity: *f64,
+	TargetValue: *f64,
+	PredefinedMetric: github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric,
+	ScaleInCooldown: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+	ScaleOutCooldown: github.com/aws/aws-cdk-go/awscdk/v2.Duration,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.minCapacity">minCapacity</a></code> | <code>number</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
-| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.targetValue">targetValue</a></code> | <code>number</code> | The target value for the metric. |
-| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.predefinedMetric">predefinedMetric</a></code> | <code>aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
-| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.scaleInCooldown">scaleInCooldown</a></code> | <code>aws-cdk-lib.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
-| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.scaleOutCooldown">scaleOutCooldown</a></code> | <code>aws-cdk-lib.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
+| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | The maximum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | The minimum value that Application Auto Scaling can use to scale a target during a scaling activity. |
+| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.targetValue">TargetValue</a></code> | <code>*f64</code> | The target value for the metric. |
+| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.predefinedMetric">PredefinedMetric</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric</code> | A predefined metric for application autoscaling. |
+| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.scaleInCooldown">ScaleInCooldown</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
+| <code><a href="#cdk-constructs.ThronTargetScalingProps.property.scaleOutCooldown">ScaleOutCooldown</a></code> | <code>github.com/aws/aws-cdk-go/awscdk/v2.Duration</code> | The amount of time after a scale in activity completes before another scale in activity can start. |
 
 ---
 
-##### `maxCapacity`<sup>Required</sup> <a name="maxCapacity" id="cdk-constructs.ThronTargetScalingProps.property.maxCapacity"></a>
+##### `MaxCapacity`<sup>Required</sup> <a name="MaxCapacity" id="cdk-constructs.ThronTargetScalingProps.property.maxCapacity"></a>
 
-```typescript
-public readonly maxCapacity: number;
+```go
+MaxCapacity *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The maximum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `minCapacity`<sup>Required</sup> <a name="minCapacity" id="cdk-constructs.ThronTargetScalingProps.property.minCapacity"></a>
+##### `MinCapacity`<sup>Required</sup> <a name="MinCapacity" id="cdk-constructs.ThronTargetScalingProps.property.minCapacity"></a>
 
-```typescript
-public readonly minCapacity: number;
+```go
+MinCapacity *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The minimum value that Application Auto Scaling can use to scale a target during a scaling activity.
 
 ---
 
-##### `targetValue`<sup>Required</sup> <a name="targetValue" id="cdk-constructs.ThronTargetScalingProps.property.targetValue"></a>
+##### `TargetValue`<sup>Required</sup> <a name="TargetValue" id="cdk-constructs.ThronTargetScalingProps.property.targetValue"></a>
 
-```typescript
-public readonly targetValue: number;
+```go
+TargetValue *f64
 ```
 
-- *Type:* number
+- *Type:* *f64
 
 The target value for the metric.
 
 ---
 
-##### `predefinedMetric`<sup>Optional</sup> <a name="predefinedMetric" id="cdk-constructs.ThronTargetScalingProps.property.predefinedMetric"></a>
+##### `PredefinedMetric`<sup>Optional</sup> <a name="PredefinedMetric" id="cdk-constructs.ThronTargetScalingProps.property.predefinedMetric"></a>
 
-```typescript
-public readonly predefinedMetric: PredefinedMetric;
+```go
+PredefinedMetric PredefinedMetric
 ```
 
-- *Type:* aws-cdk-lib.aws_applicationautoscaling.PredefinedMetric
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_applicationautoscaling.PredefinedMetric
 
 A predefined metric for application autoscaling.
 
@@ -14505,26 +14800,26 @@ scaling in will happen in the metric is lower than the target value.
 
 ---
 
-##### `scaleInCooldown`<sup>Optional</sup> <a name="scaleInCooldown" id="cdk-constructs.ThronTargetScalingProps.property.scaleInCooldown"></a>
+##### `ScaleInCooldown`<sup>Optional</sup> <a name="ScaleInCooldown" id="cdk-constructs.ThronTargetScalingProps.property.scaleInCooldown"></a>
 
-```typescript
-public readonly scaleInCooldown: Duration;
+```go
+ScaleInCooldown Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 - *Default:* Duration.minutes(300)
 
 The amount of time after a scale in activity completes before another scale in activity can start.
 
 ---
 
-##### `scaleOutCooldown`<sup>Optional</sup> <a name="scaleOutCooldown" id="cdk-constructs.ThronTargetScalingProps.property.scaleOutCooldown"></a>
+##### `ScaleOutCooldown`<sup>Optional</sup> <a name="ScaleOutCooldown" id="cdk-constructs.ThronTargetScalingProps.property.scaleOutCooldown"></a>
 
-```typescript
-public readonly scaleOutCooldown: Duration;
+```go
+ScaleOutCooldown Duration
 ```
 
-- *Type:* aws-cdk-lib.Duration
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.Duration
 - *Default:* Duration.minutes(90)
 
 The amount of time after a scale in activity completes before another scale in activity can start.
@@ -14537,32 +14832,39 @@ ThronVPC Props.
 
 #### Initializer <a name="Initializer" id="cdk-constructs.ThronVpcProps.Initializer"></a>
 
-```typescript
-import { ThronVpcProps } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-const thronVpcProps: ThronVpcProps = { ... }
+&cdkconstructs.ThronVpcProps {
+	GatewayEndpoints: *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.GatewayVpcEndpointAwsService,
+	InterfaceEndpoints: *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.InterfaceVpcEndpointAwsService,
+	Ipv4Cidr: *string,
+	IsNatHA: *bool,
+	Prefix: *string,
+	SubnetsConfigs: *[]git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs.SubnetConfigProps,
+}
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronVpcProps.property.gatewayEndpoints">gatewayEndpoints</a></code> | <code>aws-cdk-lib.aws_ec2.GatewayVpcEndpointAwsService[]</code> | Set of gateway endpoints to use in the VPC. |
-| <code><a href="#cdk-constructs.ThronVpcProps.property.interfaceEndpoints">interfaceEndpoints</a></code> | <code>aws-cdk-lib.aws_ec2.InterfaceVpcEndpointAwsService[]</code> | Set of interface Endpoints to add to the VPC. |
-| <code><a href="#cdk-constructs.ThronVpcProps.property.ipv4Cidr">ipv4Cidr</a></code> | <code>string</code> | IPv4 CIDR to assign to the VPC. |
-| <code><a href="#cdk-constructs.ThronVpcProps.property.isNatHA">isNatHA</a></code> | <code>boolean</code> | Whether to use a High Availability NAT configuration. |
-| <code><a href="#cdk-constructs.ThronVpcProps.property.prefix">prefix</a></code> | <code>string</code> | Prefix to name all the child resources with. |
-| <code><a href="#cdk-constructs.ThronVpcProps.property.subnetsConfigs">subnetsConfigs</a></code> | <code><a href="#cdk-constructs.SubnetConfigProps">SubnetConfigProps</a>[]</code> | Subnet configurations for the VPC. |
+| <code><a href="#cdk-constructs.ThronVpcProps.property.gatewayEndpoints">GatewayEndpoints</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.GatewayVpcEndpointAwsService</code> | Set of gateway endpoints to use in the VPC. |
+| <code><a href="#cdk-constructs.ThronVpcProps.property.interfaceEndpoints">InterfaceEndpoints</a></code> | <code>*[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.InterfaceVpcEndpointAwsService</code> | Set of interface Endpoints to add to the VPC. |
+| <code><a href="#cdk-constructs.ThronVpcProps.property.ipv4Cidr">Ipv4Cidr</a></code> | <code>*string</code> | IPv4 CIDR to assign to the VPC. |
+| <code><a href="#cdk-constructs.ThronVpcProps.property.isNatHA">IsNatHA</a></code> | <code>*bool</code> | Whether to use a High Availability NAT configuration. |
+| <code><a href="#cdk-constructs.ThronVpcProps.property.prefix">Prefix</a></code> | <code>*string</code> | Prefix to name all the child resources with. |
+| <code><a href="#cdk-constructs.ThronVpcProps.property.subnetsConfigs">SubnetsConfigs</a></code> | <code>*[]<a href="#cdk-constructs.SubnetConfigProps">SubnetConfigProps</a></code> | Subnet configurations for the VPC. |
 
 ---
 
-##### `gatewayEndpoints`<sup>Required</sup> <a name="gatewayEndpoints" id="cdk-constructs.ThronVpcProps.property.gatewayEndpoints"></a>
+##### `GatewayEndpoints`<sup>Required</sup> <a name="GatewayEndpoints" id="cdk-constructs.ThronVpcProps.property.gatewayEndpoints"></a>
 
-```typescript
-public readonly gatewayEndpoints: GatewayVpcEndpointAwsService[];
+```go
+GatewayEndpoints *[]GatewayVpcEndpointAwsService
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.GatewayVpcEndpointAwsService[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.GatewayVpcEndpointAwsService
 
 Set of gateway endpoints to use in the VPC.
 
@@ -14570,37 +14872,37 @@ As they are free, put them all by default! (DYNAMO + S3)
 
 ---
 
-##### `interfaceEndpoints`<sup>Required</sup> <a name="interfaceEndpoints" id="cdk-constructs.ThronVpcProps.property.interfaceEndpoints"></a>
+##### `InterfaceEndpoints`<sup>Required</sup> <a name="InterfaceEndpoints" id="cdk-constructs.ThronVpcProps.property.interfaceEndpoints"></a>
 
-```typescript
-public readonly interfaceEndpoints: InterfaceVpcEndpointAwsService[];
+```go
+InterfaceEndpoints *[]InterfaceVpcEndpointAwsService
 ```
 
-- *Type:* aws-cdk-lib.aws_ec2.InterfaceVpcEndpointAwsService[]
+- *Type:* *[]github.com/aws/aws-cdk-go/awscdk/v2.aws_ec2.InterfaceVpcEndpointAwsService
 
 Set of interface Endpoints to add to the VPC.
 
 ---
 
-##### `ipv4Cidr`<sup>Required</sup> <a name="ipv4Cidr" id="cdk-constructs.ThronVpcProps.property.ipv4Cidr"></a>
+##### `Ipv4Cidr`<sup>Required</sup> <a name="Ipv4Cidr" id="cdk-constructs.ThronVpcProps.property.ipv4Cidr"></a>
 
-```typescript
-public readonly ipv4Cidr: string;
+```go
+Ipv4Cidr *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 IPv4 CIDR to assign to the VPC.
 
 ---
 
-##### `isNatHA`<sup>Required</sup> <a name="isNatHA" id="cdk-constructs.ThronVpcProps.property.isNatHA"></a>
+##### `IsNatHA`<sup>Required</sup> <a name="IsNatHA" id="cdk-constructs.ThronVpcProps.property.isNatHA"></a>
 
-```typescript
-public readonly isNatHA: boolean;
+```go
+IsNatHA *bool
 ```
 
-- *Type:* boolean
+- *Type:* *bool
 
 Whether to use a High Availability NAT configuration.
 
@@ -14610,25 +14912,25 @@ If `false` a NAT will be created only in the first (alphabetically speaking) zon
 
 ---
 
-##### `prefix`<sup>Required</sup> <a name="prefix" id="cdk-constructs.ThronVpcProps.property.prefix"></a>
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="cdk-constructs.ThronVpcProps.property.prefix"></a>
 
-```typescript
-public readonly prefix: string;
+```go
+Prefix *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 Prefix to name all the child resources with.
 
 ---
 
-##### `subnetsConfigs`<sup>Required</sup> <a name="subnetsConfigs" id="cdk-constructs.ThronVpcProps.property.subnetsConfigs"></a>
+##### `SubnetsConfigs`<sup>Required</sup> <a name="SubnetsConfigs" id="cdk-constructs.ThronVpcProps.property.subnetsConfigs"></a>
 
-```typescript
-public readonly subnetsConfigs: SubnetConfigProps[];
+```go
+SubnetsConfigs *[]SubnetConfigProps
 ```
 
-- *Type:* <a href="#cdk-constructs.SubnetConfigProps">SubnetConfigProps</a>[]
+- *Type:* *[]<a href="#cdk-constructs.SubnetConfigProps">SubnetConfigProps</a>
 
 Subnet configurations for the VPC.
 
@@ -14642,28 +14944,28 @@ Subnet configurations for the VPC.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.DockerImageName.Initializer"></a>
 
-```typescript
-import { DockerImageName } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new DockerImageName(name: string, creds?: string)
+cdkconstructs.NewDockerImageName(name *string, creds *string) DockerImageName
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DockerImageName.Initializer.parameter.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.DockerImageName.Initializer.parameter.creds">creds</a></code> | <code>string</code> | The credentials of the docker image. |
+| <code><a href="#cdk-constructs.DockerImageName.Initializer.parameter.name">name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.DockerImageName.Initializer.parameter.creds">creds</a></code> | <code>*string</code> | The credentials of the docker image. |
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="name" id="cdk-constructs.DockerImageName.Initializer.parameter.name"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `creds`<sup>Optional</sup> <a name="creds" id="cdk-constructs.DockerImageName.Initializer.parameter.creds"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The credentials of the docker image.
 
@@ -14677,18 +14979,18 @@ Format `user:password` or `AWS Secrets Manager secret arn` or `AWS Secrets Manag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.DockerImageName.property.uri">uri</a></code> | <code>string</code> | The uri of the docker image. |
-| <code><a href="#cdk-constructs.DockerImageName.property.creds">creds</a></code> | <code>string</code> | The credentials of the docker image. |
+| <code><a href="#cdk-constructs.DockerImageName.property.uri">Uri</a></code> | <code>*string</code> | The uri of the docker image. |
+| <code><a href="#cdk-constructs.DockerImageName.property.creds">Creds</a></code> | <code>*string</code> | The credentials of the docker image. |
 
 ---
 
-##### `uri`<sup>Required</sup> <a name="uri" id="cdk-constructs.DockerImageName.property.uri"></a>
+##### `Uri`<sup>Required</sup> <a name="Uri" id="cdk-constructs.DockerImageName.property.uri"></a>
 
-```typescript
-public readonly uri: string;
+```go
+func Uri() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The uri of the docker image.
 
@@ -14696,13 +14998,13 @@ The uri spec follows https://github.com/containers/skopeo
 
 ---
 
-##### `creds`<sup>Optional</sup> <a name="creds" id="cdk-constructs.DockerImageName.property.creds"></a>
+##### `Creds`<sup>Optional</sup> <a name="Creds" id="cdk-constructs.DockerImageName.property.creds"></a>
 
-```typescript
-public readonly creds: string;
+```go
+func Creds() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The credentials of the docker image.
 
@@ -14718,31 +15020,31 @@ Format `user:password` or `AWS Secrets Manager secret arn` or `AWS Secrets Manag
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.EndpointUtils.buildInternalServiceRecord">buildInternalServiceRecord</a></code> | Builds the service DNS record from the service infos. |
-| <code><a href="#cdk-constructs.EndpointUtils.buildInternalServiceRecordFirstPart">buildInternalServiceRecordFirstPart</a></code> | Builds the service DNS record from the service infos. |
-| <code><a href="#cdk-constructs.EndpointUtils.buildPrivateRoutingTokenPrefix">buildPrivateRoutingTokenPrefix</a></code> | Build the routing token prefix for a private endpoint. |
-| <code><a href="#cdk-constructs.EndpointUtils.buildPublicRoutingTokenPrefix">buildPublicRoutingTokenPrefix</a></code> | Build the routing token prefix for a public endpoint. |
-| <code><a href="#cdk-constructs.EndpointUtils.buildRoutingTokenPrefix">buildRoutingTokenPrefix</a></code> | Build routing token prefix using Thron's conventions. |
-| <code><a href="#cdk-constructs.EndpointUtils.buildServiceNameFromRoutingTokenPrefix">buildServiceNameFromRoutingTokenPrefix</a></code> | Builds `serviceName` from routing token. |
-| <code><a href="#cdk-constructs.EndpointUtils.isValidRoutingTokenPrefix">isValidRoutingTokenPrefix</a></code> | Validates `routingTokenPrefix` against conventions. |
-| <code><a href="#cdk-constructs.EndpointUtils.isValidThronServiceName">isValidThronServiceName</a></code> | Check wether a service name validates against Thron conventions. |
-| <code><a href="#cdk-constructs.EndpointUtils.isValidVersion">isValidVersion</a></code> | Validates `version` against conventions. |
+| <code><a href="#cdk-constructs.EndpointUtils.buildInternalServiceRecord">BuildInternalServiceRecord</a></code> | Builds the service DNS record from the service infos. |
+| <code><a href="#cdk-constructs.EndpointUtils.buildInternalServiceRecordFirstPart">BuildInternalServiceRecordFirstPart</a></code> | Builds the service DNS record from the service infos. |
+| <code><a href="#cdk-constructs.EndpointUtils.buildPrivateRoutingTokenPrefix">BuildPrivateRoutingTokenPrefix</a></code> | Build the routing token prefix for a private endpoint. |
+| <code><a href="#cdk-constructs.EndpointUtils.buildPublicRoutingTokenPrefix">BuildPublicRoutingTokenPrefix</a></code> | Build the routing token prefix for a public endpoint. |
+| <code><a href="#cdk-constructs.EndpointUtils.buildRoutingTokenPrefix">BuildRoutingTokenPrefix</a></code> | Build routing token prefix using Thron's conventions. |
+| <code><a href="#cdk-constructs.EndpointUtils.buildServiceNameFromRoutingTokenPrefix">BuildServiceNameFromRoutingTokenPrefix</a></code> | Builds `serviceName` from routing token. |
+| <code><a href="#cdk-constructs.EndpointUtils.isValidRoutingTokenPrefix">IsValidRoutingTokenPrefix</a></code> | Validates `routingTokenPrefix` against conventions. |
+| <code><a href="#cdk-constructs.EndpointUtils.isValidThronServiceName">IsValidThronServiceName</a></code> | Check wether a service name validates against Thron conventions. |
+| <code><a href="#cdk-constructs.EndpointUtils.isValidVersion">IsValidVersion</a></code> | Validates `version` against conventions. |
 
 ---
 
-##### `buildInternalServiceRecord` <a name="buildInternalServiceRecord" id="cdk-constructs.EndpointUtils.buildInternalServiceRecord"></a>
+##### `BuildInternalServiceRecord` <a name="BuildInternalServiceRecord" id="cdk-constructs.EndpointUtils.buildInternalServiceRecord"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.buildInternalServiceRecord(serviceName: string, internalDomain: string, sitename: string)
+cdkconstructs.EndpointUtils_BuildInternalServiceRecord(serviceName *string, internalDomain *string, sitename *string) *string
 ```
 
 Builds the service DNS record from the service infos.
 
 ###### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.EndpointUtils.buildInternalServiceRecord.parameter.serviceName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 the complete name of the service, i.e `awsd04-view-api-adxsso`.
 
@@ -14750,7 +15052,7 @@ the complete name of the service, i.e `awsd04-view-api-adxsso`.
 
 ###### `internalDomain`<sup>Required</sup> <a name="internalDomain" id="cdk-constructs.EndpointUtils.buildInternalServiceRecord.parameter.internalDomain"></a>
 
-- *Type:* string
+- *Type:* *string
 
 the internal domain, i.e `cdndev.weebo.it`.
 
@@ -14758,25 +15060,25 @@ the internal domain, i.e `cdndev.weebo.it`.
 
 ###### `sitename`<sup>Required</sup> <a name="sitename" id="cdk-constructs.EndpointUtils.buildInternalServiceRecord.parameter.sitename"></a>
 
-- *Type:* string
+- *Type:* *string
 
 thron sitename, i.e. `awsd04`.
 
 ---
 
-##### `buildInternalServiceRecordFirstPart` <a name="buildInternalServiceRecordFirstPart" id="cdk-constructs.EndpointUtils.buildInternalServiceRecordFirstPart"></a>
+##### `BuildInternalServiceRecordFirstPart` <a name="BuildInternalServiceRecordFirstPart" id="cdk-constructs.EndpointUtils.buildInternalServiceRecordFirstPart"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.buildInternalServiceRecordFirstPart(serviceName: string, internalDomain: string, sitename: string)
+cdkconstructs.EndpointUtils_BuildInternalServiceRecordFirstPart(serviceName *string, internalDomain *string, sitename *string) *string
 ```
 
 Builds the service DNS record from the service infos.
 
 ###### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.EndpointUtils.buildInternalServiceRecordFirstPart.parameter.serviceName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 the complete name of the service, i.e `awsd04-view-api-adxsso`.
 
@@ -14784,7 +15086,7 @@ the complete name of the service, i.e `awsd04-view-api-adxsso`.
 
 ###### `internalDomain`<sup>Required</sup> <a name="internalDomain" id="cdk-constructs.EndpointUtils.buildInternalServiceRecordFirstPart.parameter.internalDomain"></a>
 
-- *Type:* string
+- *Type:* *string
 
 the internal domain, i.e `cdndev.weebo.it`.
 
@@ -14792,75 +15094,75 @@ the internal domain, i.e `cdndev.weebo.it`.
 
 ###### `sitename`<sup>Required</sup> <a name="sitename" id="cdk-constructs.EndpointUtils.buildInternalServiceRecordFirstPart.parameter.sitename"></a>
 
-- *Type:* string
+- *Type:* *string
 
 thron sitename, i.e. `awsd04`.
 
 ---
 
-##### `buildPrivateRoutingTokenPrefix` <a name="buildPrivateRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildPrivateRoutingTokenPrefix"></a>
+##### `BuildPrivateRoutingTokenPrefix` <a name="BuildPrivateRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildPrivateRoutingTokenPrefix"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.buildPrivateRoutingTokenPrefix(serviceName: string, version: number)
+cdkconstructs.EndpointUtils_BuildPrivateRoutingTokenPrefix(serviceName *string, version *f64) *string
 ```
 
 Build the routing token prefix for a private endpoint.
 
 ###### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.EndpointUtils.buildPrivateRoutingTokenPrefix.parameter.serviceName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.EndpointUtils.buildPrivateRoutingTokenPrefix.parameter.version"></a>
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
-##### `buildPublicRoutingTokenPrefix` <a name="buildPublicRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildPublicRoutingTokenPrefix"></a>
+##### `BuildPublicRoutingTokenPrefix` <a name="BuildPublicRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildPublicRoutingTokenPrefix"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.buildPublicRoutingTokenPrefix(serviceName: string, version: number)
+cdkconstructs.EndpointUtils_BuildPublicRoutingTokenPrefix(serviceName *string, version *f64) *string
 ```
 
 Build the routing token prefix for a public endpoint.
 
 ###### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.EndpointUtils.buildPublicRoutingTokenPrefix.parameter.serviceName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.EndpointUtils.buildPublicRoutingTokenPrefix.parameter.version"></a>
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
-##### `buildRoutingTokenPrefix` <a name="buildRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildRoutingTokenPrefix"></a>
+##### `BuildRoutingTokenPrefix` <a name="BuildRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildRoutingTokenPrefix"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.buildRoutingTokenPrefix(serviceName: string, version: number, visibility: EndpointVisibility)
+cdkconstructs.EndpointUtils_BuildRoutingTokenPrefix(serviceName *string, version *f64, visibility EndpointVisibility) *string
 ```
 
 Build routing token prefix using Thron's conventions.
 
 ###### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.EndpointUtils.buildRoutingTokenPrefix.parameter.serviceName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `version`<sup>Required</sup> <a name="version" id="cdk-constructs.EndpointUtils.buildRoutingTokenPrefix.parameter.version"></a>
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
@@ -14870,19 +15172,19 @@ Build routing token prefix using Thron's conventions.
 
 ---
 
-##### `buildServiceNameFromRoutingTokenPrefix` <a name="buildServiceNameFromRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildServiceNameFromRoutingTokenPrefix"></a>
+##### `BuildServiceNameFromRoutingTokenPrefix` <a name="BuildServiceNameFromRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.buildServiceNameFromRoutingTokenPrefix"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.buildServiceNameFromRoutingTokenPrefix(routingTokenPrefix: string, serviceGroup: ServiceGroup)
+cdkconstructs.EndpointUtils_BuildServiceNameFromRoutingTokenPrefix(routingTokenPrefix *string, serviceGroup ServiceGroup) *string
 ```
 
 Builds `serviceName` from routing token.
 
 ###### `routingTokenPrefix`<sup>Required</sup> <a name="routingTokenPrefix" id="cdk-constructs.EndpointUtils.buildServiceNameFromRoutingTokenPrefix.parameter.routingTokenPrefix"></a>
 
-- *Type:* string
+- *Type:* *string
 
 service routing token.
 
@@ -14896,53 +15198,53 @@ service group.
 
 ---
 
-##### `isValidRoutingTokenPrefix` <a name="isValidRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.isValidRoutingTokenPrefix"></a>
+##### `IsValidRoutingTokenPrefix` <a name="IsValidRoutingTokenPrefix" id="cdk-constructs.EndpointUtils.isValidRoutingTokenPrefix"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.isValidRoutingTokenPrefix(routingTokenPrefix: string)
+cdkconstructs.EndpointUtils_IsValidRoutingTokenPrefix(routingTokenPrefix *string) *bool
 ```
 
 Validates `routingTokenPrefix` against conventions.
 
 ###### `routingTokenPrefix`<sup>Required</sup> <a name="routingTokenPrefix" id="cdk-constructs.EndpointUtils.isValidRoutingTokenPrefix.parameter.routingTokenPrefix"></a>
 
-- *Type:* string
+- *Type:* *string
 
 routing token prefix to validate.
 
 ---
 
-##### `isValidThronServiceName` <a name="isValidThronServiceName" id="cdk-constructs.EndpointUtils.isValidThronServiceName"></a>
+##### `IsValidThronServiceName` <a name="IsValidThronServiceName" id="cdk-constructs.EndpointUtils.isValidThronServiceName"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.isValidThronServiceName(serviceName: string)
+cdkconstructs.EndpointUtils_IsValidThronServiceName(serviceName *string) *bool
 ```
 
 Check wether a service name validates against Thron conventions.
 
 ###### `serviceName`<sup>Required</sup> <a name="serviceName" id="cdk-constructs.EndpointUtils.isValidThronServiceName.parameter.serviceName"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `isValidVersion` <a name="isValidVersion" id="cdk-constructs.EndpointUtils.isValidVersion"></a>
+##### `IsValidVersion` <a name="IsValidVersion" id="cdk-constructs.EndpointUtils.isValidVersion"></a>
 
-```typescript
-import { EndpointUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-EndpointUtils.isValidVersion(version?: number)
+cdkconstructs.EndpointUtils_IsValidVersion(version *f64) *bool
 ```
 
 Validates `version` against conventions.
 
 ###### `version`<sup>Optional</sup> <a name="version" id="cdk-constructs.EndpointUtils.isValidVersion.parameter.version"></a>
 
-- *Type:* number
+- *Type:* *f64
 
 ---
 
@@ -14954,35 +15256,35 @@ Validates `version` against conventions.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.S3ArchiveName.Initializer"></a>
 
-```typescript
-import { S3ArchiveName } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new S3ArchiveName(p: string, ref?: string, creds?: string)
+cdkconstructs.NewS3ArchiveName(p *string, ref *string, creds *string) S3ArchiveName
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.S3ArchiveName.Initializer.parameter.p">p</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.S3ArchiveName.Initializer.parameter.ref">ref</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.S3ArchiveName.Initializer.parameter.creds">creds</a></code> | <code>string</code> | The credentials of the docker image. |
+| <code><a href="#cdk-constructs.S3ArchiveName.Initializer.parameter.p">p</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.S3ArchiveName.Initializer.parameter.ref">ref</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.S3ArchiveName.Initializer.parameter.creds">creds</a></code> | <code>*string</code> | The credentials of the docker image. |
 
 ---
 
 ##### `p`<sup>Required</sup> <a name="p" id="cdk-constructs.S3ArchiveName.Initializer.parameter.p"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `ref`<sup>Optional</sup> <a name="ref" id="cdk-constructs.S3ArchiveName.Initializer.parameter.ref"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ##### `creds`<sup>Optional</sup> <a name="creds" id="cdk-constructs.S3ArchiveName.Initializer.parameter.creds"></a>
 
-- *Type:* string
+- *Type:* *string
 
 The credentials of the docker image.
 
@@ -14996,18 +15298,18 @@ Format `user:password` or `AWS Secrets Manager secret arn` or `AWS Secrets Manag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.S3ArchiveName.property.uri">uri</a></code> | <code>string</code> | The uri of the docker image. |
-| <code><a href="#cdk-constructs.S3ArchiveName.property.creds">creds</a></code> | <code>string</code> | The credentials of the docker image. |
+| <code><a href="#cdk-constructs.S3ArchiveName.property.uri">Uri</a></code> | <code>*string</code> | The uri of the docker image. |
+| <code><a href="#cdk-constructs.S3ArchiveName.property.creds">Creds</a></code> | <code>*string</code> | The credentials of the docker image. |
 
 ---
 
-##### `uri`<sup>Required</sup> <a name="uri" id="cdk-constructs.S3ArchiveName.property.uri"></a>
+##### `Uri`<sup>Required</sup> <a name="Uri" id="cdk-constructs.S3ArchiveName.property.uri"></a>
 
-```typescript
-public readonly uri: string;
+```go
+func Uri() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The uri of the docker image.
 
@@ -15015,13 +15317,13 @@ The uri spec follows https://github.com/containers/skopeo
 
 ---
 
-##### `creds`<sup>Optional</sup> <a name="creds" id="cdk-constructs.S3ArchiveName.property.creds"></a>
+##### `Creds`<sup>Optional</sup> <a name="Creds" id="cdk-constructs.S3ArchiveName.property.creds"></a>
 
-```typescript
-public readonly creds: string;
+```go
+func Creds() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The credentials of the docker image.
 
@@ -15037,81 +15339,81 @@ Format `user:password` or `AWS Secrets Manager secret arn` or `AWS Secrets Manag
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronApiGatewayUtils.apigwMainIdSsmParam">apigwMainIdSsmParam</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayUtils.apigwVpceDnsSsmParam">apigwVpceDnsSsmParam</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayUtils.apigwVpceIdSsmParam">apigwVpceIdSsmParam</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayUtils.certificateIdArnSsmParam">certificateIdArnSsmParam</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronApiGatewayUtils.sanitizeId">sanitizeId</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayUtils.apigwMainIdSsmParam">ApigwMainIdSsmParam</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayUtils.apigwVpceDnsSsmParam">ApigwVpceDnsSsmParam</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayUtils.apigwVpceIdSsmParam">ApigwVpceIdSsmParam</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayUtils.certificateIdArnSsmParam">CertificateIdArnSsmParam</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronApiGatewayUtils.sanitizeId">SanitizeId</a></code> | *No description.* |
 
 ---
 
-##### `apigwMainIdSsmParam` <a name="apigwMainIdSsmParam" id="cdk-constructs.ThronApiGatewayUtils.apigwMainIdSsmParam"></a>
+##### `ApigwMainIdSsmParam` <a name="ApigwMainIdSsmParam" id="cdk-constructs.ThronApiGatewayUtils.apigwMainIdSsmParam"></a>
 
-```typescript
-import { ThronApiGatewayUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayUtils.apigwMainIdSsmParam(thronSitename: string)
+cdkconstructs.ThronApiGatewayUtils_ApigwMainIdSsmParam(thronSitename *string) *string
 ```
 
 ###### `thronSitename`<sup>Required</sup> <a name="thronSitename" id="cdk-constructs.ThronApiGatewayUtils.apigwMainIdSsmParam.parameter.thronSitename"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `apigwVpceDnsSsmParam` <a name="apigwVpceDnsSsmParam" id="cdk-constructs.ThronApiGatewayUtils.apigwVpceDnsSsmParam"></a>
+##### `ApigwVpceDnsSsmParam` <a name="ApigwVpceDnsSsmParam" id="cdk-constructs.ThronApiGatewayUtils.apigwVpceDnsSsmParam"></a>
 
-```typescript
-import { ThronApiGatewayUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayUtils.apigwVpceDnsSsmParam(thronSitename: string)
+cdkconstructs.ThronApiGatewayUtils_ApigwVpceDnsSsmParam(thronSitename *string) *string
 ```
 
 ###### `thronSitename`<sup>Required</sup> <a name="thronSitename" id="cdk-constructs.ThronApiGatewayUtils.apigwVpceDnsSsmParam.parameter.thronSitename"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `apigwVpceIdSsmParam` <a name="apigwVpceIdSsmParam" id="cdk-constructs.ThronApiGatewayUtils.apigwVpceIdSsmParam"></a>
+##### `ApigwVpceIdSsmParam` <a name="ApigwVpceIdSsmParam" id="cdk-constructs.ThronApiGatewayUtils.apigwVpceIdSsmParam"></a>
 
-```typescript
-import { ThronApiGatewayUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayUtils.apigwVpceIdSsmParam(thronSitename: string)
+cdkconstructs.ThronApiGatewayUtils_ApigwVpceIdSsmParam(thronSitename *string) *string
 ```
 
 ###### `thronSitename`<sup>Required</sup> <a name="thronSitename" id="cdk-constructs.ThronApiGatewayUtils.apigwVpceIdSsmParam.parameter.thronSitename"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `certificateIdArnSsmParam` <a name="certificateIdArnSsmParam" id="cdk-constructs.ThronApiGatewayUtils.certificateIdArnSsmParam"></a>
+##### `CertificateIdArnSsmParam` <a name="CertificateIdArnSsmParam" id="cdk-constructs.ThronApiGatewayUtils.certificateIdArnSsmParam"></a>
 
-```typescript
-import { ThronApiGatewayUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayUtils.certificateIdArnSsmParam(thronSitename: string)
+cdkconstructs.ThronApiGatewayUtils_CertificateIdArnSsmParam(thronSitename *string) *string
 ```
 
 ###### `thronSitename`<sup>Required</sup> <a name="thronSitename" id="cdk-constructs.ThronApiGatewayUtils.certificateIdArnSsmParam.parameter.thronSitename"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `sanitizeId` <a name="sanitizeId" id="cdk-constructs.ThronApiGatewayUtils.sanitizeId"></a>
+##### `SanitizeId` <a name="SanitizeId" id="cdk-constructs.ThronApiGatewayUtils.sanitizeId"></a>
 
-```typescript
-import { ThronApiGatewayUtils } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronApiGatewayUtils.sanitizeId(id: string)
+cdkconstructs.ThronApiGatewayUtils_SanitizeId(id *string) *string
 ```
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronApiGatewayUtils.sanitizeId.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -15121,10 +15423,10 @@ ThronApiGatewayUtils.sanitizeId(id: string)
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronEnvironment.Initializer"></a>
 
-```typescript
-import { ThronEnvironment } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronEnvironment()
+cdkconstructs.NewThronEnvironment() ThronEnvironment
 ```
 
 | **Name** | **Type** | **Description** |
@@ -15139,50 +15441,50 @@ new ThronEnvironment()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.ThronEnvironment.property.BETA">BETA</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEnvironment.property.DEVELOPMENT">DEVELOPMENT</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEnvironment.property.PRODUCTION">PRODUCTION</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronEnvironment.property.QUALITY">QUALITY</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEnvironment.property.BETA">Beta</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEnvironment.property.DEVELOPMENT">Development</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEnvironment.property.PRODUCTION">Production</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronEnvironment.property.QUALITY">Quality</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `BETA`<sup>Required</sup> <a name="BETA" id="cdk-constructs.ThronEnvironment.property.BETA"></a>
+##### `Beta`<sup>Required</sup> <a name="Beta" id="cdk-constructs.ThronEnvironment.property.BETA"></a>
 
-```typescript
-public readonly BETA: string;
+```go
+func Beta() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `DEVELOPMENT`<sup>Required</sup> <a name="DEVELOPMENT" id="cdk-constructs.ThronEnvironment.property.DEVELOPMENT"></a>
+##### `Development`<sup>Required</sup> <a name="Development" id="cdk-constructs.ThronEnvironment.property.DEVELOPMENT"></a>
 
-```typescript
-public readonly DEVELOPMENT: string;
+```go
+func Development() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `PRODUCTION`<sup>Required</sup> <a name="PRODUCTION" id="cdk-constructs.ThronEnvironment.property.PRODUCTION"></a>
+##### `Production`<sup>Required</sup> <a name="Production" id="cdk-constructs.ThronEnvironment.property.PRODUCTION"></a>
 
-```typescript
-public readonly PRODUCTION: string;
+```go
+func Production() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `QUALITY`<sup>Required</sup> <a name="QUALITY" id="cdk-constructs.ThronEnvironment.property.QUALITY"></a>
+##### `Quality`<sup>Required</sup> <a name="Quality" id="cdk-constructs.ThronEnvironment.property.QUALITY"></a>
 
-```typescript
-public readonly QUALITY: string;
+```go
+func Quality() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -15190,10 +15492,10 @@ public readonly QUALITY: string;
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronHealthCheck.Initializer"></a>
 
-```typescript
-import { ThronHealthCheck } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronHealthCheck()
+cdkconstructs.NewThronHealthCheck() ThronHealthCheck
 ```
 
 | **Name** | **Type** | **Description** |
@@ -15206,25 +15508,25 @@ new ThronHealthCheck()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronHealthCheck.default">default</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronHealthCheck.defaultWithOverrides">defaultWithOverrides</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheck.default">Default</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronHealthCheck.defaultWithOverrides">DefaultWithOverrides</a></code> | *No description.* |
 
 ---
 
-##### `default` <a name="default" id="cdk-constructs.ThronHealthCheck.default"></a>
+##### `Default` <a name="Default" id="cdk-constructs.ThronHealthCheck.default"></a>
 
-```typescript
-import { ThronHealthCheck } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronHealthCheck.default()
+cdkconstructs.ThronHealthCheck_Default() HealthCheck
 ```
 
-##### `defaultWithOverrides` <a name="defaultWithOverrides" id="cdk-constructs.ThronHealthCheck.defaultWithOverrides"></a>
+##### `DefaultWithOverrides` <a name="DefaultWithOverrides" id="cdk-constructs.ThronHealthCheck.defaultWithOverrides"></a>
 
-```typescript
-import { ThronHealthCheck } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-ThronHealthCheck.defaultWithOverrides(props: ThronHealthCheckOverride)
+cdkconstructs.ThronHealthCheck_DefaultWithOverrides(props ThronHealthCheckOverride) HealthCheck
 ```
 
 ###### `props`<sup>Required</sup> <a name="props" id="cdk-constructs.ThronHealthCheck.defaultWithOverrides.parameter.props"></a>
@@ -15241,10 +15543,10 @@ Builder Class for {@link ThronLambdaSingleEnvPipeline}.
 
 #### Initializers <a name="Initializers" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.Initializer"></a>
 
-```typescript
-import { ThronLambdaSingleEnvPipelineBuilder } from 'cdk-constructs'
+```go
+import "git-codecommit.eu-west-1.amazonaws.com/v1/repos/cdk-constructs-go.git/cdkconstructs"
 
-new ThronLambdaSingleEnvPipelineBuilder()
+cdkconstructs.NewThronLambdaSingleEnvPipelineBuilder() ThronLambdaSingleEnvPipelineBuilder
 ```
 
 | **Name** | **Type** | **Description** |
@@ -15256,67 +15558,67 @@ new ThronLambdaSingleEnvPipelineBuilder()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.buildPipeline">buildPipeline</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withArtifactBucket">withArtifactBucket</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withBuildDisabled">withBuildDisabled</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultBuildStepConfig">withDefaultBuildStepConfig</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultDeployStepConfig">withDefaultDeployStepConfig</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultStepConfig">withDefaultStepConfig</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultTestStepConfig">withDefaultTestStepConfig</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDeployEnvironment">withDeployEnvironment</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withLambda">withLambda</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withNotifyConfig">withNotifyConfig</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withSourceConfiguration">withSourceConfiguration</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withTestStep">withTestStep</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.buildPipeline">BuildPipeline</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withArtifactBucket">WithArtifactBucket</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withBuildDisabled">WithBuildDisabled</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultBuildStepConfig">WithDefaultBuildStepConfig</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultDeployStepConfig">WithDefaultDeployStepConfig</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultStepConfig">WithDefaultStepConfig</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultTestStepConfig">WithDefaultTestStepConfig</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDeployEnvironment">WithDeployEnvironment</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withLambda">WithLambda</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withNotifyConfig">WithNotifyConfig</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withSourceConfiguration">WithSourceConfiguration</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withTestStep">WithTestStep</a></code> | *No description.* |
 
 ---
 
-##### `buildPipeline` <a name="buildPipeline" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.buildPipeline"></a>
+##### `BuildPipeline` <a name="BuildPipeline" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.buildPipeline"></a>
 
-```typescript
-public buildPipeline(scope: Construct, id: string, prefix: string): ThronLambdaSingleEnvPipeline
+```go
+func BuildPipeline(scope Construct, id *string, prefix *string) ThronLambdaSingleEnvPipeline
 ```
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.buildPipeline.parameter.scope"></a>
 
-- *Type:* constructs.Construct
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
 ---
 
 ###### `id`<sup>Required</sup> <a name="id" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.buildPipeline.parameter.id"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `prefix`<sup>Required</sup> <a name="prefix" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.buildPipeline.parameter.prefix"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
-##### `withArtifactBucket` <a name="withArtifactBucket" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withArtifactBucket"></a>
+##### `WithArtifactBucket` <a name="WithArtifactBucket" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withArtifactBucket"></a>
 
-```typescript
-public withArtifactBucket(artifactBucket: IBucket): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithArtifactBucket(artifactBucket IBucket) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `artifactBucket`<sup>Required</sup> <a name="artifactBucket" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withArtifactBucket.parameter.artifactBucket"></a>
 
-- *Type:* aws-cdk-lib.aws_s3.IBucket
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_s3.IBucket
 
 ---
 
-##### `withBuildDisabled` <a name="withBuildDisabled" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withBuildDisabled"></a>
+##### `WithBuildDisabled` <a name="WithBuildDisabled" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withBuildDisabled"></a>
 
-```typescript
-public withBuildDisabled(): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithBuildDisabled() ThronLambdaSingleEnvPipelineBuilder
 ```
 
-##### `withDefaultBuildStepConfig` <a name="withDefaultBuildStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultBuildStepConfig"></a>
+##### `WithDefaultBuildStepConfig` <a name="WithDefaultBuildStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultBuildStepConfig"></a>
 
-```typescript
-public withDefaultBuildStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithDefaultBuildStepConfig(stepConfig StepConfig) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultBuildStepConfig.parameter.stepConfig"></a>
@@ -15325,10 +15627,10 @@ public withDefaultBuildStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnvP
 
 ---
 
-##### `withDefaultDeployStepConfig` <a name="withDefaultDeployStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultDeployStepConfig"></a>
+##### `WithDefaultDeployStepConfig` <a name="WithDefaultDeployStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultDeployStepConfig"></a>
 
-```typescript
-public withDefaultDeployStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithDefaultDeployStepConfig(stepConfig StepConfig) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultDeployStepConfig.parameter.stepConfig"></a>
@@ -15337,10 +15639,10 @@ public withDefaultDeployStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnv
 
 ---
 
-##### `withDefaultStepConfig` <a name="withDefaultStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultStepConfig"></a>
+##### `WithDefaultStepConfig` <a name="WithDefaultStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultStepConfig"></a>
 
-```typescript
-public withDefaultStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithDefaultStepConfig(stepConfig StepConfig) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultStepConfig.parameter.stepConfig"></a>
@@ -15349,10 +15651,10 @@ public withDefaultStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnvPipeli
 
 ---
 
-##### `withDefaultTestStepConfig` <a name="withDefaultTestStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultTestStepConfig"></a>
+##### `WithDefaultTestStepConfig` <a name="WithDefaultTestStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultTestStepConfig"></a>
 
-```typescript
-public withDefaultTestStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithDefaultTestStepConfig(stepConfig StepConfig) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `stepConfig`<sup>Required</sup> <a name="stepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDefaultTestStepConfig.parameter.stepConfig"></a>
@@ -15361,10 +15663,10 @@ public withDefaultTestStepConfig(stepConfig: StepConfig): ThronLambdaSingleEnvPi
 
 ---
 
-##### `withDeployEnvironment` <a name="withDeployEnvironment" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDeployEnvironment"></a>
+##### `WithDeployEnvironment` <a name="WithDeployEnvironment" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDeployEnvironment"></a>
 
-```typescript
-public withDeployEnvironment(deployConfig: DeployConfig): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithDeployEnvironment(deployConfig DeployConfig) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `deployConfig`<sup>Required</sup> <a name="deployConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withDeployEnvironment.parameter.deployConfig"></a>
@@ -15373,21 +15675,21 @@ public withDeployEnvironment(deployConfig: DeployConfig): ThronLambdaSingleEnvPi
 
 ---
 
-##### `withLambda` <a name="withLambda" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withLambda"></a>
+##### `WithLambda` <a name="WithLambda" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withLambda"></a>
 
-```typescript
-public withLambda(lambdaId: string, destinationEcrRepository: Repository, stepConfOverrides?: StepConfig): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithLambda(lambdaId *string, destinationEcrRepository Repository, stepConfOverrides StepConfig) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `lambdaId`<sup>Required</sup> <a name="lambdaId" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withLambda.parameter.lambdaId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
 ###### `destinationEcrRepository`<sup>Required</sup> <a name="destinationEcrRepository" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withLambda.parameter.destinationEcrRepository"></a>
 
-- *Type:* aws-cdk-lib.aws_ecr.Repository
+- *Type:* github.com/aws/aws-cdk-go/awscdk/v2.aws_ecr.Repository
 
 ---
 
@@ -15397,10 +15699,10 @@ public withLambda(lambdaId: string, destinationEcrRepository: Repository, stepCo
 
 ---
 
-##### `withNotifyConfig` <a name="withNotifyConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withNotifyConfig"></a>
+##### `WithNotifyConfig` <a name="WithNotifyConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withNotifyConfig"></a>
 
-```typescript
-public withNotifyConfig(notifyConf: NotifyConf): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithNotifyConfig(notifyConf NotifyConf) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `notifyConf`<sup>Required</sup> <a name="notifyConf" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withNotifyConfig.parameter.notifyConf"></a>
@@ -15409,10 +15711,10 @@ public withNotifyConfig(notifyConf: NotifyConf): ThronLambdaSingleEnvPipelineBui
 
 ---
 
-##### `withSourceConfiguration` <a name="withSourceConfiguration" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withSourceConfiguration"></a>
+##### `WithSourceConfiguration` <a name="WithSourceConfiguration" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withSourceConfiguration"></a>
 
-```typescript
-public withSourceConfiguration(sourceConfig: ThronLambdaSingleEnvPipelineCodeCommitProps): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithSourceConfiguration(sourceConfig ThronLambdaSingleEnvPipelineCodeCommitProps) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `sourceConfig`<sup>Required</sup> <a name="sourceConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withSourceConfiguration.parameter.sourceConfig"></a>
@@ -15421,15 +15723,15 @@ public withSourceConfiguration(sourceConfig: ThronLambdaSingleEnvPipelineCodeCom
 
 ---
 
-##### `withTestStep` <a name="withTestStep" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withTestStep"></a>
+##### `WithTestStep` <a name="WithTestStep" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withTestStep"></a>
 
-```typescript
-public withTestStep(testId: string, stepConfOverrides?: StepConfig): ThronLambdaSingleEnvPipelineBuilder
+```go
+func WithTestStep(testId *string, stepConfOverrides StepConfig) ThronLambdaSingleEnvPipelineBuilder
 ```
 
 ###### `testId`<sup>Required</sup> <a name="testId" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.withTestStep.parameter.testId"></a>
 
-- *Type:* string
+- *Type:* *string
 
 ---
 
@@ -15451,8 +15753,8 @@ public withTestStep(testId: string, stepConfOverrides?: StepConfig): ThronLambda
 
 ##### `DefaultStepConfig`<sup>Required</sup> <a name="DefaultStepConfig" id="cdk-constructs.ThronLambdaSingleEnvPipelineBuilder.property.DefaultStepConfig"></a>
 
-```typescript
-public readonly DefaultStepConfig: StepConfig;
+```go
+func DefaultStepConfig() StepConfig
 ```
 
 - *Type:* <a href="#cdk-constructs.StepConfig">StepConfig</a>
@@ -15470,18 +15772,18 @@ public readonly DefaultStepConfig: StepConfig;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-constructs.IImageName.property.uri">uri</a></code> | <code>string</code> | The uri of the docker image. |
-| <code><a href="#cdk-constructs.IImageName.property.creds">creds</a></code> | <code>string</code> | The credentials of the docker image. |
+| <code><a href="#cdk-constructs.IImageName.property.uri">Uri</a></code> | <code>*string</code> | The uri of the docker image. |
+| <code><a href="#cdk-constructs.IImageName.property.creds">Creds</a></code> | <code>*string</code> | The credentials of the docker image. |
 
 ---
 
-##### `uri`<sup>Required</sup> <a name="uri" id="cdk-constructs.IImageName.property.uri"></a>
+##### `Uri`<sup>Required</sup> <a name="Uri" id="cdk-constructs.IImageName.property.uri"></a>
 
-```typescript
-public readonly uri: string;
+```go
+func Uri() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The uri of the docker image.
 
@@ -15489,13 +15791,13 @@ The uri spec follows https://github.com/containers/skopeo
 
 ---
 
-##### `creds`<sup>Optional</sup> <a name="creds" id="cdk-constructs.IImageName.property.creds"></a>
+##### `Creds`<sup>Optional</sup> <a name="Creds" id="cdk-constructs.IImageName.property.creds"></a>
 
-```typescript
-public readonly creds: string;
+```go
+func Creds() *string
 ```
 
-- *Type:* string
+- *Type:* *string
 
 The credentials of the docker image.
 
@@ -15513,29 +15815,29 @@ Enum with all the AZ you may use in a region.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.AvailabilityZone.A">A</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.AvailabilityZone.B">B</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.AvailabilityZone.C">C</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.AvailabilityZone.D">D</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.AvailabilityZone.A">AvailabilityZone_A</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.AvailabilityZone.B">AvailabilityZone_B</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.AvailabilityZone.C">AvailabilityZone_C</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.AvailabilityZone.D">AvailabilityZone_D</a></code> | *No description.* |
 
 ---
 
-##### `A` <a name="A" id="cdk-constructs.AvailabilityZone.A"></a>
-
----
-
-
-##### `B` <a name="B" id="cdk-constructs.AvailabilityZone.B"></a>
+##### `AvailabilityZone_A` <a name="AvailabilityZone_A" id="cdk-constructs.AvailabilityZone.A"></a>
 
 ---
 
 
-##### `C` <a name="C" id="cdk-constructs.AvailabilityZone.C"></a>
+##### `AvailabilityZone_B` <a name="AvailabilityZone_B" id="cdk-constructs.AvailabilityZone.B"></a>
 
 ---
 
 
-##### `D` <a name="D" id="cdk-constructs.AvailabilityZone.D"></a>
+##### `AvailabilityZone_C` <a name="AvailabilityZone_C" id="cdk-constructs.AvailabilityZone.C"></a>
+
+---
+
+
+##### `AvailabilityZone_D` <a name="AvailabilityZone_D" id="cdk-constructs.AvailabilityZone.D"></a>
 
 ---
 
@@ -15546,29 +15848,29 @@ Enum with all the AZ you may use in a region.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ClusterOption.CORE_MAIN">CORE_MAIN</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ClusterOption.ECS_MANAGEMENT">ECS_MANAGEMENT</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ClusterOption.THE_SHIRE">THE_SHIRE</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ClusterOption.VALINOR">VALINOR</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ClusterOption.CORE_MAIN">ClusterOption_CORE_MAIN</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ClusterOption.ECS_MANAGEMENT">ClusterOption_ECS_MANAGEMENT</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ClusterOption.THE_SHIRE">ClusterOption_THE_SHIRE</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ClusterOption.VALINOR">ClusterOption_VALINOR</a></code> | *No description.* |
 
 ---
 
-##### `CORE_MAIN` <a name="CORE_MAIN" id="cdk-constructs.ClusterOption.CORE_MAIN"></a>
-
----
-
-
-##### `ECS_MANAGEMENT` <a name="ECS_MANAGEMENT" id="cdk-constructs.ClusterOption.ECS_MANAGEMENT"></a>
+##### `ClusterOption_CORE_MAIN` <a name="ClusterOption_CORE_MAIN" id="cdk-constructs.ClusterOption.CORE_MAIN"></a>
 
 ---
 
 
-##### `THE_SHIRE` <a name="THE_SHIRE" id="cdk-constructs.ClusterOption.THE_SHIRE"></a>
+##### `ClusterOption_ECS_MANAGEMENT` <a name="ClusterOption_ECS_MANAGEMENT" id="cdk-constructs.ClusterOption.ECS_MANAGEMENT"></a>
 
 ---
 
 
-##### `VALINOR` <a name="VALINOR" id="cdk-constructs.ClusterOption.VALINOR"></a>
+##### `ClusterOption_THE_SHIRE` <a name="ClusterOption_THE_SHIRE" id="cdk-constructs.ClusterOption.THE_SHIRE"></a>
+
+---
+
+
+##### `ClusterOption_VALINOR` <a name="ClusterOption_VALINOR" id="cdk-constructs.ClusterOption.VALINOR"></a>
 
 ---
 
@@ -15579,17 +15881,17 @@ Enum with all the AZ you may use in a region.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.EndpointVisibility.PUBLIC">PUBLIC</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.EndpointVisibility.PRIVATE">PRIVATE</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.EndpointVisibility.PUBLIC">EndpointVisibility_PUBLIC</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.EndpointVisibility.PRIVATE">EndpointVisibility_PRIVATE</a></code> | *No description.* |
 
 ---
 
-##### `PUBLIC` <a name="PUBLIC" id="cdk-constructs.EndpointVisibility.PUBLIC"></a>
+##### `EndpointVisibility_PUBLIC` <a name="EndpointVisibility_PUBLIC" id="cdk-constructs.EndpointVisibility.PUBLIC"></a>
 
 ---
 
 
-##### `PRIVATE` <a name="PRIVATE" id="cdk-constructs.EndpointVisibility.PRIVATE"></a>
+##### `EndpointVisibility_PRIVATE` <a name="EndpointVisibility_PRIVATE" id="cdk-constructs.EndpointVisibility.PRIVATE"></a>
 
 ---
 
@@ -15600,41 +15902,41 @@ Enum with all the AZ you may use in a region.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.ALL">ALL</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.AGENT">AGENT</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.HANDLER">HANDLER</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.SANITY">SANITY</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.VENDOR">VENDOR</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.FALSE">FALSE</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.ALL">NewRelicIgnoreExtensionChecksOption_ALL</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.AGENT">NewRelicIgnoreExtensionChecksOption_AGENT</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.HANDLER">NewRelicIgnoreExtensionChecksOption_HANDLER</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.SANITY">NewRelicIgnoreExtensionChecksOption_SANITY</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.VENDOR">NewRelicIgnoreExtensionChecksOption_VENDOR</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.NewRelicIgnoreExtensionChecksOption.FALSE">NewRelicIgnoreExtensionChecksOption_FALSE</a></code> | *No description.* |
 
 ---
 
-##### `ALL` <a name="ALL" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.ALL"></a>
-
----
-
-
-##### `AGENT` <a name="AGENT" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.AGENT"></a>
+##### `NewRelicIgnoreExtensionChecksOption_ALL` <a name="NewRelicIgnoreExtensionChecksOption_ALL" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.ALL"></a>
 
 ---
 
 
-##### `HANDLER` <a name="HANDLER" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.HANDLER"></a>
+##### `NewRelicIgnoreExtensionChecksOption_AGENT` <a name="NewRelicIgnoreExtensionChecksOption_AGENT" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.AGENT"></a>
 
 ---
 
 
-##### `SANITY` <a name="SANITY" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.SANITY"></a>
+##### `NewRelicIgnoreExtensionChecksOption_HANDLER` <a name="NewRelicIgnoreExtensionChecksOption_HANDLER" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.HANDLER"></a>
 
 ---
 
 
-##### `VENDOR` <a name="VENDOR" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.VENDOR"></a>
+##### `NewRelicIgnoreExtensionChecksOption_SANITY` <a name="NewRelicIgnoreExtensionChecksOption_SANITY" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.SANITY"></a>
 
 ---
 
 
-##### `FALSE` <a name="FALSE" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.FALSE"></a>
+##### `NewRelicIgnoreExtensionChecksOption_VENDOR` <a name="NewRelicIgnoreExtensionChecksOption_VENDOR" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.VENDOR"></a>
+
+---
+
+
+##### `NewRelicIgnoreExtensionChecksOption_FALSE` <a name="NewRelicIgnoreExtensionChecksOption_FALSE" id="cdk-constructs.NewRelicIgnoreExtensionChecksOption.FALSE"></a>
 
 ---
 
@@ -15645,43 +15947,43 @@ Enum with all the AZ you may use in a region.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.PipelineCapability.BUILD">BUILD</a></code> | Enable BUILD stage in the pipeline. |
-| <code><a href="#cdk-constructs.PipelineCapability.TEST">TEST</a></code> | Enable TEST stage in the pipeline. |
-| <code><a href="#cdk-constructs.PipelineCapability.NOTIFY_ON_START">NOTIFY_ON_START</a></code> | Enable pipeline notification when the pipeline starts, both manually or via a new commit. |
-| <code><a href="#cdk-constructs.PipelineCapability.NOTIFY_ON_FAIL">NOTIFY_ON_FAIL</a></code> | Enable pipeline notification when the pipeline fails. |
-| <code><a href="#cdk-constructs.PipelineCapability.NOTIFY_ON_SUCCESS">NOTIFY_ON_SUCCESS</a></code> | Enable pipeline notification when the pipeline succeeds. |
+| <code><a href="#cdk-constructs.PipelineCapability.BUILD">PipelineCapability_BUILD</a></code> | Enable BUILD stage in the pipeline. |
+| <code><a href="#cdk-constructs.PipelineCapability.TEST">PipelineCapability_TEST</a></code> | Enable TEST stage in the pipeline. |
+| <code><a href="#cdk-constructs.PipelineCapability.NOTIFY_ON_START">PipelineCapability_NOTIFY_ON_START</a></code> | Enable pipeline notification when the pipeline starts, both manually or via a new commit. |
+| <code><a href="#cdk-constructs.PipelineCapability.NOTIFY_ON_FAIL">PipelineCapability_NOTIFY_ON_FAIL</a></code> | Enable pipeline notification when the pipeline fails. |
+| <code><a href="#cdk-constructs.PipelineCapability.NOTIFY_ON_SUCCESS">PipelineCapability_NOTIFY_ON_SUCCESS</a></code> | Enable pipeline notification when the pipeline succeeds. |
 
 ---
 
-##### `BUILD` <a name="BUILD" id="cdk-constructs.PipelineCapability.BUILD"></a>
+##### `PipelineCapability_BUILD` <a name="PipelineCapability_BUILD" id="cdk-constructs.PipelineCapability.BUILD"></a>
 
 Enable BUILD stage in the pipeline.
 
 ---
 
 
-##### `TEST` <a name="TEST" id="cdk-constructs.PipelineCapability.TEST"></a>
+##### `PipelineCapability_TEST` <a name="PipelineCapability_TEST" id="cdk-constructs.PipelineCapability.TEST"></a>
 
 Enable TEST stage in the pipeline.
 
 ---
 
 
-##### `NOTIFY_ON_START` <a name="NOTIFY_ON_START" id="cdk-constructs.PipelineCapability.NOTIFY_ON_START"></a>
+##### `PipelineCapability_NOTIFY_ON_START` <a name="PipelineCapability_NOTIFY_ON_START" id="cdk-constructs.PipelineCapability.NOTIFY_ON_START"></a>
 
 Enable pipeline notification when the pipeline starts, both manually or via a new commit.
 
 ---
 
 
-##### `NOTIFY_ON_FAIL` <a name="NOTIFY_ON_FAIL" id="cdk-constructs.PipelineCapability.NOTIFY_ON_FAIL"></a>
+##### `PipelineCapability_NOTIFY_ON_FAIL` <a name="PipelineCapability_NOTIFY_ON_FAIL" id="cdk-constructs.PipelineCapability.NOTIFY_ON_FAIL"></a>
 
 Enable pipeline notification when the pipeline fails.
 
 ---
 
 
-##### `NOTIFY_ON_SUCCESS` <a name="NOTIFY_ON_SUCCESS" id="cdk-constructs.PipelineCapability.NOTIFY_ON_SUCCESS"></a>
+##### `PipelineCapability_NOTIFY_ON_SUCCESS` <a name="PipelineCapability_NOTIFY_ON_SUCCESS" id="cdk-constructs.PipelineCapability.NOTIFY_ON_SUCCESS"></a>
 
 Enable pipeline notification when the pipeline succeeds.
 
@@ -15694,17 +15996,17 @@ Enable pipeline notification when the pipeline succeeds.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.ServiceGroup.PRODUCT">PRODUCT</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.ServiceGroup.VIEW">VIEW</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ServiceGroup.PRODUCT">ServiceGroup_PRODUCT</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.ServiceGroup.VIEW">ServiceGroup_VIEW</a></code> | *No description.* |
 
 ---
 
-##### `PRODUCT` <a name="PRODUCT" id="cdk-constructs.ServiceGroup.PRODUCT"></a>
+##### `ServiceGroup_PRODUCT` <a name="ServiceGroup_PRODUCT" id="cdk-constructs.ServiceGroup.PRODUCT"></a>
 
 ---
 
 
-##### `VIEW` <a name="VIEW" id="cdk-constructs.ServiceGroup.VIEW"></a>
+##### `ServiceGroup_VIEW` <a name="ServiceGroup_VIEW" id="cdk-constructs.ServiceGroup.VIEW"></a>
 
 ---
 
@@ -15717,17 +16019,17 @@ Attribute indicating whether a Subnet is public or private.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-constructs.SubnetType.PUBLIC">PUBLIC</a></code> | *No description.* |
-| <code><a href="#cdk-constructs.SubnetType.PRIVATE">PRIVATE</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.SubnetType.PUBLIC">SubnetType_PUBLIC</a></code> | *No description.* |
+| <code><a href="#cdk-constructs.SubnetType.PRIVATE">SubnetType_PRIVATE</a></code> | *No description.* |
 
 ---
 
-##### `PUBLIC` <a name="PUBLIC" id="cdk-constructs.SubnetType.PUBLIC"></a>
+##### `SubnetType_PUBLIC` <a name="SubnetType_PUBLIC" id="cdk-constructs.SubnetType.PUBLIC"></a>
 
 ---
 
 
-##### `PRIVATE` <a name="PRIVATE" id="cdk-constructs.SubnetType.PRIVATE"></a>
+##### `SubnetType_PRIVATE` <a name="SubnetType_PRIVATE" id="cdk-constructs.SubnetType.PRIVATE"></a>
 
 ---
 
